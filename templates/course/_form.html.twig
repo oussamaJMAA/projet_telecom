@@ -1,4 +1,132 @@
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
-{{ form_end(form) }}
+
+	<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="card card-box">
+								<div class="card-head">
+									<header>Course Details</header>
+			
+								</div>
+                                <div class="card-body" id="bar-parent">
+									<form action="#" id="form_sample_1" class="form-horizontal">
+										<div class="form-body">
+											<div class="form-group row">
+												<label class="control-label col-md-3">Course Name
+													<span class="required"> * </span>
+												</label>
+												<div class="col-md-5">
+													<input type="text" name="coursename" placeholder="enter course name"
+														class="form-control input-height" />
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">Course Code
+													<span class="required"> * </span>
+												</label>
+												<div class="col-md-5">
+													<input type="text" name="ccode" placeholder="enter course code"
+														class="form-control input-height" /> </div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">Course Details
+													<span class="required"> * </span>
+												</label>
+												<div class="col-md-5">
+													<textarea name="address" placeholder="course details"
+														class="form-control-textarea" rows="5"></textarea>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">Starting Date
+													<span class="required"> * </span>
+												</label>
+												<div class="col-md-5">
+													<div class="input-append date">
+														<div id="dateIcon" class="input-group datePicker">
+															<input class="formDatePicker form-control" type="text"
+																placeholder="Select Date.." data-input>
+															<span class="dateBtn">
+																<a class="input-button" title="toggle" data-toggle>
+																	<i class="icon-calendar"></i>
+																</a>
+																<a class="input-button" title="clear" data-clear>
+																	<i class="icon-close"></i>
+																</a>
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">Course Duration
+													<span class="required"> * </span>
+												</label>
+												<div class="col-md-5">
+													<input type="text" name="csuration" placeholder="Course Duration"
+														class="form-control input-height" />
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">Course Price
+													<span class="required"> * </span>
+												</label>
+												<div class="col-md-5">
+													<input type="text" name="cprice" placeholder="Course Price"
+														class="form-control input-height" /> </div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">Professor Name
+													<span class="required"> * </span>
+												</label>
+												<div class="col-md-5">
+													<select class="form-select input-height" name="proff">
+														<option value="">Select...</option>
+														<option value="Category 1">Pr. Jayesh Patel</option>
+														<option value="Category 2">Pr. Salini Parmar</option>
+														<option value="Category 3">Pr. Mayank Trivedi</option>
+														<option value="Category 3">Pr. Parit Varma</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">Maximum Students
+													<span class="required"> * </span>
+												</label>
+												<div class="col-md-5">
+													<input type="text" name="maxstud" placeholder="Maximum Students"
+														class="form-control input-height" />
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">Contact No.
+													<span class="required"> * </span>
+												</label>
+												<div class="col-md-5">
+													<input name="number" type="text" placeholder="Contact Number"
+														class="form-control input-height" /> </div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-md-3">Profile Picture
+												</label>
+												<div class="col-md-5">
+													<input type="file" class="default" multiple>
+												</div>
+											</div>
+											<div class="form-actions">
+												<div class="row">
+													<div class="offset-md-3 col-md-9">
+														<button type="submit"
+															class="btn btn-info m-r-20">Submit</button>
+														<button type="button" class="btn btn-default">Cancel</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+ 

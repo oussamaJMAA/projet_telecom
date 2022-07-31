@@ -30,7 +30,7 @@ class Course
     /**
      * @ORM\Column(type="integer", nullable=true)
      */
-    private $nb_enrollments;
+    private $nb_enrollments = 0;
 
     /**
      * @ORM\Column(type="text")
@@ -45,7 +45,7 @@ class Course
     /**
      * @ORM\Column(type="integer")
      */
-    private $nb_likes;
+    private $nb_likes = 0;
 
     public function getId(): ?int
     {
