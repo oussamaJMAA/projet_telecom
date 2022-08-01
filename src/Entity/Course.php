@@ -20,6 +20,10 @@ class Course
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Length(
+     *      min = 3,
+     *      max = 100,
+     * )
      */
     private $name;
 
@@ -35,11 +39,17 @@ class Course
 
     /**
      * @ORM\Column(type="text")
+
      */
     private $details;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Regex(
+     * pattern = "/^(http:|https:|www.)/",
+     * match="false",
+     * message="lien nest pas valide"
+     * )
      */
     private $link;
 

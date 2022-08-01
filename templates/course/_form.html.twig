@@ -9,6 +9,7 @@
 								</div>
                                 <div class="card-body" id="bar-parent">
 								{{ form_start(form,{'attr':{'novalidate':'novalidate','class':'needs-validation'}}) }}
+							
 										<div class="form-body">
 
 {{ form_widget(form.nb_likes, {'attr': {'class': 'form-control input-height invisible','placeholder':'Lien cours'}}) }}
@@ -24,6 +25,8 @@
 													
 														{{ form_widget(form.name, {'attr': {'class': 'form-control input-height','placeholder':'Nom Cours'}}) }}
 														<div class="invalid-feedback">Please provide a valid name.</div>
+													
+											
 												</div>
 
 
