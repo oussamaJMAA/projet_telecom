@@ -4,11 +4,13 @@ namespace App\Controller;
 
 use App\Entity\Course;
 use App\Form\CourseType;
+use Symfony\Component\Mime\Email;
 use App\Repository\CourseRepository;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 /**
  * @Route("/course")
@@ -37,7 +39,7 @@ class CourseController extends AbstractController
     /**
      * @Route("/new", name="app_course_new", methods={"GET", "POST"})
      */
-    public function new(Request $request, CourseRepository $courseRepository): Response
+    public function new(Request $request, CourseRepository $courseRepository,MailerInterface $mailer): Response
     {
         $course = new Course();
         $form = $this->createForm(CourseType::class, $course);
@@ -54,6 +56,14 @@ class CourseController extends AbstractController
             );
         $course->setImage($fileName);
         $courseRepository->add($course);
+        $email = (new Email())
+        ->from('roukaia@gmail.com')
+        ->to('roukaia.khelifi@esprit.tn')
+        ->subject('Theres a new course check it out')
+        ->html('<p>See Twig integration for better HTML integration!</p>');
+
+    $mailer->send($email);
+
         return $this->redirectToRoute('app_course_index', [], Response::HTTP_SEE_OTHER);
         }
 
