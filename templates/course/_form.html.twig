@@ -1,5 +1,5 @@
-{{ form_start(form) }}
-{{ form_row(form._token) }}
+
+
 	<div class="row">
 						<div class="col-md-12 col-sm-12">
 							<div class="card card-box">
@@ -8,10 +8,11 @@
 			
 								</div>
                                 <div class="card-body" id="bar-parent">
-									<form action="#" id="form_sample_1" class="form-horizontal">
+								{{ form_start(form,{'attr':{'novalidate':'novalidate','class':'needs-validation'}}) }}
 										<div class="form-body">
 
 {{ form_widget(form.nb_likes, {'attr': {'class': 'form-control input-height invisible','placeholder':'Lien cours'}}) }}
+
 											<div class="form-group row">
 
 											
@@ -22,6 +23,7 @@
 												<div class="col-md-5">
 													
 														{{ form_widget(form.name, {'attr': {'class': 'form-control input-height','placeholder':'Nom Cours'}}) }}
+														<div class="invalid-feedback">Please provide a valid name.</div>
 												</div>
 
 
@@ -36,6 +38,8 @@
 												<div class="col-md-5">
 												
 												{{ form_widget(form.details, {'attr': {'class': 'form-control-textarea','placeholder':'Details cours'}}) }}
+												<div class="invalid-feedback">Please provide valid details.</div>
+											
 
 												</div>
 											</div>
@@ -49,6 +53,8 @@
 												<div class="col-md-5">
 													
 														{{ form_widget(form.link, {'attr': {'class': 'form-control input-height','placeholder':'Lien cours'}}) }}
+														<div class="invalid-feedback">Please provide a valid link.</div>
+												
 												</div>
 
 
@@ -60,6 +66,10 @@
 												</label>
 												<div class="col-md-5">
 													{{ form_widget(form.image)}}
+													   <div class="invalid-feedback">Please provide a valid image.</div>
+																
+																
+												
 												</div>
 											</div>
 												<div class="form-actions">
@@ -80,7 +90,7 @@
 
 
 										</div>
-									</form>
+									{{ form_end(form) }}
 								</div>
 							</div>
 						</div>
@@ -88,4 +98,3 @@
 				</div>
 			</div>
  
-{{ form_end(form) }}

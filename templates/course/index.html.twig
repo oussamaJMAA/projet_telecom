@@ -112,7 +112,7 @@
 																	  
                                                                             <td class="left">{{ course.name }}</td>
 																			
-                                                                           <td> <img src="{{course.image}}" /></td>
+                                                                           	<td><img src="/uploads/photos/{{course.image}}" height="42" width="42">
 																			
                                                                             <td class="left">{{ course.nbEnrollments }}</td>
                                                                             <td class="left">{{ course.details }}</td>
@@ -153,8 +153,8 @@
 										
 									<div class="col-lg-3 col-md-6 col-12 col-sm-6">
 										<div class="blogThumb">
-											<div class="thumb-center"><img class="img-responsive" alt="user"
-													src="../assets/img/course/course1.jpg"></div>
+											<div class="thumb-center"><img class="img-responsive" alt="course"
+													src="/uploads/photos/{{course.image}}"></div>
 											<div class="course-box">
 												<h4>{{ course.name }}</h4>
 
