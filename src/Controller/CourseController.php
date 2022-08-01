@@ -25,6 +25,15 @@ class CourseController extends AbstractController
         ]);
     }
 
+      /**
+     * @Route("/course_front", name="app_course_index_front", methods={"GET"})
+     */
+    public function index_front(CourseRepository $courseRepository): Response
+    {
+     return $this->render('course/index_front.html.twig', [
+            'courses' => $courseRepository->findAll(),
+        ]);
+    }
     /**
      * @Route("/new", name="app_course_new", methods={"GET", "POST"})
      */
