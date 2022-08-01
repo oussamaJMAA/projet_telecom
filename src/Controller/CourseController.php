@@ -56,14 +56,14 @@ class CourseController extends AbstractController
             );
         $course->setImage($fileName);
         $courseRepository->add($course);
-        $email = (new Email())
+       /* $email = (new Email())
         ->from('roukaia@gmail.com')
         ->to('roukaia.khelifi@esprit.tn')
         ->subject('Theres a new course check it out')
         ->html('<p>See Twig integration for better HTML integration!</p>');
 
     $mailer->send($email);
-
+*/
         return $this->redirectToRoute('app_course_index', [], Response::HTTP_SEE_OTHER);
         }
 
