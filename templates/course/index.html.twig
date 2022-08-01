@@ -111,21 +111,27 @@
 																		
 																	  
                                                                             <td class="left">{{ course.name }}</td>
-                                                                            <td class="left">{{ course.image }}</td>
+																			
+                                                                           	<td><img src="/uploads/photos/{{course.image}}" height="42" width="42">
+																			
                                                                             <td class="left">{{ course.nbEnrollments }}</td>
                                                                             <td class="left">{{ course.details }}</td>
                                                                             <td class="left">{{ course.link }}</td>
                                                                             <td class="left">{{ course.nbLikes }}</td>
                                                                         
 																		<td class="left">
-																			<a href="edit_professor.html"
-																				class="btn btn-primary btn-xs">
-																				<i class="fa fa-pencil"></i>
-																			</a>
-																			<button class="btn btn-danger btn-xs">
-																				<i class="fa fa-trash-o "></i>
-																			</button>
+																		<div class="d-flex justify-content-around">
+									<a href="{{ path('app_course_edit', {'id': course.id}) }}" class="btn btn-primary btn-xs">
+																	<i class="fa fa-pencil"></i>
+																</a>
+
+																			
+																			{{ include('course/_delete_form.html.twig') }}
+
+																			<div>
 																		</td>
+
+
 																	</tr>
                                                                         {% else %}
                                                                     <tr>
@@ -143,24 +149,28 @@
 									
                                                 <div class="tab-pane" id="tab2">
 										<div class="row">
-											{% for i in 0..10 %}
+										  {% for course in courses %}
 										
 									<div class="col-lg-3 col-md-6 col-12 col-sm-6">
 										<div class="blogThumb">
-											<div class="thumb-center"><img class="img-responsive" alt="user"
-													src="../assets/img/course/course1.jpg"></div>
+											<div class="thumb-center"><img class="img-responsive" alt="course"
+													src="/uploads/photos/{{course.image}}"></div>
 											<div class="course-box">
-												<h4>PHP Development Course</h4>
-												<div class="text-muted"><span class="m-r-10">April 23</span>
+												<h4>{{ course.name }}</h4>
+
+											<div class="text-muted"><span class="m-r-10">April 23</span>
 													<a class="course-likes m-l-10" href="#"><i
-															class="fa fa-heart-o"></i> 654</a>
+															class="fa fa-heart-o"></i> {{ course.nbLikes }}</a>
 												</div>
-												<p><span><i class="ti-alarm-clock"></i> Duration: 6 Months</span></p>
-												<p><span><i class="ti-user"></i> Professor: Jane Doe</span></p>
-												<p><span><i class="fa fa-graduation-cap"></i> Students: 200+</span></p>
+
+												<p><span><i class="fa fa-graduation-cap"></i> Students: {{ course.nbEnrollments }}</span></p>
 												<button type="button"
-													class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect m-b-10 btn-info">Read
-													More</button>
+													class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect m-b-10 btn-info">
+													
+													<a href={{ path('app_course_show', {'id': course.id}) }} class="text-white">
+													READ MORE
+													</a>
+													</button>
 											</div>
 										</div>
 									</div>
