@@ -6,7 +6,8 @@ use App\Entity\Course;
 use App\Form\CourseType;
 use Symfony\Component\Mime\Email;
 use App\Repository\CourseRepository;
-use Symfony\Component\HttpFoundation\Request;
+use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Component\BrowserKit\Request;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -36,6 +37,19 @@ class CourseController extends AbstractController
             'courses' => $courseRepository->findAll(),
         ]);
     }
+
+      /**
+     * @Route("/{id}", name="app_course_index_front_detailed", methods={"GET"})
+     */
+    public function detailed_course(Course $course,CourseRepository $courseRepository,EntityManagerInterface $entityManager): Response
+    {
+        
+        return $this->render('course/details_course.html.twig', [
+            'course' => $course,
+          
+        ]);
+    }
+
     /**
      * @Route("/new", name="app_course_new", methods={"GET", "POST"})
      */
