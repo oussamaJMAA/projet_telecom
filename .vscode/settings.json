@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": false,
+  "editor.defaultFormatter": "HookyQR.beautify",
+  "[twig]": {
+    "editor.defaultFormatter": "mblode.twig-language-2"
+  }
+}
