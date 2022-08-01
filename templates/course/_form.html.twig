@@ -1,4 +1,100 @@
-{{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
-{{ form_end(form) }}
+
+
+	<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="card card-box">
+								<div class="card-head">
+									<header>Course Details</header>
+			
+								</div>
+                                <div class="card-body" id="bar-parent">
+								{{ form_start(form,{'attr':{'novalidate':'novalidate','class':'needs-validation'}}) }}
+										<div class="form-body">
+
+{{ form_widget(form.nb_likes, {'attr': {'class': 'form-control input-height invisible','placeholder':'Lien cours'}}) }}
+
+											<div class="form-group row">
+
+											
+												<label class="control-label col-md-3">Course Name
+													<span class="required"> * </span>
+												</label>
+
+												<div class="col-md-5">
+													
+														{{ form_widget(form.name, {'attr': {'class': 'form-control input-height','placeholder':'Nom Cours'}}) }}
+														<div class="invalid-feedback">Please provide a valid name.</div>
+												</div>
+
+
+											</div>
+										
+
+
+											<div class="form-group row">
+												<label class="control-label col-md-3">Course Details
+													<span class="required"> * </span>
+												</label>
+												<div class="col-md-5">
+												
+												{{ form_widget(form.details, {'attr': {'class': 'form-control-textarea','placeholder':'Details cours'}}) }}
+												<div class="invalid-feedback">Please provide valid details.</div>
+											
+
+												</div>
+											</div>
+												<div class="form-group row">
+
+											
+												<label class="control-label col-md-3">Course Link
+													<span class="required"> * </span>
+												</label>
+
+												<div class="col-md-5">
+													
+														{{ form_widget(form.link, {'attr': {'class': 'form-control input-height','placeholder':'Lien cours'}}) }}
+														<div class="invalid-feedback">Please provide a valid link.</div>
+												
+												</div>
+
+
+											</div>
+										
+										
+											<div class="form-group row">
+												<label class="control-label col-md-3">Profile Picture
+												</label>
+												<div class="col-md-5">
+													{{ form_widget(form.image)}}
+													   <div class="invalid-feedback">Please provide a valid image.</div>
+																
+																
+												
+												</div>
+											</div>
+												<div class="form-actions">
+												<div class="row">
+													<div class="offset-md-3 col-md-9">
+														<button type="submit"
+															class="btn btn-info m-r-20">{{ button_label|default('Submit') }}</button>
+														<input class="btn btn-primary me-3" type="reset" value="Cancel">
+													</div>
+												</div>
+											</div>
+
+				{{ form_widget(form.nb_enrollments, {'attr': {'class': 'form-control input-height invisible','placeholder':'Lien cours','size': '5'}}) }}
+				
+
+										
+
+
+
+										</div>
+									{{ form_end(form) }}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+ 

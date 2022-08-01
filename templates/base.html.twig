@@ -44,8 +44,8 @@
 				<!-- logo start -->
 				<div class="page-logo">
 					<a href="index.html">
-						<span class="logo-icon material-icons fa-rotate-45">school</span>
-						<span class="logo-default">Smart</span> </a>
+						<img src="../assets/img/Tunisie-Telecom.jpg" class="img-circle" alt="" height="50px" width="80px"></a>
+						<span class="logo-default">Tunisie Telecom</span> </a>
 				</div>
 				<!-- logo end -->
 				<ul class="nav navbar-nav navbar-left in">
@@ -408,27 +408,9 @@
 								<a href="#" class="nav-link nav-toggle">
 									<i class="material-icons">dashboard</i>
 									<span class="title">Dashboard</span>
-									<span class="selected"></span>
-									<span class="arrow open"></span>
+								
 								</a>
-								<ul class="sub-menu">
-									<li class="nav-item active">
-										<a href="index.html" class="nav-link ">
-											<span class="title">Dashboard 1</span>
-											<span class="selected"></span>
-										</a>
-									</li>
-									<li class="nav-item ">
-										<a href="dashboard2.html" class="nav-link ">
-											<span class="title">Dashboard 2</span>
-										</a>
-									</li>
-									<li class="nav-item">
-										<a href="dashboard3.html" class="nav-link ">
-											<span class="title">Dashboard 3</span>
-										</a>
-									</li>
-								</ul>
+								
 							</li>
 							<li class="nav-item">
 								<a href="event.html" class="nav-link nav-toggle"> <i class="material-icons">event</i>
@@ -505,30 +487,18 @@
 								</a>
 								<ul class="sub-menu">
 									<li class="nav-item">
-										<a href="all_courses.html" class="nav-link "> <span class="title">All
+										<a href={{path('app_course_index')}} class="nav-link "> <span class="title">All
 												Courses</span>
 										</a>
 									</li>
 									<li class="nav-item">
-										<a href="add_course.html" class="nav-link "> <span class="title">Add
+										<a href={{path('app_course_new')}} class="nav-link "> <span class="title">Add
 												Course</span>
 										</a>
 									</li>
-									<li class="nav-item">
-										<a href="add_course_bootstrap.html" class="nav-link "> <span class="title">Add
-												Course Bootstrap</span>
-										</a>
-									</li>
-									<li class="nav-item">
-										<a href="edit_course.html" class="nav-link "> <span class="title">Edit
-												Course</span>
-										</a>
-									</li>
-									<li class="nav-item">
-										<a href="course_details.html" class="nav-link "> <span class="title">About
-												Course</span>
-										</a>
-									</li>
+									
+									
+									
 								</ul>
 							</li>
 							<li class="nav-item">
@@ -1127,11 +1097,21 @@
             <div class="page-content-wrapper">
 				<div class="page-content">
         {% block body %}
-        
+
         
         {% endblock %}
 </div>
+<!-- start footer -->
+		<div class="page-footer">
+			<div class="page-footer-inner"> 2017 &copy; Smart University Theme By
+				<a href="https://radixtouch.com/cdn-cgi/l/email-protection#097b6c6d7a7d687b7d616c646c496e64686065276a6664" target="_top" class="makerCss">Redstar Theme</a>
+			</div>
+			<div class="scroll-to-top">
+				<i class="icon-arrow-up"></i>
+			</div>
+		</div>
 </div>
+
 
 
               {% block javascripts %}
@@ -1162,6 +1142,7 @@
 	<script src="{{asset('assets/plugins/datatables/jquery.dataTables.min.js')}}"></script>
 	<script src="{{asset('assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap4.min.js')}}"></script>
 	<script src="{{asset('assets/js/pages/table/table_data.js')}}"></script>
+	<script src="{{asset('assets/js/validation.js')}}"></script>
         {% endblock %}
     </body>
 

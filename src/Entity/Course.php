@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\CourseRepository;
+use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -30,7 +31,7 @@ class Course
     /**
      * @ORM\Column(type="integer", nullable=true)
      */
-    private $nb_enrollments;
+    private $nb_enrollments = 0;
 
     /**
      * @ORM\Column(type="text")
@@ -45,7 +46,7 @@ class Course
     /**
      * @ORM\Column(type="integer")
      */
-    private $nb_likes;
+    private $nb_likes = 0;
 
     public function getId(): ?int
     {
@@ -64,12 +65,12 @@ class Course
         return $this;
     }
 
-    public function getImage(): ?string
+    public function getImage()
     {
         return $this->image;
     }
 
-    public function setImage(string $image): self
+    public function setImage($image)
     {
         $this->image = $image;
 
