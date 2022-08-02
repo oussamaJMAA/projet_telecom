@@ -33,15 +33,26 @@ class CourseController extends AbstractController
      */
     public function index_front(CourseRepository $courseRepository): Response
     {
+
      return $this->render('course/index_front.html.twig', [
             'courses' => $courseRepository->findAll(),
         ]);
     }
 
+        /**
+     * @Route("/course_front/liked/{id}", name="like_course", methods={"GET"})
+     */
+    public function like_course(CourseRepository $courseRepository,Course $course,$id): Response
+    {
+        $courseRepository ->  like_course_($id);
+        return $this->redirectToRoute('app_course_index_front_detailed', ['id'=>$id], Response::HTTP_SEE_OTHER);
+
+    }
+
       /**
      * @Route("/{id}", name="app_course_index_front_detailed", methods={"GET"})
      */
-    public function detailed_course(Course $course,CourseRepository $courseRepository,EntityManagerInterface $entityManager): Response
+    public function detailed_course(Course $course): Response
     {
         
         return $this->render('course/details_course.html.twig', [

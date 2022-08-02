@@ -46,7 +46,16 @@ class CourseRepository extends ServiceEntityRepository
             $this->_em->flush();
         }
     }
-
+    public function like_course_($idc){
+    
+        $conn = $this->getEntityManager()
+        ->getConnection();
+        $sql = "update course set nb_likes = nb_likes+1 where id = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindValue(1, $idc);
+    return $stmt->executeQuery();
+      
+    }
     // /**
     //  * @return Course[] Returns an array of Course objects
     //  */
