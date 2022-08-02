@@ -56,6 +56,29 @@ class CourseRepository extends ServiceEntityRepository
     return $stmt->executeQuery();
       
     }
+    public function likes_user_course_($idc,$idu){
+    
+        $conn = $this->getEntityManager()
+        ->getConnection();
+        $sql = "insert into user_course (user_id,course_id) values(?,?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindValue(1, $idu);
+        $stmt->bindValue(2, $idc);
+    return $stmt->executeQuery();
+      
+    }
+    public function verif_likes_user_course_($idc,$idu){
+        $conn = $this->getEntityManager()
+        ->getConnection();
+        $sql = "select count(user_id) from user_course where user_id = ? and course_id = ?";
+        $statement = $conn->prepare($sql);
+        $statement->bindValue(1, $idu);
+        $statement->bindValue(2, $idc);
+        $resultSet = $statement->executeQuery();
+        $a= $resultSet->fetchOne();
+    return $a;
+    
+    }
     // /**
     //  * @return Course[] Returns an array of Course objects
     //  */

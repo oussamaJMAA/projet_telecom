@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -40,6 +42,17 @@ class User implements UserInterface
      * @ORM\Column(type="string", length=255)
      */
     private $fullName;
+
+    /**
+     * @ORM\ManyToMany(targetEntity=course::class, inversedBy="liked_courses")
+  
+     */
+    private $likes;
+
+    public function __construct()
+    {
+        $this->likes = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -130,6 +143,30 @@ class User implements UserInterface
     public function setFullName(string $fullName): self
     {
         $this->fullName = $fullName;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, course>
+     */
+    public function getLikes(): Collection
+    {
+        return $this->likes;
+    }
+
+    public function addLike(course $like): self
+    {
+        if (!$this->likes->contains($like)) {
+            $this->likes[] = $like;
+        }
+
+        return $this;
+    }
+
+    public function removeLike(course $like): self
+    {
+        $this->likes->removeElement($like);
 
         return $this;
     }

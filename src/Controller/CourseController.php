@@ -40,25 +40,40 @@ class CourseController extends AbstractController
     }
 
         /**
-     * @Route("/course_front/liked/{id}", name="like_course", methods={"GET"})
+     * @Route("/course_front/liked/{id}/{user}", name="like_course", methods={"GET"})
      */
-    public function like_course(CourseRepository $courseRepository,Course $course,$id): Response
+    public function like_course(CourseRepository $courseRepository,Course $course,$id,$user): Response
     {
         $courseRepository ->  like_course_($id);
-        return $this->redirectToRoute('app_course_index_front_detailed', ['id'=>$id], Response::HTTP_SEE_OTHER);
+        $courseRepository ->  likes_user_course_($id,$user);
+
+        return $this->redirectToRoute('app_course_index_front_detailed', ['id'=>$id,'user'=>$user], Response::HTTP_SEE_OTHER);
 
     }
 
       /**
-     * @Route("/{id}", name="app_course_index_front_detailed", methods={"GET"})
+     * @Route("/{id}/{user}", name="app_course_index_front_detailed", methods={"GET"})
      */
-    public function detailed_course(Course $course): Response
+    public function detailed_course(Course $course,$id,$user,CourseRepository $courseRepository): Response
     {
+
+        $like_by_user_exist = $courseRepository ->  verif_likes_user_course_($id,$user);
+
+        if($like_by_user_exist!=0){
+            return $this->render('course/details_course.html.twig', [
+                'course' => $course,
+                'liked' =>1
+              
+            ]);
+        }
         
+        else{
+
         return $this->render('course/details_course.html.twig', [
             'course' => $course,
-          
+            'liked' =>0
         ]);
+        }
     }
 
     /**

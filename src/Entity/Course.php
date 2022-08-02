@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\CourseRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -57,6 +59,17 @@ class Course
      * @ORM\Column(type="integer")
      */
     private $nb_likes = 0;
+
+    /**
+     * @ORM\ManyToMany(targetEntity=User::class, mappedBy="likes")
+     *  
+     */
+    private $liked_courses;
+
+    public function __construct()
+    {
+        $this->liked_courses = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -131,6 +144,33 @@ class Course
     public function setNbLikes(int $nb_likes): self
     {
         $this->nb_likes = $nb_likes;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, User>
+     */
+    public function getLikedCourses(): Collection
+    {
+        return $this->liked_courses;
+    }
+
+    public function addLikedCourse(User $likedCourse): self
+    {
+        if (!$this->liked_courses->contains($likedCourse)) {
+            $this->liked_courses[] = $likedCourse;
+            $likedCourse->addLike($this);
+        }
+
+        return $this;
+    }
+
+    public function removeLikedCourse(User $likedCourse): self
+    {
+        if ($this->liked_courses->removeElement($likedCourse)) {
+            $likedCourse->removeLike($this);
+        }
 
         return $this;
     }
