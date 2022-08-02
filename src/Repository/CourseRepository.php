@@ -67,6 +67,27 @@ class CourseRepository extends ServiceEntityRepository
     return $stmt->executeQuery();
       
     }
+    public function unlike_course_($idc){
+    
+        $conn = $this->getEntityManager()
+        ->getConnection();
+        $sql = "update course set nb_likes = nb_likes-1 where id = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindValue(1, $idc);
+    return $stmt->executeQuery();
+      
+    }
+    public function unlikes_user_course_($idc,$idu){
+    
+        $conn = $this->getEntityManager()
+        ->getConnection();
+        $sql = "delete from user_course where user_id = ? and course_id = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindValue(1, $idu);
+        $stmt->bindValue(2, $idc);
+    return $stmt->executeQuery();
+      
+    }
     public function verif_likes_user_course_($idc,$idu){
         $conn = $this->getEntityManager()
         ->getConnection();
@@ -79,6 +100,40 @@ class CourseRepository extends ServiceEntityRepository
     return $a;
     
     }
+    public function enroll_course_($idc){
+    
+        $conn = $this->getEntityManager()
+        ->getConnection();
+        $sql = "update course set nb_enrollments = nb_enrollments+1 where id = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindValue(1, $idc);
+    return $stmt->executeQuery();
+      
+    }
+    public function enroll_user_course_($idc,$idu){
+    
+        $conn = $this->getEntityManager()
+        ->getConnection();
+        $sql = "insert into enrollments (user,course) values(?,?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindValue(1, $idu);
+        $stmt->bindValue(2, $idc);
+    return $stmt->executeQuery();
+      
+    }
+    public function verif_enroll_user_course_($idc,$idu){
+        $conn = $this->getEntityManager()
+        ->getConnection();
+        $sql = "select count(user) from enrollments where user= ? and course= ?";
+        $statement = $conn->prepare($sql);
+        $statement->bindValue(1, $idu);
+        $statement->bindValue(2, $idc);
+        $resultSet = $statement->executeQuery();
+        $a= $resultSet->fetchOne();
+    return $a;
+    
+    }
+
     // /**
     //  * @return Course[] Returns an array of Course objects
     //  */

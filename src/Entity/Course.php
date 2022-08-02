@@ -62,6 +62,7 @@ class Course
 
     /**
      * @ORM\ManyToMany(targetEntity=User::class, mappedBy="likes")
+     *  @ORM\JoinColumn(name="id", referencedColumnName="id",onDelete="cascade")
      *  
      */
     private $liked_courses;

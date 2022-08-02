@@ -45,6 +45,7 @@ class User implements UserInterface
 
     /**
      * @ORM\ManyToMany(targetEntity=course::class, inversedBy="liked_courses")
+     *  @ORM\JoinColumn(name="id", referencedColumnName="id",onDelete="cascade")
   
      */
     private $likes;

@@ -38,17 +38,39 @@
                             <p>{{course.details|length > 100 ? course.details|slice(0,100) ~ '...' : course.details }}</p>
 
                               <div class="buy-checkbox-btn">
-                                
+                                 {% if enrolled == 0 and liked == 0 %}
                                 <div class="item">
-                                    <a href={{ course.link }} class="buy-btn" target="_blank">Enroll Now</a>
-                                </div>
+                                    <a href="{{ path('enroll_course', {'id': course.id,'user':app.user.id} ) }}" class="buy-btn" target="_blank">Enroll Now</a>
+                                </div> 
 
-                                    {% if liked == 0  %}
-                                  
-                                <div class="item">
+                                  <div class="item">
                                     <a href="{{ path('like_course', {'id': course.id,'user':app.user.id} ) }}" class="buy-btn">Like</a>
                                 </div>
-                                  {% endif %}
+                                {% elseif enrolled == 1 and liked == 1 %}
+                                         <div class="item">
+                                    <a href="{{ path('continue_course', {'id': course.id,'user':app.user.id} ) }}" class="buy-btn" target="_blank">Continue</a>
+                                </div> 
+
+                                  <div class="item">
+                                    <a href="{{ path('unlike_course', {'id': course.id,'user':app.user.id} ) }}" class="buy-btn">Unlike</a>
+                                </div>
+                                {% elseif enrolled == 1 and liked == 0 %}
+                                     <div class="item">
+                                    <a href="{{ path('continue_course', {'id': course.id,'user':app.user.id} ) }}" class="buy-btn" target="_blank">Continue</a>
+                                </div> 
+
+                                  <div class="item">
+                                    <a href="{{ path('like_course', {'id': course.id,'user':app.user.id} ) }}" class="buy-btn">Like</a>
+                                </div>
+                                {% elseif enrolled == 0 and liked == 1 %}
+                                 <div class="item">
+                                    <a href="{{ path('enroll_course', {'id': course.id,'user':app.user.id} ) }}" class="buy-btn" target="_blank">Enroll Now</a>
+                                </div> 
+
+                                  <div class="item">
+                                    <a href="{{ path('unlike_course', {'id': course.id,'user':app.user.id} ) }}" class="buy-btn">Unlike</a>
+                                </div>
+                                 {% endif %}
 
                             </div>
 

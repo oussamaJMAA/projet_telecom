@@ -51,29 +51,66 @@ class CourseController extends AbstractController
 
     }
 
+        /**
+     * @Route("/course_front/unliked/{id}/{user}", name="unlike_course", methods={"GET"})
+     */
+    public function unlike_course(CourseRepository $courseRepository,Course $course,$id,$user): Response
+    {
+        $courseRepository ->  unlike_course_($id);
+        $courseRepository ->  unlikes_user_course_($id,$user);
+
+        return $this->redirectToRoute('app_course_index_front_detailed', ['id'=>$id,'user'=>$user], Response::HTTP_SEE_OTHER);
+
+    }
+
+      /**
+     * @Route("/course_front/enrolled/{id}/{user}", name="enroll_course", methods={"GET"})
+     */
+    public function enroll_course(CourseRepository $courseRepository,Course $course,$id,$user): Response
+    {
+        $courseRepository ->  enroll_course_($id);
+        $courseRepository ->  enroll_user_course_($id,$user);
+
+        return $this->redirectToRoute('app_course_index_front_detailed', ['id'=>$id,'user'=>$user], Response::HTTP_SEE_OTHER);
+
+    }
+       /**
+     * @Route("/course_front/continue/{id}/{user}", name="continue_course", methods={"GET"})
+     */
+    public function continue_course(CourseRepository $courseRepository,Course $course,$id,$user): Response
+    {
+         return $this->redirectToRoute('app_course_index_front_detailed', ['id'=>$id,'user'=>$user], Response::HTTP_SEE_OTHER);
+
+    }
       /**
      * @Route("/{id}/{user}", name="app_course_index_front_detailed", methods={"GET"})
      */
     public function detailed_course(Course $course,$id,$user,CourseRepository $courseRepository): Response
     {
+          $enrolled_by_user = $courseRepository -> verif_enroll_user_course_($id,$user);
+          $like_by_user_exist = $courseRepository ->  verif_likes_user_course_($id,$user);
 
-        $like_by_user_exist = $courseRepository ->  verif_likes_user_course_($id,$user);
-
-        if($like_by_user_exist!=0){
-            return $this->render('course/details_course.html.twig', [
-                'course' => $course,
-                'liked' =>1
-              
-            ]);
+          
+        if($like_by_user_exist!=0 && $enrolled_by_user != 0){
+           $liked = 1;
+           $enrolled = 1;
+        }else if($like_by_user_exist==0 && $enrolled_by_user == 0){
+            $liked = 0;
+            $enrolled = 0;
+        }else if($like_by_user_exist==0 && $enrolled_by_user != 0){
+            $liked = 0;
+            $enrolled = 1;
+        }else{
+            $liked = 1;
+            $enrolled = 0;
         }
-        
-        else{
-
+     
         return $this->render('course/details_course.html.twig', [
             'course' => $course,
-            'liked' =>0
+            'liked' =>$liked,
+            'enrolled'=>$enrolled
+          
         ]);
-        }
     }
 
     /**
