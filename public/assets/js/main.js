@@ -308,7 +308,7 @@
 	});
 
     // Buy Now Btn
-    $('body').append("<a href='#' class='buy-now-btn'><img src='{{asset('assets_front/img/logo1.png')}}'/>WeDontByte</a>");
+    
     
 }(jQuery));
 

@@ -1,17 +1,124 @@
-{% extends 'base.html.twig' %}
+<!doctype html>
+<html class="no-js" lang="">
 
-{% block title %}Register{% endblock %}
 
+<!-- Mirrored from affixtheme.com/html/xmee/demo/login-33.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 Aug 2022 22:15:19 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Xmee | Login and Register Form Html Templates</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{asset('assets_login/css/bootstrap.min.css')}}">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="{{asset('assets_login/css/fontawesome-all.min.css')}}">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="{{asset('assets_login/font/flaticon.css')}}">
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{asset('assets_login/css/style2.css')}}">
+</head>
+
+<body>
 {% block body %}
-    <h1>Register</h1>
-
-    {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.email) }}
-        {{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
-        }) }}
-        {{ form_row(registrationForm.agreeTerms) }}
-
-        <button type="submit" class="btn">Register</button>
-    {{ form_end(registrationForm) }}
+  
+     <div id="preloader" class="preloader">
+        <div class='inner'>
+            <div class='line1'></div>
+            <div class='line2'></div>
+            <div class='line3'></div>
+        </div>
+    </div>
+    <section class="fxt-template-animation fxt-template-layout33">
+        <div class="fxt-content-wrap">
+            <div class="fxt-heading-content">
+                <div class="fxt-inner-wrap fxt-transformX-R-50 fxt-transition-delay-3">
+                    <div class="fxt-transformX-R-50 fxt-transition-delay-10">
+                        <a href="login-33.html" class="fxt-logo"><img src="{{asset('assets_login/img/logo-33.png')}}" alt="Logo"></a>
+                    </div>
+                    <div class="fxt-transformX-R-50 fxt-transition-delay-10">
+                        <div class="fxt-middle-content">
+                            <div class="fxt-sub-title">Welcome to</div>
+                            <h1 class="fxt-main-title">We're a Digital Agency.</h1>
+                            <p class="fxt-description">We are glad to see you again! Get access to your Orders, Wishlist and Recommendations.</p>
+                        </div>
+                    </div>
+                    <div class="fxt-transformX-R-50 fxt-transition-delay-10">
+                        <div class="fxt-switcher-description">Don't have an account?<a href="login-33.html" class="fxt-switcher-text">Sign In</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="fxt-form-content">
+                <div class="fxt-main-form">
+                    <div class="fxt-inner-wrap fxt-opacity fxt-transition-delay-13">
+                        <h2 class="fxt-page-title">Sign Up</h2>
+                        <p class="fxt-description">Sign Up to try our amazing services</p>
+                        {{ form_start(registrationForm) }}
+                            <div class="form-group">
+                                <label for="name" class="fxt-label">Full Name</label>
+                            {{ form_widget(registrationForm.fullName, {'attr': {'class': 'form-control','placeholder':'Entrez votre Nom'}}) }}
+                               {{form_errors(registrationForm.fullName)}}
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="fxt-label">Email Address</label>
+                            {{ form_widget(registrationForm.email, {'attr': {'type':'email','class': 'form-control','placeholder':'Entrez votre Email'}}) }}
+                           {{form_errors(registrationForm.email)}}
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="fxt-label">Password</label>
+                                {{form_widget(registrationForm.plainPassword, {'attr': {'class': 'form-control','placeholder':'Password','type' :'password'}}) }}
+                           {{form_errors(registrationForm.plainPassword)}}
+                            </div>
+                           
+                            <div class="form-group mb-3">
+                                <button type="submit" class="fxt-btn-fill">Log in</button>
+                            </div>
+                    {{ form_end(registrationForm) }}
+                        <div class="fxt-divider-text">OR</div>
+                        <div id="fxt-login-option" class="fxt-login-option">
+                            <ul>
+                                <li class="fxt-google active">
+                                    <a href="#">
+                                        <span class="fxt-option-icon"><i class="fab fa-google"></i></span>
+                                        <span class="fxt-option-text ml-2">Continue with Google</span>
+                                    </a>
+                                </li>
+                                <li class="fxt-facebook">
+                                    <a href="#">
+                                        <span class="fxt-option-icon"><i class="fab fa-facebook-f"></i></span>
+                                        <span class="fxt-option-text ml-2">Continue with Facebook</span>
+                                    </a>
+                                </li>
+                                <li class="fxt-apple">
+                                    <a href="#">
+                                        <span class="fxt-option-icon"><i class="fab fa-apple"></i></span>
+                                        <span class="fxt-option-text ml-2">Continue with Apple</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% block js %}
+    <!-- jquery-->
+    <script src="{{asset('assets_login/js/jquery-3.5.0.min.js')}}"></script>
+    <!-- Bootstrap js -->
+    <script src="{{asset('assets_login/js/bootstrap.min.js')}}"></script>
+    <!-- Imagesloaded js -->
+    <script src="{{asset('assets_login/js/imagesloaded.pkgd.min.js')}}"></script>
+    <!-- Validator js -->
+    <script src="{{asset('assets_login/js/validator.min.js')}}"></script>
+    <!-- Custom Js -->
+    <script src="{{asset('assets_login/js/main.js')}}"></script>
+    {% endblock %}
 {% endblock %}
+</body>
+
+
+<!-- Mirrored from affixtheme.com/html/xmee/demo/login-33.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 Aug 2022 22:15:19 GMT -->
+</html>
