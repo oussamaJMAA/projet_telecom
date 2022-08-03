@@ -33,8 +33,8 @@ class RegistrationController extends AbstractController
                     $form->get('plainPassword')->getData()
                 )
             );
-            $user->setRoles(array('ROLE_USER'));
-            
+            $user->setRoles(array('ROLE_EMPLOYEE'));
+
 
             $entityManager->persist($user);
             $entityManager->flush();
@@ -46,6 +46,8 @@ class RegistrationController extends AbstractController
                 $authenticator,
                 'main' // firewall name in security.yaml
             );
+            
+            
         }
 
         return $this->render('registration/register.html.twig', [
