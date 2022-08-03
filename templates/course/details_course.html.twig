@@ -41,7 +41,7 @@
                                  {% if enrolled == 0 and liked == 0 %}
                                 <div class="item">
                                 
-                                    <a href="{{ path('enroll_course', {'id': course.id} ) }}" class="buy-btn" >Enroll Now</a>
+                                    <a href="{{ path('enroll_course', {'id': course.id} ) }}" class="buy-btn" target="_blank" onclick="window.open('{{course.link}}');">Enroll Now</a>
                                 </div> 
                                                  
                                   <div class="item">
