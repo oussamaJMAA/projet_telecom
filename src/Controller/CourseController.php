@@ -43,12 +43,13 @@ class CourseController extends AbstractController
      * @Route("/course_front/liked/{id}", name="like_course", methods={"GET"})
      */
     public function like_course(CourseRepository $courseRepository,Course $course,$id): Response
-    {
+    { if($this->getUser()){
         $courseRepository ->  like_course_($id);
         $courseRepository ->  likes_user_course_($id,$this->getUser()->getId());
 
         return $this->redirectToRoute('app_course_index_front_detailed', ['id'=>$id,'user'=>$this->getUser()->getId()], Response::HTTP_SEE_OTHER);
-
+    }
+    return $this->redirectToRoute('app_login');
     }
 
         /**
@@ -68,11 +69,13 @@ class CourseController extends AbstractController
      */
     public function enroll_course(CourseRepository $courseRepository,Course $course,$id): Response
     {
+        if($this->getUser()){
         $courseRepository ->  enroll_course_($id);
         $courseRepository ->  enroll_user_course_($id,$this->getUser()->getId());
 
         return $this->redirectToRoute('app_course_index_front_detailed', ['id'=>$id,'user'=>$this->getUser()->getId()], Response::HTTP_SEE_OTHER);
-
+        }
+        return $this->redirectToRoute('app_login');
     }
        /**
      * @Route("/course_front/continue/{id}", name="continue_course", methods={"GET"})
