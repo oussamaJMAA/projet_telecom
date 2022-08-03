@@ -40,57 +40,58 @@ class CourseController extends AbstractController
     }
 
         /**
-     * @Route("/course_front/liked/{id}/{user}", name="like_course", methods={"GET"})
+     * @Route("/course_front/liked/{id}", name="like_course", methods={"GET"})
      */
-    public function like_course(CourseRepository $courseRepository,Course $course,$id,$user): Response
+    public function like_course(CourseRepository $courseRepository,Course $course,$id): Response
     {
         $courseRepository ->  like_course_($id);
-        $courseRepository ->  likes_user_course_($id,$user);
+        $courseRepository ->  likes_user_course_($id,$this->getUser()->getId());
 
-        return $this->redirectToRoute('app_course_index_front_detailed', ['id'=>$id,'user'=>$user], Response::HTTP_SEE_OTHER);
+        return $this->redirectToRoute('app_course_index_front_detailed', ['id'=>$id,'user'=>$this->getUser()->getId()], Response::HTTP_SEE_OTHER);
 
     }
 
         /**
-     * @Route("/course_front/unliked/{id}/{user}", name="unlike_course", methods={"GET"})
+     * @Route("/course_front/unliked/{id}", name="unlike_course", methods={"GET"})
      */
-    public function unlike_course(CourseRepository $courseRepository,Course $course,$id,$user): Response
+    public function unlike_course(CourseRepository $courseRepository,Course $course,$id): Response
     {
         $courseRepository ->  unlike_course_($id);
-        $courseRepository ->  unlikes_user_course_($id,$user);
+        $courseRepository ->  unlikes_user_course_($id,$this->getUser()->getId());
 
-        return $this->redirectToRoute('app_course_index_front_detailed', ['id'=>$id,'user'=>$user], Response::HTTP_SEE_OTHER);
+        return $this->redirectToRoute('app_course_index_front_detailed', ['id'=>$id,'user'=>$this->getUser()->getId()], Response::HTTP_SEE_OTHER);
 
     }
 
       /**
-     * @Route("/course_front/enrolled/{id}/{user}", name="enroll_course", methods={"GET"})
+     * @Route("/course_front/enrolled/{id}", name="enroll_course", methods={"GET"})
      */
-    public function enroll_course(CourseRepository $courseRepository,Course $course,$id,$user): Response
+    public function enroll_course(CourseRepository $courseRepository,Course $course,$id): Response
     {
         $courseRepository ->  enroll_course_($id);
-        $courseRepository ->  enroll_user_course_($id,$user);
+        $courseRepository ->  enroll_user_course_($id,$this->getUser()->getId());
 
-        return $this->redirectToRoute('app_course_index_front_detailed', ['id'=>$id,'user'=>$user], Response::HTTP_SEE_OTHER);
+        return $this->redirectToRoute('app_course_index_front_detailed', ['id'=>$id,'user'=>$this->getUser()->getId()], Response::HTTP_SEE_OTHER);
 
     }
        /**
-     * @Route("/course_front/continue/{id}/{user}", name="continue_course", methods={"GET"})
+     * @Route("/course_front/continue/{id}", name="continue_course", methods={"GET"})
      */
-    public function continue_course(CourseRepository $courseRepository,Course $course,$id,$user): Response
+    public function continue_course(CourseRepository $courseRepository,Course $course,$id): Response
     {
-         return $this->redirectToRoute('app_course_index_front_detailed', ['id'=>$id,'user'=>$user], Response::HTTP_SEE_OTHER);
+         return $this->redirectToRoute('app_course_index_front_detailed', ['id'=>$id,'user'=>$this->getUser()->getId()], Response::HTTP_SEE_OTHER);
 
     }
       /**
      * @Route("/{id}", name="app_course_index_front_detailed", methods={"GET"})
      */
     public function detailed_course(Course $course,$id,CourseRepository $courseRepository): Response
-    {
+    {   if($this->getUser()){
         $enrolled_by_user = $courseRepository -> verif_enroll_user_course_($id,$this->getUser()->getId());
         $like_by_user_exist = $courseRepository ->  verif_likes_user_course_($id,$this->getUser()->getId());
-         
-          
+        
+        
+        
         if($like_by_user_exist!=0 && $enrolled_by_user != 0){
            $liked = 1;
            $enrolled = 1;
@@ -104,13 +105,22 @@ class CourseController extends AbstractController
             $liked = 1;
             $enrolled = 0;
         }
-     
+    
         return $this->render('course/details_course.html.twig', [
             'course' => $course,
             'liked' =>$liked,
             'enrolled'=>$enrolled
           
         ]);
+    }
+    else {
+        return $this->render('course/details_course.html.twig', [
+            'course' => $course,
+            'liked' =>0,
+            'enrolled'=>0
+          
+        ]);
+    }
     }
 
     /**
