@@ -1,0 +1,121 @@
+[{
+    "questions": "1. Hackers who help in finding bugs and vulnerabilities in a system & don\u2019t intend to crack a system are termed as ________",
+    "A choice": "a) Black Hat hackers",
+    "B choice": "b) White Hat Hackers",
+    "C choice": "c) Grey Hat Hackers",
+    "D choice": "d) Red Hat Hackers",
+    "answers": "Answer: b",
+    "explanations": "Explanation: White Hat Hackers are cyber security analysts and consultants who have the intent to help firms and Governments in the identification of loopholes as well as help to perform penetration tests for securing a system."
+}, {
+    "questions": "2. Which is the legal form of hacking based on which jobs are provided in IT industries and firms?",
+    "A choice": "a) Cracking",
+    "B choice": "b) Non ethical Hacking",
+    "C choice": "c) Ethical hacking",
+    "D choice": "d) Hactivism",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Ethical Hacking is an ethical form of hacking done by white-hat hackers for performing penetration tests and identifying potential threats in any organizations and firms."
+}, {
+    "questions": "3. They are nefarious hackers, and their main motive is to gain financial profit by doing cyber crimes. Who are \u201cthey\u201d referred to here?",
+    "A choice": "a) Gray Hat Hackers",
+    "B choice": "b) White Hat Hackers",
+    "C choice": "c) Hactivists",
+    "D choice": "d) Black Hat Hackers",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Black Hat hackers also termed as \u2018crackers\u2019 and are a major type of cyber criminals who take unauthorized access in user\u2019s account or system and steal sensitive data or inject malware into the system for their profit or to harm the organization."
+}, {
+    "questions": "4. ________ are the combination of both white as well as black hat hackers.",
+    "A choice": "a) Grey Hat hackers",
+    "B choice": "b) Green Hat hackers",
+    "C choice": "c) Blue Hat Hackers",
+    "D choice": "d) Red Hat Hackers",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Grey Hat Hackers have a blending character of both ethical as well as un-ethical hacker. They hack other\u2019s systems for fun but do not harm the system, exploits bugs and vulnerabilities in network without the knowledge of the admin or the owner."
+}, {
+    "questions": "5. The amateur or newbie in the field of hacking who don\u2019t have many skills about coding and in-depth working of security and hacking tools are called ________",
+    "A choice": "a) Sponsored Hackers",
+    "B choice": "b) Hactivists",
+    "C choice": "c) Script Kiddies",
+    "D choice": "d) Whistle Blowers",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Script Kiddies are new to hacking and at the same time do not have many interests in developing coding skills or find bugs of their own in systems; rather they prefer downloading of available tools (developed by elite hackers) and use them to break any system or network. They just try to gain attention of their friend circles."
+}, {
+    "questions": "6. Suicide Hackers are those _________",
+    "A choice": "a) who break a system for some specific purpose with or without keeping in mind that they may suffer long term imprisonment due to their malicious activity",
+    "B choice": "b) individuals with no knowledge of codes but an expert in using hacking tools",
+    "C choice": "c) who know the consequences of their hacking activities and hence try to prevent them by erasing their digital footprints",
+    "D choice": "d) who are employed in an organization to do malicious activities on other firms",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Suicide hackers are those who break into any network or system with or without knowing the consequences of the cyber crime and its penalty. There are some suicide hackers who intentionally do crimes and get caught to bring their names in the headlines."
+}, {
+    "questions": "7. Criminal minded individuals who work for terrorist organizations and steal information of nations and other secret intelligence are _________",
+    "A choice": "a) State sponsored hackers",
+    "B choice": "b) Blue Hat Hackers",
+    "C choice": "c) Cyber Terrorists",
+    "D choice": "d) Red Hat Hackers",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Cyber Terrorists are very expert programmers and cyber criminals who hide themselves while doing malicious activities over the internet and they are smart enough to hide themselves or their tracks of action. They are hired for gaining unauthorised access to nation\u2019s data centres or break into the network of intelligence agencies."
+}, {
+    "questions": "8. One who disclose information to public of a company, organization, firm, government and private agency and he\/she is the member or employee of that organization; such individuals are termed as ___________",
+    "A choice": "a) Sponsored hackers",
+    "B choice": "b) Crackers",
+    "C choice": "c) Hactivist",
+    "D choice": "d) Whistleblowers",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Whistleblowers are those individuals who is a member or an employee of any specific organization and is responsible for disclosing private information of those organizations, firms, either government or private."
+}, {
+    "questions": "9. These types of hackers are the most skilled hackers in the hackers\u2019 community. Who are \u201cthey\u201d referred to?",
+    "A choice": "a) White hat Hackers",
+    "B choice": "b) Elite Hackers",
+    "C choice": "c) Licensed Penetration Testers",
+    "D choice": "d) Red Hat Hackers",
+    "answers": "Answer: b",
+    "explanations": "Explanation: The tag \u201cElite hackers\u201d are considered amongst the most reputed hackers who possess most of the hacking and security skills. They are treated with utmost respect in the hackers\u2019 community. Zero day vulnerabilities, serious hacking tools and newly introduced bugs are found and developed by them."
+}, {
+    "questions": "10. _________ are those individuals who maintain and handles IT security in any firm or organization.",
+    "A choice": "a) IT Security Engineer",
+    "B choice": "b) Cyber Security Interns",
+    "C choice": "c) Software Security Specialist",
+    "D choice": "d) Security Auditor",
+    "answers": "Answer: a",
+    "explanations": "Explanation: This is an intermediary level of position of an individual in an organization or firm who builds and preserves different systems and its associated security tools of the firm of organization to which he\/she belongs. "
+}, {
+    "questions": "11. Role of security auditor is to ____________",
+    "A choice": "a) secure the network",
+    "B choice": "b) probe for safety and security of organization\u2019s security components and systems",
+    "C choice": "c) detects and prevents cyber attacks and threats to organization",
+    "D choice": "d) does penetration testing on different web applications",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Security auditors are those who conduct auditing of various computer and network systems on an organization or company and reports the safety and security issues as well as helps in suggesting improvements or enhancements in any particular system that is threat prone. "
+}, {
+    "questions": "12. ________ are senior level corporate employees who have the role and responsibilities of creating and designing secured network or security structures.",
+    "A choice": "a) Ethical Hackers",
+    "B choice": "b) Chief Technical Officer",
+    "C choice": "c) IT Security Engineers",
+    "D choice": "d) Security Architect",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Security architect are those senior grade employees of an organization who are in charge of building, designing, implementing and testing of secured network topologies, protocols as well as secured computers in an organization."
+}, {
+    "questions": "13. __________ security consultants uses database security monitoring & scanning tools to maintain security to different data residing in the database \/ servers \/ cloud.",
+    "A choice": "a) Database",
+    "B choice": "b) Network",
+    "C choice": "c) System",
+    "D choice": "d) Hardware",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Database Security consultants are specific individuals hired in order to monitor and scan the database systems and keep them secured from unwanted threats and attacks by giving access to restricted users, blocking unwanted files, multi-factor access control etc."
+}, {
+    "questions": "14. Governments hired some highly skilled hackers. These types of hackers are termed as _______",
+    "A choice": "a) Special Hackers",
+    "B choice": "b) Government Hackers",
+    "C choice": "c) Cyber Intelligence Agents",
+    "D choice": "d) Nation \/ State sponsored hackers",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Nation \/ State sponsored hackers are specific individuals who are employed or hired by the government of that nation or state and protect the nation from cyber terrorists and other groups or individuals and to reveal their plans, communications and actions."
+}, {
+    "questions": "15. Someone (from outside) who tests security issues for bugs before launching a system or application, and who is not a part of that organization or company are ______",
+    "A choice": "a) Black Hat hacker",
+    "B choice": "b) External penetration tester",
+    "C choice": "c) Blue Hat hacker",
+    "D choice": "d) White Hat Hacker",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Blue Hat Hackers are outsiders yet security testers who are temporarily hired for performing outsourced security test for bugs and vulnerabilities in any system before launching it to the market or making the application live."
+}]

@@ -3,36 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f23bd650-0189-47e2-832b-1224fb218ca7" name="Changes" comment="">
       <changelist_data name="khalil dimassi" email="" />
-      <change afterPath="$PROJECT_DIR$/json files/Corporate Cyber Security Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Cyber &amp; IT laws Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Cyber Attacks Types Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Cyber Security Aptitude Test - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Cyber Security Interview Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Cyber Security Interview Questions and Answers for Experienced - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Cyber Security Questions and Answers for Freshers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Cyber Security Questions for Campus Interviews - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Cyber Security Questions for Entrance Exams - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Cyber Security Quiz - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Digital Privacy Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Email Security Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Exploits &amp; Exploitation Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Firewalls Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Generic Security Steps Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Hackers Types &amp; Security Professionals Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Information Security Technologies Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Mobile Phone Security Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Password Cracking &amp; Security Measures Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Security Elements Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Security Protocols Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Security Tools Multiple Choice Questions 2 - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Security Tools Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Sniffing Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Tricky Cyber Security Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Trojans &amp; Backdoors Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Virus &amp; Worms Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Web Server Attacks Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Windows Security Questions and Answers - Sanfoundry.html.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json files/Wireless Security Questions and Answers - Sanfoundry.html.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,9 +31,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/scrapping.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2CnbN1evrnFgNAPbUmeBK4aWpUp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -175,6 +142,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

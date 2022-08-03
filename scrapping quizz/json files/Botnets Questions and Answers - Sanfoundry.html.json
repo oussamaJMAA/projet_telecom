@@ -1,1 +1,121 @@
-[{"questions":"1. A ___________ consists of at least one bot server or controller and one or more client-bots.","A choice":"a) Virus","B choice":"b) Trojan","C choice":"c) Botnet","D choice":"d) Adware","answers":"Answer: c","explanations":"Explanation: The botnet comprises one bot server or controller and one or more client-bots. Botnets are managed by bot-herders. They have become major threats to security as they are getting popular in the cyber-crime world."},{"questions":"2. Botnets are managed by ______________","A choice":"a) Bot-holders","B choice":"b) Bot-herders","C choice":"c) Bot-trainers","D choice":"d) Bot-creators","answers":"Answer: b","explanations":"Explanation: A botnet consists of at least one bot server or controller and one or more client-bots. Botnets are managed by bot-herders. The exact term is bot herders."},{"questions":"3. A _____________ is a number of Internet-connected systems, where each of them is running one or more bots.","A choice":"a) Trojan","B choice":"b) Virus","C choice":"c) Worms","D choice":"d) Botnet","answers":"Answer: d","explanations":"Explanation: A botnet is a number of Internet-connected devices, each of which is running one or more bots. Botnets are managed by bot-herders. These botnets have become foremost threats to cyber-security."},{"questions":"4. _____________ are implemented to carry out distributed DDoS attacks, steal data, send spam messages & permits the hacker to access various devices & its connection.","A choice":"a) Trojan","B choice":"b) Virus","C choice":"c) Botnet","D choice":"d) Worms","answers":"Answer: c","explanations":"Explanation: Botnets are implemented to carry out distributed DDoS attacks, steal data, send spam messages & permits the hacker to access various devices & its connection."},{"questions":"5. Botnets are not used for ______________","A choice":"a) Perform DDoS","B choice":"b) Steal bulk amount of sensitive data","C choice":"c) Spamming","D choice":"d) Encrypting for ransom","answers":"Answer: d","explanations":"Explanation: Botnets usually are not used for encrypting files for ransom. Botnets are implemented to carry out distributed DDoS attacks, steal data, send spam messages & permits the hacker to access various devices & its connection."},{"questions":"6. The owner of botnets can control the botnet using ___________________ software.","A choice":"a) trojans","B choice":"b) command and control","C choice":"c) servers","D choice":"d) infected servers","answers":"Answer: b","explanations":"Explanation: A botnet owner can govern and manage the botnet through command & programs. Botnets are implemented to carry out distributed DDoS attacks, steal data, send spam messages & permits the hacker to access various devices & its connection."},{"questions":"7. The full form of C&C is ____________","A choice":"a) command and control","B choice":"b) copy and cut","C choice":"c) command and capture","D choice":"d) copy and control","answers":"Answer: a","explanations":"Explanation: The owner of botnets can control the botnet using command & control (C&C) software. Botnets are implemented to carry out distributed DDoS attacks, steal data, send spam messages & permits the hacker to access various devices & its connection."},{"questions":"8. The word \u201cbotnet\u201d is a blend of the words _____________ & ___________","A choice":"a) robot, network","B choice":"b) rocket, network","C choice":"c) bot, network","D choice":"d) bot, internet","answers":"Answer: a","explanations":"Explanation: The word \u201cbotnet\u201d is a blend of the words robot & network. Botnets usually are not used for encrypting files for ransom. They are implemented to carry out distributed DDoS attacks, steal data, send spam messages and compromise various services & its connection."},{"questions":"9. Botnets are not the logical connection of which of the following?","A choice":"a) Smart-phones","B choice":"b) IoT devices","C choice":"c) Computer systems","D choice":"d) Modems","answers":"Answer: d","explanations":"Explanation: Botnets are logical connections of smart-phones, IoT devices, computer systems etc. They are strong enough to carry out distributed denial of service attacks & permit hackers to access various devices & its connection."},{"questions":"10. Infected computers and other systems within the botnet are called __________","A choice":"a) killers","B choice":"b) vampires","C choice":"c) zombies","D choice":"d) gargoyles","answers":"Answer: c","explanations":"Explanation: Attackers use the botnet for connecting of smart-phones, IoT devices, computer systems etc. These infected computers and other systems within the botnet connection are called zombies or zombie computers. "},{"questions":"11. The bot program allows the bot-herders to perform all operations from a ___________ location.","A choice":"a) local","B choice":"b) open","C choice":"c) corporate","D choice":"d) remote","answers":"Answer: d","explanations":"Explanation: Infected computers and other systems within the botnet are called zombies systems which are controlled by bot programs that allow the bot-herders to perform all operations from a remote location."},{"questions":"12. Nowadays, most botnets rely on existing _______________ networks for communication.","A choice":"a) server-to-server","B choice":"b) peer-to-peer","C choice":"c) client-to-server","D choice":"d) host-to-server","answers":"Answer: b","explanations":"Explanation: Botnets are compromised connectivity of systems like smart-phones, IoT devices, computer systems etc. Now-a-days, most botnets rely on existing peer-to-peer networks for communication."},{"questions":"13. Which of the following is not an example of a botnet program?","A choice":"a) Zeus","B choice":"b) GameOver","C choice":"c) ZeroAccess","D choice":"d) MyDoom","answers":"Answer: d","explanations":"Explanation: Examples of some popular botnets are gameover, ZeroAccess, and Zeus. The infect computers & other systems and turned them into zombies which are also called zombies systems."},{"questions":"14. Which of the following is an example of Botnet?","A choice":"a) Zeus","B choice":"b) ILOVEYOU","C choice":"c) Storm Worm","D choice":"d) MyDoom","answers":"Answer: a","explanations":"Explanation: Botnets are can compromise any system and turn them into zombie computers. GameOver, Zeus etc. are examples of some popular botnets programs."},{"questions":"15. Which of the following is an example of a Botnet program?","A choice":"a) Slammer","B choice":"b) GameOver","C choice":"c) Stuxnet","D choice":"d) Anna Kournikova","answers":"Answer: b","explanations":"Explanation: Botnets create logical connections with internet connected devices like smart-phones, IoT devices, computer systems etc. Examples of some popular botnets are GameOver, ZeroAccess, & Zeus. "}]
+[{
+    "questions": "1. A ___________ consists of at least one bot server or controller and one or more client-bots.",
+    "A choice": "a) Virus",
+    "B choice": "b) Trojan",
+    "C choice": "c) Botnet",
+    "D choice": "d) Adware",
+    "answers": "Answer: c",
+    "explanations": "Explanation: The botnet comprises one bot server or controller and one or more client-bots. Botnets are managed by bot-herders. They have become major threats to security as they are getting popular in the cyber-crime world."
+}, {
+    "questions": "2. Botnets are managed by ______________",
+    "A choice": "a) Bot-holders",
+    "B choice": "b) Bot-herders",
+    "C choice": "c) Bot-trainers",
+    "D choice": "d) Bot-creators",
+    "answers": "Answer: b",
+    "explanations": "Explanation: A botnet consists of at least one bot server or controller and one or more client-bots. Botnets are managed by bot-herders. The exact term is bot herders."
+}, {
+    "questions": "3. A _____________ is a number of Internet-connected systems, where each of them is running one or more bots.",
+    "A choice": "a) Trojan",
+    "B choice": "b) Virus",
+    "C choice": "c) Worms",
+    "D choice": "d) Botnet",
+    "answers": "Answer: d",
+    "explanations": "Explanation: A botnet is a number of Internet-connected devices, each of which is running one or more bots. Botnets are managed by bot-herders. These botnets have become foremost threats to cyber-security."
+}, {
+    "questions": "4. _____________ are implemented to carry out distributed DDoS attacks, steal data, send spam messages & permits the hacker to access various devices & its connection.",
+    "A choice": "a) Trojan",
+    "B choice": "b) Virus",
+    "C choice": "c) Botnet",
+    "D choice": "d) Worms",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Botnets are implemented to carry out distributed DDoS attacks, steal data, send spam messages & permits the hacker to access various devices & its connection."
+}, {
+    "questions": "5. Botnets are not used for ______________",
+    "A choice": "a) Perform DDoS",
+    "B choice": "b) Steal bulk amount of sensitive data",
+    "C choice": "c) Spamming",
+    "D choice": "d) Encrypting for ransom",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Botnets usually are not used for encrypting files for ransom. Botnets are implemented to carry out distributed DDoS attacks, steal data, send spam messages & permits the hacker to access various devices & its connection."
+}, {
+    "questions": "6. The owner of botnets can control the botnet using ___________________ software.",
+    "A choice": "a) trojans",
+    "B choice": "b) command and control",
+    "C choice": "c) servers",
+    "D choice": "d) infected servers",
+    "answers": "Answer: b",
+    "explanations": "Explanation: A botnet owner can govern and manage the botnet through command & programs. Botnets are implemented to carry out distributed DDoS attacks, steal data, send spam messages & permits the hacker to access various devices & its connection."
+}, {
+    "questions": "7. The full form of C&C is ____________",
+    "A choice": "a) command and control",
+    "B choice": "b) copy and cut",
+    "C choice": "c) command and capture",
+    "D choice": "d) copy and control",
+    "answers": "Answer: a",
+    "explanations": "Explanation: The owner of botnets can control the botnet using command & control (C&C) software. Botnets are implemented to carry out distributed DDoS attacks, steal data, send spam messages & permits the hacker to access various devices & its connection."
+}, {
+    "questions": "8. The word \u201cbotnet\u201d is a blend of the words _____________ & ___________",
+    "A choice": "a) robot, network",
+    "B choice": "b) rocket, network",
+    "C choice": "c) bot, network",
+    "D choice": "d) bot, internet",
+    "answers": "Answer: a",
+    "explanations": "Explanation: The word \u201cbotnet\u201d is a blend of the words robot & network. Botnets usually are not used for encrypting files for ransom. They are implemented to carry out distributed DDoS attacks, steal data, send spam messages and compromise various services & its connection."
+}, {
+    "questions": "9. Botnets are not the logical connection of which of the following?",
+    "A choice": "a) Smart-phones",
+    "B choice": "b) IoT devices",
+    "C choice": "c) Computer systems",
+    "D choice": "d) Modems",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Botnets are logical connections of smart-phones, IoT devices, computer systems etc. They are strong enough to carry out distributed denial of service attacks & permit hackers to access various devices & its connection."
+}, {
+    "questions": "10. Infected computers and other systems within the botnet are called __________",
+    "A choice": "a) killers",
+    "B choice": "b) vampires",
+    "C choice": "c) zombies",
+    "D choice": "d) gargoyles",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Attackers use the botnet for connecting of smart-phones, IoT devices, computer systems etc. These infected computers and other systems within the botnet connection are called zombies or zombie computers. "
+}, {
+    "questions": "11. The bot program allows the bot-herders to perform all operations from a ___________ location.",
+    "A choice": "a) local",
+    "B choice": "b) open",
+    "C choice": "c) corporate",
+    "D choice": "d) remote",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Infected computers and other systems within the botnet are called zombies systems which are controlled by bot programs that allow the bot-herders to perform all operations from a remote location."
+}, {
+    "questions": "12. Nowadays, most botnets rely on existing _______________ networks for communication.",
+    "A choice": "a) server-to-server",
+    "B choice": "b) peer-to-peer",
+    "C choice": "c) client-to-server",
+    "D choice": "d) host-to-server",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Botnets are compromised connectivity of systems like smart-phones, IoT devices, computer systems etc. Now-a-days, most botnets rely on existing peer-to-peer networks for communication."
+}, {
+    "questions": "13. Which of the following is not an example of a botnet program?",
+    "A choice": "a) Zeus",
+    "B choice": "b) GameOver",
+    "C choice": "c) ZeroAccess",
+    "D choice": "d) MyDoom",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Examples of some popular botnets are gameover, ZeroAccess, and Zeus. The infect computers & other systems and turned them into zombies which are also called zombies systems."
+}, {
+    "questions": "14. Which of the following is an example of Botnet?",
+    "A choice": "a) Zeus",
+    "B choice": "b) ILOVEYOU",
+    "C choice": "c) Storm Worm",
+    "D choice": "d) MyDoom",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Botnets are can compromise any system and turn them into zombie computers. GameOver, Zeus etc. are examples of some popular botnets programs."
+}, {
+    "questions": "15. Which of the following is an example of a Botnet program?",
+    "A choice": "a) Slammer",
+    "B choice": "b) GameOver",
+    "C choice": "c) Stuxnet",
+    "D choice": "d) Anna Kournikova",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Botnets create logical connections with internet connected devices like smart-phones, IoT devices, computer systems etc. Examples of some popular botnets are GameOver, ZeroAccess, & Zeus. "
+}]

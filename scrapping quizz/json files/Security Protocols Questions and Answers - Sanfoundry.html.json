@@ -1,0 +1,113 @@
+[{
+    "questions": "1. ___________ ensures the integrity and security of data that are passing over a network.",
+    "A choice": "a) Firewall",
+    "B choice": "b) Antivirus",
+    "C choice": "c) Pentesting Tools",
+    "D choice": "d) Network-security protocols",
+    "answers": "Answer: d",
+    "explanations": "Explanation: The methods and processes in securing network data from unauthorized content extraction are controlled by network-security protocols."
+}, {
+    "questions": "2. Which of the following is not a strong security protocol?",
+    "A choice": "a) HTTPS",
+    "B choice": "b) SSL",
+    "C choice": "c) SMTP",
+    "D choice": "d) SFTP",
+    "answers": "Answer: c",
+    "explanations": "Explanation: SMTP (is abbreviated as Simple Mail Transfer Protocol) is a standard protocol to transmit electronic mail and is a widely used mail transmitting protocol."
+}, {
+    "questions": "3. Which of the following is not a secured mail transferring methodology?",
+    "A choice": "a) POP3",
+    "B choice": "b) SSMTP",
+    "C choice": "c) Mail using PGP",
+    "D choice": "d) S\/MIME",
+    "answers": "Answer: a",
+    "explanations": "Explanation: POP (Post Office Protocol) is a simple protocol which fetches the updated mail stored for you by the server. S\/MIME (Secure\/Multipurpose Internet Mail Extensions), SSMTP (Secure-Simple Mail Transfer Protocol), and PGP (Pretty Good Privacy) are examples of protocols and methods for secure mailing."
+}, {
+    "questions": "4. __________ is a set of conventions & rules set for communicating two or more devices residing in the same network?",
+    "A choice": "a) Security policies",
+    "B choice": "b) Protocols",
+    "C choice": "c) Wireless network",
+    "D choice": "d) Network algorithms",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Network protocols are designed with mechanisms for identifying devices and make connections between them. In addition, some proper rules are defined as to how data packets will be sent and received."
+}, {
+    "questions": "5. TSL (Transport Layer Security) is a cryptographic protocol used for securing HTTP\/HTTPS based connection.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: a",
+    "explanations": "Explanation: TLS which has now become SSL (Secure Socket Layer) is one of the popular cryptographic protocols developed to provide security to computer network while communication."
+}, {
+    "questions": "6. HTTPS is abbreviated as _________",
+    "A choice": "a) Hypertexts Transfer Protocol Secured",
+    "B choice": "b) Secured Hyper Text Transfer Protocol",
+    "C choice": "c) Hyperlinked Text Transfer Protocol Secured",
+    "D choice": "d) Hyper Text Transfer Protocol Secure",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Hyper Text Transfer Protocol Secure (HTTPS) is a security protocol which maintains security when data is sent from browser to server and vice versa. It denotes that all communication setup between the browser and the server is encrypted."
+}, {
+    "questions": "7. SSL primarily focuses on _______",
+    "A choice": "a) integrity and authenticity",
+    "B choice": "b) integrity and non-repudiation",
+    "C choice": "c) authenticity and privacy",
+    "D choice": "d) confidentiality and integrity",
+    "answers": "Answer: a",
+    "explanations": "Explanation: SSL primarily focuses on maintaining the integrity of the data. Also, it maintains authenticity which helps the customers feel secure to communicate over the internet."
+}, {
+    "questions": "8. In SSL, what is used for authenticating a message?",
+    "A choice": "a) MAC (Message Access Code)",
+    "B choice": "b) MAC (Message Authentication Code)",
+    "C choice": "c) MAC (Machine Authentication Code)",
+    "D choice": "d) MAC (Machine Access Code)",
+    "answers": "Answer: b",
+    "explanations": "Explanation: For authenticating in SSL, a short message known as MAC (Message Authentication Code) is used for authenticating a message; where both the sender & the receiver need to implement the same key in order to start communicating."
+}, {
+    "questions": "9. __________ is used for encrypting data at network level.",
+    "A choice": "a) IPSec",
+    "B choice": "b) HTTPS",
+    "C choice": "c) SMTP",
+    "D choice": "d) S\/MIME",
+    "answers": "Answer: a",
+    "explanations": "Explanation: IPSec (Secure Internet Protocol) is used for securing data at the network level by using 3 different protocols. These are Encapsulating Secure Payload (ESP), Authentication Header, and Internet Key Exchange (IKE)."
+}, {
+    "questions": "10. S\/MIME is abbreviated as __________________",
+    "A choice": "a) Secure\/Multimedia Internet Mailing Extensions",
+    "B choice": "b) Secure\/Multipurpose Internet Mailing Extensions",
+    "C choice": "c) Secure\/Multimedia Internet Mail Extensions",
+    "D choice": "d) Secure\/Multipurpose Internet Mail Extensions",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Secure\/Multipurpose Internet Mail Extensions is the most popular protocol used to send encrypted messages that are digitally signed. In this protocol, the encryption is done with a digital sign in them."
+}, {
+    "questions": "11. Users are able to see a pad-lock icon in the address bar of the browser when there is _______ connection.",
+    "A choice": "a) HTTP",
+    "B choice": "b) HTTPS",
+    "C choice": "c) SMTP",
+    "D choice": "d) SFTP",
+    "answers": "Answer: b",
+    "explanations": "Explanation: It is when HTTPS (Hyper Text Transfer Protocol Secure) connection is built an extended validation certificate is installed in the website for security reasons."
+}, {
+    "questions": "12. Why did SSL certificate require in HTTP?",
+    "A choice": "a) For making security weak",
+    "B choice": "b) For making information move faster",
+    "C choice": "c) For encrypted data sent over HTTP protocol",
+    "D choice": "d) For sending and receiving emails unencrypted",
+    "answers": "Answer: c",
+    "explanations": "Explanation: In the case of HTTP connection, data are sent as plain-text, which is easily readable by hackers, especially when it is credit card details and personal information. But with the incorporation of SSL certificate, communication becomes secure\tand data sent and received are encrypted."
+}, {
+    "questions": "13. SFTP is abbreviated as ________",
+    "A choice": "a) Secure File Transfer Protocol",
+    "B choice": "b) Secured File Transfer Protocol",
+    "C choice": "c) Secure Folder Transfer Protocol",
+    "D choice": "d) Secure File Transferring Protocol",
+    "answers": "Answer: a",
+    "explanations": "Explanation: It is a secured FTP, where communication is made secured using SSH (Secure Shell) which helps in secure transferring of files in both local as well as remote systems."
+}, {
+    "questions": "14. PCT is abbreviated as ________",
+    "A choice": "a) Private Connecting Technology",
+    "B choice": "b) Personal Communication Technology",
+    "C choice": "c) Private Communication Technique",
+    "D choice": "d) Private Communication Technology",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Private Communication Technology (PCT) is similar to SSL except that the size of the message is smaller in the case of PCT. It supports different encryption algorithms like DES, RSA, Diffie-Hellman etc."
+}]

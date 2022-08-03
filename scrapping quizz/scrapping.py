@@ -23,6 +23,7 @@ class QuizScrapper:
             return BeautifulSoup(doc, "html.parser")
 
     def parseData(self, fileName):
+
         Qs = self.initSoup(fileName).find("div", class_="entry-content").find_all('p', limit=36)
         Qs.remove(Qs[0])
         for Q in Qs:
@@ -51,8 +52,9 @@ class QuizScrapper:
             self.dataLists[5].append(splits[0])
             self.dataLists[6].append(splits[1])
 
-        for i in range(len(self.dataLists[0]), 35):
+        for i in range(len(self.dataLists[0]), len(self.dataLists[5])):
             self.dataLists[5].pop(len(self.dataLists[0]))
+        for i in range(len(self.dataLists[0]), len(self.dataLists[6])):
             self.dataLists[6].pop(len(self.dataLists[0]))
 
         Data = {"questions": self.dataLists[0],

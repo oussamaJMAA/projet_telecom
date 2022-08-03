@@ -1,0 +1,97 @@
+[{
+    "questions": "1. Which of the following attach is not used by LC4 to recover Windows password?",
+    "A choice": "a) Brute-force attack",
+    "B choice": "b) Dictionary attack",
+    "C choice": "c) MiTM attack",
+    "D choice": "d) Hybrid attacks",
+    "answers": "Answer: c",
+    "explanations": "Explanation: LC4 is a password auditing and recovery tool; used for testing strength of a password and also helps in recovering lost Microsoft Windows passwords using a hybrid attack, brute-force attack as well as using a dictionary attack."
+}, {
+    "questions": "2. ____________ is the world\u2019s most popular vulnerability scanner used in companies for checking vulnerabilities in the network.",
+    "A choice": "a) Wireshark",
+    "B choice": "b) Nessus",
+    "C choice": "c) Snort",
+    "D choice": "d) WebInspect",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Nessus is a popular and proprietary network vulnerability scanning tool developed by Tenable Network Security. It helps in easily identifying vulnerabilities and fix them, which includes missing patches and software flaws."
+}, {
+    "questions": "3. _____________ is a tool which can detect registry issues in an operating system.",
+    "A choice": "a) Network Stumbler",
+    "B choice": "b) Ettercap",
+    "C choice": "c) Maltego",
+    "D choice": "d) LANguard Network Security Scanner",
+    "answers": "Answer: d",
+    "explanations": "Explanation: LANguard Network Security Scanner helps in monitoring networks by scanning connected machines to provide information for every node. It can also be used for identifying registry issues."
+}, {
+    "questions": "4. Network Stumbler is a Windows Wi-Fi monitoring tool.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: a",
+    "explanations": "Explanation: Network Stumbler is a popular tool that helps in detecting WLANs and helps hackers in finding non-broadcasting wireless networks. It is popularly used as Wi-Fi scanning and monitoring tool for Windows."
+}, {
+    "questions": "5. ToneLoc is abbreviated as __________",
+    "A choice": "a) Tone Locking",
+    "B choice": "b) Tone Locator",
+    "C choice": "c) Tone Locker",
+    "D choice": "d) Tune Locator",
+    "answers": "Answer: c",
+    "explanations": "Explanation: ToneLoc is a popular and primitive tool written for MS-DOS users. It is basically used by malicious attackers to guess user accounts, finding entry points in modems and locating modems connected in the network."
+}, {
+    "questions": "6. __________ is a debugger and exploration tool.",
+    "A choice": "a) Netdog",
+    "B choice": "b) Netcat",
+    "C choice": "c) Tcpdump",
+    "D choice": "d) BackTrack",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Netcat is an easy Unix utility that helps in reading and writing data across network connections, using TCP or UDP protocol. It is popularly used as a debugger and exploration tool that is found free for Windows and Mac OS also."
+}, {
+    "questions": "7. __________ is a popular command-line packet analyser.",
+    "A choice": "a) Wireshark",
+    "B choice": "b) Snort",
+    "C choice": "c) Metasploit",
+    "D choice": "d) Tcpdump",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Tcpdump is a popular command-line network packet analyzer. It allows its user in displaying TCP \/ IP as well as other data packets being transmitted or received over the computer network."
+}, {
+    "questions": "8. ________________ is a platform that essentially keeps the log of data from networks, devices as well as applications in a single location.",
+    "A choice": "a) EventLog Analyser",
+    "B choice": "b) NordVPN",
+    "C choice": "c) Wireshark",
+    "D choice": "d) PacketFilter Analyzer",
+    "answers": "Answer: a",
+    "explanations": "Explanation: EventLog Analyser is a tool that basically keeps the log of data from networks, devices as well as applications in a single location. Latest encryption techniques are used for securing its stored data."
+}, {
+    "questions": "9. ______________ is competent to restore corrupted Exchange Server Database files as well as recovering unapproachable mails in mailboxes.",
+    "A choice": "a) Outlook",
+    "B choice": "b) Nessus",
+    "C choice": "c) Mailbox Exchange Recovery",
+    "D choice": "d) Mail Exchange Recovery toolkit",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Mailbox Exchange Recovery is competent to restore corrupted Exchange Server Database files as well as recovering unapproachable mails in mailboxes. This tool is popularly used by ethical hackers and cyber-forensics investigators in recovering emails, calendars, attachments, contacts from inaccessible mail-servers."
+}, {
+    "questions": "10. ________________ helps in protecting businesses against data breaches that may make threats to cloud.",
+    "A choice": "a) Centrify",
+    "B choice": "b) Mailbox Exchange Recovery",
+    "C choice": "c) Nessus",
+    "D choice": "d) Dashline",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Centrify helps in protecting businesses against data breaches that may make threats to the cloud. This is done by securing Centrify users by providing internal, external and privileged users."
+}, {
+    "questions": "11. __________ is a popular corporate security tool that is used to detect the attack on email with cloud only services.",
+    "A choice": "a) Cain and Abel",
+    "B choice": "b) Proofpoint",
+    "C choice": "c) Angry IP Scanner",
+    "D choice": "d) Ettercap",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Proofpoint is a popular corporate security tool that is used to detect an attack on email with cloud-only services. It helps firms detect attack vectors and loopholes in different security systems through which attackers may gain access."
+}, {
+    "questions": "12. _____________ helps in protecting corporate data, communications and other assets.",
+    "A choice": "a) Snort",
+    "B choice": "b) CipherCloud",
+    "C choice": "c) Burp Suit",
+    "D choice": "d) Wireshark",
+    "answers": "Answer: b",
+    "explanations": "Explanation: CipherCloud helps in protecting corporate data, different communications as well as other assets. This includes anti-virus scanning facility, encryption & traffic monitoring. In addition, it provides mobile security support also."
+}]

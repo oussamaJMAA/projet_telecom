@@ -1,0 +1,97 @@
+[{
+    "questions": "1. __________ passwords are next level of security.",
+    "A choice": "a) BIOS",
+    "B choice": "b) CMOS",
+    "C choice": "c) SMOS",
+    "D choice": "d) BOIS",
+    "answers": "Answer: a",
+    "explanations": "Explanation: BIOS passwords are next level of security where the password is set in the CMOS (which is a tiny battery) chip on the motherboard, which keeps on running even after the PC is turned off."
+}, {
+    "questions": "2. BIOS is abbreviated as _______________",
+    "A choice": "a) Basic Input Output Server",
+    "B choice": "b) Basic Internet Output Systems",
+    "C choice": "c) Basic Input Output System",
+    "D choice": "d) Battery-based Input Output System",
+    "answers": "Answer: c",
+    "explanations": "Explanation: BIOS (Basic Input Output System) passwords are next level of security. BIOS is an essential part of your system & comes with it as you bring the computer home where the password gets stored in CMOS which keeps on running even after the PC gets shut down."
+}, {
+    "questions": "3. Most computers have BIOS which can be configured so that it can ask for a password once the system starts.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: a",
+    "explanations": "Explanation: Most computers have BIOS which can be configured so that it can ask for a password once the system starts. It is the next level of security where the password is set in the CMOS."
+}, {
+    "questions": "4. Find out, select & uninstall all ________________ programs from your computer.",
+    "A choice": "a) useful",
+    "B choice": "b) pre-installed",
+    "C choice": "c) unwanted",
+    "D choice": "d) utility",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Find out, select & uninstall all unwanted programs from your computer to maintain security. At times, there are some programs that get installed with useful applications as separate programs or as complementary programs. If you\u2019re not using those programs or don\u2019t know about their usage and from where they came, it can be a malware also."
+}, {
+    "questions": "5. As a backup for securing your device, it is necessary to create a _____________",
+    "A choice": "a) backup point",
+    "B choice": "b) copy of files in separate drives",
+    "C choice": "c) copy of files in the same drives",
+    "D choice": "d) restore point",
+    "answers": "Answer: d",
+    "explanations": "Explanation: As a backup for securing your device, it is necessary to create a restore point so that you can roll-back all the changes and programs installed by restoring the system to the state before those changes."
+}, {
+    "questions": "6. The _______________ is a security app by Microsoft which is a built-in one into Windows OS that is designed to filter network data from your Windows system & block harmful communications or the programs which are initiating them.",
+    "A choice": "a) Windows Security Essentials",
+    "B choice": "b) Windows Firewall",
+    "C choice": "c) Windows app blocker",
+    "D choice": "d) Windows 10",
+    "answers": "Answer: b",
+    "explanations": "Explanation: The Windows Firewall is a security app by Microsoft which is a built-in one into Windows OS that is designed to filter network data from your Windows system & block harmful communications or the programs which are initiating them."
+}, {
+    "questions": "7. _____________ are essential because they frequently comprises of critical patches to security holes.",
+    "A choice": "a) System software",
+    "B choice": "b) Utility Software",
+    "C choice": "c) Software executables",
+    "D choice": "d) Software updates",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Software updates are essential because they frequently comprise critical patches to security holes. In fact, a lot of harmful malware attacks can be stopped with official updates from vendors."
+}, {
+    "questions": "8. The ______________ account and the __________ account have the same file privileges, but their working and functionalities have difference.",
+    "A choice": "a) system, administrator",
+    "B choice": "b) system, user",
+    "C choice": "c) group, user",
+    "D choice": "d) user, administrator",
+    "answers": "Answer: a",
+    "explanations": "Explanation: The system account and the administrator account have the same file privileges, but their working and functionalities have a difference. Actually, the system account is used by the OS & by services which run under Windows. And, administrator account gives the user full control to their files, directories, services."
+}, {
+    "questions": "9. ________________ is an anti-malware tool found in newer OS which is designed for protecting computers from viruses, spyware & other malware.",
+    "A choice": "a) Norton Antivirus",
+    "B choice": "b) Windows Defender",
+    "C choice": "c) Anti-malware",
+    "D choice": "d) Microsoft Security Essentials",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Windows Defender is an anti-malware tool found in newer OS which is designed for protecting computers from viruses, spyware & other malware. It comes built-in with Windows 8 & Windows 10."
+}, {
+    "questions": "10. ____________ is an application which now comes built-in Windows OS & it allows Windows users to encrypt all drive for security purpose.",
+    "A choice": "a) MS Windows Defender",
+    "B choice": "b) MSE",
+    "C choice": "c) BitLocker",
+    "D choice": "d) MS Office",
+    "answers": "Answer: c",
+    "explanations": "Explanation: BitLocker is an application which now comes as built-in Windows OS and it allows Windows users to encrypt all drives for |security purpose. It checks for TPM status whether activated or not."
+}, {
+    "questions": "11. A __________ is a dedicatedly designed chip on an endpoint device which stores RSA encryption keys particular to the host system for the purpose of hardware authentication.",
+    "A choice": "a) Trusted Platform Mode",
+    "B choice": "b) Trusted Protocol Module",
+    "C choice": "c) Trusted Privacy Module",
+    "D choice": "d) Trusted Platform Module",
+    "answers": "Answer: d",
+    "explanations": "Explanation: A Trusted Platform Module is a dedicatedly designed chip on an endpoint device which stores RSA encryption keys particular to the host system for the purpose of hardware authentication."
+}, {
+    "questions": "12. TPM is abbreviated as ____________",
+    "A choice": "a) Trusted Platform Mode",
+    "B choice": "b) Trusted Platform Module",
+    "C choice": "c) Trusted Privacy Module",
+    "D choice": "d) True Platform Module",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Port knocking is quite an esoteric process for preventing session creation through a particular port. Port knocking is not presently used by default in any stack, but soon patches will come to allow the use of knocking protocols."
+}]

@@ -1,0 +1,97 @@
+[{
+    "questions": "1. A\/an ___________ is a program that steals your logins & passwords for instant messaging applications.",
+    "A choice": "a) IM \u2013 Trojans",
+    "B choice": "b) Backdoor Trojans",
+    "C choice": "c) Trojan-Downloader",
+    "D choice": "d) Ransom Trojan",
+    "answers": "Answer: a",
+    "explanations": "Explanation: An IM Trojan is a program that steals your logins & passwords for instant messaging applications. It popularly attacked apps like AOL, Yahoo Pager, and Skype with vulnerabilities."
+}, {
+    "questions": "2. _____________ can modify data on your system \u2013 so that your system doesn\u2019t run correctly or you can no longer access specific data, or it may even ask for ransom in order to give your access.",
+    "A choice": "a) IM \u2013 Trojans",
+    "B choice": "b) Backdoor Trojans",
+    "C choice": "c) Trojan-Downloader",
+    "D choice": "d) Ransom Trojan",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Ransom Trojan can modify data on your system \u2013 so that your system doesn\u2019t run correctly or you can no longer access specific data, or it may even ask for ransom in order to give your access."
+}, {
+    "questions": "3. The ______________ can cost you money, by sending text messages from your mobile phone numbers.",
+    "A choice": "a) IM \u2013 Trojans",
+    "B choice": "b) Backdoor Trojans",
+    "C choice": "c) SMS Trojan",
+    "D choice": "d) Ransom Trojan",
+    "answers": "Answer: c",
+    "explanations": "Explanation: The SMS Trojans can cost you money, by sending text messages from your mobile phone numbers. These generally target the smart-phones & some of them are designed to send their own composed SMS also, to embarrass the receiver as well as the sender of the SMS."
+}, {
+    "questions": "4. Trojan-Spy programs can keep an eye on how you are using your system.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: a",
+    "explanations": "Explanation: Trojan-Spy programs can keep an eye on how you are using your system. These are one of the most notorious silent observers which even track your browsing data and record your behaviour. Also, it keeps track of all the programs you use. "
+}, {
+    "questions": "5. A ___________ is a method in which a computer security mechanism is bypassed untraceable for accessing the computer or its information.",
+    "A choice": "a) front-door",
+    "B choice": "b) backdoor",
+    "C choice": "c) clickjacking",
+    "D choice": "d) key-logging",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Using backdoors hackers can breach computer security mechanism for accessing the computer or its information. This type of code usually comes attached with Trojans."
+}, {
+    "questions": "6. A _________________ may be a hidden part of a program, a separate infected program a Trojan in disguise of an executable or code in the firmware of any system\u2019s hardware.",
+    "A choice": "a) crypter",
+    "B choice": "b) virus",
+    "C choice": "c) backdoor",
+    "D choice": "d) key-logger",
+    "answers": "Answer: c",
+    "explanations": "Explanation: A backdoor may be a hidden part of a program, a separate infected program a Trojan in disguise of an executable or code in the firmware of any system\u2019s hardware."
+}, {
+    "questions": "7. Backdoors cannot be designed as ______________",
+    "A choice": "a) the hidden part of a program",
+    "B choice": "b) as a part of Trojans",
+    "C choice": "c) embedded code of the firmware",
+    "D choice": "d) embedded with anti-malware",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Cyber-criminals use backdoors as a means through which they can bypassed security postures untraceable. They may be a hidden part of a program, a separate infected program a Trojan in disguise of an executable or code in the firmware of any system\u2019s hardware."
+}, {
+    "questions": "8. Trojans having backdoors are harmless.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: b",
+    "explanations": "Explanation: Backdoor trojans can cause huge damage as this is a method used by hackers to breach computer security mechanism. These types of code usually come attached with Trojans programs and can steal your personal data."
+}, {
+    "questions": "9. The threat of backdoors started when ____________ & ____________ OSs became widely accepted.",
+    "A choice": "a) single-user, Windows",
+    "B choice": "b) multiuser, networked",
+    "C choice": "c) single-user, UNIX",
+    "D choice": "d) multiuser, UNIX",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Hackers take the help of backdoor to breach security mechanism & bypassed for stealing different types of information from the target system. The threat of backdoors started when multiuser & networked OS became widely accepted. "
+}, {
+    "questions": "10. Backdoors are also known as ______________",
+    "A choice": "a) Malware-doors",
+    "B choice": "b) Trojan-backups",
+    "C choice": "c) Front-doors",
+    "D choice": "d) Trapdoors",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Trapdoors popularly known as backdoors are used my cyber-criminals as a method in which a system\u2019s security methods can be bypassed untraceable."
+}, {
+    "questions": "11. __________ is a powerful RAT build using the language Delphi 7.",
+    "A choice": "a) Stuxnet",
+    "B choice": "b) T-Bomb",
+    "C choice": "c) Beast",
+    "D choice": "d) Zeus",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Beast is a powerful RAT build using the language Delphi 7. One special feature of Beast is that it can help attackers to create all types of Trojans & it has capabilities of multiple Trojan types."
+}, {
+    "questions": "12. Which of the following is a remote Trojan?",
+    "A choice": "a) Troya",
+    "B choice": "b) DaCryptic",
+    "C choice": "c) BankerA",
+    "D choice": "d) Game-Troj",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Trojan is a small malicious program that runs hidden on the infected system. They are created with the intent and they infected the system by misleading the user. Troya is a remote Trojan that works remotely for its creator."
+}]

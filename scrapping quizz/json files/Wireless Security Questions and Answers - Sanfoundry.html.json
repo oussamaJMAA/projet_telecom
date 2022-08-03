@@ -1,0 +1,121 @@
+[{
+    "questions": "1. ____________________ is the anticipation of unauthorized access or break to computers or data by means of wireless networks.",
+    "A choice": "a) Wireless access",
+    "B choice": "b) Wireless security",
+    "C choice": "c) Wired Security",
+    "D choice": "d) Wired device apps",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Wireless security is the anticipation of unauthorized access or breaks to computers or data by means of wireless networks. The most widespread types of wireless securities are Wired Equivalent Privacy (WEP), Wi-Fi Protected Access (WPA), WPA2 and recently released WPA3."
+}, {
+    "questions": "2. Which among them has the strongest wireless security?",
+    "A choice": "a) WEP",
+    "B choice": "b) WPA",
+    "C choice": "c) WPA2",
+    "D choice": "d) WPA3",
+    "answers": "Answer: d",
+    "explanations": "Explanation: The most extensive types of wireless securities are Wired Equivalent Privacy (WEP), Wi-Fi Protected Access (WPA), WPA2 and WPA3. WPA3 is the strongest and recently released."
+}, {
+    "questions": "3. Which among the following is the least strong security encryption standard?",
+    "A choice": "a) WEP",
+    "B choice": "b) WPA",
+    "C choice": "c) WPA2",
+    "D choice": "d) WPA3",
+    "answers": "Answer: a",
+    "explanations": "Explanation: A prime branch of cyber-security is wireless security. The most widespread types of wireless securities are Wired Equivalent Privacy (WEP), Wi-Fi Protected Access (WPA), WPA2 and WPA3. WEP is notoriously weak encryption standard."
+}, {
+    "questions": "4. _________ is an old IEEE 802.11 standard from the year 1999.",
+    "A choice": "a) WPA2",
+    "B choice": "b) WPA3",
+    "C choice": "c) WEP",
+    "D choice": "d) WPA",
+    "answers": "Answer: c",
+    "explanations": "Explanation: The most widespread types of wireless securities are Wired Equivalent Privacy (WEP), Wi-Fi Protected Access (WPA), WPA2 and WPA3. WEP is an old IEEE 802.11 standard from the year 1999."
+}, {
+    "questions": "5. _______________ is the central node of 802.11 wireless operations.",
+    "A choice": "a) WPA",
+    "B choice": "b) Access Point",
+    "C choice": "c) WAP",
+    "D choice": "d) Access Port",
+    "answers": "Answer: b",
+    "explanations": "Explanation: The central node of 802.11 wireless operations is the Access Point (AP). It is that interface which acts as an intermediary of a wired & wireless network; and all the associated wireless clients\u2019 use this to exchange data with it."
+}, {
+    "questions": "6. AP is abbreviated as _____________",
+    "A choice": "a) Access Point",
+    "B choice": "b) Access Port",
+    "C choice": "c) Access Position",
+    "D choice": "d) Accessing Port",
+    "answers": "Answer: a",
+    "explanations": "Explanation: The central node of 802.11 is that interface which acts as an intermediary of a wired & wireless network; and all the associated wireless clients\u2019 use this and exchange data."
+}, {
+    "questions": "7. ___________________ is alike as that of Access Point (AP) from 802.11, & the mobile operators uses it for offering signal coverage.",
+    "A choice": "a) Base Signal Station",
+    "B choice": "b) Base Transmitter Station",
+    "C choice": "c) Base Transceiver Station",
+    "D choice": "d) Transceiver Station",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Base Transceiver Station (BTS) which is also known as a base station (BS) or radio base station (RBS) is alike as that of Access Point (AP) from 802.11, & the mobile operators use it for offering signal coverage. "
+}, {
+    "questions": "8. BTS stands for ___________________",
+    "A choice": "a) Basement Transceiver Server",
+    "B choice": "b) Base Transmitter Station",
+    "C choice": "c) Base Transceiver Server",
+    "D choice": "d) Base Transceiver Station",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Base Transceiver Station is a section of equipment which facilitates wireless communication from 802.11 & the mobile operators use it for offering signal coverage. Examples are GSM, 3G, 4G etc."
+}, {
+    "questions": "9. There are __________ types of wireless authentication modes.",
+    "A choice": "a) 2",
+    "B choice": "b) 3",
+    "C choice": "c) 4",
+    "D choice": "d) 5",
+    "answers": "Answer: a",
+    "explanations": "Explanation: There are 2 achievable authentication types or schemes which are implemented in the wireless security. These are Pre-Shared Key \u2013 based authentication & Open Authentication. "
+}, {
+    "questions": "10. When a wireless user authenticates to any AP, both of them go in the course of four-step authentication progression which is called _____________",
+    "A choice": "a) AP-handshaking",
+    "B choice": "b) 4-way handshake",
+    "C choice": "c) 4-way connection",
+    "D choice": "d) wireless handshaking",
+    "answers": "Answer: b",
+    "explanations": "Explanation: When a wireless user authenticates to any AP, both of them go in the course of four-step authentication progression which is called 4-way handshake."
+}, {
+    "questions": "11. WPS stands for __________________",
+    "A choice": "a) WiFi Protected System",
+    "B choice": "b) WiFi Protected Setup",
+    "C choice": "c) WiFi Protocol Setup",
+    "D choice": "d) Wireless Protected Setup",
+    "answers": "Answer: b",
+    "explanations": "Explanation: WPS stands for WiFi Protected Setup began to show up a few years back on wireless access points as a new way of adding or connecting new devices to the network by just pushing a key (within the router) & inserting the password."
+}, {
+    "questions": "12. It is recommended to use WPA2 or WPA3 encryption standard as they are strong and more secure.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: a",
+    "explanations": "Explanation: It is recommended to use WPA2 or WPA3 encryption standard as they are strong and more secure. WPA2 & WPA3 characterizes the protocols a router & Wi-Fi client devices use for performing \u201chandshake\u201d securely for communication."
+}, {
+    "questions": "13. ___________ is a process of wireless traffic analysis that may be helpful for forensic investigations or during troubleshooting any wireless issue.",
+    "A choice": "a) Wireless Traffic Sniffing",
+    "B choice": "b) WiFi Traffic Sniffing",
+    "C choice": "c) Wireless Traffic Checking",
+    "D choice": "d) Wireless Transmission Sniffing",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Wireless Traffic Sniffing is a process of analyzing wireless traffic that may be helpful for forensic investigations or during troubleshooting any wireless issue."
+}, {
+    "questions": "14. Which of the following is a Wireless traffic Sniffing tool?",
+    "A choice": "a) Maltego",
+    "B choice": "b) BurpSuit",
+    "C choice": "c) Nessus",
+    "D choice": "d) Wireshark",
+    "answers": "Answer: d",
+    "explanations": "Explanation: The process of analyzing wireless traffic that may be helpful for forensic investigations or during troubleshooting any wireless issue is called Wireless Traffic Sniffing. Popular tools used in this case are Wireshark and Kismet."
+}, {
+    "questions": "15. ___________________ began to show up few years back on wireless access points as a new way of adding or connecting new devices.",
+    "A choice": "a) WPA2",
+    "B choice": "b) WPA",
+    "C choice": "c) WPS",
+    "D choice": "d) WEP",
+    "answers": "Answer: c",
+    "explanations": "Explanation: WiFi Protected Setup (WPS) began to show up a few years back on wireless access points as a new way of adding or connecting new devices to the network by just pushing a key (within the router) & typing an eight-digit password on the client device."
+}]

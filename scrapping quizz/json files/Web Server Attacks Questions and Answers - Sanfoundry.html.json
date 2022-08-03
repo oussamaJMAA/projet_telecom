@@ -1,0 +1,97 @@
+[{
+    "questions": "1. Which of the following is not an appropriate way to compromise web servers?",
+    "A choice": "a) Misconfiguration in OS",
+    "B choice": "b) Using network vulnerabilities",
+    "C choice": "c) Misconfiguration in networks",
+    "D choice": "d) Bugs in OS which allow commands to run on web servers",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Websites get hosted on web servers. Web servers are actually computers running that makes us available & accessible files (web pages) through the internet. Various ways that can help compromise a web server are a misconfiguration of network or OS, bugs in web server\u2019s OS etc."
+}, {
+    "questions": "2. Which of the following is not an appropriate method of defacing web server?",
+    "A choice": "a) Fetching credentials through MiTM",
+    "B choice": "b) Brute-forcing Admin Password",
+    "C choice": "c) IP address spoofing",
+    "D choice": "d) DNS Attack through cache poisoning",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Various ways which can help a hacker deface the web server. These are by fetching credentials through MiTM, brute-forcing administrator password, DNS attack through cache poisoning, FTP server intrusion and many more."
+}, {
+    "questions": "3. Which of the following is not an appropriate method of defacing web server?",
+    "A choice": "a) Mail server intrusion",
+    "B choice": "b) Web application bugs",
+    "C choice": "c) Web shares misconfiguration",
+    "D choice": "d) Sessions hijacking",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Defacing the web server can be done in various ways by fetching credentials through brute-forcing administrator password, through cache poisoning, mail server intrusion, web app bugs and many more."
+}, {
+    "questions": "4. _________ is one of the most widely used web server platforms.",
+    "A choice": "a) IIS",
+    "B choice": "b) IAS",
+    "C choice": "c) ISS",
+    "D choice": "d) AIS",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Websites get hosted on web servers. Web servers are actually computers running that makes us available & accessible files (web pages) through the internet. IIS is one of the most widely used web server platforms."
+}, {
+    "questions": "5. IIS stands for __________________",
+    "A choice": "a) Interconnected Information Server",
+    "B choice": "b) Interconnected Information Services",
+    "C choice": "c) Internet Information Server",
+    "D choice": "d) Internet Information Services",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Web servers are actually computers running that makes us available & accessible files (web pages) through the internet. The most widely used web server platform is the IIS (Internet Information Services)."
+}, {
+    "questions": "6. ____________ is a tiny script that if uploaded to a web server can give hacker complete control of a remote PC.",
+    "A choice": "a) Spyware",
+    "B choice": "b) ASP Trojan",
+    "C choice": "c) Web ransomware",
+    "D choice": "d) Stuxnet",
+    "answers": "Answer: b",
+    "explanations": "Explanation: ASP Trojan is a tiny script that if uploaded to a web server can give hacker complete control of remote PC. ASP Trojan can be easily attached to web applications creating a backdoor in web server hacking."
+}, {
+    "questions": "7. ____________ logs all the visits in log files which is located at <%systemroot%>\\logfiles.",
+    "A choice": "a) IIS",
+    "B choice": "b) Microsoft Server",
+    "C choice": "c) Linux",
+    "D choice": "d) IAS",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Internet Information Services logs all the visits in log files which are located at <%systemroot%>\\logfiles. IIS (Internet Information Services) is one of the most widely used web server platforms."
+}, {
+    "questions": "8. Which of the following is not a web server attack type?",
+    "A choice": "a) DOS attack",
+    "B choice": "b) Website Defacement using SQLi",
+    "C choice": "c) Directory Traversal",
+    "D choice": "d) Password guessing",
+    "answers": "Answer: d",
+    "explanations": "Explanation: The web servers are actually computers running that makes us available & accessible files (web pages) through the internet. Different web server attack types are through DOS attack, website defacement using SQLi and directory traversal."
+}, {
+    "questions": "9. ______________ tool clears the log entries in the IIS log files filtered by an IP address.",
+    "A choice": "a) CleanIISLoging",
+    "B choice": "b) CleanLogger",
+    "C choice": "c) CleanIISLog",
+    "D choice": "d) ClearIISLog",
+    "answers": "Answer: c",
+    "explanations": "Explanation: IIS (Internet Information Services) is one of the most widely used web server platform. IIS logs all the visits in log files which are located at <%systemroot%>\\logfiles. CleanIISLog tool clears the log entries in the IIS log files filtered by an IP address. "
+}, {
+    "questions": "10. CleanIISLog is not a hacking tool.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: b",
+    "explanations": "Explanation: CleanIISLog tool is used to clear the log entries in the IIS log files filtered by an IP address. It is a hacking tool which can help in easily remove all traces of her log file from the server."
+}, {
+    "questions": "11. Which of the following is not an appropriate countermeasure for web server hacking?",
+    "A choice": "a) Patch updates need to be done regularly",
+    "B choice": "b) Not to use default configurations",
+    "C choice": "c) Use IDS and firewalls with signature updates",
+    "D choice": "d) Use low-speed internet",
+    "answers": "Answer: d",
+    "explanations": "Explanation: To protect against web server hacking, one need to patch updates regularly, not to use default configurations, use IDS and firewalls with signature updates."
+}, {
+    "questions": "12. Which of the following is not an appropriate countermeasure for web server hacking?",
+    "A choice": "a) Using OS or antivirus without updates",
+    "B choice": "b) Scan web server applications for vulnerabilities",
+    "C choice": "c) Using secure protocols",
+    "D choice": "d) Follow strict access control policy",
+    "answers": "Answer: a",
+    "explanations": "Explanation: For defending against web server hacking, one needs to scan web server applications for vulnerabilities, make use of secure protocols, and follow strict access control policy."
+}]

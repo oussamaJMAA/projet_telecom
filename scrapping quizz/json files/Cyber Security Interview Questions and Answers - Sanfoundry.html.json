@@ -1,0 +1,65 @@
+[{
+    "questions": "1. A _________ can gain access illegally to a system if the system is not properly tested in scanning and gaining access phase.",
+    "A choice": "a) security officer",
+    "B choice": "b) malicious hacker",
+    "C choice": "c) security auditor",
+    "D choice": "d) network analyst",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Malicious hackers can gain illegal access at OS level, application level or network level if the penetration testers or ethical hackers lack in testing and reporting the vulnerabilities in a system. "
+}, {
+    "questions": "2. In which phase, the hackers install backdoors so that his\/her ownership with the victim\u2019s system can be retained later?",
+    "A choice": "a) Scanning",
+    "B choice": "b) Maintaining access",
+    "C choice": "c) Maintaining Access",
+    "D choice": "d) Gaining access",
+    "answers": "Answer: c",
+    "explanations": "Explanation: After gaining access to a system, the hacker needs to keep a path open so that he\/she in future can access the system. Therefore, backdoors are set which will later allow the attacker to gain access through it easily."
+}, {
+    "questions": "3. _______ is the tool used for this purpose.",
+    "A choice": "a) Powersploit",
+    "B choice": "b) Aircrack \u2013 ng",
+    "C choice": "c) Snort",
+    "D choice": "d) Nmap",
+    "answers": "Answer: a",
+    "explanations": "Explanation: The Powersploit is an access maintaining tool used for Windows systems. This tool is used for gaining re-access to the victim\u2019s system using PowerShell."
+}, {
+    "questions": "4. Which of the following hacking tools and techniques hackers\u2019 do not use for maintaining access in a system?",
+    "A choice": "a) Rootkits",
+    "B choice": "b) Backdoors",
+    "C choice": "c) Trojans",
+    "D choice": "d) Wireshark",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Wireshark is not a tool for maintaining access because it is used for analysing network protocols at a microscopic level (very minutely). It is an interactive tool for data traffic analysing on any computer."
+}, {
+    "questions": "5. In _______ phase, the hackers try to hide their footprints.",
+    "A choice": "a) Scanning",
+    "B choice": "b) Tracks clearing",
+    "C choice": "c) Reconnaissance",
+    "D choice": "d) Gaining access",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Tracks clearing or covering tracks is the name of the phase where the hackers delete logs of their existence & other activity records they do during the hacking process. This step is actually an unethical one. "
+}, {
+    "questions": "6. Which of them is not a track clearing technique?",
+    "A choice": "a) Altering log files",
+    "B choice": "b) Tunnelling",
+    "C choice": "c) Port Scanning",
+    "D choice": "d) Footprint removing",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Port scanning is a method used in the scanning phase. Altering or changing log files, tunnelling for hiding your identity and removing footprints from different sites are examples of clearing tracks."
+}, {
+    "questions": "7. __________ is the last phase of ethical hacking process.",
+    "A choice": "a) Scanning",
+    "B choice": "b) Tracks clearing",
+    "C choice": "c) Reconnaissance",
+    "D choice": "d) Reporting",
+    "answers": "Answer: d",
+    "explanations": "Explanation: In the reporting phase, the penetration tester or ethical hacker has to assemble all the flaws along with the tools and processes used for detecting then and report it to the firm or organization."
+}, {
+    "questions": "8. Which of the following is not a footprint-scanning tool?",
+    "A choice": "a) SuperScan",
+    "B choice": "b) TcpView",
+    "C choice": "c) Maltego",
+    "D choice": "d) OWASP Zed",
+    "answers": "Answer: c",
+    "explanations": "Explanation: SuperScan, TcpView and OWASP Zed are tools used for scanning footprints. Maltego is not a footprint-scanning tool. It is used for reconnaissance purpose only. "
+}]

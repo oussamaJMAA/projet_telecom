@@ -1,0 +1,121 @@
+[{
+    "questions": "1. Which of the following is not a type of cyber crime?",
+    "A choice": "a) Data theft",
+    "B choice": "b) Forgery",
+    "C choice": "c) Damage to data and systems",
+    "D choice": "d) Installing antivirus for protection",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Cyber crimes are one of the most threatening terms that is an evolving phase. It is said that major percentage of the World War III will be based on cyber-attacks by cyber armies of different countries."
+}, {
+    "questions": "2. Cyber-laws are incorporated for punishing all criminals only.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: b",
+    "explanations": "Explanation: Cyber-laws were incorporated in our law book not only to punish cyber criminals but to reduce cyber crimes and tie the hands of citizens from doing illicit digital acts that harm or damage other\u2019s digital property or identity."
+}, {
+    "questions": "3. Cyber-crime can be categorized into ________ types.",
+    "A choice": "a) 4",
+    "B choice": "b) 3",
+    "C choice": "c) 2",
+    "D choice": "d) 6",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Cyber crime can be categorized into 2 types. These are peer-to-peer attack and computer as weapon. In peer-to-peer attack, attackers target the victim users; and in computer as weapon attack technique, computers are used by attackers for a mass attack such as illegal and banned photo leak, IPR violation, pornography, cyber terrorism etc."
+}, {
+    "questions": "4. Which of the following is not a type of peer-to-peer cyber-crime?",
+    "A choice": "a) Phishing",
+    "B choice": "b) Injecting Trojans to a target victim",
+    "C choice": "c) MiTM",
+    "D choice": "d) Credit card details leak in deep web",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Phishing, injecting Trojans and worms to individuals comes under peer-to-peer cyber crime. Whereas, leakage of credit card data of a large number of people in deep web comes under computer as weapon cyber-crime."
+}, {
+    "questions": "5. Which of the following is not an example of a computer as weapon cyber-crime?",
+    "A choice": "a) Credit card fraudulent",
+    "B choice": "b) Spying someone using keylogger",
+    "C choice": "c) IPR Violation",
+    "D choice": "d) Pornography",
+    "answers": "Answer: b",
+    "explanations": "Explanation: DDoS (Distributed Denial of Service), IPR violation, pornography are mass attacks done using a computer. Spying someone using keylogger is an example of peer-to-peer attack."
+}, {
+    "questions": "6. Which of the following is not done by cyber criminals?",
+    "A choice": "a) Unauthorized account access",
+    "B choice": "b) Mass attack using Trojans as botnets",
+    "C choice": "c) Email spoofing and spamming",
+    "D choice": "d) Report vulnerability in any system",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Cyber-criminals are involved in activities like accessing online accounts in unauthorized manner; use Trojans to attack large systems, sending spoofed emails. But cyber-criminals do not report any bug is found in a system, rather they exploit the bug for their profit."
+}, {
+    "questions": "7. What is the name of the IT law that India is having in the Indian legislature?",
+    "A choice": "a) India\u2019s Technology (IT) Act, 2000",
+    "B choice": "b) India\u2019s Digital Information Technology (DIT) Act, 2000",
+    "C choice": "c) India\u2019s Information Technology (IT) Act, 2000",
+    "D choice": "d) The Technology Act, 2008",
+    "answers": "Answer: c",
+    "explanations": "Explanation: The Indian legislature thought of adding a chapter that is dedicated to cyber law. This finally brought India\u2019s Information Technology (IT) Act, 2000 which deals with the different cyber-crimes and their associated laws."
+}, {
+    "questions": "8. In which year India\u2019s IT Act came into existence?",
+    "A choice": "a) 2000",
+    "B choice": "b) 2001",
+    "C choice": "c) 2002",
+    "D choice": "d) 2003",
+    "answers": "Answer: a",
+    "explanations": "Explanation: On 17th Oct 2000, the Indian legislature thought of adding a chapter that is dedicated to cyber law, for which India\u2019s Information Technology (IT) Act, 2000 came into existence."
+}, {
+    "questions": "9. What is the full form of ITA-2000?",
+    "A choice": "a) Information Tech Act -2000",
+    "B choice": "b) Indian Technology Act -2000",
+    "C choice": "c) International Technology Act -2000",
+    "D choice": "d) Information Technology Act -2000",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Information Technology Act -2000 (ITA-2000), came into existence on 17th Oct 2000, that is dedicated to cyber-crime and e-commerce law in India."
+}, {
+    "questions": "10. The Information Technology Act -2000 bill was passed by K. R. Narayanan.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: b",
+    "explanations": "Explanation: The bill was passed & signed by Dr. K. R. Narayanan on 9th May, in the year 2000. The bill got finalised by head officials along with the Minister of Information Technology, Dr. Pramod Mahajan."
+}, {
+    "questions": "11. Under which section of IT Act, stealing any digital asset or information is written a cyber-crime.",
+    "A choice": "a) 65",
+    "B choice": "b) 65-D",
+    "C choice": "c) 67",
+    "D choice": "d) 70",
+    "answers": "Answer: a",
+    "explanations": "Explanation: When a cyber-criminal steals any computer documents, assets or any software\u2019s source code from any organization, individual, or from any other means then the cyber crime falls under section 65 of IT Act, 2000."
+}, {
+    "questions": "12. What is the punishment in India for stealing computer documents, assets or any software\u2019s source code from any organization, individual, or from any other means?",
+    "A choice": "a) 6 months of imprisonment and a fine of Rs. 50,000",
+    "B choice": "b) 1 year of imprisonment and a fine of Rs. 100,000",
+    "C choice": "c) 2 years of imprisonment and a fine of Rs. 250,000",
+    "D choice": "d) 3 years of imprisonment and a fine of Rs. 500,000",
+    "answers": "Answer: d",
+    "explanations": "Explanation: The punishment in India for stealing computer documents, assets or any software\u2019s source code from any organization, individual, or from any other means is 3 years of imprisonment and a fine of Rs. 500,000."
+}, {
+    "questions": "13. What is the updated version of the IT Act, 2000?",
+    "A choice": "a) IT Act, 2007",
+    "B choice": "b) Advanced IT Act, 2007",
+    "C choice": "c) IT Act, 2008",
+    "D choice": "d) Advanced IT Act, 2008",
+    "answers": "Answer: c",
+    "explanations": "Explanation: In the year 2008, the IT Act, 2000 was updated and came up with a much broader and precise law on different computer-related crimes and cyber offenses."
+}, {
+    "questions": "14. In which year the Indian IT Act, 2000 got updated?",
+    "A choice": "a) 2006",
+    "B choice": "b) 2008",
+    "C choice": "c) 2010",
+    "D choice": "d) 2012",
+    "answers": "Answer: b",
+    "explanations": "Explanation: In the year 2008, the IT Act, 2000 was updated and came up with a much broader and precise law on different computer-related crimes and cyber offenses."
+}, {
+    "questions": "15. What type of cyber-crime, its laws and punishments does section 66 of the Indian IT Act holds?",
+    "A choice": "a) Cracking or illegally hack into any system",
+    "B choice": "b) Putting antivirus into the victim",
+    "C choice": "c) Stealing data",
+    "D choice": "d) Stealing hardware components",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Under section 66 of IT Act, 2000 which later came up with a much broader and precise law says that cracking or illegally hacking into any victim\u2019s computer is a crime. It covers a wide range of cyber-crimes under this section of the IT Act."
+}]

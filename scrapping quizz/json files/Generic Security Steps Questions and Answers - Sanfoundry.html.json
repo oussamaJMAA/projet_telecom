@@ -1,0 +1,113 @@
+[{
+    "questions": "1. How many basic processes or steps are there in ethical hacking?",
+    "A choice": "a) 4",
+    "B choice": "b) 5",
+    "C choice": "c) 6",
+    "D choice": "d) 7",
+    "answers": "Answer: c",
+    "explanations": "Explanation: According to the standard ethical hacking standards, the entire process of hacking can be divided into 6 steps or phases. These are: Reconnaissance, Scanning, Gaining Access, Maintaining Access, Tracks clearing, reporting."
+}, {
+    "questions": "2. ____________ is the information gathering phase in ethical hacking from the target user.",
+    "A choice": "a) Reconnaissance",
+    "B choice": "b) Scanning",
+    "C choice": "c) Gaining access",
+    "D choice": "d) Maintaining access",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Reconnaissance is the phase where the ethical hacker tries to gather different kinds of information about the target user or the victim\u2019s system."
+}, {
+    "questions": "3. Which of the following is not a reconnaissance tool or technique for information gathering?",
+    "A choice": "a) Hping",
+    "B choice": "b) NMAP",
+    "C choice": "c) Google Dorks",
+    "D choice": "d) Nexpose",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Hping, NMAP & Google Dorks are tools and techniques for reconnaissance. Nexpose is a tool for scanning the network for vulnerabilities."
+}, {
+    "questions": "4. There are ______ subtypes of reconnaissance.",
+    "A choice": "a) 2",
+    "B choice": "b) 3",
+    "C choice": "c) 4",
+    "D choice": "d) 5",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Reconnaissance can be done in two different ways. 1st, Active Reconnaissance which involves interacting with the target user or system directly in order to gain information; 2nd, Passive Reconnaissance, where information gathering from target user is done indirectly without interacting with the target user or system."
+}, {
+    "questions": "5. Which of the following is an example of active reconnaissance?",
+    "A choice": "a) Searching public records",
+    "B choice": "b) Telephone calls as a help desk or fake customer care person",
+    "C choice": "c) Looking for the target\u2019s details in the database",
+    "D choice": "d) Searching the target\u2019s details in paper files",
+    "answers": "Answer: b",
+    "explanations": "Explanation: As active reconnaissance is all about interacting with target victim directly, hence telephonic calls as a legitimate customer care person or help desk person, the attacker can get more information about the target user."
+}, {
+    "questions": "6. Which of the following is an example of passive reconnaissance?",
+    "A choice": "a) Telephonic calls to target victim",
+    "B choice": "b) Attacker as a fake person for Help Desk support",
+    "C choice": "c) Talk to the target user in person",
+    "D choice": "d) Search about target records in online people database",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Passive reconnaissance is all about acquiring of information about the target indirectly, hence searching any information about the target on online people database is an example of passive reconnaissance."
+}, {
+    "questions": "7. ________ phase in ethical hacking is known as the pre-attack phase.",
+    "A choice": "a) Reconnaissance",
+    "B choice": "b) Scanning",
+    "C choice": "c) Gaining access",
+    "D choice": "d) Maintaining access",
+    "answers": "Answer: b",
+    "explanations": "Explanation: In the scanning phase, the hacker actively scans for the vulnerabilities or specific information in the network which can be exploited."
+}, {
+    "questions": "8. While looking for a single entry point where penetration testers can test the vulnerability, they use ______ phase of ethical hacking.",
+    "A choice": "a) Reconnaissance",
+    "B choice": "b) Scanning",
+    "C choice": "c) Gaining access",
+    "D choice": "d) Maintaining access",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Scanning is done to look for entry points in a network or system in order to launch an attack and check whether the system is penetrable or not."
+}, {
+    "questions": "9. Which of them does not comes under scanning methodologies?",
+    "A choice": "a) Vulnerability scanning",
+    "B choice": "b) Sweeping",
+    "C choice": "c) Port Scanning",
+    "D choice": "d) Google Dorks",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Google dork is used for reconnaissance, which uses special search queries for narrowing down the search results. The rest three scanning methodologies are used for scanning ports (logical), and network vulnerabilities."
+}, {
+    "questions": "10. Which of them is not a scanning tool?",
+    "A choice": "a) NMAP",
+    "B choice": "b) Nexpose",
+    "C choice": "c) Maltego",
+    "D choice": "d) Nessus",
+    "answers": "Answer: c",
+    "explanations": "Explanation: NMAP is used for both reconnaissance and scanning purposes. Nepose and Nessus are fully scanning tool. Maltego is an example of a reconnaissance tool used for acquiring information about target user."
+}, {
+    "questions": "11. Which of the following comes after scanning phase in ethical hacking?",
+    "A choice": "a) Scanning",
+    "B choice": "b) Maintaining access",
+    "C choice": "c) Reconnaissance",
+    "D choice": "d) Gaining access",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Gaining access is the next step after scanning. Once the scanning tools are used to look for flaws in a system, it is the next phase where the ethical hackers or penetration testers have to technically gain access to a network or system."
+}, {
+    "questions": "12. In __________ phase the hacker exploits the network or system vulnerabilities.",
+    "A choice": "a) Scanning",
+    "B choice": "b) Maintaining access",
+    "C choice": "c) Reconnaissance",
+    "D choice": "d) Gaining access",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Penetration testers after scanning the system or network tries to exploit the flaw of the system or network in \u201cgaining access\u201d phase."
+}, {
+    "questions": "13. Which of the following is not done in gaining access phase?",
+    "A choice": "a) Tunnelling",
+    "B choice": "b) Buffer overflow",
+    "C choice": "c) Session hijacking",
+    "D choice": "d) Password cracking",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Tunnelling is a method that is followed to cover tracks created by attackers and erasing digital footprints. Buffer overflow, session hijacking and password cracking are examples of gaining access to test the flaw in system or network."
+}, {
+    "questions": "14. Which of the below-mentioned penetration testing tool is popularly used in gaining access phase?",
+    "A choice": "a) Maltego",
+    "B choice": "b) NMAP",
+    "C choice": "c) Metasploit",
+    "D choice": "d) Nessus",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Metasploit is a framework and the most widely used penetration testing tool used by ethical hackers for testing the vulnerabilities in a system or network."
+}]

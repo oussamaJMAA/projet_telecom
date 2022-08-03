@@ -1,0 +1,113 @@
+[{
+    "questions": "1. Packet filtering firewalls are vulnerable to __________",
+    "A choice": "a) hardware vulnerabilities",
+    "B choice": "b) MiTM",
+    "C choice": "c) phishing",
+    "D choice": "d) spoofing",
+    "answers": "Answer: d",
+    "explanations": "Explanation: One popular disadvantage of the packet filtering technique is that it cannot support the complex models of rules and is spoofing attack-prone in some cases as well."
+}, {
+    "questions": "2. Circuit-level gateway firewalls are installed in _______ layer of OSI model.",
+    "A choice": "a) Application layer",
+    "B choice": "b) Session layer",
+    "C choice": "c) Presentation layer",
+    "D choice": "d) Network layer",
+    "answers": "Answer: b",
+    "explanations": "Explanation: In the session layer (which is the fifth layer) of the OSI model, circuit-level gateway firewalls are deployed for monitoring TCP sessions for 3-way handshakes."
+}, {
+    "questions": "3. Which of these comes under the advantage of Circuit-level gateway firewalls?",
+    "A choice": "a) They maintain anonymity and also inexpensive",
+    "B choice": "b) They are light-weight",
+    "C choice": "c) They\u2019re expensive yet efficient",
+    "D choice": "d) They preserve IP address privacy yet expensive",
+    "answers": "Answer: a",
+    "explanations": "Explanation: For a private network, or for organizations, circuit-level gateway firewalls maintain anonymity. They\u2019re also inexpensive as compared to other firewall types."
+}, {
+    "questions": "4. Which of the following is a disadvantage of Circuit-level gateway firewalls?",
+    "A choice": "a) They\u2019re expensive",
+    "B choice": "b) They\u2019re complex in architecture",
+    "C choice": "c) They do not filter individual packets",
+    "D choice": "d) They\u2019re complex to setup",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Circuit-level gateway firewalls don\u2019t filter packets individually which gives the attacker a chance to take access in the network."
+}, {
+    "questions": "5. _____________ gateway firewalls are deployed in application-layer of OSI model.",
+    "A choice": "a) Packet Filtering Firewalls",
+    "B choice": "b) Circuit Level Gateway Firewalls",
+    "C choice": "c) Application-level Gateway Firewalls",
+    "D choice": "d) Stateful Multilayer Inspection Firewalls",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Application level Gateway Firewalls are deployed in the application-layer of OSI model for protecting the network for different protocols of the application layer."
+}, {
+    "questions": "6. Application level gateway firewalls protect the network for specific _____________",
+    "A choice": "a) application layer protocol",
+    "B choice": "b) session layer protocol",
+    "C choice": "c) botnet attacks",
+    "D choice": "d) network layer protocol",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Some specific application layer protocols need protection from attacks which is done by the application level gateway firewall in the application layer of the OSI model."
+}, {
+    "questions": "7. Application level gateway firewalls are also used for configuring cache-servers.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: a",
+    "explanations": "Explanation: As caching servers, the application level gateway firewalls are configured that helps in increasing the network performance making it smooth for logging traffic."
+}, {
+    "questions": "8. ___________ firewalls are a combination of other three types of firewalls.",
+    "A choice": "a) Packet Filtering",
+    "B choice": "b) Circuit Level Gateway",
+    "C choice": "c) Application-level Gateway",
+    "D choice": "d) Stateful Multilayer Inspection",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Stateful Multilayer Inspection firewalls are a combination of other three types of firewalls. These combinations are Packet filtering, circuit level and application-level gateway firewalls."
+}, {
+    "questions": "9. Stateful Multilayer Inspection firewall cannot perform which of the following?",
+    "A choice": "a) Filter network layer packets",
+    "B choice": "b) Check for legitimate session",
+    "C choice": "c) Scans for illicit data packets at the presentation layer",
+    "D choice": "d) Evaluate packets at application lager",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Stateful Multilayer Inspection firewalls are designed to perform filtering packets in the network layer, check for legitimate sessions in the session layer as well as evaluate all packets at the application layer of OSI model. But it cannot scan for illicit data packets at the presentation layer."
+}, {
+    "questions": "10. We can also implement ____________ in Stateful Multilayer Inspection firewall.",
+    "A choice": "a) external programs",
+    "B choice": "b) algorithms",
+    "C choice": "c) policies",
+    "D choice": "d) algorithms and external programs",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Stateful Multilayer Inspection firewall can also allow us to implement algorithms as well as complex security modes making data transfer more secure."
+}, {
+    "questions": "11. One advantage of Stateful Multilayer Inspection firewall is __________",
+    "A choice": "a) costlier but easy to understand",
+    "B choice": "b) large to manage",
+    "C choice": "c) complex internal architecture",
+    "D choice": "d) large to manage but efficient",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Stateful Multilayer Inspection firewalls are complex internally due to multiple characteristics of different firewalls incorporated together which makes it powerful and more secure."
+}, {
+    "questions": "12. Packet filtering firewalls are also called ____________",
+    "A choice": "a) first generation firewalls",
+    "B choice": "b) second generation firewalls",
+    "C choice": "c) third generation firewalls",
+    "D choice": "d) fourth generation firewalls",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Packet filtering firewalls are also called the first generation firewalls. It came into the picture around the 1980s. Packet filtering technique cannot support the complex models of rules and is spoofing attack-prone in some cases as well."
+}, {
+    "questions": "13. Stateful Multilayer firewalls are also called ____________",
+    "A choice": "a) first generation firewalls",
+    "B choice": "b) second generation firewalls",
+    "C choice": "c) third generation firewalls",
+    "D choice": "d) fourth generation firewalls",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Stateful multilayer firewalls are also called second generation firewalls. They came into the picture in around 1989-1990. Due to multiple characteristics of different firewalls in Multilayer Inspection firewalls, it makes such type of firewalls powerful and more secure."
+}, {
+    "questions": "14. Application layer firewalls are also called ____________",
+    "A choice": "a) first generation firewalls",
+    "B choice": "b) second generation firewalls",
+    "C choice": "c) third generation firewalls",
+    "D choice": "d) fourth generation firewalls",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Application layer firewalls are also called third generation firewalls. They came into the picture in around 1995-1998. Application level gateway firewalls are helped in making the network performance smooth for logging traffic."
+}]
