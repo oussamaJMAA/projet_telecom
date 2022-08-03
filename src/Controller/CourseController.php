@@ -12,7 +12,7 @@ use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-
+use Symfony\Component\Security\Core\Security;
 /**
  * @Route("/course")
  */
@@ -83,13 +83,13 @@ class CourseController extends AbstractController
 
     }
       /**
-     * @Route("/{id}/{user}", name="app_course_index_front_detailed", methods={"GET"})
+     * @Route("/{id}", name="app_course_index_front_detailed", methods={"GET"})
      */
-    public function detailed_course(Course $course,$id,$user,CourseRepository $courseRepository): Response
+    public function detailed_course(Course $course,$id,CourseRepository $courseRepository): Response
     {
-          $enrolled_by_user = $courseRepository -> verif_enroll_user_course_($id,$user);
-          $like_by_user_exist = $courseRepository ->  verif_likes_user_course_($id,$user);
-
+        $enrolled_by_user = $courseRepository -> verif_enroll_user_course_($id,$this->getUser()->getId());
+        $like_by_user_exist = $courseRepository ->  verif_likes_user_course_($id,$this->getUser()->getId());
+         
           
         if($like_by_user_exist!=0 && $enrolled_by_user != 0){
            $liked = 1;
