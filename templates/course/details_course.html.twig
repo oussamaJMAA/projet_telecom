@@ -37,75 +37,89 @@
 
                             <p>{{course.details|length > 100 ? course.details|slice(0,100) ~ '...' : course.details }}</p>
 
-                              <div class="buy-checkbox-btn">
+                            <br>
+                            <div>
                                  {% if enrolled == 0 and liked == 0 %}
+                                   <div class="item d-flex justify-content-center">
+                                    <a href="{{ path('like_course', {'id': course.id} ) }}" class="buy-btn"><i class="bi bi-heart"></i></a>
+                                </div>
+                                      <div class="buy-checkbox-btn">
                                 <div class="item">
                                 
                                     <a href="{{ path('enroll_course', {'id': course.id} ) }}" class="buy-btn" target="_blank" onclick="window.open('{{course.link}}');">Enroll Now</a>
                                 </div> 
-                                                 
-                                  <div class="item">
-                                    <a href="{{ path('like_course', {'id': course.id} ) }}" class="buy-btn">Like</a>
-                                </div>
+                                      </div>           
+                                
+
+                               
                                 {% elseif enrolled == 1 and liked == 1 %}
+                                 <div class="item d-flex justify-content-center">
+                                    <a href="{{ path('unlike_course', {'id': course.id} ) }}" class="buy-btn"><i class="bi bi-heart-fill"></i></a>
+                                </div>
+                                  <div class="buy-checkbox-btn">
                                          <div class="item">
-                                    <a href="{{ path('continue_course', {'id': course.id} ) }}" class="buy-btn" >Continue</a>
+                                    <a href="{{ path('continue_course', {'id': course.id} ) }}" class="buy-btn"target="_blank" onclick="window.open('{{course.link}}');" >Continue</a>
                                 </div> 
-
-                                  <div class="item">
-                                    <a href="{{ path('unlike_course', {'id': course.id} ) }}" class="buy-btn">Unlike</a>
-                                </div>
+                                    </div> 
+                                 
+                                 
                                 {% elseif enrolled == 1 and liked == 0 %}
+                                 <div class="item d-flex justify-content-center">
+                                    <a href="{{ path('like_course', {'id': course.id} ) }}" class="buy-btn"><i class="bi bi-heart"></i></a>
+                                </div>
+                                 <div class="buy-checkbox-btn">
                                      <div class="item">
-                                    <a href="{{ path('continue_course', {'id': course.id} ) }}" class="buy-btn" >Continue</a>
+                                    <a href="{{ path('continue_course', {'id': course.id} ) }}" class="buy-btn" target="_blank" onclick="window.open('{{course.link}}');">Continue</a>
                                 </div> 
-
-                                  <div class="item">
-                                    <a href="{{ path('like_course', {'id': course.id} ) }}" class="buy-btn">Like</a>
                                 </div>
+
+                                 
+                              
                                 {% elseif enrolled == 0 and liked == 1 %}
-                                 <div class="item">
-                                    <a href="{{ path('enroll_course', {'id': course.id} ) }}" class="buy-btn" >Enroll Now</a>
-                                </div> 
-
-                                  <div class="item">
-                                    <a href="{{ path('unlike_course', {'id': course.id} ) }}" class="buy-btn">Unlike</a>
+                                 <div class="item d-flex justify-content-center">
+                                    <a href="{{ path('unlike_course', {'id': course.id} ) }}" class="buy-btn"><i class="bi bi-heart-fill"></i></a>
                                 </div>
+                                  <div class="buy-checkbox-btn">
+                                 <div class="item">
+                                    <a href="{{ path('enroll_course', {'id': course.id} ) }}" class="buy-btn"target="_blank" onclick="window.open('{{course.link}}');" >Enroll Now</a>
+                                </div> 
+                                        </div>
+                                 
                                  {% endif %}
 
                             </div>
-
+</div>
 
                           
                         </div>
                     </div>
 
-                    <div class="col-lg-12 col-md-12">
+                     <div class="col-lg-12 col-md-12">
                         <div class="tab products-details-tab">
                             <div class="row">
                                 <div class="col-lg-12 col-md-12">
-                              
+                                    <ul class="tabs">
+                                        <li><a href="#">
+                                            <div class="dot"></div> Description
+                                        </a></li>
+                                        
+                                       
+
+                                        <li><a href="#">
+                                            <div class="dot"></div> Reviews
+                                        </a></li>
+                                    </ul>
                                 </div>
 
                                 <div class="col-lg-12 col-md-12">
                                     <div class="tab_content">
                                         <div class="tabs_item">
                                             <div class="products-details-tab-content">
-                                                <p>{{ course.details }}</p>
+                                                <p>{{course.details}}</p>
                                             </div>
                                         </div>
 
-                                        <div class="tabs_item">
-                                            <div class="products-details-tab-content">
-                                                <ul class="additional-information">
-                                                    <li><span>Brand:</span> ThemeForest</li>
-                                                    <li><span>Color:</span> Brown</li>
-                                                    <li><span>Size:</span> Large, Medium</li>
-                                                    <li><span>Weight:</span> 27 kg</li>
-                                                    <li><span>Dimensions:</span> 16 x 22 x 123 cm</li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                      
 
                                         <div class="tabs_item">
                                             <div class="products-details-tab-content">
@@ -122,7 +136,6 @@
                                                         </div>
                                                         <p>Based on 3 reviews</p>
 
-                                                        <a href="#" class="btn btn-primary">Write a Review</a>
                                                     </div>
 
                                                     <div class="review-comments">
@@ -177,27 +190,16 @@
 
                                                         <form>
                                                             <div class="row">
-                                                                <div class="col-lg-6 col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label>Name</label>
-                                                                        <input type="text" id="name" name="name" placeholder="Enter your name" class="form-control">
-                                                                    </div>
-                                                                </div>
+                                                               
 
                                                                 <div class="col-lg-6 col-md-6">
                                                                     <div class="form-group">
                                                                         <label>Email</label>
-                                                                        <input type="email" id="email" name="email" placeholder="Enter your email" class="form-control">
+                                                                        <input type="email" id="email" name="email" placeholder="Enter your email" class="form-control" value={{app.user.email}}  readonly>
                                                                     </div>
                                                                 </div>
 
-                                                                <div class="col-lg-12 col-md-12">
-                                                                    <div class="form-group">
-                                                                        <label>Review Title</label>
-                                                                        <input type="text" id="review-title" name="review-title" placeholder="Enter your review a title" class="form-control">
-                                                                    </div>
-                                                                </div>
-
+                                                          
                                                                 <div class="col-lg-12 col-md-12">
                                                                     <div class="form-group">
                                                                         <label>Body of Review (1500)</label>
@@ -219,7 +221,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
 
         </section>
