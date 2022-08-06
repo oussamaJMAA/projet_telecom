@@ -5,10 +5,12 @@ namespace App\Controller;
 use App\Entity\User;
 use App\Form\UserType;
 use App\Repository\UserRepository;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use App\Form\AdminRegistrationFormType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 /**
  * @Route("/user")
@@ -70,9 +72,34 @@ class UserController extends AbstractController
 
         return $this->render('user/edit.html.twig', [
             'user' => $user,
-            'form' => $form->createView(),
+            'form' => $registrationForm->createView(),
         ]);
     }
+    /**
+     * @Route("/admin/{id}/edit", name="app_admin_edit", methods={"GET", "POST"})
+     */
+    public function edit_admin(Request $request, User $user,UserPasswordEncoderInterface $userPasswordEncoder, UserRepository $userRepository): Response
+    {
+        $registrationForm = $this->createForm(AdminRegistrationFormType::class, $user);
+        $registrationForm->handleRequest($request);
+
+        if ($registrationForm->isSubmitted() && $registrationForm->isValid()) {
+            $user->setPassword(
+                $userPasswordEncoder->encodePassword(
+                        $user,
+                        $registrationForm->get('plainPassword')->getData()
+                    )
+                );
+            $userRepository->add($user);
+            return $this->redirectToRoute('app_user_index', [], Response::HTTP_SEE_OTHER);
+        }
+
+        return $this->render('user/edit.html.twig', [
+            'user' => $user,
+            'registrationForm' => $registrationForm->createView(),
+        ]);
+    }
+
 
     /**
      * @Route("/{id}", name="app_user_delete", methods={"POST"})
