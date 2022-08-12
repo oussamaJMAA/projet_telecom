@@ -133,7 +133,16 @@ class CourseRepository extends ServiceEntityRepository
     return $a;
     
     }
-
+    public function recent_courses(){
+        $conn = $this->getEntityManager()
+        ->getConnection();
+        $sql = "select * from course order by id desc limit 3";
+        $statement = $conn->prepare($sql);
+        $resultSet = $statement->executeQuery();
+        $a= $resultSet->fetchAllAssociative();
+    return $a;
+    
+    }
     // /**
     //  * @return Course[] Returns an array of Course objects
     //  */
