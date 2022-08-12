@@ -38,6 +38,42 @@ class CourseController extends AbstractController
             'courses' => $courseRepository->findAll(),
         ]);
     }
+     /**
+     * @Route("/new", name="app_course_new", methods={"GET", "POST"})
+     */
+    public function new(Request $request, CourseRepository $courseRepository,MailerInterface $mailer): Response
+    {
+        $course = new Course();
+        $form = $this->createForm(CourseType::class, $course);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $file = $form->get('image')->getData();
+            $fileName = $this->generateUniqueFileName().'.'.$file->guessExtension();
+
+            // moves the file to the directory where brochures are stored
+        $file->move(
+                $this->getParameter('brochures_directory'),
+                $fileName
+            );
+        $course->setImage($fileName);
+        $courseRepository->add($course);
+       /* $email = (new Email())
+        ->from('roukaia@gmail.com')
+        ->to('roukaia.khelifi@esprit.tn')
+        ->subject('Theres a new course check it out')
+        ->html('<p>See Twig integration for better HTML integration!</p>');
+
+    $mailer->send($email);
+*/
+        return $this->redirectToRoute('app_course_index', [], Response::HTTP_SEE_OTHER);
+        }
+
+        return $this->render('course/new.html.twig', [
+            'course' => $course,
+            'form' => $form->createView(),
+        ]);
+    }
 
         /**
      * @Route("/course_front/liked/{id}", name="like_course", methods={"GET"})
@@ -126,42 +162,7 @@ class CourseController extends AbstractController
     }
     }
 
-    /**
-     * @Route("/new", name="app_course_new", methods={"GET", "POST"})
-     */
-    public function new(Request $request, CourseRepository $courseRepository,MailerInterface $mailer): Response
-    {
-        $course = new Course();
-        $form = $this->createForm(CourseType::class, $course);
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $file = $form->get('image')->getData();
-            $fileName = $this->generateUniqueFileName().'.'.$file->guessExtension();
-
-            // moves the file to the directory where brochures are stored
-        $file->move(
-                $this->getParameter('brochures_directory'),
-                $fileName
-            );
-        $course->setImage($fileName);
-        $courseRepository->add($course);
-       /* $email = (new Email())
-        ->from('roukaia@gmail.com')
-        ->to('roukaia.khelifi@esprit.tn')
-        ->subject('Theres a new course check it out')
-        ->html('<p>See Twig integration for better HTML integration!</p>');
-
-    $mailer->send($email);
-*/
-        return $this->redirectToRoute('app_course_index', [], Response::HTTP_SEE_OTHER);
-        }
-
-        return $this->render('course/new.html.twig', [
-            'course' => $course,
-            'form' => $form->createView(),
-        ]);
-    }
+   
 
     /**
      * @Route("/{id}", name="app_course_show", methods={"GET"})
