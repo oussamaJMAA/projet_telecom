@@ -1,0 +1,121 @@
+[{
+    "questions": "1. Firewalls can be of _______ kinds.",
+    "A choice": "a) 1",
+    "B choice": "b) 2",
+    "C choice": "c) 3",
+    "D choice": "d) 4",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Firewalls are of three kinds \u2013 one is the hardware firewalls, another is software firewalls and the other is a combination of both hardware and software."
+}, {
+    "questions": "2. _________________ is the kind of firewall is connected between the device and the network connecting to internet.",
+    "A choice": "a) Hardware Firewall",
+    "B choice": "b) Software Firewall",
+    "C choice": "c) Stateful Inspection Firewall",
+    "D choice": "d) Microsoft Firewall",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Hardware firewalls are those firewalls that need to be connected as additional hardware between the device through which the internet is coming to the system and the network used for connecting to the internet."
+}, {
+    "questions": "3. _________ is software that is installed using an internet connection or they come by-default with operating systems.",
+    "A choice": "a) Hardware Firewall",
+    "B choice": "b) Software Firewall",
+    "C choice": "c) Stateful Inspection Firewall",
+    "D choice": "d) Microsoft Firewall",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Software firewalls are those kinds of firewalls that are installed in the system using internet connection as we install normal applications and update them. Some operating system vendors provide default firewalls with their operating systems."
+}, {
+    "questions": "4. Which of the following is not a software firewall?",
+    "A choice": "a) Windows Firewall",
+    "B choice": "b) Outpost Firewall Pro",
+    "C choice": "c) Endian Firewall",
+    "D choice": "d) Linksys Firewall",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Windows Firewall, Outpost Firewall Pro and Endian Firewall are software firewalls that are installed in the system. Linksys firewall is not an example of a software firewall."
+}, {
+    "questions": "5. Firewall examines each ____________ that are entering or leaving the internal network.",
+    "A choice": "a) emails users",
+    "B choice": "b) updates",
+    "C choice": "c) connections",
+    "D choice": "d) data packets",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Firewalls examines each data packets that are entering or leaving the internal network which ultimately prevents unauthorized access."
+}, {
+    "questions": "6. A firewall protects which of the following attacks?",
+    "A choice": "a) Phishing",
+    "B choice": "b) Dumpster diving",
+    "C choice": "c) Denial of Service (DoS)",
+    "D choice": "d) Shoulder surfing",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Firewalls are used to protect the computer network and restricts illicit traffic. Denial of Service (DoS) attack is one such automated attack which a firewall with proper settings and the updated version can resist and stop from getting executed."
+}, {
+    "questions": "7. There are ______ types of firewall.",
+    "A choice": "a) 5",
+    "B choice": "b) 4",
+    "C choice": "c) 3",
+    "D choice": "d) 2",
+    "answers": "Answer: b",
+    "explanations": "Explanation: There are four types of firewall based on their working and characteristics. These are Packet Filtering Firewalls, Circuit Level Gateway Firewalls, Application level Gateway Firewalls, and Stateful Multilayer Inspection Firewalls."
+}, {
+    "questions": "8. Packet filtering firewalls are deployed on ________",
+    "A choice": "a) routers",
+    "B choice": "b) switches",
+    "C choice": "c) hubs",
+    "D choice": "d) repeaters",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Packet filtering firewalls are deployed on routers that help in connecting internal network worldwide via the internet."
+}, {
+    "questions": "9. In the ______________ layer of OSI model, packet filtering firewalls are implemented.",
+    "A choice": "a) Application layer",
+    "B choice": "b) Session layer",
+    "C choice": "c) Presentation layer",
+    "D choice": "d) Network layer",
+    "answers": "Answer: d",
+    "explanations": "Explanation: In the network layer, which is the third layer of the OSI (Open Systems Interconnection) model, packet filtering firewalls are implemented. "
+}, {
+    "questions": "10. The __________ defines the packet filtering firewall rules.",
+    "A choice": "a) Access Control List",
+    "B choice": "b) Protocols",
+    "C choice": "c) Policies",
+    "D choice": "d) Ports",
+    "answers": "Answer: a",
+    "explanations": "Explanation: The Access Control List is a table containing rules that instruct the firewall system to provide the right access. It checks all the packets and scans them against the defined rule set by Network administrator in the packet filtering firewall. "
+}, {
+    "questions": "11. ACL stands for _____________",
+    "A choice": "a) Access Condition List",
+    "B choice": "b) Anti-Control List",
+    "C choice": "c) Access Control Logs",
+    "D choice": "d) Access Control List",
+    "answers": "Answer: d",
+    "explanations": "Explanation: The Access Control List is a table containing to check all the packets and scans them against the defined rule set by Network administrator in any particular system or firewall."
+}, {
+    "questions": "12. When a packet does not fulfil the ACL criteria, the packet is _________",
+    "A choice": "a) resend",
+    "B choice": "b) dropped",
+    "C choice": "c) destroyed",
+    "D choice": "d) acknowledged as received",
+    "answers": "Answer: b",
+    "explanations": "Explanation: In the packet filtering firewall, when the rules defined by the Access Control List is not meet by any data packet, the packet is dropped & logs are updated in the firewall."
+}, {
+    "questions": "13. Network administrators can create their own ACL rules based on _______  ________ and _______",
+    "A choice": "a) Address, Protocols and Packet attributes",
+    "B choice": "b) Address, Protocols and security policies",
+    "C choice": "c) Address, policies and Packet attributes",
+    "D choice": "d) Network topology, Protocols and data packets",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Network administrators can create their own ACL rules based on Address, Protocols and Packet attributes. This is generally done where the specific customised type of data packets need to pass through firewall screening."
+}, {
+    "questions": "14. One advantage of Packet Filtering firewall is __________",
+    "A choice": "a) more efficient",
+    "B choice": "b) less complex",
+    "C choice": "c) less costly",
+    "D choice": "d) very fast",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Packet filtering firewalls are more advantageous because they are less costly and they use fewer resources and are used effectively in small networks."
+}, {
+    "questions": "15. Packet filtering firewalls work effectively in _________ networks.",
+    "A choice": "a) very simple",
+    "B choice": "b) smaller",
+    "C choice": "c) large",
+    "D choice": "d) very large complex",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Packet Filtering Firewalls are applied within routers which connect the internal Network system with the outside network using the internet. It works effectively if the internal network is smaller in size."
+}]

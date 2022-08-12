@@ -1,0 +1,65 @@
+[{
+    "questions": "1. Authentication in PCT requires _____ keys.",
+    "A choice": "a) 1",
+    "B choice": "b) 2",
+    "C choice": "c) 3",
+    "D choice": "d) 4",
+    "answers": "Answer: b",
+    "explanations": "Explanation: For message encryption using PCT it requires two separate keys. Moreover, PCT has more options for data formats and security algorithms."
+}, {
+    "questions": "2. The latest version of TLS is _____",
+    "A choice": "a) version 1.1",
+    "B choice": "b) version 1.2",
+    "C choice": "c) version 2.1",
+    "D choice": "d) version 1.3",
+    "answers": "Answer: b",
+    "explanations": "Explanation: The latest standard version of TLS is version 1.2. Version 1.3 is still in the development stage."
+}, {
+    "questions": "3. SIP is abbreviated as __________",
+    "A choice": "a) Session Initiation Protocol",
+    "B choice": "b) Secured Initiation Protocol",
+    "C choice": "c) Secure Initiation Protocol",
+    "D choice": "d) Session Integration Protocol",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Session Initiation Protocol is an important protocol used for starting, preserving and terminating any real time sessions over the internet."
+}, {
+    "questions": "4. In which of the following cases Session Initiation Protocol is not used?",
+    "A choice": "a) Instant Messaging",
+    "B choice": "b) Voice over LTE (VoLTE)",
+    "C choice": "c) Internet telephony",
+    "D choice": "d) Data Transferring",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Session Initiation Protocol is used as real-time session maintaining and is used voice, video as well as messaging applications for controlling multimedia communication sessions."
+}, {
+    "questions": "5. SRTP is abbreviated as ________",
+    "A choice": "a) Secure Relay Transport Protocol",
+    "B choice": "b) Secure Real-time Transferring Protocol",
+    "C choice": "c) Secure Real-time Transport Protocol",
+    "D choice": "d) Secure Real-time Transportation Protocol",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Secure Real-time Transport Protocol is a real-time multimedia delivery protocol with encryption for message integrity and authentication. It is used mostly in entertainment systems and streaming media and sites."
+}, {
+    "questions": "6. ESP is abbreviated as ____________",
+    "A choice": "a) Encapsulating Security Payload",
+    "B choice": "b) Encapsulating Secure Protocol",
+    "C choice": "c) Encrypted Secure Payload",
+    "D choice": "d) Encapsulating Secure Payload",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Encapsulating Secure Payload is a special type of protocol used for offering integrity, authentication, and confidentiality to network packets\u2019 data in IPSec (Secure Internet Protocol)."
+}, {
+    "questions": "7. ________ is the entity for issuing digital certificates.",
+    "A choice": "a) Certificate Authority (CA)",
+    "B choice": "b) Cert Authority (CA)",
+    "C choice": "c) Cert Authorization (CA)",
+    "D choice": "d) Certificate Authorization (CA)",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Digital certificates are used for certifying the ownership of a public key and the entity who issue those certificates is the Certificate Authority."
+}, {
+    "questions": "8. IKE is abbreviated as Internet Key Exchange.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: a",
+    "explanations": "Explanation: Internet Key Exchange is a security protocol used for setting up a security association in the Secure IP protocol. IKE = Key Management Protocol (KMP) + Security Association (SA)."
+}]

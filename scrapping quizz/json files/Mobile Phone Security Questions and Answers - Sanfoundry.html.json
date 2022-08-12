@@ -1,0 +1,121 @@
+[{
+    "questions": "1. Which of the following is not an appropriate way of targeting a mobile phone for hacking?",
+    "A choice": "a) Target mobile hardware vulnerabilities",
+    "B choice": "b) Target apps\u2019 vulnerabilities",
+    "C choice": "c) Setup Keyloggers and spyware in smart-phones",
+    "D choice": "d) Snatch the phone",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Snatching is not a type of hacking any smart-phone. Targeting the hardware and application level vulnerabilities and setting some keylogger or spyware in the target mobile can help get valuable info about the victim."
+}, {
+    "questions": "2. Which of the following is not an OS for mobile?",
+    "A choice": "a) Palm",
+    "B choice": "b) Windows",
+    "C choice": "c) Mango",
+    "D choice": "d) Android",
+    "answers": "Answer: c",
+    "explanations": "Explanation: A mobile\/smart-phone operating system is software which allows smart-phones, tablets, phablets & other devices to run apps & programs within it. Palm OS, Windows OS, and Android OS are some of the examples of Mobile OS."
+}, {
+    "questions": "3. Mobile Phone OS contains open APIs that may be _____________ attack.",
+    "A choice": "a) useful for",
+    "B choice": "b) vulnerable to",
+    "C choice": "c) easy to",
+    "D choice": "d) meant for",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Mobile phone operating systems contain open APIs that or may be vulnerable to different attacks. OS has a number of connectivity mechanisms through which attackers can spread malware. "
+}, {
+    "questions": "4. ____________ gets propagated through networks and technologies like SMS, Bluetooth, wireless medium, USBs and infrared to affect mobile phones.",
+    "A choice": "a) Worms",
+    "B choice": "b) Antivirus",
+    "C choice": "c) Malware",
+    "D choice": "d) Multimedia files",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Malware gets propagated through networks and technologies like SMS, Bluetooth, wireless medium, USBs and infrared to affect mobile phones."
+}, {
+    "questions": "5. ____________ is the protection of smart-phones, phablets, tablets, and other portable tech-devices, & the networks to which they connect to, from threats & bugs.",
+    "A choice": "a) OS Security",
+    "B choice": "b) Database security",
+    "C choice": "c) Cloud security",
+    "D choice": "d) Mobile security",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Mobile security is the protection of smart-phones, phablets, tablets, and other portable tech-devices, & the networks to which they connect to, from threats & bugs."
+}, {
+    "questions": "6. Mobile security is also known as ____________",
+    "A choice": "a) OS Security",
+    "B choice": "b) Wireless security",
+    "C choice": "c) Cloud security",
+    "D choice": "d) Database security",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Mobile security also known as wireless security is the protection of smart-phones, phablets, tablets, and other portable tech-devices, & the networks to which they connect to, from threats & bugs."
+}, {
+    "questions": "7. DDoS in mobile systems wait for the owner of the _____________ to trigger the attack.",
+    "A choice": "a) worms",
+    "B choice": "b) virus",
+    "C choice": "c) botnets",
+    "D choice": "d) programs",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Botnets on compromised mobile devices wait for instructions from their owner. After getting the owner\u2019s instruction it launches DDoS flood attack. This result in a failure in connecting calls or transmitting data."
+}, {
+    "questions": "8. Hackers cannot do which of the following after compromising your phone?",
+    "A choice": "a) Steal your information",
+    "B choice": "b) Rob your e-money",
+    "C choice": "c) Shoulder surfing",
+    "D choice": "d) Spying",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Shoulder surfing is done before compromising the mobile. So, hackers can steal your information; rob your e-money or do spying after compromising your smart-phone."
+}, {
+    "questions": "9. Hackers cannot do which of the following after compromising your phone?",
+    "A choice": "a) Shoulder surfing",
+    "B choice": "b) Accessing your voice mail",
+    "C choice": "c) Steal your information",
+    "D choice": "d) Use your app credentials",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Shoulder surfing is done before compromising the mobile. So, hackers can steal your information; accessing your voice mail or use your app credentials after compromising your smart-phone."
+}, {
+    "questions": "10. App permissions can cause trouble as some apps may secretly access your memory card or contact data.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: a",
+    "explanations": "Explanation: App permissions can cause trouble as some apps may secretly access your memory card or contact data. Almost all applications nowadays ask for such permission, so make sure you do a proper survey on these apps before allowing such access. "
+}, {
+    "questions": "11. Activate _____________ when you\u2019re required it to use, otherwise turn it off for security purpose.",
+    "A choice": "a) Flash Light",
+    "B choice": "b) App updates",
+    "C choice": "c) Bluetooth",
+    "D choice": "d) Rotation",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Activate Bluetooth when you\u2019re required it to use, otherwise turn it off for security purpose. This is because; there are various tools and vulnerabilities that may gain access to your smart-phone using Bluetooth."
+}, {
+    "questions": "12. Try not to keep ________________ passwords, especially fingerprint for your smart-phone, because it can lead to physical hacking if you\u2019re not aware or asleep.",
+    "A choice": "a) Biometric",
+    "B choice": "b) PIN-based",
+    "C choice": "c) Alphanumeric",
+    "D choice": "d) Short",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Try not to keep biometric passwords, especially fingerprint for your smart-phone containing very confidential data, because anyone can do physical hacking if you\u2019re not aware or asleep."
+}, {
+    "questions": "13. Which of the following tool is used for Blackjacking?",
+    "A choice": "a) BBAttacker",
+    "B choice": "b) BBProxy",
+    "C choice": "c) Blackburried",
+    "D choice": "d) BBJacking",
+    "answers": "Answer: b",
+    "explanations": "Explanation: BBProxy (installed on blackberry phones) is the name of the tool used to conduct blackjacking. What attackers do is they install BBProxy on user\u2019s blackberry and once the tool is activated it opens a covert channel between the hacker and the compromised host."
+}, {
+    "questions": "14. BBProxy tool is used in which mobile OS?",
+    "A choice": "a) Android",
+    "B choice": "b) Symbian",
+    "C choice": "c) Raspberry",
+    "D choice": "d) Blackberry",
+    "answers": "Answer: d",
+    "explanations": "Explanation: BBProxy (installed on blackberry phones) is the name of the tool used to conduct blackjacking. What attackers do is they install BBProxy on user\u2019s blackberry and once the tool is activated it opens a covert channel between the hacker and the compromised host."
+}, {
+    "questions": "15. Which of the following is not a security issue for PDAs?",
+    "A choice": "a) Password theft",
+    "B choice": "b) Data theft",
+    "C choice": "c) Reverse engineering",
+    "D choice": "d) Wireless vulnerability",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Reverse engineering is not an issue of PDA (Personal Digital Assistant). Password theft, data theft, wireless vulnerability exploitation, data corruption using virus are some of them."
+}]

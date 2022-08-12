@@ -1,0 +1,81 @@
+[{
+    "questions": "1. _______ is the practice and precautions taken to protect valuable information from unauthorised access, recording, disclosure or destruction.",
+    "A choice": "a) Network Security",
+    "B choice": "b) Database Security",
+    "C choice": "c) Information Security",
+    "D choice": "d) Physical Security",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Information Security (abbreviated as InfoSec) is a process or set of processes used for protecting valuable information for alteration, destruction, deletion or disclosure by unauthorised users."
+}, {
+    "questions": "2. From the options below, which of them is not a threat to information security?",
+    "A choice": "a) Disaster",
+    "B choice": "b) Eavesdropping",
+    "C choice": "c) Information leakage",
+    "D choice": "d) Unchanged default password",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Disaster, eavesdropping and information leakage come under information security threats whereas not changing the default password of any system, hardware or any software comes under the category of vulnerabilities that the user may pose to its system."
+}, {
+    "questions": "3. From the options below, which of them is not a vulnerability to information security?",
+    "A choice": "a) flood",
+    "B choice": "b) without deleting data, disposal of storage media",
+    "C choice": "c) unchanged default password",
+    "D choice": "d) latest patches and updates not done",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Flood comes under natural disaster which is a threat to any information and not acts as a vulnerability to any system."
+}, {
+    "questions": "4. _____ platforms are used for safety and protection of information in the cloud.",
+    "A choice": "a) Cloud workload protection platforms",
+    "B choice": "b) Cloud security protocols",
+    "C choice": "c) AWS",
+    "D choice": "d) One Drive",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Nowadays data centres support workloads from different geographic locations across the globe through physical systems, virtual machines, servers, and clouds. Their security can be managed using Cloud workload protection platforms which manage policies regarding security of information irrespective of its location."
+}, {
+    "questions": "5. Which of the following information security technology is used for avoiding browser-based hacking?",
+    "A choice": "a) Anti-malware in browsers",
+    "B choice": "b) Remote browser access",
+    "C choice": "c) Adware remover in browsers",
+    "D choice": "d) Incognito mode in a browser",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Cyber-criminals target browsers for breaching information security. If a user establishes a remote browsing by isolating the browsing session of end user, cyber-criminals will not be able to infect the system along with browser with malware, ultimately reducing the attack surface area."
+}, {
+    "questions": "6. The full form of EDR is _______",
+    "A choice": "a) Endpoint Detection and recovery",
+    "B choice": "b) Early detection and response",
+    "C choice": "c) Endpoint Detection and response",
+    "D choice": "d) Endless Detection and Recovery",
+    "answers": "Answer: c",
+    "explanations": "Explanation: It is a collective name for tools that monitor networks & endpoints of systems and record all the activities for further reporting, analysis & detection in a central database. Analyzing the reports generated through such EDR tools, loopholes in a system or any internal, as well as external breaching attempts can be detected."
+}, {
+    "questions": "7. _______ technology is used for analyzing and monitoring traffic in network and information flow.",
+    "A choice": "a) Cloud access security brokers (CASBs)",
+    "B choice": "b) Managed detection and response (MDR)",
+    "C choice": "c) Network Security Firewall",
+    "D choice": "d) Network traffic analysis (NTA)",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Network traffic analysis (NTA) is an approach of information security for supervising the traffic in any network, a flow of data over the network as well as malicious threats that are trying to breach the network. This technological solution also helps in triage the events detected by Network Traffic Analysing tools."
+}, {
+    "questions": "8. Compromising confidential information comes under _________",
+    "A choice": "a) Bug",
+    "B choice": "b) Threat",
+    "C choice": "c) Vulnerability",
+    "D choice": "d) Attack",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Threats are anything that may cause damage or harm to a computer system, individual or any information. Compromising of confidential information means extracting out sensitive data from a system by illegal manner."
+}, {
+    "questions": "9. Lack of access control policy is a _____________",
+    "A choice": "a) Bug",
+    "B choice": "b) Threat",
+    "C choice": "c) Vulnerability",
+    "D choice": "d) Attack",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Access control policies are incorporated to a security system for restricting of unauthorised access to any logical or physical system. Every security compliance program must need this as a fundamental component. Those systems which lack this feature is vulnerable.  "
+}, {
+    "questions": "10. Possible threat to any information cannot be ________________",
+    "A choice": "a) reduced",
+    "B choice": "b) transferred",
+    "C choice": "c) protected",
+    "D choice": "d) ignored",
+    "answers": "Answer: d",
+    "explanations": "Explanation: When there lies a threat to any system, safeguards can be implemented, outsourced, distributed or transferred to some other system, protected using security tools and techniques but cannot be ignored."
+}]

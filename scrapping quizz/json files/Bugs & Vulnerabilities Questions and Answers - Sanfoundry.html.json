@@ -1,0 +1,121 @@
+[{
+    "questions": "1. ___________ is a weakness that can be exploited by attackers.",
+    "A choice": "a) System with Virus",
+    "B choice": "b) System without firewall",
+    "C choice": "c) System with vulnerabilities",
+    "D choice": "d) System with a strong password",
+    "answers": "Answer: c",
+    "explanations": "Explanation: In cyber-security, a system having vulnerabilities is defined as the weakness in a system that can be exploited by cyber-criminals and attackers for their own benefit. For this, they use special tools and techniques in order to crack into the system through the vulnerabilities."
+}, {
+    "questions": "2. _________ is the sum of all the possible points in software or system where unauthorized users can enter as well as extract data from the system.",
+    "A choice": "a) Attack vector",
+    "B choice": "b) Attack surface",
+    "C choice": "c) Attack point",
+    "D choice": "d) Attack arena",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Attack surface can be defined as the sum of all the possible points in software or system where unauthorized users can enter as well as extract data from the system. More the security, lesser is the attack surface."
+}, {
+    "questions": "3. ____________ is the cyclic practice for identifying & classifying and then solving the vulnerabilities in a system.",
+    "A choice": "a) Bug protection",
+    "B choice": "b) Bug bounty",
+    "C choice": "c) Vulnerability measurement",
+    "D choice": "d) Vulnerability management",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Vulnerability management is a cyclic process for identifying & classifying and then solving the vulnerabilities in a system. This term is generally used in software vulnerability detection and resolving process."
+}, {
+    "questions": "4. Risk and vulnerabilities are the same things.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: b",
+    "explanations": "Explanation: Risk and vulnerability cannot be used interchangeably. Risk can be defined as the potential of an impact that can grow from exploiting the vulnerability. There is some vulnerability that doesn\u2019t possess risk, known as \u201cVulnerabilities without risk\u201d."
+}, {
+    "questions": "5. _____________ is a special type of vulnerability that doesn\u2019t possess risk.",
+    "A choice": "a) Vulnerabilities without risk",
+    "B choice": "b) Vulnerabilities without attacker",
+    "C choice": "c) Vulnerabilities without action",
+    "D choice": "d) Vulnerabilities no one knows",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Vulnerabilities is defined as the weakness in a system that can be exploited by cyber-criminals and attackers. Risk can be defined as the potential of an impact that can grow from exploiting the vulnerability. There is some vulnerability that doesn\u2019t possess risk, known as \u201cVulnerabilities without risk\u201d."
+}, {
+    "questions": "6. A\/An __________ is a piece of software or a segment of command that usually take advantage of a bug to cause unintended actions and behaviors.",
+    "A choice": "a) malware",
+    "B choice": "b) trojan",
+    "C choice": "c) worms",
+    "D choice": "d) exploit",
+    "answers": "Answer: d",
+    "explanations": "Explanation: An exploit is a piece of software or a segment of command that usually take advantage of a bug to cause unintended actions and behaviors. Using exploits, attackers can gain access in a system or allow privilege escalation also."
+}, {
+    "questions": "7. There are ________ types of exploit.",
+    "A choice": "a) 3",
+    "B choice": "b) 2",
+    "C choice": "c) 5",
+    "D choice": "d) 4",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Exploits can be categorized based on various criteria. But the most prominent categorization is done by how exploits communicate with vulnerable software. These are categorized as local exploits and remote exploits."
+}, {
+    "questions": "8. Remote exploits is that type of exploits acts over any network to exploit on security vulnerability.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: a",
+    "explanations": "Explanation: Remote exploits is that type of exploits which uses internet for exploiting on security vulnerability without gaining any prior access to the target system."
+}, {
+    "questions": "9. ________ type of exploit requires accessing to any vulnerable system for enhancing privilege for an attacker to run the exploit.",
+    "A choice": "a) Local exploits",
+    "B choice": "b) Remote exploits",
+    "C choice": "c) System exploits",
+    "D choice": "d) Network exploits",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Local exploits are those type of exploit requires accessing to any vulnerable system for enhancing privilege for an attacker to run the exploit. They\u2019ve to pass through granted system administration in order to harm the system."
+}, {
+    "questions": "10. ___________ is a technique used by penetration testers to compromise any system within a network for targeting other systems.",
+    "A choice": "a) Exploiting",
+    "B choice": "b) Cracking",
+    "C choice": "c) Hacking",
+    "D choice": "d) Pivoting",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Pivoting is a technique used by penetration testers to compromise any system within a network for targeting other systems. They test systems within the same network for vulnerabilities using this technique."
+}, {
+    "questions": "11. A _________ is a software bug that attackers can take advantage to gain unauthorized access in a system.",
+    "A choice": "a) System error",
+    "B choice": "b) Bugged system",
+    "C choice": "c) Security bug",
+    "D choice": "d) System virus",
+    "answers": "Answer: c",
+    "explanations": "Explanation: A security bug is a software bug that attackers can take advantage to gain unauthorized access in a system. They can harm all legitimate users, compromise data confidentiality and integrity."
+}, {
+    "questions": "12. Security bugs are also known as _______",
+    "A choice": "a) security defect",
+    "B choice": "b) security problems",
+    "C choice": "c) system defect",
+    "D choice": "d) software error",
+    "answers": "Answer: a",
+    "explanations": "Explanation: A security bug also known as security defect is a software bug that attackers can take advantage to gain unauthorized access in a system. They can harm legitimate users, compromise data confidentiality and integrity."
+}, {
+    "questions": "13. __________ is the timeframe from when the loophole in security was introduced till the time when the bug was fixed.",
+    "A choice": "a) Time-frame of vulnerability",
+    "B choice": "b) Window of vulnerability",
+    "C choice": "c) Time-lap of vulnerability",
+    "D choice": "d) Entry-door of vulnerability",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Window of vulnerability is the timeframe from when the loophole in security was introduced or released till the time when the bug was fixed, or the illicit access was removed or the attacker was disabled. "
+}, {
+    "questions": "14. ISMS is abbreviated as __________",
+    "A choice": "a) Information Server Management System",
+    "B choice": "b) Information Security Management Software",
+    "C choice": "c) Internet Server Management System",
+    "D choice": "d) Information Security Management System",
+    "answers": "Answer: d",
+    "explanations": "Explanation: ISMS (Information Security Management System) is a set of policies concerning various information security management. ISMS (Information Security Management System) was developed for managing risk management principles and countermeasures for ensuring security through rules and regulations. "
+}, {
+    "questions": "15. A zero-day vulnerability is a type of vulnerability unknown to the creator or vendor of the system or software.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: a",
+    "explanations": "Explanation: Zero-day vulnerability is a type of vulnerability unknown to the creator or vendor of the system or software. Until such bugs get fixed, hackers take advantage of these vulnerabilities to exploit the system."
+}]

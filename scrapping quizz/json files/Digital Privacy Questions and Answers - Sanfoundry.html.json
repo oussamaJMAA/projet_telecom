@@ -1,0 +1,121 @@
+[{
+    "questions": "1. _______________deals with the protection of an individual\u2019s information which is implemented while using the Internet on any computer or personal device.",
+    "A choice": "a) Digital agony",
+    "B choice": "b) Digital privacy",
+    "C choice": "c) Digital secrecy",
+    "D choice": "d) Digital protection",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Digital Privacy deals with the protection of an individual\u2019s information which is implemented while using the Internet on any computer or personal device."
+}, {
+    "questions": "2. _______________ is a combined term which encompasses 3 sub-pillars; information privacy, individual privacy, and communication privacy.",
+    "A choice": "a) Digital Integrity",
+    "B choice": "b) Digital privacy",
+    "C choice": "c) Digital secrecy",
+    "D choice": "d) Digital protection",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Digital Privacy is a combined term which encompasses 3 sub-pillars; information privacy, individual privacy, and communication privacy where all of them deal with the protection of an individual\u2019s information."
+}, {
+    "questions": "3. Which of the following do not comes under the three pillars of digital privacy?",
+    "A choice": "a) Information privacy",
+    "B choice": "b) Individual privacy",
+    "C choice": "c) Communication privacy",
+    "D choice": "d) Family privacy",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Digital Privacy encompasses 3 sub-pillars; information privacy, individual privacy, and communication privacy. Family privacy is not a part of its 3-pillars."
+}, {
+    "questions": "4. Which of the following is not an appropriate solution for preserving privacy?",
+    "A choice": "a) Use privacy-focussed SE",
+    "B choice": "b) Use private Browser-window",
+    "C choice": "c) Disable cookies",
+    "D choice": "d) Uninstall Antivirus",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Preserving data privacy needs some appropriate which are by using privacy-focussed search engines, using private browser window and by disabling cookies."
+}, {
+    "questions": "5. Which of the following is not an appropriate solution for preserving privacy?",
+    "A choice": "a) Use privacy-focussed SE",
+    "B choice": "b) Close all logical ports",
+    "C choice": "c) Do not use malicious sites and torrent sites",
+    "D choice": "d) Use VPN",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Closing of all logical ports is done to secure system from Trojans. Some appropriate way out for preserving privacy is by using VPNs, using private browser window & by disabling cookies also."
+}, {
+    "questions": "6. Which of the following is not a private Search-engine?",
+    "A choice": "a) Yahoo",
+    "B choice": "b) DuckDuckGo",
+    "C choice": "c) StartPage",
+    "D choice": "d) Wolfram Alpha",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Digital Privacy includes information privacy, individual privacy & communication privacy. One appropriate solution for preserving privacy is by using privacy-focussed search engines like DuckDuckGo, StartPage and Wolfram Alpha. "
+}, {
+    "questions": "7. Which of the following is a private Search-engine and do not track our searching data?",
+    "A choice": "a) Google",
+    "B choice": "b) Search Encrypt",
+    "C choice": "c) Bing",
+    "D choice": "d) Yahoo",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Digital Privacy can be preserved in different ways. Few suitable solutions for preserving privacy are by using privacy-focussed search engines like Search Encrypt, DuckDuckGo, StartPage and Wolfram Alpha."
+}, {
+    "questions": "8. It is necessary to use ________________ for maintaining searched data privacy.",
+    "A choice": "a) Private email services",
+    "B choice": "b) Private search engines",
+    "C choice": "c) Tor Browser",
+    "D choice": "d) Private Browser window",
+    "answers": "Answer: b",
+    "explanations": "Explanation: It is necessary to use private search engines for maintaining searched data privacy. They do not keep track of your searched terms or your browsing behaviour and habits. Examples are like Search Encrypt, DuckDuckGo, StartPage and Wolfram Alpha."
+}, {
+    "questions": "9. Which of the following browser is used for Privacy purpose?",
+    "A choice": "a) Chrome",
+    "B choice": "b) Firefox",
+    "C choice": "c) Opera",
+    "D choice": "d) Tor",
+    "answers": "Answer: d",
+    "explanations": "Explanation: In the complex world where e-privacy is a concern, one should preserve their online privacy. Some appropriate measures for preserving privacy are by using browsers like Tor and by disabling cookies."
+}, {
+    "questions": "10. The Tor browser protects your privacy by bouncing your connection and links around a distributed network over the globe run by volunteers. It gives three layers of anonymity.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: a",
+    "explanations": "Explanation: The Tor browser protects your privacy by bouncing your connection and links around a distributed network over the globe run by volunteers. It gives three layers of anonymity."
+}, {
+    "questions": "11. The __________________ protects your privacy by bouncing your connection and links around a distributed network over the globe run by volunteers. It gives three layers of anonymity.",
+    "A choice": "a) Cookie removers",
+    "B choice": "b) Private Search Engines",
+    "C choice": "c) Tor browser",
+    "D choice": "d) VPNs",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Privacy of data and communication is a major concern nowadays. The Tor browser protects your privacy by bouncing your connection and links around a distributed network over the globe run by volunteers."
+}, {
+    "questions": "12. Which of the following is not an example of privacy-browser?",
+    "A choice": "a) Tor",
+    "B choice": "b) Brave",
+    "C choice": "c) Epic",
+    "D choice": "d) Opera",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Digital Privacy gets eliminated if you are using usual browsers that do not have encrypted security measures to preserve your piracy. One appropriate solution for preserving privacy is by using browsers like Tor, Brave and Epic."
+}, {
+    "questions": "13. ____________ allow its users to attach to the internet via a remote or virtual server which preserves privacy.",
+    "A choice": "a) Cookie removers",
+    "B choice": "b) VPNs",
+    "C choice": "c) Tor browser",
+    "D choice": "d) Private Search Engines",
+    "answers": "Answer: b",
+    "explanations": "Explanation: There is a suitable solution for preserving privacy is by using privacy-focussed search engines, and by using VPNs. VPNs allow its users to attach to the internet via a remote or virtual server which preserves privacy."
+}, {
+    "questions": "14. The ____________ transferred between your device & the server is securely encrypted if you are using VPNs.",
+    "A choice": "a) data",
+    "B choice": "b) virus",
+    "C choice": "c) music files",
+    "D choice": "d) document files",
+    "answers": "Answer: a",
+    "explanations": "Explanation: VPNs allow its users to attach to the internet via a remote or virtual server which preserves privacy. The data transferred between your device & the server is securely encrypted if you are using VPNs."
+}, {
+    "questions": "15. The data transferred between your device & the server is securely _____________ if you\u2019re using VPNs.",
+    "A choice": "a) locked",
+    "B choice": "b) sealed",
+    "C choice": "c) packed",
+    "D choice": "d) encrypted",
+    "answers": "Answer: d",
+    "explanations": "Explanation: VPNs allow its users to attach to the internet via a remote or virtual server which preserves privacy. If you are using VPN, the data between your device & the server gets securely transmitted."
+}]

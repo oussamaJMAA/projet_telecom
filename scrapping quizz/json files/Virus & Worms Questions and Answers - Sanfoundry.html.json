@@ -1,0 +1,121 @@
+[{
+    "questions": "1. There are _________ types of computer virus.",
+    "A choice": "a) 5",
+    "B choice": "b) 7",
+    "C choice": "c) 10",
+    "D choice": "d) 12",
+    "answers": "Answer: c",
+    "explanations": "Explanation: There are a total of 10 types of virus. These are categorized based on their working and characteristics. These are System or Boot Sector Virus, Direct Action Virus, Resident Virus, Multipartite Virus, Polymorphic Virus, Overwrite Virus, Space-filler Virus, File infectors, Macro Virus, Rootkit virus."
+}, {
+    "questions": "2. Which of the following is not a type of virus?",
+    "A choice": "a) Boot sector",
+    "B choice": "b) Polymorphic",
+    "C choice": "c) Multipartite",
+    "D choice": "d) Trojans",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Types of viruses are System or Boot Sector Virus, Direct Action Virus, Resident Virus, Multipartite Virus, Polymorphic Virus, Overwrite Virus, Space-filler Virus, File infectors, Macro Virus, Rootkit virus. Trojan does not come under types of virus."
+}, {
+    "questions": "3. A computer ________ is a malicious code which self-replicates by copying itself to other programs.",
+    "A choice": "a) program",
+    "B choice": "b) virus",
+    "C choice": "c) application",
+    "D choice": "d) worm",
+    "answers": "Answer: b",
+    "explanations": "Explanation: A computer virus is a malicious code which self-replicates by copying itself to other programs. The computer virus gets spread by itself into other executable code or documents. The intention of creating a virus is to infect vulnerable systems."
+}, {
+    "questions": "4. Which of them is not an ideal way of spreading the virus?",
+    "A choice": "a) Infected website",
+    "B choice": "b) Emails",
+    "C choice": "c) Official Antivirus CDs",
+    "D choice": "d) USBs",
+    "answers": "Answer: c",
+    "explanations": "Explanation: The ideal means of spreading computer virus are through emails, USB drives that are used portable and injected and ejected in different systems as well as from infected websites. Antivirus selling vendors do not place a virus in their CDs and DVDs."
+}, {
+    "questions": "5. In which year Apple II virus came into existence?",
+    "A choice": "a) 1979",
+    "B choice": "b) 1980",
+    "C choice": "c) 1981",
+    "D choice": "d) 1982",
+    "answers": "Answer: c",
+    "explanations": "Explanation: In mid-1981, the 1st virus for Apple computers with the name Apple II came into existence. It was also called Elk Cloner, which resided in the boot sectors of a 3.3 floppy disk. "
+}, {
+    "questions": "6. In mid-1981, the 1st virus for Apple computers with the name _________ came into existence.",
+    "A choice": "a) Apple I",
+    "B choice": "b) Apple II",
+    "C choice": "c) Apple III",
+    "D choice": "d) Apple Virus",
+    "answers": "Answer: b",
+    "explanations": "Explanation: In mid-1981, the 1st virus for Apple computers with the name Apple II came into existence. It was also called Elk Cloner, which resided in the boot sectors of a 3.3 floppy disk."
+}, {
+    "questions": "7. The virus hides itself from getting detected by ______ different ways.",
+    "A choice": "a) 2",
+    "B choice": "b) 3",
+    "C choice": "c) 4",
+    "D choice": "d) 5",
+    "answers": "Answer: b",
+    "explanations": "Explanation: The virus hides itself from getting detected in three different ways. These are by encrypting itself, by altering the disk directory with additional virus bytes or it uses stealth algorithm to redirect disk data."
+}, {
+    "questions": "8. _______________ infects the master boot record and it is challenging and a complex task to remove this virus.",
+    "A choice": "a) Boot Sector Virus",
+    "B choice": "b) Polymorphic",
+    "C choice": "c) Multipartite",
+    "D choice": "d) Trojans",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Boot Sector Virus infects the master boot record & it is a challenging & a complex task to remove such virus. Mostly such virus spreads through removable devices."
+}, {
+    "questions": "9. ________________ gets installed & stays hidden in your computer\u2019s memory. It stays involved to the specific type of files which it infects.",
+    "A choice": "a) Boot Sector Virus",
+    "B choice": "b) Direct Action Virus",
+    "C choice": "c) Polymorphic Virus",
+    "D choice": "d) Multipartite Virus",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Direct Action Virus gets installed & stays hidden in your computer\u2019s memory. Such type of virus stays involved to the specific type of files which it infects."
+}, {
+    "questions": "10. Direct Action Virus is also known as ___________",
+    "A choice": "a) Non-resident virus",
+    "B choice": "b) Boot Sector Virus",
+    "C choice": "c) Polymorphic Virus",
+    "D choice": "d) Multipartite Virus",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Direct Action Virus is also known as a non-resident virus which gets installed & stays hidden in your computer\u2019s memory. Such type of virus stays involved to the specific type of files which it infects."
+}, {
+    "questions": "11. ______________ infects the executables as well as the boot sectors.",
+    "A choice": "a) Non-resident virus",
+    "B choice": "b) Boot Sector Virus",
+    "C choice": "c) Polymorphic Virus",
+    "D choice": "d) Multipartite Virus",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Multipartite Virus infects the executables as well as the boot sectors. It infects the computer or get into any system through multiple mediums and are hard to remove."
+}, {
+    "questions": "12. ______________ are difficult to identify as they keep on changing their type and signature.",
+    "A choice": "a) Non-resident virus",
+    "B choice": "b) Boot Sector Virus",
+    "C choice": "c) Polymorphic Virus",
+    "D choice": "d) Multipartite Virus",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Polymorphic Virus is difficult to identify as they keep on changing their type and signature. They\u2019re not easily detectable by traditional antivirus. It usually changes the signature pattern whenever it replicates itself."
+}, {
+    "questions": "13. ____________ deletes all the files that it infects.",
+    "A choice": "a) Non-resident virus",
+    "B choice": "b) Overwrite Virus",
+    "C choice": "c) Polymorphic Virus",
+    "D choice": "d) Multipartite Virus",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Overwrite virus deletes all files that it infects. It can be removed by only deleting those infected files. Mostly, it gets spread via emails."
+}, {
+    "questions": "14. _____________ is also known as cavity virus.",
+    "A choice": "a) Non-resident virus",
+    "B choice": "b) Overwrite Virus",
+    "C choice": "c) Polymorphic Virus",
+    "D choice": "d) Space-filler Virus",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Space-fillers are a special type of virus which usually does not cause any serious harm to the system except it fills up the empty space in memory and codes leading to wastage of memory."
+}, {
+    "questions": "15. Which of the below-mentioned reasons do not satisfy the reason why people create a computer virus?",
+    "A choice": "a) Research purpose",
+    "B choice": "b) Pranks",
+    "C choice": "c) Identity theft",
+    "D choice": "d) Protection",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Computer virus is not created for protection. Virus writers may have other reasons like for research purpose, pranks, vandalism, financial gain, identity theft, and some other malicious purposes."
+}]

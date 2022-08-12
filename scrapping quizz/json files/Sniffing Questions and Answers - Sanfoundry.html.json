@@ -1,0 +1,121 @@
+[{
+    "questions": "1. _____________ is data interception method used by hackers.",
+    "A choice": "a) Phishing",
+    "B choice": "b) DoS",
+    "C choice": "c) Sniffing",
+    "D choice": "d) MiTM",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Sniffing is data interception method used by hackers. Sniffing is the method used to monitor & capture all data packets passing through any target network using sniffing tools."
+}, {
+    "questions": "2. Sniffing is also known as ___________________",
+    "A choice": "a) network-tapping",
+    "B choice": "b) wiretapping",
+    "C choice": "c) net-tapping",
+    "D choice": "d) wireless-tapping",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Sniffing which is also known as wiretapping is data interception method used by hackers. It is a technique used for monitoring & capturing all data packets passing through any target network."
+}, {
+    "questions": "3. _____________ are programs or devices that capture the vital information from the target network or particular network.",
+    "A choice": "a) Routers",
+    "B choice": "b) Trappers",
+    "C choice": "c) Wireless-crackers",
+    "D choice": "d) Sniffers",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Sniffing is data interception method used by cyber-criminals. Sniffers are programs or devices that capture vital information from the target network or particular network."
+}, {
+    "questions": "4. Which of them is not an objective of sniffing for hackers?",
+    "A choice": "a) Fetching passwords",
+    "B choice": "b) Email texts",
+    "C choice": "c) Types of files transferred",
+    "D choice": "d) Geographic location of a user",
+    "answers": "Answer: d",
+    "explanations": "Explanation: The method used to capture data packets through any target network is called sniffing. The various objectives of sniffing for hackers are fetching passwords, email texts and the type of files transferred."
+}, {
+    "questions": "5. Which of the following tech-concepts cannot be sniffed?",
+    "A choice": "a) Router configuration",
+    "B choice": "b) ISP details",
+    "C choice": "c) Email Traffic",
+    "D choice": "d) Web Traffic",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Sniffing is data interception method and is not used for sniffing ISP details. It is particularly used for capturing router configuration, email traffic & web traffic."
+}, {
+    "questions": "6. Which of the following tech-concepts cannot be sniffed?",
+    "A choice": "a) Cloud sessions",
+    "B choice": "b) FTP passwords",
+    "C choice": "c) Telnet passwords",
+    "D choice": "d) Chat sessions",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Sniffing technique is used to monitor packets of target network using sniffer programs. It cannot sniff cloud sessions. It is used to capture and monitor router configuration, Telnet passwords, chat sessions etc. "
+}, {
+    "questions": "7. Which of the below-mentioned protocol is not susceptible to sniffing?",
+    "A choice": "a) HTTP",
+    "B choice": "b) SMTP",
+    "C choice": "c) POP",
+    "D choice": "d) TCP",
+    "answers": "Answer: d",
+    "explanations": "Explanation: The technique used to supervise & confine all data packets through any target network is called sniffing. HTTP, SMTP, POP are some protocols that are susceptible to sniffing."
+}, {
+    "questions": "8. Which of the below-mentioned protocol is not susceptible to sniffing?",
+    "A choice": "a) NNTP",
+    "B choice": "b) UDP",
+    "C choice": "c) FTP",
+    "D choice": "d) IMAP",
+    "answers": "Answer: b",
+    "explanations": "Explanation: NNTP, FTP, POP and IMAP are some protocols that are susceptible to sniffing. UDP protocol is not susceptible to sniffing attack. Sniffing is mainly used for capturing email traffic, router\u2019s configuration, & web traffic."
+}, {
+    "questions": "9. There are __________ types of sniffing.",
+    "A choice": "a) 2",
+    "B choice": "b) 3",
+    "C choice": "c) 4",
+    "D choice": "d) 5",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Sniffing is data surveillance technique used by hackers and is used to keep an eye on as well as detain all data packets with the help of sniffing tools. There are two types of sniffing attacks. These are passive sniffing and active sniffing."
+}, {
+    "questions": "10. Active sniffing is difficult to detect.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: b",
+    "explanations": "Explanation: Sniffing is like \u201ctapping phone calls\u201d and try to know about any conversation. There are two types of sniffing. These are passive sniffing and active sniffing. Passive sniffing is difficult to detect. "
+}, {
+    "questions": "11. Which of the following is not a sniffing tool?",
+    "A choice": "a) Wireshark",
+    "B choice": "b) Dude Sniffer",
+    "C choice": "c) Maltego",
+    "D choice": "d) [email\u00a0protected]",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Packet sniffers are utility tools which are used since the release of Ethernet. List of some of these sniffing tools are Wireshark, Dude Sniffer, [email\u00a0protected] etc."
+}, {
+    "questions": "12. A sniffer, on the whole turns your system\u2019s NIC to the licentious mode so that it can listen to all your data transmitted on its division.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: a",
+    "explanations": "Explanation: A sniffer on the whole turns your system\u2019s NIC to the licentious mode so that it can listen to all your data transmitted on its division. This is how it works to sniff all data packets."
+}, {
+    "questions": "13. A ______________ on the whole turns your system\u2019s NIC to the licentious mode so that it can listen to all your data transmitted on its division.",
+    "A choice": "a) Phishing site",
+    "B choice": "b) Sniffer tool",
+    "C choice": "c) Password cracker",
+    "D choice": "d) NIC cracker",
+    "answers": "Answer: b",
+    "explanations": "Explanation: A sniffer tool turns your machine\u2019s NIC to the dissolute mode so that hackers can listen to & observe all your data packets. Hence they can know what type of data is being transmitted and received."
+}, {
+    "questions": "14. In _____________ sniffing, the network traffic is not only supervised & locked but also be can be altered in different ways to accomplish the attack.",
+    "A choice": "a) passive",
+    "B choice": "b) signal",
+    "C choice": "c) network",
+    "D choice": "d) active",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Sniffing is like tapping the phone calls & over-heard about any discussion. In active sniffing, the network traffic is not only supervised & locked but also be can be altered in different ways to accomplish the attack."
+}, {
+    "questions": "15. __________________ are those devices which can be plugged into your network at the hardware level & it can monitor traffic.",
+    "A choice": "a) Hardware sniffers & analyzers",
+    "B choice": "b) Hardware protocol analyzers",
+    "C choice": "c) Hardware protocol sniffers",
+    "D choice": "d) Hardware traffic sniffers and observers",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Sniffing is data interception method which can be done using hardware also. Hardware protocol analyzers are those devices which can be plugged into your network at the hardware level & it can monitor traffic without manipulating it."
+}]

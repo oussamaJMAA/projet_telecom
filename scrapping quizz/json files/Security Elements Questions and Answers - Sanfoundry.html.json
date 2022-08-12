@@ -1,0 +1,121 @@
+[{
+    "questions": "1. In general how many key elements constitute the entire security structure?",
+    "A choice": "a) 1",
+    "B choice": "b) 2",
+    "C choice": "c) 3",
+    "D choice": "d) 4",
+    "answers": "Answer: d",
+    "explanations": "Explanation: The 4 key elements that constitute the security are: confidentiality, integrity, authenticity & availability. Authenticity is not considered as one of the key elements in some other security models, but the popular CIA Triad eliminates this as authenticity at times comes under confidentiality & availability."
+}, {
+    "questions": "2. According to the CIA Triad, which of the below-mentioned element is not considered in the triad?",
+    "A choice": "a) Confidentiality",
+    "B choice": "b) Integrity",
+    "C choice": "c) Authenticity",
+    "D choice": "d) Availability",
+    "answers": "Answer: c",
+    "explanations": "Explanation: According to the CIA triad the three components that a security need is the Confidentiality, Integrity, Availability (as in short read as CIA)."
+}, {
+    "questions": "3. This is the model designed for guiding the policies of Information security within a company, firm or organization. What is \u201cthis\u201d referred to here?",
+    "A choice": "a) Confidentiality",
+    "B choice": "b) Non-repudiation",
+    "C choice": "c) CIA Triad",
+    "D choice": "d) Authenticity",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Various security models were being developed till date. This is by far the most popular and widely used model which focuses on the information\u2019s confidentiality, integrity as well as availability and how these key elements can be preserved for a better security in any organization."
+}, {
+    "questions": "4. CIA triad is also known as ________",
+    "A choice": "a) NIC (Non-repudiation, Integrity, Confidentiality)",
+    "B choice": "b) AIC (Availability, Integrity, Confidentiality)",
+    "C choice": "c) AIN (Availability, Integrity, Non-repudiation)",
+    "D choice": "d) AIC (Authenticity, Integrity, Confidentiality)",
+    "answers": "Answer: b",
+    "explanations": "Explanation: This approach of naming it CIA Triad as AIC (Availability, Integrity, Confidentiality) Triad because people get confused about this acronym with the abbreviation and the secret agency name Central Intelligence Agency."
+}, {
+    "questions": "5. When you use the word _____  it means you are protecting your data from getting disclosed.",
+    "A choice": "a) Confidentiality",
+    "B choice": "b) Integrity",
+    "C choice": "c) Authentication",
+    "D choice": "d) Availability",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Confidentiality is what every individual prefer in terms of physical privacy as well as digital privacy. This term means our information needs to be protected from getting disclose to unauthorised parties, for which we use different security mechanisms like password protection, biometric security, OTPs (One Time Passwords) etc."
+}, {
+    "questions": "6. ______ means the protection of data from modification by unknown users.",
+    "A choice": "a) Confidentiality",
+    "B choice": "b) Integrity",
+    "C choice": "c) Authentication",
+    "D choice": "d) Non-repudiation",
+    "answers": "Answer: b",
+    "explanations": "Explanation: A information only seems valuable if it is correct and do not get modified during its journey in the course of arrival. The element integrity makes sure that the data sent or generated from other end is correct and is not modified by any unauthorised party in between."
+}, {
+    "questions": "7. When integrity is lacking in a security system, _________ occurs.",
+    "A choice": "a) Database hacking",
+    "B choice": "b) Data deletion",
+    "C choice": "c) Data tampering",
+    "D choice": "d) Data leakage",
+    "answers": "Answer: c",
+    "explanations": "Explanation: The term data tampering is used when integrity is compromised in any security model and checking its integrity later becomes costlier. Example: let suppose you sent $50 to an authorised person and in between a Man in the Middle (MiTM) attack takes place and the value has tampered to $500. This is how integrity is compromised."
+}, {
+    "questions": "8. _______ of information means, only authorised users are capable of accessing the information.",
+    "A choice": "a) Confidentiality",
+    "B choice": "b) Integrity",
+    "C choice": "c) Non-repudiation",
+    "D choice": "d) Availability",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Information seems useful only when right people (authorised users) access it after going through proper authenticity check. The key element availability ensures that only authorised users are able to access the information."
+}, {
+    "questions": "9. Why these 4 elements (confidentiality, integrity, authenticity & availability) are considered fundamental?",
+    "A choice": "a) They help understanding hacking better",
+    "B choice": "b) They are key elements to a security breach",
+    "C choice": "c) They help understands security and its components better",
+    "D choice": "d) They help to understand the cyber-crime better",
+    "answers": "Answer: c",
+    "explanations": "Explanation: The four elements of security viz. confidentiality, integrity, authenticity & availability helps in better understanding the pillars of security and its different components."
+}, {
+    "questions": "10. This helps in identifying the origin of information and authentic user. This referred to here as __________",
+    "A choice": "a) Confidentiality",
+    "B choice": "b) Integrity",
+    "C choice": "c) Authenticity",
+    "D choice": "d) Availability",
+    "answers": "Answer: c",
+    "explanations": "Explanation: The key element, authenticity helps in assuring the fact that the information is from the original source."
+}, {
+    "questions": "11. Data ___________ is used to ensure confidentiality.",
+    "A choice": "a) Encryption",
+    "B choice": "b) Locking",
+    "C choice": "c) Deleting",
+    "D choice": "d) Backup",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Data encryption is the method of converting plain text to cipher-text and only authorised users can decrypt the message back to plain text. This preserves the confidentiality of data."
+}, {
+    "questions": "12. Which of these is not a proper method of maintaining confidentiality?",
+    "A choice": "a) Biometric verification",
+    "B choice": "b) ID and password based verification",
+    "C choice": "c) 2-factor authentication",
+    "D choice": "d) switching off the phone",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Switching off the phone in the fear of preserving the confidentiality of data is not a proper solution for data confidentiality. Fingerprint detection, face recognition, password-based authentication, two-step verifications are some of these."
+}, {
+    "questions": "13. Data integrity gets compromised when _____ and  _____ are taken control off.",
+    "A choice": "a) Access control, file deletion",
+    "B choice": "b) Network, file permission",
+    "C choice": "c) Access control, file permission",
+    "D choice": "d) Network, system",
+    "answers": "Answer: c",
+    "explanations": "Explanation: The two key ingredients that need to be kept safe are: access control & file permission in order to preserve data integrity."
+}, {
+    "questions": "14. ______ is the latest technology that faces an extra challenge because of CIA paradigm.",
+    "A choice": "a) Big data",
+    "B choice": "b) Database systems",
+    "C choice": "c) Cloud storages",
+    "D choice": "d) Smart dust",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Big data has additional challenges that it has to face because of the tremendous volume of data that needs protection as well as other key elements of the CIA triad, which makes the entire process costly and time-consuming."
+}, {
+    "questions": "15. One common way to maintain data availability is __________",
+    "A choice": "a) Data clustering",
+    "B choice": "b) Data backup",
+    "C choice": "c) Data recovery",
+    "D choice": "d) Data Altering",
+    "answers": "Answer: b",
+    "explanations": "Explanation: For preventing data from data-loss, or damage data backup can be done and stored in a different geographical location so that it can sustain its data from natural disasters & unpredictable events."
+}]

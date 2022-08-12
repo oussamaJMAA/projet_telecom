@@ -2,11 +2,23 @@
 
 namespace App\Controller;
 
+
+use App\Entity\QuizQuestions;
+use Symfony\Component\HttpFoundation\Request;
+use App\Repository\QuizQuestionsRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Console\Question\Question;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+<<<<<<< HEAD
 /**
  * @Route("/quizz")
+=======
+
+
+/**
+ * @Route("/quiz", name="app_quiz")
+>>>>>>> b571fb09c22b2d8ed34f53aa41cb871b4e551a95
  */
 class QuizController extends AbstractController
 {
@@ -22,19 +34,29 @@ class QuizController extends AbstractController
 
 
     /**
-     * create quiz rows from json files
+     * @Route("/new", name="app_new_quiz")
      */
     
-    // public function store(Request $request, SerializerInterface $serializer, EntityManagerInterface $em)
+    // public function store(Request $request, QuizQuestionsRepository $quizQuestionsRepository)
     // {
-    //     $jsonRecu =file_get_contents("api.json");
-    //     $arrayOfProperObjects = $serializer->deserialize($jsonRecu, Article::class.'[]', 'json');
-    //     var_dump($arrayOfProperObjects);
-    //     foreach ($arrayOfProperObjects as $article) {
-    //         $em->persist($article);
-    //         $em->flush();
+    //     $quizQuest = new QuizQuestions();        
+    //     $form = $this->createForm(QuestionType::class, $quizQuest);
+    //     $form->handleRequest($request);
+        
+    //     if ($form->isSubmitted() && $form->isValid()) 
+    //     {
+    //         $file = $form->get('image')->getData();
+    //         $fileName = $this->generateUniqueFileName().'.'.$file->guessExtension();
 
+    //         // moves the file to the directory where brochures are stored
+    //         $file->move(
+    //             $this->getParameter('brochures_directory'),
+    //             $fileName
+    //         );
+    //         $quizQuest->setImage($fileName);
+    //         $courseRepository->add($quizQuest);
+            
+    //         return $this->redirectToRoute('quiz', [], Response::HTTP_SEE_OTHER);
     //     }
-    //     return $this->json($article, 201, []);
     // }
 }
