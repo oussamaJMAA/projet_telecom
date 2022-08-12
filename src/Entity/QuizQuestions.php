@@ -11,7 +11,7 @@ use Doctrine\ORM\Mapping as ORM;
 class QuizQuestions
 {
     /**
-     * @ORM\QuestID
+     * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
