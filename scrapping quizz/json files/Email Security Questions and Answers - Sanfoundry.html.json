@@ -1,0 +1,121 @@
+[{
+    "questions": "1. There are _______ major ways of stealing email information.",
+    "A choice": "a) 2",
+    "B choice": "b) 3",
+    "C choice": "c) 4",
+    "D choice": "d) 5",
+    "answers": "Answer: b",
+    "explanations": "Explanation: There are three major ways of stealing email information. These are by stealing cookies, social engineering and password phishing technique."
+}, {
+    "questions": "2. Which of them is not a major way of stealing email information?",
+    "A choice": "a) Stealing cookies",
+    "B choice": "b) Reverse Engineering",
+    "C choice": "c) Password Phishing",
+    "D choice": "d) Social Engineering",
+    "answers": "Answer: b",
+    "explanations": "Explanation: There are three major ways of stealing email information. These are by stealing cookies, social engineering and password phishing technique. Reverse engineering is not a way of stealing email information."
+}, {
+    "questions": "3. ____________ is the method for keeping sensitive information in email communication & accounts secure against unofficial access, loss, or compromise.",
+    "A choice": "a) Email security",
+    "B choice": "b) Email hacking",
+    "C choice": "c) Email protection",
+    "D choice": "d) Email safeguarding",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Email security is the method for keeping sensitive information in email communication & accounts secure against unofficial access, loss, or compromise."
+}, {
+    "questions": "4. _____________ is a famous technological medium for the spread of malware, facing problems of spam, & phishing attacks.",
+    "A choice": "a) Cloud",
+    "B choice": "b) Pen drive",
+    "C choice": "c) Website",
+    "D choice": "d) Email",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Email is a famous technological medium for the spread of malware, facing problems of spam, & phishing attacks and to entice recipients in divulging sensitive information, by open attachments and\/or by clicking on hyperlinks which in background install malware on the victim\u2019s device."
+}, {
+    "questions": "5. Which of them is not a proper method for email security?",
+    "A choice": "a) Use Strong password",
+    "B choice": "b) Use email Encryption",
+    "C choice": "c) Spam filters and malware scanners",
+    "D choice": "d) Click on unknown links to explore",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Use of strong passwords and email encryption other than planting spam filters and installing malware scanners are some of the proper methods for email security."
+}, {
+    "questions": "6. If a website uses a cookie, or a browser contains the cookie, then every time you visit that website, the browser transfers the cookie to that website.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: a",
+    "explanations": "Explanation: If a website uses a cookie, or a browser contains the cookie, then every time you visit that website, the browser transfers the cookie to that website. This helps in initiating cookie stealing attack. "
+}, {
+    "questions": "7. The stored cookie which contains all your personal data about that website can be stolen away by _____________ using _____________ or trojans.",
+    "A choice": "a) attackers, malware",
+    "B choice": "b) hackers, antivirus",
+    "C choice": "c) penetration testers, malware",
+    "D choice": "d) penetration testers, virus",
+    "answers": "Answer: a",
+    "explanations": "Explanation: If a website uses a cookie, or a browser contains the cookie, then every time you visit that website, the browser transfers the cookie to that website. This stored cookie which contains all your personal data about that website can be stolen away by attackers using malware or trojans."
+}, {
+    "questions": "8. If the data stored in the _____________ is not encrypted, then after cookie stealing, attackers can see information such as username and password stored by the cookie.",
+    "A choice": "a) memory",
+    "B choice": "b) quarantine",
+    "C choice": "c) cookies",
+    "D choice": "d) hard drive",
+    "answers": "Answer: c",
+    "explanations": "Explanation: If the data stored in the cookies is not encrypted, then after cookie stealing, attackers can see information such as username and password stored by the cookie."
+}, {
+    "questions": "9. Which of the following is a non-technical type of intrusion or attack technique?",
+    "A choice": "a) Reverse Engineering",
+    "B choice": "b) Malware Analysis",
+    "C choice": "c) Social Engineering",
+    "D choice": "d) Malware Writing",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Social Engineering is a non-technical type of intrusion or attack technique which relies heavily on human interaction. It involves tricking target users to break normal security postures."
+}, {
+    "questions": "10. Which of them is an example of grabbing email information?",
+    "A choice": "a) Cookie stealing",
+    "B choice": "b) Reverse engineering",
+    "C choice": "c) Port scanning",
+    "D choice": "d) Banner grabbing",
+    "answers": "Answer: a",
+    "explanations": "Explanation: There are three major ways of stealing email information. These are by stealing cookies, social engineering and password phishing technique. The remaining three (in the option) are not ways of stealing email information."
+}, {
+    "questions": "11. _____________ is the technique used for tricking users to disclose their username and passwords through fake pages.",
+    "A choice": "a) Social Engineering",
+    "B choice": "b) Phishing",
+    "C choice": "c) Cookie Stealing",
+    "D choice": "d) Banner Grabbing",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Phishing is the technique used for tricking users to disclose their username and passwords through fake pages."
+}, {
+    "questions": "12. Using email hacking illicit hackers can send & spread ___________   virus _____________ and spam emails.",
+    "A choice": "a) trojans, redirected malicious URLs",
+    "B choice": "b) antivirus, patches",
+    "C choice": "c) cracked software, redirected malicious URLs",
+    "D choice": "d) malware, security patches",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Using email hacking illicit hackers can send & spread malware, trojans, virus, worms, redirected malicious URLs which can take the target recipients to some infected webpage also."
+}, {
+    "questions": "13. Unsolicited Bulk E-mails (UBI) are called __________",
+    "A choice": "a) SMS",
+    "B choice": "b) MMS",
+    "C choice": "c) Spam emails",
+    "D choice": "d) Malicious emails",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Unsolicited Bulk E-mails (UBI) are an act of sending unwanted emails which one has no specific or important thing in it. Email spams are actually junk emails that are sent by commercial firms as an advertisement of their products and services."
+}, {
+    "questions": "14. Fraudulent email messages are some fake email messages that seem legitimate which ask for your bank details and reply those emails with updated confidential information.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: a",
+    "explanations": "Explanation: Yes, fraudulent email messages are some fake email messages that seem legitimate which ask for your bank details and reply those emails with updated confidential information. Email users must stay aware of such e-frauds."
+}, {
+    "questions": "15. Fraudulent email messages are some fake email messages that seem legitimate which asks for your confidential bank details such as _____________ details _________ and passwords.",
+    "A choice": "a) credit card, antivirus name",
+    "B choice": "b) credit card, login ID",
+    "C choice": "c) cell phone, antivirus name",
+    "D choice": "d) car model, account ID",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Fraudulent email messages are some fake email messages that seem legitimate which ask for your confidential bank details such as credit card details, cell phone number, Login ID and passwords."
+}]

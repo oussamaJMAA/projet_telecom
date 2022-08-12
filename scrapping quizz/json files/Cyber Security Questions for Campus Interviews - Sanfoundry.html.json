@@ -1,0 +1,97 @@
+[{
+    "questions": "1. Saving passwords in the browser is a good habit.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: b",
+    "explanations": "Explanation: Saving passwords in the browser for your different user accounts and web services is not a good habit. All browsers do not keep these passwords as an encrypted format. Chrome allows you to see those passwords if you know the system\u2019s password which can lead to a security breach."
+}, {
+    "questions": "2. Which of the following is not an advantage of dictionary attack?",
+    "A choice": "a) Very fast",
+    "B choice": "b) Time-saving",
+    "C choice": "c) Easy to perform",
+    "D choice": "d) Very tough and inefficient",
+    "answers": "Answer: d",
+    "explanations": "Explanation: A dictionary attack is a process of breaking a password protected system or server by simply & automatically entering every word in a dictionary as a password. It is very fast, time-saving and easy to perform. "
+}, {
+    "questions": "3. A _______________ is a process of breaking a password protected system or server by simply & automatically entering every word in a dictionary as a password.",
+    "A choice": "a) Dictionary attack",
+    "B choice": "b) Phishing attack",
+    "C choice": "c) Social engineering attack",
+    "D choice": "d) MiTM attack",
+    "answers": "Answer: a",
+    "explanations": "Explanation: A dictionary attack is a process of breaking a password protected system or server by simply & automatically entering every word in a dictionary as a password. It is very fast, time-saving and easy to perform."
+}, {
+    "questions": "4. Which of the following comes under the advantage of dictionary attack?",
+    "A choice": "a) Time-consuming",
+    "B choice": "b) Moderate efficient",
+    "C choice": "c) Very fast",
+    "D choice": "d) Complex to carry-out",
+    "answers": "Answer: c",
+    "explanations": "Explanation: A dictionary attack is a process of breaking a password protected system or server by simply & automatically entering every word in a dictionary as a password. It is very fast, time-saving and easy to perform."
+}, {
+    "questions": "5. The hybrid attack is a combination of dictionary attack followed by inserting entropy & performs brute force.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: a",
+    "explanations": "Explanation: A hybrid attack is a combination of both brute force attack & dictionary attack. So, while a dictionary attack would comprise a wordlist of passwords, the brute force attack would be functional for each possible password in the given list."
+}, {
+    "questions": "6. Brute force attack is ______________",
+    "A choice": "a) fast",
+    "B choice": "b) inefficient",
+    "C choice": "c) slow",
+    "D choice": "d) complex to understand",
+    "answers": "Answer: c",
+    "explanations": "Explanation: A brute force is the simplest process of gaining access to any password-protected system. It tries a variety of combinations of usernames & passwords again and again until it cracks it or password matches. But it is comparatively slow."
+}, {
+    "questions": "7. A _____________ attack one of the simplest processes of gaining access to any password-protected system.",
+    "A choice": "a) Clickjacking",
+    "B choice": "b) Brute force",
+    "C choice": "c) Eavesdropping",
+    "D choice": "d) Waterhole",
+    "answers": "Answer: b",
+    "explanations": "Explanation: A brute force is the simplest process of gaining access to any password-protected system. It tries a variety of combinations of usernames & passwords again and again until it cracks it or password matches."
+}, {
+    "questions": "8. ____________ attack is a combination of Dictionary attack & brute force attack.",
+    "A choice": "a) Syllable",
+    "B choice": "b) Syllabi",
+    "C choice": "c) Database",
+    "D choice": "d) Phishing",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Syllable attack is a combination of Dictionary attack & brute force attack. This technique may be implemented when the password is a non-existing word and attacker tries some techniques to crack it."
+}, {
+    "questions": "9. Attackers can use the _______________ when he\/she gets some information or hint regarding password he\/she wants to crack.",
+    "A choice": "a) Syllable attack",
+    "B choice": "b) Rule-based attack",
+    "C choice": "c) Offline attack",
+    "D choice": "d) Hybrid attack",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Attackers can use the rule-based attack when he\/she gets some information or hint regarding password he\/she wants to crack. Examples of such scenarios are like: hacker knows about the type of password, or size or what type of data it might contain."
+}, {
+    "questions": "10. _______________ are based on dictionary attack techniques.",
+    "A choice": "a) Hybrid attacks",
+    "B choice": "b) Network attacks",
+    "C choice": "c) TCP attacks",
+    "D choice": "d) Database attacks",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Hybrid attacks are based on dictionary attack techniques. In such types of attacks, the dictionary attack is mixed with some numerals and special symbols."
+}, {
+    "questions": "11. _____________ are based on dictionary attack techniques where the dictionary attack is mixed with some numerals and special symbols.",
+    "A choice": "a) Syllable attack",
+    "B choice": "b) Rule-based attack",
+    "C choice": "c) Offline attack",
+    "D choice": "d) Hybrid attack",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Hybrid attack is a type of offline attack which is based on dictionary attack methods. In such types of attacks, the dictionary attack is mixed with some numerals and special symbols."
+}, {
+    "questions": "12. Which of the following is not an example of non-technical attack techniques?",
+    "A choice": "a) Shoulder surfing",
+    "B choice": "b) Keyboard sniffing",
+    "C choice": "c) Phishing",
+    "D choice": "d) Social engineering",
+    "answers": "Answer: c",
+    "explanations": "Explanation: In the non-technical type of attacks, it is not required to have any technical knowledge to attack your target victim. Examples of such types of attacks are shoulder surfing, keyboard sniffing, and social engineering."
+}]

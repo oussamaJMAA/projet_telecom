@@ -1,0 +1,121 @@
+[{
+    "questions": "1. _________ framework made cracking of vulnerabilities easy like point and click.",
+    "A choice": "a) .Net",
+    "B choice": "b) Metasploit",
+    "C choice": "c) Zeus",
+    "D choice": "d) Ettercap",
+    "answers": "Answer: b",
+    "explanations": "Explanation: In the year 2003, the Metasploit framework was released which made finding and cracking of vulnerabilities easy and is used by both white as well as black hat hackers."
+}, {
+    "questions": "2. Nmap is abbreviated as Network Mapper.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: a",
+    "explanations": "Explanation: Network Mapper (Nmap) is a popular open-source tool used for discovering network as well as security auditing. It can be used for either a single host network or large networks."
+}, {
+    "questions": "3. __________ is a popular tool used for discovering networks as well as in security auditing.",
+    "A choice": "a) Ettercap",
+    "B choice": "b) Metasploit",
+    "C choice": "c) Nmap",
+    "D choice": "d) Burp Suit",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Network Mapper (Nmap) is a popular open-source tool used for discovering network as well as security auditing. It can be used for either a single host network or large networks."
+}, {
+    "questions": "4. Which of this Nmap do not check?",
+    "A choice": "a) services different hosts are offering",
+    "B choice": "b) on what OS they are running",
+    "C choice": "c) what kind of firewall is in use",
+    "D choice": "d) what type of antivirus is in use",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Network Mapper (Nmap) is a popular open-source tool used for discovering network as well as security auditing. It usually checks for different services used by the host, what operating system it is running and the type of firewall it is using."
+}, {
+    "questions": "5. Which of the following deals with network intrusion detection and real-time traffic analysis?",
+    "A choice": "a) John the Ripper",
+    "B choice": "b) L0phtCrack",
+    "C choice": "c) Snort",
+    "D choice": "d) Nessus",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Snort is a network intrusion detecting application that deals with real-time traffic analysis. As the rules are set and kept updated, they help in matching patterns against known patterns and protect your network."
+}, {
+    "questions": "6. Wireshark is a ____________ tool.",
+    "A choice": "a) network protocol analysis",
+    "B choice": "b) network connection security",
+    "C choice": "c) connection analysis",
+    "D choice": "d) defending malicious packet-filtering",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Wireshark is popular standardized network protocol analysis tools that allow in-depth check and analysis of packets from different protocols used by the system."
+}, {
+    "questions": "7. Which of the below-mentioned tool is used for Wi-Fi hacking?",
+    "A choice": "a) Wireshark",
+    "B choice": "b) Nessus",
+    "C choice": "c) Aircrack-ng",
+    "D choice": "d) Snort",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Weak wireless encryption protocols get easily cracked using Aircrack WPA and Aircrack WEP attacks that comes with Aircrack-ng tool. Its packet sniffing feature keeps track of all its traffic without making any attack."
+}, {
+    "questions": "8. Aircrack-ng is used for ____________",
+    "A choice": "a) Firewall bypassing",
+    "B choice": "b) Wi-Fi attacks",
+    "C choice": "c) Packet filtering",
+    "D choice": "d) System password cracking",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Weak wireless encryption protocols get easily cracked using Aircrack WPA and Aircrack WEP. Its packet sniffing feature keeps track of all its traffic without making any attack."
+}, {
+    "questions": "9. _____________ is a popular IP address and port scanner.",
+    "A choice": "a) Cain and Abel",
+    "B choice": "b) Snort",
+    "C choice": "c) Angry IP Scanner",
+    "D choice": "d) Ettercap",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Angry IP scanner is a light-weight, cross-platform IP and port scanning tool that scans a range of IP. It uses the concept of multithreading for making fast efficient scanning."
+}, {
+    "questions": "10. _______________ is a popular tool used for network analysis in multiprotocol diverse network.",
+    "A choice": "a) Snort",
+    "B choice": "b) SuperScan",
+    "C choice": "c) Burp Suit",
+    "D choice": "d) EtterPeak",
+    "answers": "Answer: d",
+    "explanations": "Explanation: EtterPeak\tis a network analysis tool that can be used for multiprotocol heterogeneous networking architecture. It can help in sniffing packets of network traffic."
+}, {
+    "questions": "11. ____________ scans TCP ports and resolves different hostnames.",
+    "A choice": "a) SuperScan",
+    "B choice": "b) Snort",
+    "C choice": "c) Ettercap",
+    "D choice": "d) QualysGuard",
+    "answers": "Answer: a",
+    "explanations": "Explanation: SuperScan has a very nice user-friendly interface and it is used for scanning TCP ports as well as resolve hostnames. It is popularly used for scanning ports from a given range of IP."
+}, {
+    "questions": "12. ___________ is a web application assessment security tool.",
+    "A choice": "a) LC4",
+    "B choice": "b) WebInspect",
+    "C choice": "c) Ettercap",
+    "D choice": "d) QualysGuard",
+    "answers": "Answer: b",
+    "explanations": "Explanation: WebInspect is a popular web application security tool used for identifying known vulnerabilities residing in web-application layer. It also helps in penetration testing of web servers."
+}, {
+    "questions": "13. Which of the following attack-based checks WebInspect cannot do?",
+    "A choice": "a) cross-site scripting",
+    "B choice": "b) directory traversal",
+    "C choice": "c) parameter injection",
+    "D choice": "d) injecting shell code",
+    "answers": "Answer: d",
+    "explanations": "Explanation: WebInspect can check whether a web server is properly configured or not by attempting for common attacks such as Cross-site scripting, directory traversal, and parameter injection. But it cannot inject malicious shell code in the server."
+}, {
+    "questions": "14. ________ is a password recovery and auditing tool.",
+    "A choice": "a) LC3",
+    "B choice": "b) LC4",
+    "C choice": "c) Network Stumbler",
+    "D choice": "d) Maltego",
+    "answers": "Answer: b",
+    "explanations": "Explanation: LC4 which was previously known as L0phtCrack is a password auditing and recovery tool; used for testing strength of a password and also helps in recovering lost Microsoft Windows passwords."
+}, {
+    "questions": "15. L0phtCrack is formerly known as LC3.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: b",
+    "explanations": "Explanation: L0phtCrack is now commonly known as LC4 is a password auditing and recovery tool; used for testing strength of a password and also helps in recovering lost Microsoft Windows passwords."
+}]

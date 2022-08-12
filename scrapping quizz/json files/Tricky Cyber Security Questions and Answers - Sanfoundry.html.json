@@ -1,0 +1,129 @@
+[{
+    "questions": "1. ______________ is an internet scam done by cyber-criminals where the user is convinced digitally to provide confidential information.",
+    "A choice": "a) Phishing attack",
+    "B choice": "b) DoS attack",
+    "C choice": "c) Website attack",
+    "D choice": "d) MiTM attack",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Phishing is an internet scam done by cyber-criminals where the user is convinced digitally to provide confidential information. There are different types of phishing. Some of them redirect the user to different sites via emails & spyware."
+}, {
+    "questions": "2. In _______________ some cyber-criminals redirect the legitimate users to different phishing sites and web pages via emails, IMs, ads and spyware.",
+    "A choice": "a) URL Redirection",
+    "B choice": "b) DoS",
+    "C choice": "c) Phishing",
+    "D choice": "d) MiTM attack",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Phishing is an internet scam done by hackers to provide classified information. In some of them, cyber-criminals redirect the users to different sites via emails, IMs, and ads."
+}, {
+    "questions": "3. Phishers often develop ______________ websites for tricking users & filling their personal data.",
+    "A choice": "a) legitimate",
+    "B choice": "b) illegitimate",
+    "C choice": "c) genuine",
+    "D choice": "d) official",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Phishing is a category of social engineering attack that is used to steal user data. Phishers often develop illegitimate websites for tricking users & filling their personal data."
+}, {
+    "questions": "4. Which of the following type of data, phishers cannot steal from its target victims?",
+    "A choice": "a) bank details",
+    "B choice": "b) phone number",
+    "C choice": "c) passwords",
+    "D choice": "d) apps installed in the mobile",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Phishers often develop illegitimate websites for tricking users & filling their personal data such as bank account details, phone number, address, username, and passwords etc."
+}, {
+    "questions": "5. Algorithm-Based Phishing was developed in the year __________",
+    "A choice": "a) 1988",
+    "B choice": "b) 1989",
+    "C choice": "c) 1990",
+    "D choice": "d) 1991",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Algorithm-Based Phishing was developed in the year 1990 where the first team of phishers developed an algorithm for generating random credit card numbers for getting an original card\u2019s match."
+}, {
+    "questions": "6. ______________ was the first type of phishing where the phishers developed an algorithm for generating random credit card numbers.",
+    "A choice": "a) Algo-based phishing",
+    "B choice": "b) Email-based phishing",
+    "C choice": "c) Domain Phishing",
+    "D choice": "d) Vishing",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Phishing is a category of social engineering attack. In Algorithm-Based Phishing, an algorithm for generating random credit card numbers for getting an original card\u2019s match."
+}, {
+    "questions": "7. Email Phishing came into origin in the year __________",
+    "A choice": "a) 1990",
+    "B choice": "b) 2000",
+    "C choice": "c) 2005",
+    "D choice": "d) 2015",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Email Phishing came into origin in the year 2000 which is more tech-savvy. Here the email is created as if it has been sent from a legitimate source with a legitimate link to its official website."
+}, {
+    "questions": "8. _________________ type of phishing became very popular as if it has been sent from a legitimate source with a legitimate link to its official website.",
+    "A choice": "a) Algo-based phishing",
+    "B choice": "b) Email-based phishing",
+    "C choice": "c) Domain Phishing",
+    "D choice": "d) Vishing",
+    "answers": "Answer: b",
+    "explanations": "Explanation: In email phishing, the email is fashioned as if it has been sent from a legitimate source with a legitimate link to its official website. It came into origin in the year 2000."
+}, {
+    "questions": "9. _____________ refers to phishing performed over smart-phone by calling.",
+    "A choice": "a) Algo-based phishing",
+    "B choice": "b) Email-based phishing",
+    "C choice": "c) Domain Phishing",
+    "D choice": "d) Vishing",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Phishers often develop illegitimate websites for tricking users & filling their personal data. Vishing refers to phishing performed over smart-phone by calling. As the phishing is done through voice so it is called vishing = voice + phishing."
+}, {
+    "questions": "10. _____________ = voice + phishing.",
+    "A choice": "a) Algo-based phishing",
+    "B choice": "b) Vishing",
+    "C choice": "c) Domain Phishing",
+    "D choice": "d) Email-based phishing",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Phishing occurs when a cyber-criminal masquerade as a trusted entity. Vishing refers to phishing performed where the phishing is done through voice hence called vishing = voice + phishing."
+}, {
+    "questions": "11. Victims of phishing are mostly ___________________",
+    "A choice": "a) Tech enthusiast",
+    "B choice": "b) Professional computer engineers",
+    "C choice": "c) Lack of computer knowledge",
+    "D choice": "d) Lack of management skill",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Phishers often develop illegitimate websites for tricking users & filling their personal data. Victims of such type of attacks are those users with lack of computer knowledge."
+}, {
+    "questions": "12. ___________________ is usually targeted by nature where the emails are exclusively designed to target any exact user.",
+    "A choice": "a) Algo-based phishing",
+    "B choice": "b) Vishing",
+    "C choice": "c) Domain Phishing",
+    "D choice": "d) Spear phishing",
+    "answers": "Answer: d",
+    "explanations": "Explanation: In spear phishing, hackers usually targeted specifically where the emails are exclusively designed to target any particular user. It occurs when an attacker masquerades the victim a trusted party."
+}, {
+    "questions": "13. ____________ or smishing is one of the simplest types of phishing where the target victims may get a fake order detail with a cancellation link.",
+    "A choice": "a) Algo-based phishing",
+    "B choice": "b) SMS phishing",
+    "C choice": "c) Domain Phishing",
+    "D choice": "d) Spear phishing",
+    "answers": "Answer: b",
+    "explanations": "Explanation: SMS phishing or Smishing is one of the simplest types of phishing where the target victims may get a fake order detail with a cancellation link or any other link that leads you to a malicious link."
+}, {
+    "questions": "14. ________________ phishing is that type of phishing where the construction of a fake webpage is done for targeting definite keywords & waiting for the searcher to land on the fake webpage.",
+    "A choice": "a) Voice",
+    "B choice": "b) SMS",
+    "C choice": "c) Search engine",
+    "D choice": "d) Email",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Search engine phishing is that type of phishing where the construction of a fake webpage is done for targeting definite keywords & waiting for the searcher to land on the fake webpage."
+}, {
+    "questions": "15. Which of the following is not an example or type of phishing?",
+    "A choice": "a) Spear phishing",
+    "B choice": "b) Deceptive phishing",
+    "C choice": "c) Whaling",
+    "D choice": "d) Monkey in the Middle",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Phishing is an internet scam done by cyber-criminals where the user is convinced digitally to provide confidential information. There are different types of phishing. Some of them are Spear phishing, deceptive phishing, whaling, pharming, vishing."
+}, {
+    "questions": "16. Which of the following is not an example or type of phishing?",
+    "A choice": "a) Tracking",
+    "B choice": "b) Vishing",
+    "C choice": "c) Smishing",
+    "D choice": "d) Pharming",
+    "answers": "Answer: a",
+    "explanations": "Explanation: A popular internet scam done by black hat hackers and crackers to grab confidential information by masquerading is the phishing technique. Smishing, email phishing, whaling, pharming, vishing are some popular types of phishing."
+}]

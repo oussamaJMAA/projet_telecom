@@ -1,0 +1,129 @@
+[{
+    "questions": "1. Which of the following is a micro-virus that can bring down the confidentiality of an email (specifically)?",
+    "A choice": "a) Zeus",
+    "B choice": "b) Stuxnet",
+    "C choice": "c) Reaper Exploit",
+    "D choice": "d) Friday the 13",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Reaper exploit is a micro-virus that can compromise the email security as it works in the background and sends a copy of reply or forwarded the email to its creator or sender."
+}, {
+    "questions": "2. Email users who use IE as their _________________ are vulnerable to Reaper Exploit.",
+    "A choice": "a) Web engine",
+    "B choice": "b) Rendering engine",
+    "C choice": "c) Game engine",
+    "D choice": "d) HTML engine",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Email users who use Internet Explorer as their HTML engine are vulnerable to Reaper Exploit. It works in the background and sends a copy of a reply or forwarded the email to its creator or sender."
+}, {
+    "questions": "3. _______________ needs to be turned off in order to prevent from this attack.",
+    "A choice": "a) Email scripting",
+    "B choice": "b) Email attachments",
+    "C choice": "c) Email services",
+    "D choice": "d) Third party email programs",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Email users who use Internet Explorer as their HTML engine are vulnerable to Reaper Exploit. It works in the background and sends a copy of a reply or forwarded the email to its creator or sender. Email scripting needs to be turned off in order to prevent from this attack."
+}, {
+    "questions": "4. Which of the following is a tool to monitor outgoing traffic of target PC\u2019s email and intercept all the emails sent from it?",
+    "A choice": "a) Wireshark",
+    "B choice": "b) Advanced Stealth Email Redirector",
+    "C choice": "c) MS Outlook",
+    "D choice": "d) Cisco Jabber",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Advanced Stealth Email Redirector is a tool to monitor outgoing traffic of target PC\u2019s email and intercept all the emails send from it. Intercepted emails are then forwarded to a pre-specified email ID."
+}, {
+    "questions": "5. Advanced SER is abbreviated as ___________",
+    "A choice": "a) Advanced Stealth Electronic Redirector",
+    "B choice": "b) Advanced Security Email Redirector",
+    "C choice": "c) Advanced Stealth Email Redirector",
+    "D choice": "d) Advanced Stealth Email Recorder",
+    "answers": "Answer: c",
+    "explanations": "Explanation: Advanced Stealth Email Redirector (Advanced SER) is a tool to monitor outgoing traffic of target PC\u2019s email and intercept all the emails send from it. Intercepted emails are then forwarded to a pre-specified email ID."
+}, {
+    "questions": "6. Which of the following will not help in preserving email security?",
+    "A choice": "a) Create a strong password",
+    "B choice": "b) Connect your email to a phone number",
+    "C choice": "c) Use two-factor authentication for password verification and login",
+    "D choice": "d) Click on unknown links and sites",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Some of the following measures to preserve your email security is via creating a strong password, connecting your emails to your personal phone number and set up 2-factor authentication for login."
+}, {
+    "questions": "7. Once the email is compromised, all other sites and services online associated with this email can be compromised.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: a",
+    "explanations": "Explanation: Email security is very much necessary because once the email is compromised, all other sites and services online associated with this email can be compromised and the hacker will be able to access all other accounts linked to this email."
+}, {
+    "questions": "8. _____________ is an encryption program or add-ons which provides cryptographic privacy & authentication for email communication.",
+    "A choice": "a) Powerful Good Privacy",
+    "B choice": "b) Pretty Good Privacy",
+    "C choice": "c) Pretty Good Encryption",
+    "D choice": "d) Pretty Strong Encryption",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Pretty Good Privacy is an encryption program which provides cryptographic privacy & authentication for email communication. Basically, it is used for securing user\u2019s texts, emails, attachments etc."
+}, {
+    "questions": "9. PGP is abbreviated as _______________",
+    "A choice": "a) Pretty Good Privacy",
+    "B choice": "b) Powerful Good Privacy",
+    "C choice": "c) Protocol Giving Privacy",
+    "D choice": "d) Pretty Good Protocol",
+    "answers": "Answer: a",
+    "explanations": "Explanation: Pretty Good Privacy (PGP) is an encryption program which provides cryptographic privacy & authentication for email communication. Basically, it is used for securing user\u2019s texts, emails, attachments etc."
+}, {
+    "questions": "10. Which of them is not an example of business email security tool?",
+    "A choice": "a) Microsoft Office Trust Center",
+    "B choice": "b) Sendinc",
+    "C choice": "c) Hushmail Business",
+    "D choice": "d) Cisco Jabber",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Cisco Jabber is a unified communications application that lets users access, send instant messaging, voice, voice messaging, desktop sharing, & conferencing. The rest three are a business email security tools."
+}, {
+    "questions": "11. Which of them is not an example of business email security tool?",
+    "A choice": "a) Enlocked",
+    "B choice": "b) RPost Office",
+    "C choice": "c) MS Outlook",
+    "D choice": "d) Sendinc",
+    "answers": "Answer: c",
+    "explanations": "Explanation: MS Outlook is a web-based desktop app as well as an online suite of webmail, tasks, contacts & calendaring services developed by Microsoft. The rest three are a business email security tools."
+}, {
+    "questions": "12. ________________ is a free extension of browser that enables you in decrypting as well as encrypting emails.",
+    "A choice": "a) Enlocked",
+    "B choice": "b) MS Outlook",
+    "C choice": "c) Cisco Jabber",
+    "D choice": "d) Mailvelope",
+    "answers": "Answer: d",
+    "explanations": "Explanation: Mailvelope is a free extension of the browser (which is available for both Google Chrome as well as Mozilla Firefox) that enables users in decrypting as well as encrypting emails using an openPGP standard of encryption."
+}, {
+    "questions": "13. Which of the following is not an email related hacking tool?",
+    "A choice": "a) Email Finder Pro",
+    "B choice": "b) Sendinc",
+    "C choice": "c) Mail PassView",
+    "D choice": "d) Mail Password",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Sendinc is not an email data compromising tool. It is used for securing business email accounts and offers a quick web-based way to jump into offering secure emails for firms. The rest three are email compromising tools."
+}, {
+    "questions": "14. _______________ is targeted bulk email marketing software.",
+    "A choice": "a) Email Spider Toolkit",
+    "B choice": "b) Email Spider Easy",
+    "C choice": "c) Email Crawler Easy",
+    "D choice": "d) Email Spider Toolkit",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Email Spider Easy is targeted bulk email marketing software. It rapidly & automatically searches & spider from the search engine for finding email addresses. This tool is integrated with top search engines."
+}, {
+    "questions": "15. ______________ is a tool that is integrated with top 90 search engines to grab quick search for email addresses and other details.",
+    "A choice": "a) Email Spider Toolkit",
+    "B choice": "b) Email Spider Easy",
+    "C choice": "c) Email Crawler Easy",
+    "D choice": "d) Email Spider Toolkit",
+    "answers": "Answer: b",
+    "explanations": "Explanation: Email Spider Easy is targeted bulk email marketing software. It rapidly & automatically searches & spider from the search engine for finding email addresses. This tool is integrated with top search engines & its speed allows up to 500 email extraction threads simultaneously."
+}, {
+    "questions": "16. MegaHackerZ helps crackers to crack email passwords.",
+    "A choice": "a) True",
+    "B choice": "b) False",
+    "C choice": null,
+    "D choice": null,
+    "answers": "Answer: a",
+    "explanations": "Explanation: MegaHackerZ helps crackers to crack email passwords. Though it is not used very much as the versions are deprecated. But it is still useful for weak passwords to crack easily."
+}]
