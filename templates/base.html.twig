@@ -259,7 +259,9 @@
 							<a class="dropdown-toggle" data-bs-toggle="dropdown" data-hover="dropdown"
 								data-close-others="true">
 								<img alt="" class="img-circle " src="../assets/img/dp.jpg" />
+								{% if app.user %}
 								<span class="username username-hide-on-mobile"> {{app.user.fullName| split(' ', 2)[0]}} </span>
+								{% endif %}
 								<i class="fa fa-angle-down"></i>
 							</a>
 							<ul class="dropdown-menu dropdown-menu-default">
