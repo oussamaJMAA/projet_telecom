@@ -36,7 +36,7 @@
 				<div class="card-body ">
 					<div class="table-wrap">
 						<div class="table-responsive">
-							<table class="table display product-overview mb-30" id="support_table">
+							<table class="table display product-overview mb-30" id="example3">
 								<thead>
 									<tr>
 										<th>Id</th>
@@ -54,18 +54,17 @@
 								<tbody>
 									{% for q in quizz %}
 										<tr>
-											<td>{{ q.id }}</td>
-											<td>{{ q.questions }}</td>
-											<td>{{ q.choice_a }}</td>
-											<td>{{q.choice_b}}</td>
-                                            <td>{{q.choice_c}}</td>
-										    <td>{{q.choice_d}}</td>
-                                            <td>{{q.correct_answer}}</td>
-                                            <td>{{q.explanation}}</td>
-
+											<td>{{ q.QuestID}}</td>
+											<td>{{ q.Question[3:] }}</td>
+											<td>{{ q.choiceA }}</td>
+											<td>{{q.choiceB}}</td>
+                                            <td>{{q.choiceC}}</td>
+										    <td>{{q.choiceD}}</td>
+                                            <td>{{q.CorrectAnswer}}</td>
+                                      <td> {{q.Explanation|length >50 ? q.Explanation|slice(0,50) ~ '...' : q.Explanation }}</td>
 																	<td class="left">
 																		<div class="d-flex justify-content-around">
-									<a href="{{ path('app_quiz_questions_edit', {'id': q.id}) }}" class="btn btn-primary btn-xs">
+									<a href="{{ path('app_quiz_questions_edit', {'QuestID': q.QuestID}) }}" class="btn btn-primary btn-xs">
 																	<i class="fa fa-pencil"></i>
 																</a>
 
