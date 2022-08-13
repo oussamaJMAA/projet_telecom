@@ -30,11 +30,12 @@ class QuizQuestionsController extends AbstractController
     /**
      * @Route("/employee", name="quizz_front")
      */
-    public function quizz_front(QuizRepository $qr): Response
+    public function quizz_front(QuizRepository $qr,QuizQuestionsRepository $qqr): Response
     {
 
         return $this->render('home/quizz_front.html.twig',[
             'quizz' => $qr->findAll(),
+                'question' => $qqr->findByQuiz_id($qr->getId()),
         ]);
     }
 
