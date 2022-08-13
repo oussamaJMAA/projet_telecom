@@ -24,6 +24,14 @@ class QuizQuestionsController extends AbstractController
             'quizz' => $quizQuestionsRepository->findAll(),
         ]);
     }
+    /**
+     * @Route("/employee", name="quizz_front")
+     */
+    public function quizz_front()
+    {
+
+        return $this->render('home/quizz_front.html.twig');
+    }
 
     /**
      * @Route("/new", name="app_quiz_questions_new", methods={"GET", "POST"})
@@ -79,7 +87,7 @@ class QuizQuestionsController extends AbstractController
      */
     public function delete(Request $request, QuizQuestions $quizQuestion, QuizQuestionsRepository $quizQuestionsRepository): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$quizQuestion->getQuestID(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $quizQuestion->getQuestID(), $request->request->get('_token'))) {
             $quizQuestionsRepository->remove($quizQuestion);
         }
 
