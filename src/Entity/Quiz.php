@@ -31,6 +31,7 @@ class Quiz
 
     /**
      * @ORM\OneToMany(targetEntity=QuizQuestions::class, mappedBy="quiz")
+     * @ORM\JoinColumn(onDelete="CASCADE")
      */
     private $questions;
 
