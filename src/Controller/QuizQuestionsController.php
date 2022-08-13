@@ -35,7 +35,7 @@ class QuizQuestionsController extends AbstractController
 
         return $this->render('home/quizz_front.html.twig',[
             'quizz' => $qr->findAll(),
-                'question' => $qqr->findByQuiz_id($qr->getId()),
+         
         ]);
     }
 
