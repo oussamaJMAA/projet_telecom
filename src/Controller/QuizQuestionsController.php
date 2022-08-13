@@ -4,11 +4,12 @@ namespace App\Controller;
 
 use App\Entity\QuizQuestions;
 use App\Form\QuizQuestionsType;
+use App\Repository\QuizRepository;
 use App\Repository\QuizQuestionsRepository;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 /**
  * @Route("/quiz/questions")
@@ -24,13 +25,17 @@ class QuizQuestionsController extends AbstractController
             'quizz' => $quizQuestionsRepository->findAll(),
         ]);
     }
+
+    
     /**
      * @Route("/employee", name="quizz_front")
      */
-    public function quizz_front()
+    public function quizz_front(QuizRepository $qr): Response
     {
 
-        return $this->render('home/quizz_front.html.twig');
+        return $this->render('home/quizz_front.html.twig',[
+            'quizz' => $qr->findAll(),
+        ]);
     }
 
     /**
