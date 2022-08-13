@@ -3,5 +3,8 @@
   "editor.defaultFormatter": "HookyQR.beautify",
   "[twig]": {
     "editor.defaultFormatter": "mblode.twig-language-2"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   }
 }
