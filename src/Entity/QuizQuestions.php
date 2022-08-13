@@ -52,6 +52,11 @@ class QuizQuestions
      */
     private $Explanation;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Quiz::class, inversedBy="questions")
+     */
+    private $quiz;
+
 
     public function getQuestID(): ?int
     {
@@ -138,6 +143,18 @@ class QuizQuestions
     public function setExplanation(string $Explanation): self
     {
         $this->Explanation = $Explanation;
+
+        return $this;
+    }
+
+    public function getQuiz(): ?Quiz
+    {
+        return $this->quiz;
+    }
+
+    public function setQuiz(?Quiz $quiz): self
+    {
+        $this->quiz = $quiz;
 
         return $this;
     }
