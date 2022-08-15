@@ -75,4 +75,16 @@ class QuizQuestionsRepository extends ServiceEntityRepository
         ;
     }
     */
+    public function getQuestions($id){
+
+        $conn = $this->getEntityManager()
+        ->getConnection();
+        $sql = "select * from quiz_questions where quiz_id = ? ORDER BY RAND() limit 5 ";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindValue(1, $id);
+        $resultSet = $stmt->executeQuery();
+        $a= $resultSet->fetchAllAssociative();
+
+    return $a;
+    }
 }
