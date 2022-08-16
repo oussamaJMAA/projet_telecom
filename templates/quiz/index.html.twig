@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="{{asset('assets_front/css/style_q.css')}}">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 {% endblock %}
-
+{% block body %}
 <div class="start_btn">
 	<button>Start Quiz</button>
 </div>
@@ -77,7 +77,7 @@
 		<button class="quit">Quit Quiz</button>
 	</div>
 </div>
-
+{% endblock %}
 
 {% block js %}
 
@@ -86,22 +86,35 @@
 
 	<!-- Inside this JavaScript file I've coded all Quiz Codes --><script src="{{asset('assets_front/js/script.js')}}"> </script>
 	<script>
+{% set t = [1,23,"hey"] %}
 
+var x = {{quizz | json_encode| raw}}
+console.log(x);
 
-let questions = [];
+var questions=[];
 let dict = {}
-var a,b,c;
-{% for i,q in quizz %}
-
+cr ="";
+for (const [i, q] of x.entries()){
+if(q.correct_answer=='a'){
+	cr=q.choice_a;
+}
+else if (q.correct_answer=='b'){
+		cr=q.choice_b;
+}
+else if (q.correct_answer=='c'){
+		cr=q.choice_c;
+}
+else cr=q.choice_d;
 dict = {
 
-numb: {{ i+1 }},
-question: {{ q.question }},
-answer: {{ q.correct_answer }},
-options: [{{q.choice_a }}, {{ q.choice_b }}, {{ q.choice_c }}, {{ q.choice_d }}],
+numb:  i+1 ,
+question: q.question ,
+answer:  cr,
+options: [q.choice_a , q.choice_b , q.choice_c , q.choice_d ],
 };
-questions.push(dict);{% endfor %}
+questions.push(dict);}
 
-console.log(questions);
+
+
 	</script>
 {% endblock %}
