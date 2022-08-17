@@ -3,10 +3,11 @@
 namespace App\Repository;
 
 use App\Entity\Course;
-use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
-use Doctrine\ORM\OptimisticLockException;
 use Doctrine\ORM\ORMException;
+use Doctrine\DBAL\Query\QueryBuilder;
+use Doctrine\ORM\OptimisticLockException;
 use Doctrine\Persistence\ManagerRegistry;
+use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 
 /**
  * @extends ServiceEntityRepository<Course>
@@ -46,102 +47,102 @@ class CourseRepository extends ServiceEntityRepository
             $this->_em->flush();
         }
     }
-    public function like_course_($idc){
-    
+    public function like_course_($idc)
+    {
+
         $conn = $this->getEntityManager()
-        ->getConnection();
+            ->getConnection();
         $sql = "update course set nb_likes = nb_likes+1 where id = ?";
         $stmt = $conn->prepare($sql);
         $stmt->bindValue(1, $idc);
-    return $stmt->executeQuery();
-      
+        return $stmt->executeQuery();
     }
-    public function likes_user_course_($idc,$idu){
-    
+    public function likes_user_course_($idc, $idu)
+    {
+
         $conn = $this->getEntityManager()
-        ->getConnection();
+            ->getConnection();
         $sql = "insert into user_course (user_id,course_id) values(?,?)";
         $stmt = $conn->prepare($sql);
         $stmt->bindValue(1, $idu);
         $stmt->bindValue(2, $idc);
-    return $stmt->executeQuery();
-      
+        return $stmt->executeQuery();
     }
-    public function unlike_course_($idc){
-    
+    public function unlike_course_($idc)
+    {
+
         $conn = $this->getEntityManager()
-        ->getConnection();
+            ->getConnection();
         $sql = "update course set nb_likes = nb_likes-1 where id = ?";
         $stmt = $conn->prepare($sql);
         $stmt->bindValue(1, $idc);
-    return $stmt->executeQuery();
-      
+        return $stmt->executeQuery();
     }
-    public function unlikes_user_course_($idc,$idu){
-    
+    public function unlikes_user_course_($idc, $idu)
+    {
+
         $conn = $this->getEntityManager()
-        ->getConnection();
+            ->getConnection();
         $sql = "delete from user_course where user_id = ? and course_id = ?";
         $stmt = $conn->prepare($sql);
         $stmt->bindValue(1, $idu);
         $stmt->bindValue(2, $idc);
-    return $stmt->executeQuery();
-      
+        return $stmt->executeQuery();
     }
-    public function verif_likes_user_course_($idc,$idu){
+    public function verif_likes_user_course_($idc, $idu)
+    {
         $conn = $this->getEntityManager()
-        ->getConnection();
+            ->getConnection();
         $sql = "select count(user_id) from user_course where user_id = ? and course_id = ?";
         $statement = $conn->prepare($sql);
         $statement->bindValue(1, $idu);
         $statement->bindValue(2, $idc);
         $resultSet = $statement->executeQuery();
-        $a= $resultSet->fetchOne();
-    return $a;
-    
+        $a = $resultSet->fetchOne();
+        return $a;
     }
-    public function enroll_course_($idc){
-    
+    public function enroll_course_($idc)
+    {
+
         $conn = $this->getEntityManager()
-        ->getConnection();
+            ->getConnection();
         $sql = "update course set nb_enrollments = nb_enrollments+1 where id = ?";
         $stmt = $conn->prepare($sql);
         $stmt->bindValue(1, $idc);
-    return $stmt->executeQuery();
-      
+        return $stmt->executeQuery();
     }
-    public function enroll_user_course_($idc,$idu){
-    
+    public function enroll_user_course_($idc, $idu)
+    {
+
         $conn = $this->getEntityManager()
-        ->getConnection();
+            ->getConnection();
         $sql = "insert into enrollments (user,course) values(?,?)";
         $stmt = $conn->prepare($sql);
         $stmt->bindValue(1, $idu);
         $stmt->bindValue(2, $idc);
-    return $stmt->executeQuery();
-      
+        return $stmt->executeQuery();
     }
-    public function verif_enroll_user_course_($idc,$idu){
+    public function verif_enroll_user_course_($idc, $idu)
+    {
         $conn = $this->getEntityManager()
-        ->getConnection();
+            ->getConnection();
         $sql = "select count(user) from enrollments where user= ? and course= ?";
         $statement = $conn->prepare($sql);
         $statement->bindValue(1, $idu);
         $statement->bindValue(2, $idc);
         $resultSet = $statement->executeQuery();
-        $a= $resultSet->fetchOne();
-    return $a;
-    
+        $a = $resultSet->fetchOne();
+        return $a;
     }
-    public function recent_courses(){
+    public function recent_courses()
+    {
         $conn = $this->getEntityManager()
-        ->getConnection();
+            ->getConnection();
         $sql = "select * from course order by id desc limit 3";
         $statement = $conn->prepare($sql);
         $resultSet = $statement->executeQuery();
-        $a= $resultSet->fetchAllAssociative();
-    return $a;
-    
+        $a = $resultSet->fetchAllAssociative();
+        return $a;
     }
     // /**
     //  * @return Course[] Returns an array of Course objects
@@ -171,4 +172,9 @@ class CourseRepository extends ServiceEntityRepository
         ;
     }
     */
+    public function allCourses()
+    {
+        return $this->createQueryBuilder('c')
+        ->orderBy('c.id', 'ASC');
+    }
 }

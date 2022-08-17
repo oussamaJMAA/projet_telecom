@@ -4,9 +4,11 @@ namespace App\Controller;
 
 use App\Entity\Course;
 use App\Form\CourseType;
+use Pagerfanta\Pagerfanta;
 use Symfony\Component\Mime\Email;
 use App\Repository\CourseRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Pagerfanta\Doctrine\ORM\QueryAdapter;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Security\Core\Security;
@@ -29,13 +31,15 @@ class CourseController extends AbstractController
     }
 
       /**
-     * @Route("/course_front", name="app_course_index_front", methods={"GET"})
+     * @Route("/course_front/{page<\d+>}", name="app_course_index_front", methods={"GET"})
      */
-    public function index_front(CourseRepository $courseRepository): Response
-    {
+    public function index_front(CourseRepository $courseRepository,int $page = 1): Response
+    {$pagerfanta = new Pagerfanta(new QueryAdapter($courseRepository->allCourses()));
+        $pagerfanta->setMaxPerPage(6);
+        $pagerfanta->setCurrentPage($page);
 
      return $this->render('course/index_front.html.twig', [
-            'courses' => $courseRepository->findAll(),
+        'pager' => $pagerfanta,
         ]);
     }
      /**
@@ -122,7 +126,7 @@ class CourseController extends AbstractController
 
     }
       /**
-     * @Route("/{id}", name="app_course_index_front_detailed", methods={"GET"})
+     * @Route("/details/{id}", name="app_course_index_front_detailed", methods={"GET"})
      */
     public function detailed_course(Course $course,$id,CourseRepository $courseRepository): Response
     {   if($this->getUser()){
