@@ -67,6 +67,8 @@ class Course
      */
     private $liked_courses;
 
+  
+
     public function __construct()
     {
         $this->liked_courses = new ArrayCollection();
@@ -175,4 +177,6 @@ class Course
 
         return $this;
     }
+
+
 }
