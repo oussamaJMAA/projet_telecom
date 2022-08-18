@@ -46,7 +46,16 @@ class QuizRepository extends ServiceEntityRepository
             $this->_em->flush();
         }
     }
-
+    public function count_Quizz()
+    {
+        $conn = $this->getEntityManager()
+            ->getConnection();
+        $sql = "select count(id) from quiz";
+        $statement = $conn->prepare($sql);
+        $resultSet = $statement->executeQuery();
+        $a = $resultSet->fetchOne();
+        return $a;
+    }
     // /**
     //  * @return Quiz[] Returns an array of Quiz objects
     //  */
