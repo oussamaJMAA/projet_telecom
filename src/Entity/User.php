@@ -50,9 +50,15 @@ class User implements UserInterface
      */
     private $likes;
 
+    /**
+     * @ORM\ManyToMany(targetEntity=Quiz::class, inversedBy="users")
+     */
+    private $score;
+
     public function __construct()
     {
         $this->likes = new ArrayCollection();
+        $this->score = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -168,6 +174,30 @@ class User implements UserInterface
     public function removeLike(course $like): self
     {
         $this->likes->removeElement($like);
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Quiz>
+     */
+    public function getScore(): Collection
+    {
+        return $this->score;
+    }
+
+    public function addScore(Quiz $score): self
+    {
+        if (!$this->score->contains($score)) {
+            $this->score[] = $score;
+        }
+
+        return $this;
+    }
+
+    public function removeScore(Quiz $score): self
+    {
+        $this->score->removeElement($score);
 
         return $this;
     }

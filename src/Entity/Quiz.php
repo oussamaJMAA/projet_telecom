@@ -35,9 +35,15 @@ class Quiz
      */
     private $questions;
 
+    /**
+     * @ORM\ManyToMany(targetEntity=User::class, mappedBy="score")
+     */
+    private $users;
+
     public function __construct()
     {
         $this->questions = new ArrayCollection();
+        $this->users = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -94,6 +100,33 @@ class Quiz
             if ($question->getQuiz() === $this) {
                 $question->setQuiz(null);
             }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, User>
+     */
+    public function getUsers(): Collection
+    {
+        return $this->users;
+    }
+
+    public function addUser(User $user): self
+    {
+        if (!$this->users->contains($user)) {
+            $this->users[] = $user;
+            $user->addScore($this);
+        }
+
+        return $this;
+    }
+
+    public function removeUser(User $user): self
+    {
+        if ($this->users->removeElement($user)) {
+            $user->removeScore($this);
         }
 
         return $this;
