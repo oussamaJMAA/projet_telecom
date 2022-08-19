@@ -54,8 +54,8 @@ class User implements UserInterface
      * @ORM\ManyToMany(targetEntity=Quiz::class, inversedBy="users")
      */
     private $score;
-
-    public function __construct()
+    //user_score
+   public function __construct()
     {
         $this->likes = new ArrayCollection();
         $this->score = new ArrayCollection();
