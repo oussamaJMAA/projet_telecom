@@ -144,6 +144,36 @@ class CourseRepository extends ServiceEntityRepository
         $a = $resultSet->fetchAllAssociative();
         return $a;
     }
+    public function count_courses()
+    {
+        $conn = $this->getEntityManager()
+            ->getConnection();
+        $sql = "select count(id) from course";
+        $statement = $conn->prepare($sql);
+        $resultSet = $statement->executeQuery();
+        $a = $resultSet->fetchOne();
+        return $a;
+    }
+    public function count_enrollments()
+    {
+        $conn = $this->getEntityManager()
+            ->getConnection();
+        $sql = "select count(id) from enrollments";
+        $statement = $conn->prepare($sql);
+        $resultSet = $statement->executeQuery();
+        $a = $resultSet->fetchOne();
+        return $a;
+    }
+    public function recent_courses_limit_4()
+    {
+        $conn = $this->getEntityManager()
+            ->getConnection();
+        $sql = "select * from course order by id desc limit 4";
+        $statement = $conn->prepare($sql);
+        $resultSet = $statement->executeQuery();
+        $a = $resultSet->fetchAllAssociative();
+        return $a;
+    }
     // /**
     //  * @return Course[] Returns an array of Course objects
     //  */
