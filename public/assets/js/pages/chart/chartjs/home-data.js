@@ -1,3 +1,4 @@
+/*
 $(function () {
   chart1();
   chart2();
@@ -147,3 +148,4 @@ function chart2() {
 
   chart.render();
 }
+*/

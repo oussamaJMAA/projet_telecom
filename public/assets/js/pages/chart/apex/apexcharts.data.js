@@ -1,6 +1,6 @@
 "use strict";
 $(function () {
-  chart1();
+  //chart1();
   chart2();
   chart3();
   chart4();
