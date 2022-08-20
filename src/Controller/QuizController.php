@@ -22,27 +22,14 @@ class QuizController extends AbstractController
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $score = $form->get('score')->getData();
-            $qr2->test($score);
-            
-
-
-
-
-            return $this->redirectToRoute('app_home', [], Response::HTTP_SEE_OTHER);
+            $qr2->test($this->getUser()->getId(),$id,$score);
+        return $this->redirectToRoute('quizz_front', [], Response::HTTP_SEE_OTHER);
         }
         return $this->render('quiz/index.html.twig', [
             'quizz' => $qr->getQuestions($id),
             'form' => $form->createView(),
-            'quizzId' => $id,
-            'userId' => $this->getUser()->getId()
+          
         ]);
     }
-    /**
-     * @Route("/test/{value}", name="app_test22")
-     */
-    public function test22($value, QuizRepository $qr2)
-    {
-        $qr2->test($value);
-        return $this->render('home/index.html.twig');
-    }
+ 
 }

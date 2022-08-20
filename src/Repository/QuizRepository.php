@@ -84,13 +84,15 @@ class QuizRepository extends ServiceEntityRepository
         ;
     }
     */
-    public function test($score)
+    public function test($userId,$quiz_id,$score)
     {
         $conn = $this->getEntityManager()
             ->getConnection();
-        $sql = "update quiz set description = ? where id = 2";
+        $sql = "insert into user_quiz(user_id,quiz_id,score) values(?,?,?)";
         $statement = $conn->prepare($sql);
-        $statement->bindValue(1, $score);
+        $statement->bindValue(1, $userId);
+        $statement->bindValue(2, $quiz_id);
+        $statement->bindValue(3, $score);
        return $statement->executeQuery();
        
     }
