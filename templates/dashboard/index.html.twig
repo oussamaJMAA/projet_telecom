@@ -729,8 +729,37 @@ function chart2() {
       {
         name: "series2",
 
-        data: [{{arr[0].count | join('|')}}, {{arr[1].count | join('|')}}, {{arr[2].count | join('|')}}, {{arr[3].count | join('|') }}, {{arr[4].count | join('|') }}, {{arr[5].count | join('|')}}],
-      }
+{% if arr|length == 0 %}
+
+ 	data: [0,0,0,0,0,0],
+
+{% elseif arr|length == 1 %}
+
+	data: [{{arr[0].count | join('|')}},0,0,0,0,0],
+
+{% elseif arr|length == 2 %}
+
+	data: [{{arr[0].count | join('|')}},{{arr[1].count | join('|')}},0,0,0,0],
+
+{% elseif arr|length == 3 %}
+
+	data: [{{arr[0].count | join('|')}},{{arr[1].count | join('|')}},{{arr[2].count | join('|')}},0,0,0],
+
+{% elseif arr|length == 4 %}
+
+	data: [{{arr[0].count | join('|')}},{{arr[1].count | join('|')}},{{arr[2].count | join('|')}},{{arr[3].count | join('|')}},0,0],
+
+{% elseif arr|length == 5 %}
+
+	data: [{{arr[0].count | join('|')}}, {{arr[1].count | join('|')}}, {{arr[2].count | join('|')}}, {{arr[3].count | join('|') }}, {{arr[4].count | join('|') }},0],
+
+{% elseif arr|length == 6 %}
+
+	data: [{{arr[0].count | join('|')}}, {{arr[1].count | join('|')}}, {{arr[2].count | join('|')}}, {{arr[3].count | join('|') }}, {{arr[4].count | join('|') }}, {{arr[5].count | join('|') }}],
+
+{% endif %}
+
+	  }
     ],
     legend: {
       show: false,
