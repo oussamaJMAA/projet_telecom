@@ -15,7 +15,7 @@ class DashboardController extends AbstractController
      * @Route("/dashboard", name="app_dashboard")
      */
     public function index(CourseRepository $courseRepository,QuizRepository $q,UserRepository $u): Response
-    {dump($q->chart2());
+    {
         return $this->render('dashboard/index.html.twig', [
 
             'controller_name' => 'DashboardController',
@@ -24,7 +24,13 @@ class DashboardController extends AbstractController
             'nb_quizz' => $q->count_Quizz(),
             'nb_users' => $u->count_users(),
             'recent_courses' => $courseRepository-> recent_courses_limit_4(),
-            'arr'=> $q->chart2()
+            'score_0'=>$q->got_score_0_(),
+            'score_1'=>$q->got_score_1_(),
+            'score_2'=>$q->got_score_2_(),
+            'score_3'=>$q->got_score_3_(),
+            'score_4'=>$q->got_score_4_(),
+            'score_5'=>$q->got_score_5_(),
+            'users_scores'=>$q->get_scores_users(),
         ]);
     }
 }

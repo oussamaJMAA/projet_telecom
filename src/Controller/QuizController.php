@@ -27,7 +27,7 @@ class QuizController extends AbstractController
             $qr2->test($this->getUser()->getId(),$id,$score);
         }
         catch (Exception $e) {
-           dump($e);
+  //         dump($e);
           $qr2->test_update($this->getUser()->getId(),$id,$score);
         }
         return $this->redirectToRoute('quizz_front', [], Response::HTTP_SEE_OTHER);
