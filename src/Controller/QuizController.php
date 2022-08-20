@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use Exception;
 use App\Form\QuizFormType;
 use App\Repository\QuizRepository;
 use App\Repository\QuizQuestionsRepository;
@@ -22,7 +23,13 @@ class QuizController extends AbstractController
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $score = $form->get('score')->getData();
+            try{
             $qr2->test($this->getUser()->getId(),$id,$score);
+        }
+        catch (Exception $e) {
+           dump($e);
+          $qr2->test_update($this->getUser()->getId(),$id,$score);
+        }
         return $this->redirectToRoute('quizz_front', [], Response::HTTP_SEE_OTHER);
         }
         return $this->render('quiz/index.html.twig', [

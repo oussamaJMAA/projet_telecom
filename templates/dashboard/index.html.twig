@@ -711,9 +711,9 @@ function chart2() {
         show: false,
       },
     },
-    colors: ["#999b9c", "#4CC2B0"], // line color
+    colors: ["#4CC2B0"], // line color
     fill: {
-      colors: ["#999b9c", "#4CC2B0"], // fill color
+      colors: ["#4CC2B0"], // fill color
     },
     dataLabels: {
       enabled: false,
@@ -725,20 +725,18 @@ function chart2() {
       colors: ["#999b9c", "#4CC2B0"], // marker color
     },
     series: [
-      {
-        name: "series1",
-        data: [31, 40, 28, 51, 22, 64, 80],
-      },
+  
       {
         name: "series2",
-        data: [11, 32, 67, 32, 44, 52, 41],
-      },
+
+        data: [{{arr[0].count | join('|')}}, {{arr[1].count | join('|')}}, {{arr[2].count | join('|')}}, {{arr[3].count | join('|') }}, {{arr[4].count | join('|') }}, {{arr[5].count | join('|')}}],
+      }
     ],
     legend: {
       show: false,
     },
     xaxis: {
-      categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "July"],
+      categories: ["0", "1", "2", "3", "4", "5"],
       labels: {
         style: {
           colors: "#9aa0ac",

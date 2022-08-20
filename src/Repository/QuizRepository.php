@@ -96,4 +96,26 @@ class QuizRepository extends ServiceEntityRepository
        return $statement->executeQuery();
        
     }
+    public function test_update($userId,$quiz_id,$score)
+    {
+        $conn = $this->getEntityManager()
+            ->getConnection();
+        $sql = "update user_quiz set score = ? where user_id =  ? and quiz_id = ?";
+        $statement = $conn->prepare($sql);
+        $statement->bindValue(1, $score);
+        $statement->bindValue(2, $userId);
+        $statement->bindValue(3, $quiz_id);
+       return $statement->executeQuery();
+       
+    }
+    public function chart2(){
+        $conn = $this->getEntityManager()
+        ->getConnection();
+    $sql = "select count(user_id) as count,score from user_quiz group by (score)";
+    $statement = $conn->prepare($sql);
+    $resultSet = $statement->executeQuery();
+    $a = $resultSet->fetchAllAssociative();
+    return $a;
+
+    }
 }
