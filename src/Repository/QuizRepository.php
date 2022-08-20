@@ -108,14 +108,87 @@ class QuizRepository extends ServiceEntityRepository
        return $statement->executeQuery();
        
     }
-    public function chart2(){
+    // public function chart2(){
+    //     $conn = $this->getEntityManager()
+    //     ->getConnection();
+    // $sql = "select count(user_id) as count,score from user_quiz group by (score)";
+    // $statement = $conn->prepare($sql);
+    // $resultSet = $statement->executeQuery();
+    // $a = $resultSet->fetchAllAssociative();
+    // return $a;
+
+    // }
+    public function got_score_0_()
+    {
+        $conn = $this->getEntityManager()
+            ->getConnection();
+        $sql = "select count(user_id) from user_quiz where score=0";
+        $statement = $conn->prepare($sql);
+        $resultSet = $statement->executeQuery();
+        $a = $resultSet->fetchOne();
+        return $a;
+    }
+    public function got_score_1_()
+    {
+        $conn = $this->getEntityManager()
+            ->getConnection();
+        $sql = "select count(user_id) from user_quiz where score=1";
+        $statement = $conn->prepare($sql);
+        $resultSet = $statement->executeQuery();
+        $a = $resultSet->fetchOne();
+        return $a;
+    }
+    public function got_score_2_()
+    {
+        $conn = $this->getEntityManager()
+            ->getConnection();
+        $sql = "select count(user_id) from user_quiz where score=2";
+        $statement = $conn->prepare($sql);
+        $resultSet = $statement->executeQuery();
+        $a = $resultSet->fetchOne();
+        return $a;
+    }
+    public function got_score_3_()
+    {
+        $conn = $this->getEntityManager()
+            ->getConnection();
+        $sql = "select count(user_id) from user_quiz where score=3";
+        $statement = $conn->prepare($sql);
+        $resultSet = $statement->executeQuery();
+        $a = $resultSet->fetchOne();
+        return $a;
+    }
+    public function got_score_4_()
+    {
+        $conn = $this->getEntityManager()
+            ->getConnection();
+        $sql = "select count(user_id) from user_quiz where score=4";
+        $statement = $conn->prepare($sql);
+        $resultSet = $statement->executeQuery();
+        $a = $resultSet->fetchOne();
+        return $a;
+    }
+    public function got_score_5_()
+    {
+        $conn = $this->getEntityManager()
+            ->getConnection();
+        $sql = "select count(user_id) from user_quiz where score=5";
+        $statement = $conn->prepare($sql);
+        $resultSet = $statement->executeQuery();
+        $a = $resultSet->fetchOne();
+        return $a;
+    }
+
+    public function get_scores_users(){
+
         $conn = $this->getEntityManager()
         ->getConnection();
-    $sql = "select count(user_id) as count,score from user_quiz group by (score)";
-    $statement = $conn->prepare($sql);
-    $resultSet = $statement->executeQuery();
-    $a = $resultSet->fetchAllAssociative();
-    return $a;
+        $sql = "select q.title quiz_t,u.full_name u_name,score from user_quiz uq,user u, quiz q where uq.user_id = u.id and uq.quiz_id = q.id";
+        $stmt = $conn->prepare($sql);
+      
+        $resultSet = $stmt->executeQuery();
+        $a= $resultSet->fetchAllAssociative();
 
+    return $a;
     }
 }

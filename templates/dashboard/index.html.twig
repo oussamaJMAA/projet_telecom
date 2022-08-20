@@ -161,7 +161,7 @@
 						<div class="col-md-12 col-sm-12">
 							<div class="card  card-box">
 								<div class="card-head">
-									<header>Users and Quizzes notes</header>
+									<header>Scores</header>
 									<div class="tools">
 										<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
 										<a class="t-collapse btn-color fa fa-chevron-down" href="javascript:;"></a>
@@ -174,144 +174,36 @@
 											<table class="table display product-overview mb-30" id="support_table">
 												<thead>
 													<tr>
-														<th>No</th>
-														<th>Name</th>
-														<th>Assigned Professor</th>
-														<th>Date Of Admit</th>
-														<th>Fees</th>
-														<th>Branch</th>
-														<th>Edit</th>
+														<th>User</th>
+														<th>Quizz Name</th>
+														<th>Score</th>
+														
 													</tr>
 												</thead>
 												<tbody>
+
+												{% for s in users_scores %}
 													<tr>
-														<td>1</td>
-														<td>Jens Brincker</td>
-														<td>Kenny Josh</td>
-														<td>27/05/2016</td>
-														<td>
-															<span class="label label-sm label-success">paid</span>
+														
+														<td>{{s.u_name}}</td>
+														<td>{{s.quiz_t}}</td>
+
+														{% if s.score < 2  %}
+													
+													<td>
+															<span class="label label-sm label-danger">{{s.score}} </span>
 														</td>
-														<td>Mechanical</td>
-														<td><a href="javascript:void(0)" class=""
-																data-bs-toggle="tooltip" title="Edit"><i
-																	class="fa fa-check"></i></a>
-															<a href="javascript:void(0)" class="text-inverse"
-																title="Delete" data-bs-toggle="tooltip"><i
-																	class="fa fa-trash"></i></a></td>
-													</tr>
-													<tr>
-														<td>2</td>
-														<td>Mark Hay</td>
-														<td> Mark</td>
-														<td>26/05/2017</td>
+														{% elseif s.score >= 2 and s.score < 5 %}
 														<td>
-															<span class="label label-sm label-warning">unpaid </span>
+															<span class="label label-sm label-warning">{{s.score}} </span>
 														</td>
-														<td>Science</td>
-														<td><a href="javascript:void(0)" class=""
-																data-bs-toggle="tooltip" title="Edit"><i
-																	class="fa fa-check"></i></a>
-															<a href="javascript:void(0)" class="text-inverse"
-																title="Delete" data-bs-toggle="tooltip"><i
-																	class="fa fa-trash"></i></a></td>
-													</tr>
-													<tr>
-														<td>3</td>
-														<td>Anthony Davie</td>
-														<td>Cinnabar</td>
-														<td>21/05/2016</td>
+														{% elseif s.score == 5 %}
 														<td>
-															<span class="label label-sm label-success ">paid</span>
+															<span class="label label-sm label-success">{{s.score}} </span>
 														</td>
-														<td>Commerce</td>
-														<td><a href="javascript:void(0)" class=""
-																data-bs-toggle="tooltip" title="Edit"><i
-																	class="fa fa-check"></i></a>
-															<a href="javascript:void(0)" class="text-inverse"
-																title="Delete" data-bs-toggle="tooltip"><i
-																	class="fa fa-trash"></i></a></td>
+														{% endif %}
 													</tr>
-													<tr>
-														<td>4</td>
-														<td>David Perry</td>
-														<td>Felix </td>
-														<td>20/04/2016</td>
-														<td>
-															<span class="label label-sm label-danger">unpaid</span>
-														</td>
-														<td>Mechanical</td>
-														<td><a href="javascript:void(0)" class=""
-																data-bs-toggle="tooltip" title="Edit"><i
-																	class="fa fa-check"></i></a>
-															<a href="javascript:void(0)" class="text-inverse"
-																title="Delete" data-bs-toggle="tooltip"><i
-																	class="fa fa-trash"></i></a></td>
-													</tr>
-													<tr>
-														<td>5</td>
-														<td>Anthony Davie</td>
-														<td>Beryl</td>
-														<td>24/05/2016</td>
-														<td>
-															<span class="label label-sm label-success ">paid</span>
-														</td>
-														<td>M.B.A.</td>
-														<td><a href="javascript:void(0)" class=""
-																data-bs-toggle="tooltip" title="Edit"><i
-																	class="fa fa-check"></i></a>
-															<a href="javascript:void(0)" class="text-inverse"
-																title="Delete" data-bs-toggle="tooltip"><i
-																	class="fa fa-trash"></i></a></td>
-													</tr>
-													<tr>
-														<td>6</td>
-														<td>Alan Gilchrist</td>
-														<td>Joshep</td>
-														<td>22/05/2016</td>
-														<td>
-															<span class="label label-sm label-warning ">unpaid</span>
-														</td>
-														<td>Science</td>
-														<td><a href="javascript:void(0)" class=""
-																data-bs-toggle="tooltip" title="Edit"><i
-																	class="fa fa-check"></i></a>
-															<a href="javascript:void(0)" class="text-inverse"
-																title="Delete" data-bs-toggle="tooltip"><i
-																	class="fa fa-trash"></i></a></td>
-													</tr>
-													<tr>
-														<td>7</td>
-														<td>Mark Hay</td>
-														<td>Jayesh</td>
-														<td>18/06/2016</td>
-														<td>
-															<span class="label label-sm label-success ">paid</span>
-														</td>
-														<td>Commerce</td>
-														<td><a href="javascript:void(0)" class=""
-																data-bs-toggle="tooltip" title="Edit"><i
-																	class="fa fa-check"></i></a>
-															<a href="javascript:void(0)" class="text-inverse"
-																title="Delete" data-bs-toggle="tooltip"><i
-																	class="fa fa-trash"></i></a></td>
-													</tr>
-													<tr>
-														<td>8</td>
-														<td>Sue Woodger</td>
-														<td>Sharma</td>
-														<td>17/05/2016</td>
-														<td>
-															<span class="label label-sm label-danger">unpaid</span>
-														</td>
-														<td>Mechanical</td>
-														<td><a href="javascript:void(0)" class=""
-																data-bs-toggle="tooltip" title="Edit"><i
-																	class="fa fa-check"></i></a>
-															<a href="javascript:void(0)" class="text-inverse"
-																title="Delete" data-bs-toggle="tooltip"><i
-																	class="fa fa-trash"></i></a></td>
-													</tr>
+												{% endfor %}
 												</tbody>
 											</table>
 										</div>
@@ -728,9 +620,8 @@ function chart2() {
   
       {
         name: "series2",
-
-        data: [{{arr[0].count | join('|')}}, {{arr[1].count | join('|')}}, {{arr[2].count | join('|')}}, {{arr[3].count | join('|') }}, {{arr[4].count | join('|') }}, {{arr[5].count | join('|')}}],
-      }
+	data: [{{score_0}},{{score_1}},{{score_2}},{{score_3}},{{score_4}},{{score_5}}],
+}
     ],
     legend: {
       show: false,
