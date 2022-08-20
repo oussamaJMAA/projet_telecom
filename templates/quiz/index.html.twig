@@ -11,11 +11,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 {% endblock %}
 {% block body %}
+
 	<div class="start_btn">
 		<button>Start Quiz</button>
 
 	</div>
-		<input type="text" id ="scoreInput" > 
+   
 	<!-- Info Box -->
 	<div class="info_box">
 		<div class="info-title">
@@ -31,8 +32,10 @@
 			<div class="info">5. You'll get points on the basis of your correct answers.</div>
 		</div>
 		<div class="buttons">
-			<button class="quit">Exit Quiz</button>
-			<button class="restart">Continue</button>
+     
+	<button  class="quit">Exit Quiz</button>
+<button class="restart">Continue</button>
+            
 		</div>
 	</div>
 
@@ -74,9 +77,13 @@
 			class="score_text"><!-- Here I've inserted Score Result from JavaScript -->
 		</div>
 		<div class="buttons">
-		
+		    {{ form_start(form)}}
+    
+    {{ form_widget(form.score, { 'id': 'scoreInput' }) }}
+       {{ form_widget(form.save,{'attr': {'class': 'xd'}}) }}
+        {{ form_end(form)}}
 			<button class="restart">Replay Quiz</button>
-			<button class="quit">Quit Quiz</button>
+			<button class="quit" hidden>Quit Quiz </button>
 		</div>
 	</div>
 {% endblock %}
@@ -128,6 +135,7 @@ const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 var score = document.getElementById("scoreInput");
+const save = document.querySelector(".xd");
 
 // if startQuiz button clicked
 start_btn.onclick = ()=>{
@@ -158,7 +166,7 @@ let counterLine;
 let widthValue = 0;
 
 const restart_quiz = result_box.querySelector(".buttons .restart");
-const quit_quiz = result_box.querySelector(".buttons .quit");
+//const quit_quiz = result_box.querySelector(".buttons .quit");
 
 // if restartQuiz button clicked
 restart_quiz.onclick = ()=>{
@@ -178,9 +186,17 @@ restart_quiz.onclick = ()=>{
     timeText.textContent = "Time Left"; //change the text of timeText to Time Left
     next_btn.classList.remove("show"); //hide the next button
 }
-
+/*
 // if quitQuiz button clicked
 quit_quiz.onclick = ()=>{
+score.value = showResult();
+	//document.write(showResult());
+	//res = showResult();
+    //window.location.reload(); //reload the current window
+	
+}*/
+// if quitQuiz button clicked
+save.onclick = ()=>{
 score.value = showResult();
 	//document.write(showResult());
 	//res = showResult();
