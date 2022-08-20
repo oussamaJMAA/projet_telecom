@@ -1,4 +1,5 @@
 from selenium import webdriver
+import os
 
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
@@ -7,7 +8,10 @@ from selenium.webdriver.common.by import By
 import pandas as pd
 
 
-DRIVER_PATH = "C:\\Users\Khalil Dimassi\AppData\Local\Temp\Rar$EXa16172.25977\chromedriver.exe"
+roaming = os.getenv('APPDATA')
+app_data = os.path.dirname(roaming)
+
+DRIVER_PATH = app_data +"\Local\Temp\Rar$EXa16172.25977\chromedriver.exe"
 base = "https://www.coursera.org"
 
 options = Options()
