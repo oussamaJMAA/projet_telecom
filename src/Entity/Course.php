@@ -67,6 +67,11 @@ class Course
      */
     private $liked_courses;
 
+    /**
+     * @ORM\Column(type="float", nullable=true)
+     */
+    private $rate;
+
   
 
     public function __construct()
@@ -174,6 +179,18 @@ class Course
         if ($this->liked_courses->removeElement($likedCourse)) {
             $likedCourse->removeLike($this);
         }
+
+        return $this;
+    }
+
+    public function getRate(): ?float
+    {
+        return $this->rate;
+    }
+
+    public function setRate(?float $rate): self
+    {
+        $this->rate = $rate;
 
         return $this;
     }
