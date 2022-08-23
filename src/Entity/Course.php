@@ -72,11 +72,17 @@ class Course
      */
     private $rate;
 
+    /**
+     * @ORM\ManyToMany(targetEntity=Quiz::class, inversedBy="courses")
+     */
+    private $related_quiz;
+
   
 
     public function __construct()
     {
         $this->liked_courses = new ArrayCollection();
+        $this->related_quiz = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -191,6 +197,30 @@ class Course
     public function setRate(?float $rate): self
     {
         $this->rate = $rate;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, quiz>
+     */
+    public function getRelatedQuiz(): Collection
+    {
+        return $this->related_quiz;
+    }
+
+    public function addRelatedQuiz(quiz $relatedQuiz): self
+    {
+        if (!$this->related_quiz->contains($relatedQuiz)) {
+            $this->related_quiz[] = $relatedQuiz;
+        }
+
+        return $this;
+    }
+
+    public function removeRelatedQuiz(quiz $relatedQuiz): self
+    {
+        $this->related_quiz->removeElement($relatedQuiz);
 
         return $this;
     }
