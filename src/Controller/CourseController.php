@@ -80,7 +80,7 @@ class CourseController extends AbstractController
      /**
      * @Route("/new", name="app_course_new", methods={"GET", "POST"})
      */
-    public function new(Request $request, CourseRepository $courseRepository,MailerInterface $mailer): Response
+    public function new(Request $request, CourseRepository $courseRepository): Response
     {
         $course = new Course();
         $form = $this->createForm(CourseType::class, $course);
@@ -97,14 +97,7 @@ class CourseController extends AbstractController
             );
         $course->setImage($fileName);
         $courseRepository->add($course);
-       /* $email = (new Email())
-        ->from('roukaia@gmail.com')
-        ->to('roukaia.khelifi@esprit.tn')
-        ->subject('Theres a new course check it out')
-        ->html('<p>See Twig integration for better HTML integration!</p>');
-
-    $mailer->send($email);
-*/
+     
         return $this->redirectToRoute('app_course_index', [], Response::HTTP_SEE_OTHER);
         }
 

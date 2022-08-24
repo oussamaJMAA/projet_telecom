@@ -83,6 +83,14 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
         $a = $resultSet->fetchOne();
         return $a;
     }
+
+    public function adminEmails(){
+        $em = $this->getEntityManager();
+        $query = $em->createQuery('SELECT u FROM App\Entity\User u  where u.roles LIKE :role')
+        ->setParameter('role', '%"'.'ROLE_ADMIN'.'"%');
+    $e = $query->getResult(); 
+    return $e ;// array of CmsUser ids
+    }
     // /**
     //  * @return User[] Returns an array of User objects
     //  */
