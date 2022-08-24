@@ -18,7 +18,7 @@ class QuizController extends AbstractController
      */
     public function index(QuizQuestionsRepository $qr, $id, Request $request, QuizRepository $qr2): Response
     { //dump($qr->getQuestions($id));
-
+if($this->getUser()){
         $form = $this->createForm(QuizFormType::class);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
@@ -38,6 +38,8 @@ class QuizController extends AbstractController
             'form' => $form->createView(),
           
         ]);
+    }
+    return $this->redirectToRoute('app_login');
     }
  
 }

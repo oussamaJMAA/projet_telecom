@@ -192,12 +192,7 @@ class CourseController extends AbstractController
         ]);
     }
     else {
-        return $this->render('course/details_course.html.twig', [
-            'course' => $course,
-            'liked' =>0,
-            'enrolled'=>0
-          
-        ]);
+        return $this->redirectToRoute('app_login');
     }
     }
 
