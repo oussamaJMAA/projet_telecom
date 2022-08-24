@@ -70,5 +70,35 @@ if($this->getUser()){
             'form' => $form->createView(),
         ]);
     }
+    
+   /**
+     * @Route("/{QuizID}/edit", name="edit_quiz", methods={"GET", "POST"})
+     */
+    public function edit(Request $request, Quiz $quizQuestion, QuizRepository $quizQuestionsRepository): Response
+    {
+        $form = $this->createForm(QuizFormType::class, $quizQuestion);
+        $form->handleRequest($request);
 
+        if ($form->isSubmitted() && $form->isValid()) {
+            $quizQuestionsRepository->add($quizQuestion);
+            return $this->redirectToRoute('all_quizes', [], Response::HTTP_SEE_OTHER);
+        }
+
+        return $this->render('quiz/edit.html.twig', [
+            'quiz' => $quizQuestion,
+            'form' => $form->createView(),
+        ]);
+    }
+
+    /**
+     * @Route("/{QuizID}", name="del_quiz", methods={"POST"})
+     */
+    public function delete(Request $request, Quiz $quizQuestion, QuizRepository $quizQuestionsRepository): Response
+    {
+        if ($this->isCsrfTokenValid('delete' . $quizQuestion->getQuestID(), $request->request->get('_token'))) {
+            $quizQuestionsRepository->remove($quizQuestion);
+        }
+
+        return $this->redirectToRoute('all_quizes', [], Response::HTTP_SEE_OTHER);
+    }
 }

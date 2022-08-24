@@ -52,14 +52,14 @@
 											<td>{{ q.description }}</td>
 					
                                    
-																	<td class="left">
+															<td class="left">
 																		<div class="d-flex justify-content-around">
-									<a href="#" class="btn btn-primary btn-xs">
+									<a href="{{ path('edit_quiz', {'QuizID': q.id}) }}" class="btn btn-primary btn-xs">
 																	<i class="fa fa-pencil"></i>
 																</a>
 
 																			
-																		
+																			{{ include('quiz/delete.html.twig') }}
 
 																			<div>
 																		</td>
