@@ -31,6 +31,18 @@ class DashboardController extends AbstractController
             'score_4'=>$q->got_score_4_(),
             'score_5'=>$q->got_score_5_(),
             'users_scores'=>$q->get_scores_users(),
+            'n1' => $q->count1(),
+            'n2' => $q->count2(),
+            'n3' => $q->count3(),
+            'n4' => $q->count4(),
+            'n5' => $q->count5(),
+            'n6' => $q->count6(),
+            'n7' => $q->count7(),
+            'n8' => $q->count8(),
+            'n9' => $q->count9(),
+            'n10' => $q->count10(),
+            'n11' => $q->count11(),
+            'n12' => $q->count12(),
         ]);
     }
 }

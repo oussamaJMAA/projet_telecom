@@ -25,6 +25,7 @@ class QuizController extends AbstractController
             $score = $form->get('score')->getData();
             try{
             $qr2->test($this->getUser()->getId(),$id,$score);
+            
         }
         catch (Exception $e) {
   //         dump($e);

@@ -2,11 +2,12 @@
 
 namespace App\Repository;
 
+use DateTime;
 use App\Entity\Quiz;
-use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
-use Doctrine\ORM\OptimisticLockException;
 use Doctrine\ORM\ORMException;
+use Doctrine\ORM\OptimisticLockException;
 use Doctrine\Persistence\ManagerRegistry;
+use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 
 /**
  * @extends ServiceEntityRepository<Quiz>
@@ -84,19 +85,21 @@ class QuizRepository extends ServiceEntityRepository
         ;
     }
     */
-    public function test($userId,$quiz_id,$score)
+    public function test($userId, $quiz_id, $score)
+
     {
+        $today = date("Y-m-d");
         $conn = $this->getEntityManager()
             ->getConnection();
-        $sql = "insert into user_quiz(user_id,quiz_id,score) values(?,?,?)";
+        $sql = "insert into user_quiz(user_id,quiz_id,score,created_at) values(?,?,?,?)";
         $statement = $conn->prepare($sql);
         $statement->bindValue(1, $userId);
         $statement->bindValue(2, $quiz_id);
         $statement->bindValue(3, $score);
-       return $statement->executeQuery();
-       
+        $statement->bindValue(4, $today);
+        return $statement->executeQuery();
     }
-    public function test_update($userId,$quiz_id,$score)
+    public function test_update($userId, $quiz_id, $score)
     {
         $conn = $this->getEntityManager()
             ->getConnection();
@@ -105,8 +108,7 @@ class QuizRepository extends ServiceEntityRepository
         $statement->bindValue(1, $score);
         $statement->bindValue(2, $userId);
         $statement->bindValue(3, $quiz_id);
-       return $statement->executeQuery();
-       
+        return $statement->executeQuery();
     }
     // public function chart2(){
     //     $conn = $this->getEntityManager()
@@ -179,16 +181,150 @@ class QuizRepository extends ServiceEntityRepository
         return $a;
     }
 
-    public function get_scores_users(){
+    public function get_scores_users()
+    {
 
         $conn = $this->getEntityManager()
-        ->getConnection();
+            ->getConnection();
         $sql = "select q.title quiz_t,u.full_name u_name,score from user_quiz uq,user u, quiz q where uq.user_id = u.id and uq.quiz_id = q.id";
         $stmt = $conn->prepare($sql);
-      
-        $resultSet = $stmt->executeQuery();
-        $a= $resultSet->fetchAllAssociative();
 
-    return $a;
+        $resultSet = $stmt->executeQuery();
+        $a = $resultSet->fetchAllAssociative();
+
+        return $a;
     }
+
+    public function count1() {
+        
+        $conn=$this->getEntityManager()
+                   ->getConnection();
+                   $sql="SELECT count(extract(month from created_at)) as 'count' from user_quiz where extract(month from created_at) =1;";
+                  
+                   $stmt = $conn->query($sql);
+                   $results = $stmt->fetchOne();
+                   return $results;
+ 
+}
+
+public function count2() {
+ 
+        $conn=$this->getEntityManager()
+                   ->getConnection();
+                   $sql="SELECT count(extract(month from created_at)) as 'count' from user_quiz where extract(month from created_at) =2;  ";
+        
+                   $stmt = $conn->query($sql);
+                   $results = $stmt->fetchOne();
+                   return $results;
+   
+   
+}
+public function count3() {
+  
+        $conn=$this->getEntityManager()
+                   ->getConnection();
+                   $sql="SELECT count(extract(month from created_at)) as 'count' from user_quiz where extract(month from created_at) =3;  ";
+        
+                   $stmt = $conn->query($sql);
+                   $results = $stmt->fetchOne();
+                   return $results;
+    }
+public function count4() {
+  
+        $conn=$this->getEntityManager()
+                   ->getConnection();
+                   $sql="SELECT count(extract(month from created_at)) as 'count' from user_quiz where extract(month from created_at) = 4;  ";
+                   $stmt = $conn->query($sql);
+                   $results = $stmt->fetchOne();
+                   return $results;
+   
+}
+public function count5() {
+    
+        $conn=$this->getEntityManager()
+                   ->getConnection();
+                   $sql="SELECT count(extract(month from created_at)) as 'count' from user_quiz where extract(month from created_at) =5;  ";
+        
+                   $stmt = $conn->query($sql);
+                   $results = $stmt->fetchOne();
+                   return $results;
+   
+}
+public function count6() {
+ 
+        $conn=$this->getEntityManager()
+                   ->getConnection();
+                   $sql="SELECT count(extract(month from created_at)) as 'count' from user_quiz where extract(month from created_at) = 6;  ";
+                   $stmt = $conn->query($sql);
+                   $results = $stmt->fetchOne();
+                   return $results;
+   
+   
+   
+}
+public function count7() {
+
+        $conn=$this->getEntityManager()
+                   ->getConnection();
+                   $sql="SELECT count(extract(month from created_at)) as 'count' from user_quiz where extract(month from created_at) = 7;  ";
+       
+                   $stmt = $conn->query($sql);
+                   $results = $stmt->fetchOne();
+                   return $results;
+   
+}
+public function count8() {
+
+        $conn=$this->getEntityManager()
+                   ->getConnection();
+                   $sql="SELECT count(extract(month from created_at)) as 'count' from user_quiz where extract(month from created_at) = 8;  ";
+                   $stmt = $conn->query($sql);
+                   $results = $stmt->fetchOne();
+                   return $results;
+ 
+   
+}
+public function count9() {
+
+        $conn=$this->getEntityManager()
+                   ->getConnection();
+                   $sql="SELECT count(extract(month from created_at)) as 'count' from user_quiz where extract(month from created_at) =9;  ";
+        
+                   $stmt = $conn->query($sql);
+                   $results = $stmt->fetchOne();
+                   return $results;
+ 
+   
+}
+public function count10() {
+ 
+        $conn=$this->getEntityManager()
+                   ->getConnection();
+                   $sql="SELECT count(extract(month from created_at)) as 'count' from user_quiz where extract(month from created_at) = 10;  ";
+        
+                   $stmt = $conn->query($sql);
+                   $results = $stmt->fetchOne();
+                   return $results;
+   
+}
+public function count11() {
+   
+        $conn=$this->getEntityManager()
+                   ->getConnection();
+                   $sql="SELECT count(extract(month from created_at)) as 'count' from user_quiz where extract(month from created_at) =11;  ";
+                   $stmt = $conn->query($sql);
+                   $results = $stmt->fetchOne();
+                   return $results;
+}
+public function count12() {
+   
+        $conn=$this->getEntityManager()
+                   ->getConnection();
+                   $sql="SELECT count(extract(month from created_at)) as 'count' from user_quiz where extract(month from created_at) =12;  ";
+        
+                   $stmt = $conn->query($sql);
+                   $results = $stmt->fetchOne();
+                   return $results;
+   
+}
 }
