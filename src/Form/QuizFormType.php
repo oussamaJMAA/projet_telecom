@@ -13,10 +13,12 @@ class QuizFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('score',HiddenType::class)
+
             ->add('save', SubmitType::class,[
                 'label'=> 'Quit Quiz'
             ])
+            ->add('title')
+            ->add('description')
         ;
     }
 
