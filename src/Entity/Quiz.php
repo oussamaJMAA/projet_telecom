@@ -40,10 +40,17 @@ class Quiz
      */
     private $users;
 
+    /**
+     * @ORM\ManyToMany(targetEntity=Course::class, inversedBy="quizzes")
+     */
+    private $courses;
+
     public function __construct()
     {
         $this->questions = new ArrayCollection();
         $this->users = new ArrayCollection();
+        $this->courses = new ArrayCollection();
+    
     }
 
     public function getId(): ?int
@@ -131,4 +138,29 @@ class Quiz
 
         return $this;
     }
+
+    /**
+     * @return Collection<int, Course>
+     */
+    public function getCourses(): Collection
+    {
+        return $this->courses;
+    }
+
+    public function addCourse(Course $course): self
+    {
+        if (!$this->courses->contains($course)) {
+            $this->courses[] = $course;
+        }
+
+        return $this;
+    }
+
+    public function removeCourse(Course $course): self
+    {
+        $this->courses->removeElement($course);
+
+        return $this;
+    }
+
 }

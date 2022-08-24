@@ -174,6 +174,38 @@ class CourseRepository extends ServiceEntityRepository
         $a = $resultSet->fetchAllAssociative();
         return $a;
     }
+    public function recent_courses_no_limit()
+    {
+        $conn = $this->getEntityManager()
+            ->getConnection();
+        $sql = "select * from course order by id desc";
+        $statement = $conn->prepare($sql);
+        $resultSet = $statement->executeQuery();
+        $a = $resultSet->fetchAllAssociative();
+        return $a;
+    }
+    public function recommended_courses($user_id)
+    {
+        $conn = $this->getEntityManager()
+            ->getConnection();
+        $sql = "select course.* from course join quiz_course on quiz_course.course_id = course.id join quiz on quiz.id = quiz_course.quiz_id join user_quiz on user_quiz.quiz_id = quiz_course.quiz_id join user on user_quiz.user_id = user.id where user_quiz.score < 5 and user.id = ? group by course.name";
+        $statement = $conn->prepare($sql);
+        $statement->bindValue(1, $user_id);
+        $resultSet = $statement->executeQuery();
+        $a = $resultSet->fetchAllAssociative();
+        return $a;
+    }
+    public function top_courses()
+    {
+        $conn = $this->getEntityManager()
+            ->getConnection();
+        $sql = "select * from course where nb_enrollments > (select avg(nb_enrollments) from course) order by nb_enrollments desc";
+        $statement = $conn->prepare($sql);
+        $resultSet = $statement->executeQuery();
+        $a = $resultSet->fetchAllAssociative();
+        return $a;
+    }
+
     // /**
     //  * @return Course[] Returns an array of Course objects
     //  */
