@@ -4,9 +4,11 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\UserType;
+use Symfony\Component\Mime\Email;
 use App\Repository\UserRepository;
 use App\Form\AdminRegistrationFormType;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -20,8 +22,15 @@ class UserController extends AbstractController
     /**
      * @Route("/", name="app_user_index", methods={"GET"})
      */
-    public function index(UserRepository $userRepository): Response
-    {
+    public function index(UserRepository $userRepository,MailerInterface $mailer): Response
+    { $email = (new Email())
+            
+        ->from('jemaaoussama64@gmail.com')
+        ->to('oussama.jmaa@esprit.tn')
+        ->subject('test')
+        ->text('Sending emails is fun again!')
+        ->html('<h1>test</h1>');
+        $mailer->send($email);
         return $this->render('user/index.html.twig', [
             'users' => $userRepository->findAll(),
         ]);
