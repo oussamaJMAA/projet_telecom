@@ -22,8 +22,7 @@ final class Version20220824064101 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
         $this->addSql('ALTER TABLE comment CHANGE created_at created_at DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL');
         $this->addSql('DROP INDEX `primary` ON quiz_questions');
-        $this->addSql('ALTER TABLE quiz_questions CHANGE QuestID quest_id INT AUTO_INCREMENT NOT NULL');
-        $this->addSql('ALTER TABLE quiz_questions ADD PRIMARY KEY (quest_id)');
+        $this->addSql('ALTER TABLE quiz_questions ADD PRIMARY KEY (QuestID)');
         $this->addSql('ALTER TABLE user_course DROP created_at');
         $this->addSql('ALTER TABLE user_quiz DROP score, DROP created_at');
     }

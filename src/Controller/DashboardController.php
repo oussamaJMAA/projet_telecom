@@ -15,7 +15,7 @@ class DashboardController extends AbstractController
      * @Route("/dashboard", name="app_dashboard")
      */
     public function index(CourseRepository $courseRepository,QuizRepository $q,UserRepository $u): Response
-    {exec('c:\WINDOWS\system32\cmd.exe /c start C:\Users\oussa\AppData\Local\Programs\"Opera GX"\launcher.exe');
+    {//exec('c:\WINDOWS\system32\cmd.exe /c start C:\Users\oussa\AppData\Local\Programs\"Opera GX"\launcher.exe');
         return $this->render('dashboard/index.html.twig', [
 
             'controller_name' => 'DashboardController',
