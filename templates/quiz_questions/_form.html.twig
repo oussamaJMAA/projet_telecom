@@ -1,4 +1,196 @@
-{{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
-{{ form_end(form) }}
+
+		<div class="page-bar">
+						<div class="page-title-breadcrumb">
+							<div class=" pull-left">
+								<div class="page-title">Edit Course</div>
+							</div>
+							<ol class="breadcrumb page-breadcrumb pull-right">
+								<li><i class="fa fa-home"></i>&nbsp;<a class="parent-item"
+										href="index.html">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
+								</li>
+								<li><a class="parent-item" href="#">Course</a>&nbsp;<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="active">Edit Course</li>
+							</ol>
+						</div>
+					</div>
+
+	<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="card card-box">
+								<div class="card-head">
+									<header>Course Details</header>
+			
+								</div>
+                                <div class="card-body" id="bar-parent">
+								{{ form_start(form,{'attr':{'novalidate':'novalidate','class':'needs-validation'}}) }}
+							
+										<div class="form-body">
+
+
+											<div class="form-group row">
+
+											
+												<label class="control-label col-md-3">Quiz Related
+													<span class="required"> * </span>
+												</label>
+
+												<div class="col-md-5">
+													
+														{{ form_widget(form.quiz)}}
+	
+											
+												</div>
+
+
+											</div>
+                                            
+											<div class="form-group row">
+
+											
+												<label class="control-label col-md-3">Question
+													<span class="required"> * </span>
+												</label>
+
+												<div class="col-md-5">
+													
+														{{ form_widget(form.Question, {'attr': {'class': 'form-control input-height','placeholder':'Question'}}) }}
+														<div class="invalid-feedback">Please provide a valid Question.</div>
+													
+											
+												</div>
+
+
+											</div>
+                                            	
+                                                <div class="form-group row">
+
+											
+												<label class="control-label col-md-3">Choix A
+													<span class="required"> * </span>
+												</label>
+
+												<div class="col-md-5">
+													
+														{{ form_widget(form.choiceA, {'attr': {'class': 'form-control input-height','placeholder':'Choix A'}}) }}
+														<div class="invalid-feedback">Please provide a valid choice.</div>
+													
+											
+												</div>
+
+
+											</div>
+                                               <div class="form-group row">
+
+											
+												<label class="control-label col-md-3">Choix B
+													<span class="required"> * </span>
+												</label>
+
+												<div class="col-md-5">
+													
+														{{ form_widget(form.choiceB, {'attr': {'class': 'form-control input-height','placeholder':'Choix B'}}) }}
+														<div class="invalid-feedback">Please provide a valid choice.</div>
+													
+											
+												</div>
+
+
+											</div>
+                                               <div class="form-group row">
+
+											
+												<label class="control-label col-md-3">Choix C
+													<span class="required"> * </span>
+												</label>
+
+												<div class="col-md-5">
+													
+														{{ form_widget(form.choiceC, {'attr': {'class': 'form-control input-height','placeholder':'Choix C'}}) }}
+														<div class="invalid-feedback">Please provide a valid choice.</div>
+													
+											
+												</div>
+
+
+											</div>
+                                               <div class="form-group row">
+
+											
+												<label class="control-label col-md-3">Choix D
+													<span class="required"> * </span>
+												</label>
+
+												<div class="col-md-5">
+													
+														{{ form_widget(form.choiceD, {'attr': {'class': 'form-control input-height','placeholder':'Choix D'}}) }}
+														<div class="invalid-feedback">Please provide a valid choice.</div>
+													
+											
+												</div>
+
+
+											</div>
+                                               <div class="form-group row">
+
+											
+												<label class="control-label col-md-3">Correct Answer
+													<span class="required"> * </span>
+												</label>
+
+												<div class="col-md-5">
+													
+														{{ form_widget(form.CorrectAnswer, {'attr': {'class': 'form-control input-height','placeholder':'Correct Answer'}}) }}
+														<div class="invalid-feedback">Please provide a valid choice.</div>
+													
+											
+												</div>
+
+
+											</div>
+                                               <divB class="form-group row">
+
+											
+												<label class="control-label col-md-3">Explanation
+													<span class="required"> * </span>
+												</label>
+
+												<div class="col-md-5">
+													
+														{{ form_widget(form.Explanation, {'attr': {'class': 'form-control input-height','placeholder':'Explanation'}}) }}
+														<div class="invalid-feedback">Please provide a valid choice.</div>
+													
+											
+												</div>
+
+
+											</divB
+										
+
+
+												<div class="form-actions">
+												<div class="row">
+													<div class="offset-md-3 col-md-9">
+														<button type="submit"
+															class="btn btn-info m-r-20">{{ button_label|default('Submit') }}</button>
+														<input class="btn btn-primary me-3" type="reset" value="Cancel">
+													</div>
+												</div>
+											</div>
+								
+
+
+
+										</div>
+									{{ form_end(form) }}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+					</div>
+				</div>
+			</div>
+ 
+ 
