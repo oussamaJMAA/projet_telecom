@@ -41,7 +41,7 @@ class Quiz
     private $users;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Course::class, mappedBy="related_quiz")
+     * @ORM\ManyToMany(targetEntity=Course::class, inversedBy="quizzes")
      */
     private $courses;
 
@@ -50,6 +50,7 @@ class Quiz
         $this->questions = new ArrayCollection();
         $this->users = new ArrayCollection();
         $this->courses = new ArrayCollection();
+    
     }
 
     public function getId(): ?int
@@ -150,7 +151,6 @@ class Quiz
     {
         if (!$this->courses->contains($course)) {
             $this->courses[] = $course;
-            $course->addRelatedQuiz($this);
         }
 
         return $this;
@@ -158,10 +158,9 @@ class Quiz
 
     public function removeCourse(Course $course): self
     {
-        if ($this->courses->removeElement($course)) {
-            $course->removeRelatedQuiz($this);
-        }
+        $this->courses->removeElement($course);
 
         return $this;
     }
+
 }

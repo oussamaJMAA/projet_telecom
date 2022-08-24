@@ -37,11 +37,46 @@ class CourseController extends AbstractController
     {$pagerfanta = new Pagerfanta(new QueryAdapter($courseRepository->allCourses()));
         $pagerfanta->setMaxPerPage(6);
         $pagerfanta->setCurrentPage($page);
-
+        
      return $this->render('course/index_front.html.twig', [
         'pager' => $pagerfanta,
         ]);
     }
+/**
+     * @Route("/course_front/rec", name="app_course_index_front_rec", methods={"GET"})
+     */
+    public function recommended(CourseRepository $courseRepository): Response
+    {
+        if($this->getUser()){
+     return $this->render('course/recommended.html.twig', [
+            'courses' => $courseRepository->recommended_courses($this->getUser()->getId()),
+        ]);
+    }
+    return $this->redirectToRoute('app_login');
+    }
+/**
+     * @Route("/course_front/top", name="top", methods={"GET"})
+     */
+    public function top_courses(CourseRepository $courseRepository): Response
+    {
+     
+     return $this->render('course/top_courses.html.twig', [
+            'courses' => $courseRepository->top_courses(),
+        ]);
+
+    }
+    /**
+     * @Route("/course_front/recent", name="recent", methods={"GET"})
+     */
+    public function recent_courses(CourseRepository $courseRepository): Response
+    {
+     
+     return $this->render('course/recent_courses.html.twig', [
+            'courses' => $courseRepository-> recent_courses_no_limit(),
+        ]);
+
+    }
+
      /**
      * @Route("/new", name="app_course_new", methods={"GET", "POST"})
      */
