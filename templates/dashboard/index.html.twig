@@ -93,7 +93,7 @@
 						<div class="col-sm-6">
 							<div class="card card-box">
 								<div class="card-head">
-									<header>University Survey</header>
+									<header>Number of Quizes Per Month</header>
 									<div class="tools">
 										<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
 										<a class="t-collapse btn-color fa fa-chevron-down" href="javascript:;"></a>
@@ -110,7 +110,7 @@
 						<div class="col-sm-6">
 							<div class="card card-box">
 								<div class="card-head">
-									<header>University Survey</header>
+									<header> Quiz Scores</header>
 									<div class="tools">
 										<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
 										<a class="t-collapse btn-color fa fa-chevron-down" href="javascript:;"></a>
@@ -492,13 +492,10 @@
 			<!-- end chat sidebar -->
 		</div>
 
-
-
-
 {% endblock %}
 
-
 {% block javascripts %}
+{% set tab = [n1, n2, n3,n4, n5,n6,n7,n8,n9,n10,n11,n12] %}
 {{parent()}}
 <script>
 $(function () {
@@ -533,12 +530,9 @@ function chart1() {
     series: [
       {
         name: "High - 2019",
-        data: [19, 15, 14, 24, 25, 19, 22, 24, 25],
+        data: [{{n1}}, {{n2}}, {{n3}}, {{n4}}, {{n5}}, {{n6}}, {{n7}}, {{n8}}, {{n9}},{{n10}}],
       },
-      {
-        name: "Low - 2019",
-        data: [7, 11, 22, 18, 31, 13, 26, 16, 31],
-      },
+    
     ],
     grid: {
       borderColor: "#e7e7e7",
@@ -561,6 +555,7 @@ function chart1() {
         "july",
         "aug",
         "sept",
+		"Oct",
       ],
 
       labels: {
@@ -571,15 +566,15 @@ function chart1() {
     },
     yaxis: {
       title: {
-        text: "Income",
+        text: "Number of Quizes",
       },
       labels: {
         style: {
           color: "#9aa0ac",
         },
       },
-      min: 5,
-      max: 40,
+      min: 1,
+      max: 10,
     },
     legend: {
       position: "top",

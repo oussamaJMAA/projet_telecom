@@ -26,21 +26,21 @@
 			<div
 				class="tabbable-line">
 				<!-- <ul class="nav nav-tabs">
-				                                    <li class="active">
-				                                        <a href="#tab1" data-bs-toggle="tab"> List View </a>
-				                                    </li>
-				                                    <li>
-				                                        <a href="#tab2" data-bs-toggle="tab"> Grid View </a>
-				                                    </li>
-				                                </ul> -->
+								                                    <li class="active">
+								                                        <a href="#tab1" data-bs-toggle="tab"> List View </a>
+								                                    </li>
+								                                    <li>
+								                                        <a href="#tab2" data-bs-toggle="tab"> Grid View </a>
+								                                    </li>
+								                                </ul> -->
 				<ul class="nav customtab nav-tabs" role="tablist">
 					<li class="nav-item">
 						<a href="#tab1" class="nav-link active" data-bs-toggle="tab">List
-																		View</a>
+																									View</a>
 					</li>
 					<li class="nav-item">
 						<a href="#tab2" class="nav-link" data-bs-toggle="tab">Grid
-																		View</a>
+																									View</a>
 					</li>
 				</ul>
 				<div class="tab-content">
@@ -82,7 +82,7 @@
 															<a href="javascript:;">
 																<i class="fa fa-file-pdf-o"></i>
 																Save as
-																																				PDF
+																																																				PDF
 															</a>
 														</li>
 														<li>
@@ -117,128 +117,136 @@
 															<td class="left">{{ course.name }}</td>
 															{% if course.image starts with 'https' %}
 																<td>
-																	<img src="{{course.image}}" width='42px' height='42px'>
-																	</td>
-																{% else %}
-																	<td><img src="/uploads/photos/{{course.image}}" height="42" width="42">
-																	</td>
-																	{% endif %}
-																	<td class="left">{{ course.nbEnrollments }}</td>
-																	<td class="left">{{ course.details }}</td>
-																	<td class="left">{{ course.link }}</td>
-																	<td class="left">{{ course.nbLikes }}</td>
+																	<img class='img-fluid' src="{{course.image}}" width='60px' height='30px'>
+																</td>
+															{% else %}
+																<td><img src="/uploads/photos/{{course.image}}" height="60px" width="30px">
+																</td>
+															{% endif %}
+															<td class="left">{{ course.nbEnrollments }}</td>
+															<td class="left">{{course.details|length > 100 ? course.details|slice(0,100) ~ '...' : course.details }}</td>
+															<td class="left">{{ course.link }}</td>
+															<td class="left">{{ course.nbLikes }}</td>
 
-																	<td class="left">
-																		<div class="d-flex justify-content-around">
-																			<a href="{{ path('app_course_edit', {'id': course.id}) }}" class="btn btn-primary btn-xs">
-																				<i class="fa fa-pencil"></i>
-																			</a>
-
-
-																			{{ include('course/_delete_form.html.twig') }}
-
-																			<div></td>
+															<td class="left">
+																<div class="d-flex justify-content-around">
+																	<a href="{{ path('app_course_edit', {'id': course.id}) }}" class="btn btn-primary btn-xs">
+																		<i class="fa fa-pencil"></i>
+																	</a>
 
 
-																		</tr>
-																	{% else %}
-																		<tr>
-																			<td colspan="8">no records found</td>
-																		</tr>
-																	{% endfor %}
-																</tbody>
-															</table>
+																	{{ include('course/_delete_form.html.twig') }}
+
+																	<div></td>
+
+
+																</tr>
+															{% else %}
+																<tr>
+																	<td colspan="8">no records found</td>
+																</tr>
+															{% endfor %}
 														</tr>
-													</div>
+													</tbody>
 												</tbody>
-											</div>
-										</div>
+											</table>
+										</tr>
 									</div>
+								</tbody>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="tab-pane" id="tab2">
+				<div class="row">
+					{% for course in courses %}
+
+						<div class="col-lg-3 col-md-6 col-12 col-sm-6">
+							<div class="blogThumb">
+								{% if course.image starts with 'https' %}
+
+									<div class="thumb-center"><img class="img-responsive" alt="course" src="{{course.image}}"></div>
+
+								{% else %}
+									<div class="thumb-center"><img class="img-responsive" alt="course" src="/uploads/photos/{{course.image}}"></div>
+								{% endif %}
+								<div class="course-box">
+									<h4>{{ course.name }}</h4>
+
+									<div class="text-muted">
+										<span class="m-r-10">April 23</span>
+										<a class="course-likes m-l-10" href="#">
+											<i class="fa fa-heart-o"></i>
+											{{ course.nbLikes }}</a>
+									</div>
+
+									<p>
+										<span>
+											<i class="fa fa-graduation-cap"></i>
+											Students:
+											{{ course.nbEnrollments }}</span>
+									</p>
+									<button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect m-b-10 btn-info">
+
+										<a href={{ path('app_course_show', {'id': course.id} ) }} class="text-white">
+											READ MORE
+										</a>
+									</button>
 								</div>
 							</div>
-
-							<div class="tab-pane" id="tab2">
-								<div class="row">
-									{% for course in courses %}
-
-										<div class="col-lg-3 col-md-6 col-12 col-sm-6">
-											<div class="blogThumb">
-												<div class="thumb-center"><img class="img-responsive" alt="course" src="/uploads/photos/{{course.image}}"></div>
-												<div class="course-box">
-													<h4>{{ course.name }}</h4>
-
-													<div class="text-muted">
-														<span class="m-r-10">April 23</span>
-														<a class="course-likes m-l-10" href="#">
-															<i class="fa fa-heart-o"></i>
-															{{ course.nbLikes }}</a>
-													</div>
-
-													<p>
-														<span>
-															<i class="fa fa-graduation-cap"></i>
-															Students:
-															{{ course.nbEnrollments }}</span>
-													</p>
-													<button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect m-b-10 btn-info">
-
-														<a href={{ path('app_course_show', {'id': course.id} ) }} class="text-white">
-															READ MORE
-														</a>
-													</button>
-												</div>
-											</div>
-										</div>
-									{% endfor %}
-									<!--
-																				<div class="col-md-4">
-																					<div class="card card-box">
-																						<div class="card-body no-padding ">
-																							<div class="doctor-profile">
-																								<img src="../assets/img/prof/prof1.jpg" class="doctor-pic"
-																									alt="">
-																								<div class="profile-usertitle">
-																									<div class="doctor-name">Rajesh </div>
-																									<div class="name-center"> Science </div>
-																								</div>
-																								<p>45, Krishna Tower, Near Bus Stop, Satellite, <br />Mumbai
-																								</p>
-																								<div>
-																									<p><i class="fa fa-phone"></i><a
-																											href="tel:(123)456-7890"> (123)456-7890</a></p>
-																								</div>
-																								<div class="profile-userbuttons">
-																									<a href="professor_profile.html"
-																										class="btn btn-circle deepPink-bgcolor btn-sm">Read
-																										More</a>
-																								</div>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																				<div class="col-md-4">
-																					<div class="card card-box">
-																						<div class="card-body no-padding ">
-																							<div class="doctor-profile">
-																								<img src="../assets/img/prof/prof2.jpg" class="doctor-pic"
-																									alt="">
-																								<div class="profile-usertitle">
-																									<div class="doctor-name">Sarah Smith </div>
-																									<div class="name-center"> Computer </div>
-																								</div>
-																								<p>456, Estern evenue, Courtage area, <br />New York</p>
-																								<div>
-																									<p><i class="fa fa-phone"></i><a
-																											href="tel:(123)456-7890"> (123)456-7890</a></p>
-																								</div>
-																								<div class="profile-userbuttons">
-																									<a href="professor_profile.html"
-																										class="btn btn-circle deepPink-bgcolor btn-sm">Read
-																										More</a>
-																								</div>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																			</div>       -->
-								{% endblock %}
+						</div>
+					{% endfor %}
+					<!--
+																									<div class="col-md-4">
+																										<div class="card card-box">
+																											<div class="card-body no-padding ">
+																												<div class="doctor-profile">
+																													<img src="../assets/img/prof/prof1.jpg" class="doctor-pic"
+																														alt="">
+																													<div class="profile-usertitle">
+																														<div class="doctor-name">Rajesh </div>
+																														<div class="name-center"> Science </div>
+																													</div>
+																													<p>45, Krishna Tower, Near Bus Stop, Satellite, <br />Mumbai
+																													</p>
+																													<div>
+																														<p><i class="fa fa-phone"></i><a
+																																href="tel:(123)456-7890"> (123)456-7890</a></p>
+																													</div>
+																													<div class="profile-userbuttons">
+																														<a href="professor_profile.html"
+																															class="btn btn-circle deepPink-bgcolor btn-sm">Read
+																															More</a>
+																													</div>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																									<div class="col-md-4">
+																										<div class="card card-box">
+																											<div class="card-body no-padding ">
+																												<div class="doctor-profile">
+																													<img src="../assets/img/prof/prof2.jpg" class="doctor-pic"
+																														alt="">
+																													<div class="profile-usertitle">
+																														<div class="doctor-name">Sarah Smith </div>
+																														<div class="name-center"> Computer </div>
+																													</div>
+																													<p>456, Estern evenue, Courtage area, <br />New York</p>
+																													<div>
+																														<p><i class="fa fa-phone"></i><a
+																																href="tel:(123)456-7890"> (123)456-7890</a></p>
+																													</div>
+																													<div class="profile-userbuttons">
+																														<a href="professor_profile.html"
+																															class="btn btn-circle deepPink-bgcolor btn-sm">Read
+																															More</a>
+																													</div>
+																												</div>
+																											</div>
+																										</div>
+																									</div>
+																								</div>       -->
+				{% endblock %}
