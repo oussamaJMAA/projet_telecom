@@ -77,12 +77,18 @@ class Course
      */
     private $quizzes;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Comment::class, mappedBy="course")
+     */
+    private $comments;
+
   
 
     public function __construct()
     {
         $this->liked_courses = new ArrayCollection();
         $this->quizzes = new ArrayCollection();
+        $this->comments = new ArrayCollection();
        
     }
 
@@ -224,6 +230,36 @@ class Course
     {
         if ($this->quizzes->removeElement($quiz)) {
             $quiz->removeCourse($this);
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Comment>
+     */
+    public function getComments(): Collection
+    {
+        return $this->comments;
+    }
+
+    public function addComment(Comment $comment): self
+    {
+        if (!$this->comments->contains($comment)) {
+            $this->comments[] = $comment;
+            $comment->setCourse($this);
+        }
+
+        return $this;
+    }
+
+    public function removeComment(Comment $comment): self
+    {
+        if ($this->comments->removeElement($comment)) {
+            // set the owning side to null (unless already changed)
+            if ($comment->getCourse() === $this) {
+                $comment->setCourse(null);
+            }
         }
 
         return $this;

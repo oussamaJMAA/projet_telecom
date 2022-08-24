@@ -1,246 +1,276 @@
 {% extends 'base_front.html.twig' %}
 
-{% block title %}All Courses{% endblock %}
+{% block title %}All Courses
+{% endblock %}
 
-{% block body %}  <!-- Start Page Title Area -->
-        <div class="page-title-area">
-            <div class="container">
-                <div class="page-title-content">
-                    <h2>Courses</h2>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li>Course Details</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!-- Start Product Details Area -->
-        <section class="product-details-area ptb-100">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="product-details-image">
-                {% if course.image starts with 'https' %}
-            <img class="img-responsive" alt="course"src="{{course.image}}">   
-           
-            {% else %}         
-<img class="img-responsive" alt="course" src="/uploads/photos/{{course.image}}"> 
-{% endif %}
-                    </div>
-</div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="product-details-desc">
-                            <h3>{{ course.name }}</h3>
-
-                            <div class="price">
-                                <span class="new-price"> {{ course.nbLikes }} Likes</span>
-                              
-                            </div>
-
-                            <div class="product-review">
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                                <span class="new-price"> {{ course.nbEnrollments }}  Enrollments</span>
-                            </div>
-
-                            <p>{{course.details|length > 100 ? course.details|slice(0,100) ~ '...' : course.details }}</p>
-
-                            <br>
-                            <div>
-                                 {% if enrolled == 0 and liked == 0 %}
-                                   <div class="item d-flex justify-content-center">
-                                    <a href="{{ path('like_course', {'id': course.id} ) }}" class="buy-btn"><i class="bi bi-heart"></i></a>
-                                </div>
-                                      <div class="buy-checkbox-btn">
-                                <div class="item">
-                                
-                                    <a href="{{ path('enroll_course', {'id': course.id} ) }}" class="buy-btn" target="_blank" onclick="window.open('{{course.link}}');">Enroll Now</a>
-                                </div> 
-                                      </div>           
-                                
-
-                               
-                                {% elseif enrolled == 1 and liked == 1 %}
-                                 <div class="item d-flex justify-content-center">
-                                    <a href="{{ path('unlike_course', {'id': course.id} ) }}" class="buy-btn"><i class="bi bi-heart-fill"></i></a>
-                                </div>
-                                  <div class="buy-checkbox-btn">
-                                         <div class="item">
-                                    <a href="{{ path('continue_course', {'id': course.id} ) }}" class="buy-btn"target="_blank" onclick="window.open('{{course.link}}');" >Continue</a>
-                                </div> 
-                                    </div> 
-                                 
-                                 
-                                {% elseif enrolled == 1 and liked == 0 %}
-                                 <div class="item d-flex justify-content-center">
-                                    <a href="{{ path('like_course', {'id': course.id} ) }}" class="buy-btn"><i class="bi bi-heart"></i></a>
-                                </div>
-                                 <div class="buy-checkbox-btn">
-                                     <div class="item">
-                                    <a href="{{ path('continue_course', {'id': course.id} ) }}" class="buy-btn" target="_blank" onclick="window.open('{{course.link}}');">Continue</a>
-                                </div> 
-                                </div>
-
-                                 
-                              
-                                {% elseif enrolled == 0 and liked == 1 %}
-                                 <div class="item d-flex justify-content-center">
-                                    <a href="{{ path('unlike_course', {'id': course.id} ) }}" class="buy-btn"><i class="bi bi-heart-fill"></i></a>
-                                </div>
-                                  <div class="buy-checkbox-btn">
-                                 <div class="item">
-                                    <a href="{{ path('enroll_course', {'id': course.id} ) }}" class="buy-btn"target="_blank" onclick="window.open('{{course.link}}');" >Enroll Now</a>
-                                </div> 
-                                        </div>
-                                 
-                                 {% endif %}
-
-                            </div>
-</div>
-
-                          
-                        </div>
-                    </div>
-
-                     <div class="col-lg-12 col-md-12">
-                        <div class="tab products-details-tab">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12">
-                                    <ul class="tabs">
-                                        <li><a href="#">
-                                            <div class="dot"></div> Description
-                                        </a></li>
-                                        
-                                       
-
-                                        <li><a href="#">
-                                            <div class="dot"></div> Reviews
-                                        </a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="tab_content">
-                                        <div class="tabs_item">
-                                            <div class="products-details-tab-content">
-                                                <p>{{course.details}}</p>
-                                            </div>
-                                        </div>
-
-                                      
-
-                                        <div class="tabs_item">
-                                            <div class="products-details-tab-content">
-                                                <div class="product-review-form">
-                                                    <h3>Customer Reviews</h3>
-
-                                                    <div class="review-title">
-                                                        <div class="rating">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="far fa-star"></i>
-                                                        </div>
-                                                        <p>Based on 3 reviews</p>
-
-                                                    </div>
-
-                                                    <div class="review-comments">
-                                                        <div class="review-item">
-                                                            <div class="rating">
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="far fa-star"></i>
-                                                            </div>
-                                                            <h3>Good</h3>
-                                                            <span><strong>Admin</strong> on <strong>Sep 21, 2021</strong></span>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-
-                                                            <a href="#" class="review-report-link">Report as Inappropriate</a>
-                                                        </div>
-
-                                                        <div class="review-item">
-                                                            <div class="rating">
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="far fa-star"></i>
-                                                            </div>
-                                                            <h3>Good</h3>
-                                                            <span><strong>Admin</strong> on <strong>Sep 21, 2021</strong></span>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-
-                                                            <a href="#" class="review-report-link">Report as Inappropriate</a>
-                                                        </div>
-
-                                                        <div class="review-item">
-                                                            <div class="rating">
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="far fa-star"></i>
-                                                            </div>
-                                                            <h3>Good</h3>
-                                                            <span><strong>Admin</strong> on <strong>Sep 21, 2021</strong></span>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-
-                                                            <a href="#" class="review-report-link">Report as Inappropriate</a>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="review-form">
-                                                        <h3>Write a Review</h3>
-
-                                                        <form>
-                                                            <div class="row">
-                                                               
-
-                                                                <div class="col-lg-6 col-md-6">
-                                                                    <div class="form-group">
-                                                                        <label>Email</label>
-                                                                        <input type="email" id="email" name="email" placeholder="Enter your email" class="form-control" value={{app.user.email}}  readonly>
-                                                                    </div>
-                                                                </div>
-
-                                                          
-                                                                <div class="col-lg-12 col-md-12">
-                                                                    <div class="form-group">
-                                                                        <label>Body of Review (1500)</label>
-                                                                        <textarea name="review-body" id="review-body" cols="30" rows="7" placeholder="Write your comments here" class="form-control"></textarea>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="col-lg-12 col-md-12">
-                                                                    <button type="submit" class="btn btn-primary">Submit Review</button>
-                                                                </div>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-
-        </section>
-        <!-- End Product Details Area -->
+{% block body %}
+	<!-- Start Page Title Area -->
+	<div class="page-title-area">
+		<div class="container">
+			<div class="page-title-content">
+				<h2>Courses</h2>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>Course Details</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
 
- {% endblock %}
+	<!-- Start Product Details Area -->
+	<section class="product-details-area ptb-100">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6 col-md-12">
+					<div class="product-details-image">
+						{% if course.image starts with 'https' %}
+							<img class="img-responsive" alt="course" src="{{course.image}}">
+
+						{% else %}
+							<img class="img-responsive" alt="course" src="/uploads/photos/{{course.image}}">
+						{% endif %}
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12">
+					<div class="product-details-desc">
+						<h3>{{ course.name }}</h3>
+
+						<div class="price">
+							<span class="new-price">
+								{{ course.nbLikes }}
+								Likes</span>
+
+						</div>
+
+						<div class="product-review">
+							<div class="rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star-half-alt"></i>
+							</div>
+							<span class="new-price">
+								{{ course.nbEnrollments }}
+								Enrollments</span>
+						</div>
+
+						<p>{{course.details|length > 100 ? course.details|slice(0,100) ~ '...' : course.details }}</p>
+
+						<br>
+						<div>
+							{% if enrolled == 0 and liked == 0 %}
+								<div class="item d-flex justify-content-center">
+									<a href="{{ path('like_course', {'id': course.id} ) }}" class="buy-btn">
+										<i class="bi bi-heart"></i>
+									</a>
+								</div>
+								<div class="buy-checkbox-btn">
+									<div class="item">
+
+										<a href="{{ path('enroll_course', {'id': course.id} ) }}" class="buy-btn" target="_blank" onclick="window.open('{{course.link}}');">Enroll Now</a>
+									</div>
+								</div>
+
+
+							{% elseif enrolled == 1 and liked == 1 %}
+								<div class="item d-flex justify-content-center">
+									<a href="{{ path('unlike_course', {'id': course.id} ) }}" class="buy-btn">
+										<i class="bi bi-heart-fill"></i>
+									</a>
+								</div>
+								<div class="buy-checkbox-btn">
+									<div class="item">
+										<a href="{{ path('continue_course', {'id': course.id} ) }}" class="buy-btn" target="_blank" onclick="window.open('{{course.link}}');">Continue</a>
+									</div>
+								</div>
+
+
+							{% elseif enrolled == 1 and liked == 0 %}
+								<div class="item d-flex justify-content-center">
+									<a href="{{ path('like_course', {'id': course.id} ) }}" class="buy-btn">
+										<i class="bi bi-heart"></i>
+									</a>
+								</div>
+								<div class="buy-checkbox-btn">
+									<div class="item">
+										<a href="{{ path('continue_course', {'id': course.id} ) }}" class="buy-btn" target="_blank" onclick="window.open('{{course.link}}');">Continue</a>
+									</div>
+								</div>
+
+
+							{% elseif enrolled == 0 and liked == 1 %}
+								<div class="item d-flex justify-content-center">
+									<a href="{{ path('unlike_course', {'id': course.id} ) }}" class="buy-btn">
+										<i class="bi bi-heart-fill"></i>
+									</a>
+								</div>
+								<div class="buy-checkbox-btn">
+									<div class="item">
+										<a href="{{ path('enroll_course', {'id': course.id} ) }}" class="buy-btn" target="_blank" onclick="window.open('{{course.link}}');">Enroll Now</a>
+									</div>
+								</div>
+
+							{% endif %}
+
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="col-lg-12 col-md-12">
+				<div class="tab products-details-tab">
+					<div class="row">
+						<div class="col-lg-12 col-md-12">
+							<ul class="tabs">
+								<li>
+									<a href="#">
+										<div class="dot"></div>
+										Description
+									</a>
+								</li>
+
+
+								<li>
+									<a href="#">
+										<div class="dot"></div>
+										Reviews
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-lg-12 col-md-12">
+							<div class="tab_content">
+								<div class="tabs_item">
+									<div class="products-details-tab-content">
+										<p>{{course.details}}</p>
+									</div>
+								</div>
+
+
+								<div class="tabs_item">
+									<div class="products-details-tab-content">
+										<div class="product-review-form">
+											<h3>Customer Reviews</h3>
+
+											<div class="review-title">
+												<div class="rating">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="far fa-star"></i>
+												</div>
+												<p>Based on 3 reviews</p>
+
+											</div>
+
+											<div class="review-comments">
+												<div class="review-item">
+													<div class="rating">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<h3>Good</h3>
+													<span>
+														<strong>Admin</strong>
+														on
+														<strong>Sep 21, 2021</strong>
+													</span>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+
+													<a href="#" class="review-report-link">Report as Inappropriate</a>
+												</div>
+
+												<div class="review-item">
+													<div class="rating">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<h3>Good</h3>
+													<span>
+														<strong>Admin</strong>
+														on
+														<strong>Sep 21, 2021</strong>
+													</span>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+
+													<a href="#" class="review-report-link">Report as Inappropriate</a>
+												</div>
+
+												<div class="review-item">
+													<div class="rating">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<h3>Good</h3>
+													<span>
+														<strong>Admin</strong>
+														on
+														<strong>Sep 21, 2021</strong>
+													</span>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+
+													<a href="#" class="review-report-link">Report as Inappropriate</a>
+												</div>
+											</div>
+
+											<div class="review-form">
+												<h3>Write a Review</h3>
+
+												{{form_start(form)}}
+												<div class="row">
+
+
+													<div class="col-lg-6 col-md-6">
+														<div class="form-group">
+															<label>Email</label>
+															<input type="email" id="email" name="email" placeholder="Enter your email" class="form-control" value={{app.user.email}} readonly>
+														</div>
+													</div>
+
+
+													<div class="col-lg-12 col-md-12">
+														<div class="form-group">
+															<label>Body of Review (1500)</label>
+
+															{{form_widget(form.content,{'attr':{'rows':'7','cols':'30','class':'form-control','placeholder':'Write your comments here'}})}}
+														</div>
+													</div>
+
+													<div class="col-lg-12 col-md-12">
+														{{form_widget(form.submit)}}
+													</div>
+												</div>
+												{{form_end(form)}}
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- End Product Details Area -->
+
+
+{% endblock %}
