@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use Exception;
+use App\Entity\Quiz;
 use App\Form\QuizFormType;
 use App\Repository\QuizRepository;
 use App\Repository\QuizQuestionsRepository;
@@ -41,5 +42,63 @@ if($this->getUser()){
     }
     return $this->redirectToRoute('app_login');
     }
- 
+     /**
+     * @Route("/quiz/all", name="all_quizes", methods={"GET"})
+     */
+    public function index_back(QuizRepository $quizRepository): Response
+    {
+        return $this->render('quiz/all.html.twig', [
+            'quizz' => $quizRepository->findAll(),
+        ]);
+    }
+    /**
+     * @Route("/quiz_/new", name="new_quiz", methods={"GET", "POST"})
+     */
+    public function new(Request $request, QuizRepository $quizRepository): Response
+    {
+        $quizQuestion = new Quiz();
+        $form = $this->createForm(QuizFormType::class, $quizQuestion);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $quizRepository->add($quizQuestion);
+            return $this->redirectToRoute('app_quiz_questions_index', [], Response::HTTP_SEE_OTHER);
+        }
+
+        return $this->render('quiz/new.html.twig', [
+            'quiz' => $quizQuestion,
+            'form' => $form->createView(),
+        ]);
+    }
+    
+   /**
+     * @Route("/{QuizID}/edit", name="edit_quiz", methods={"GET", "POST"})
+     */
+    public function edit(Request $request, Quiz $quizQuestion, QuizRepository $quizQuestionsRepository): Response
+    {
+        $form = $this->createForm(QuizFormType::class, $quizQuestion);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $quizQuestionsRepository->add($quizQuestion);
+            return $this->redirectToRoute('all_quizes', [], Response::HTTP_SEE_OTHER);
+        }
+
+        return $this->render('quiz/edit.html.twig', [
+            'quiz' => $quizQuestion,
+            'form' => $form->createView(),
+        ]);
+    }
+
+    /**
+     * @Route("/{QuizID}", name="del_quiz", methods={"POST"})
+     */
+    public function delete(Request $request, Quiz $quizQuestion, QuizRepository $quizQuestionsRepository): Response
+    {
+        if ($this->isCsrfTokenValid('delete' . $quizQuestion->getQuestID(), $request->request->get('_token'))) {
+            $quizQuestionsRepository->remove($quizQuestion);
+        }
+
+        return $this->redirectToRoute('all_quizes', [], Response::HTTP_SEE_OTHER);
+    }
 }
