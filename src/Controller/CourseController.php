@@ -76,7 +76,8 @@ class CourseController extends AbstractController
                 'course' => $course,
                 'liked' => $liked,
                 'enrolled' => $enrolled,
-                'form' => $form->createView()
+                'form' => $form->createView(),
+                
 
             ]);
         } else {
@@ -125,7 +126,7 @@ class CourseController extends AbstractController
     {
 
         return $this->render('course/recent_courses.html.twig', [
-            'courses' => $courseRepository->recent_courses_no_limit(),
+            'courses' => $courseRepository->recent_courses_limit_6(),
         ]);
     }
 

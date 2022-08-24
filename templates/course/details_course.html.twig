@@ -161,73 +161,32 @@
 
 											<div class="review-title">
 												<div class="rating">
+												{{course.rate}}
 													<i class="fas fa-star"></i>
 													<i class="fas fa-star"></i>
 													<i class="fas fa-star"></i>
 													<i class="fas fa-star"></i>
 													<i class="far fa-star"></i>
 												</div>
-												<p>Based on 3 reviews</p>
+												<p>Based on 1k reviews</p>
 
 											</div>
 
 											<div class="review-comments">
+												{% for comment in course.comments %}
 												<div class="review-item">
-													<div class="rating">
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="far fa-star"></i>
-													</div>
+													
 													<h3>Good</h3>
 													<span>
-														<strong>Admin</strong>
+														<strong>{{comment.author.fullName}}</strong>
 														on
-														<strong>Sep 21, 2021</strong>
+														<strong>{{comment.createdAt | format_datetime('medium','none',locale='en') }}</strong>
 													</span>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+													<p>{{comment.content}}</p>
 
 													<a href="#" class="review-report-link">Report as Inappropriate</a>
 												</div>
-
-												<div class="review-item">
-													<div class="rating">
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="far fa-star"></i>
-													</div>
-													<h3>Good</h3>
-													<span>
-														<strong>Admin</strong>
-														on
-														<strong>Sep 21, 2021</strong>
-													</span>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-
-													<a href="#" class="review-report-link">Report as Inappropriate</a>
-												</div>
-
-												<div class="review-item">
-													<div class="rating">
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="fas fa-star"></i>
-														<i class="far fa-star"></i>
-													</div>
-													<h3>Good</h3>
-													<span>
-														<strong>Admin</strong>
-														on
-														<strong>Sep 21, 2021</strong>
-													</span>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-
-													<a href="#" class="review-report-link">Report as Inappropriate</a>
-												</div>
+												{% endfor %}
 											</div>
 
 											<div class="review-form">
