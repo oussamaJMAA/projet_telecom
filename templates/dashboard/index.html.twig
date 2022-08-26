@@ -110,7 +110,7 @@
 						<div class="col-sm-6">
 							<div class="card card-box">
 								<div class="card-head">
-									<header> Quiz Scores</header>
+									<header> Quiz Scores  </header>
 									<div class="tools">
 										<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
 										<a class="t-collapse btn-color fa fa-chevron-down" href="javascript:;"></a>
@@ -124,6 +124,24 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-sm-6">
+							<div class="card card-box">
+								<div class="card-head">
+									<header> Quiz Scores</header>
+									<div class="tools">
+										<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
+										<a class="t-collapse btn-color fa fa-chevron-down" href="javascript:;"></a>
+										<a class="t-close btn-color fa fa-times" href="javascript:;"></a>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="recent-report__chart">
+										 <canvas id="barChart_2"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+						
 					</div>
 					<!-- Chart end -->
 					<!-- start course list -->
@@ -494,6 +512,7 @@
 
 {% endblock %}
 
+
 {% block javascripts %}
 {% set tab = [n1, n2, n3,n4, n5,n6,n7,n8,n9,n10,n11,n12] %}
 {{parent()}}
@@ -642,6 +661,61 @@ function chart2() {
 
   chart.render();
 }
+var barChart2 = function(){
+		if(jQuery('#barChart_2').length > 0 ){
+var x = {{ array | json_encode| raw }}
+
+
+var b= x[0]['name'];
+var a= x[1]['name'];
+var c = x[2]['name'];
+var d = x[3]['name'];
+console.log(b);
+		//gradient bar chart
+			const barChart_2 = document.getElementById("barChart_2").getContext('2d');
+			//generate gradient
+			const barChart_2gradientStroke = barChart_2.createLinearGradient(0, 0, 0, 250);
+			barChart_2gradientStroke.addColorStop(0, "rgba(249, 58, 11, 1)");
+			barChart_2gradientStroke.addColorStop(1, "rgba(249, 58, 11, 0.5)");
+
+			barChart_2.height = 100;
+
+			new Chart(barChart_2, {
+				type: 'bar',
+				data: {
+					defaultFontFamily: 'Poppins',
+			
+					labels: [b,a,c,d],
+					
+					datasets: [
+						{
+							label: "Quizes Passed",
+							data: [{{c1}},{{c2}},{{c3}},{{c4}}],
+							borderColor: barChart_2gradientStroke,
+							borderWidth: "0",
+							backgroundColor: barChart_2gradientStroke, 
+							hoverBackgroundColor: barChart_2gradientStroke
+						}
+					]
+				},
+				options: {
+					legend: false, 
+					scales: {
+						yAxes: [{
+							
+							ticks: {
+								beginAtZero: true
+							}
+						}],
+						xAxes: [{
+							// Change here
+							barPercentage: 0.5
+						}]
+					}
+				}
+			});
+		}
+	}
 
 </script>
 

@@ -186,7 +186,7 @@ class QuizRepository extends ServiceEntityRepository
 
         $conn = $this->getEntityManager()
             ->getConnection();
-        $sql = "select q.title quiz_t,u.full_name u_name,score from user_quiz uq,user u, quiz q where uq.user_id = u.id and uq.quiz_id = q.id";
+        $sql = "select q.title quiz_t,u.full_name u_name,score from user_quiz uq,user u, quiz q where uq.user_id = u.id and uq.quiz_id = q.id order by score desc limit 6";
         $stmt = $conn->prepare($sql);
 
         $resultSet = $stmt->executeQuery();
@@ -326,5 +326,15 @@ public function count12() {
                    $results = $stmt->fetchOne();
                    return $results;
    
+}
+public function barchart2(){
+    $conn = $this->getEntityManager()
+    ->getConnection();
+     $sql = "
+     select user_id ,user.full_name  name ,count(user_id)  count from user_quiz join user on user.id = user_quiz.user_id group by user_id";
+     $statement = $conn->prepare($sql);
+     $resultSet = $statement->executeQuery();
+     $a = $resultSet->fetchAllAssociative();
+     return $a;
 }
 }

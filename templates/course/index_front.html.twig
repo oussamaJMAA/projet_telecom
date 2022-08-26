@@ -21,8 +21,8 @@
                                         <select id="s1" NAME="section" onChange="SelectRedirect();">
                                             <option value="0">All Courses</option>
                                             <option value="1">Recommended For you</option>
-                                            <option value="2">Top Courses</option>
-                                            <option value="3">Recent Courses</option>
+                                         
+                                            <option value="2">Recent Courses</option>
                                         </select>
                                     </div>
                                 </div>
@@ -103,10 +103,6 @@ window.location="{{path('app_course_index_front_rec')}}";
 break;
 
 case "2":
-window.location="{{path('top')}}";
-break;
-
-case "3":
 window.location="{{path('recent')}}";
 break;
 

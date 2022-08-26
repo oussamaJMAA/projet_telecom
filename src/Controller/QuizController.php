@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use Exception;
+use App\Entity\History;
 use App\Form\QuizFormType;
 use App\Repository\QuizRepository;
 use App\Repository\QuizQuestionsRepository;
@@ -17,8 +18,29 @@ class QuizController extends AbstractController
      * @Route("/quiz/info/{id}", name="app_quiz")
      */
     public function index(QuizQuestionsRepository $qr, $id, Request $request, QuizRepository $qr2): Response
-    { //dump($qr->getQuestions($id));
-if($this->getUser()){
+    { 
+      if($this->getUser()){
+      $history = new History();
+      $ar =[];
+        dump($qr->getQuestions($id));
+        foreach($qr->getQuestions($id) as $element ){
+          array_push($ar, $element['question']);
+           
+        }
+        dump($ar);
+        $entityManager = $this->getDoctrine()->getManager();
+        foreach($ar as $element ){
+            $history = new History();
+            $history->setUser($this->getUser()->getId());
+            $history->setQuestion( $element);
+            $entityManager->persist($history);
+          }
+
+         
+          $entityManager->flush();
+
+        
+
         $form = $this->createForm(QuizFormType::class);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
@@ -41,5 +63,5 @@ if($this->getUser()){
     }
     return $this->redirectToRoute('app_login');
     }
- 
+  
 }

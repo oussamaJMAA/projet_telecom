@@ -1,11 +1,103 @@
-{% extends 'base.html.twig' %}
 
-{% block title %}Password Reset Email Sent{% endblock %}
 
-{% block body %}
-    <p>
+
+
+
+<html class="no-js" lang="">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Reset-Password
+		</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Telecom | Login and Register</title>
+		{% block style %}
+			<!-- Bootstrap CSS -->
+			<link
+			rel="stylesheet" href="{{asset('assets_login/css/bootstrap.min.css')}}">
+			<!-- Fontawesome CSS -->
+			<link
+			rel="stylesheet" href="{{asset('assets_login/css/fontawesome-all.min.css')}}">
+			<!-- Flaticon CSS -->
+			<link
+			rel="stylesheet" href="{{asset('assets_login/font/flaticon.css')}}">
+			<!-- Google Web Fonts -->
+			<link
+			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+			<!-- Custom CSS -->
+			<link rel="stylesheet" href="{{asset('assets_login/css/style2.css')}}">
+		{% endblock %}
+	</head>
+
+
+	{% block body %}
+
+		<body>
+			<!--[if lt IE 8]>
+						        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+						    <![endif]-->
+			<div id="preloader" class="preloader">
+				<div class='inner'>
+					<div class='line1'></div>
+					<div class='line2'></div>
+					<div class='line3'></div>
+				</div>
+			</div>
+			<section class="fxt-template-animation fxt-template-layout33">
+				<div class="fxt-content-wrap">
+					<div class="fxt-heading-content">
+						<div class="fxt-inner-wrap fxt-transformX-R-50 fxt-transition-delay-3">
+							<div class="fxt-transformX-R-50 fxt-transition-delay-10">
+								<a href="login-33.html" class="fxt-logo"></a>
+							</div>
+							<div class="fxt-transformX-R-50 fxt-transition-delay-10">
+								  <div class="fxt-middle-content">
+                            <div class="fxt-sub-title">Welcome to</div>
+                            <h1 class="fxt-main-title">Tunisie Telecom.</h1>
+                            <p class="fxt-description">We are glad to see you again! Get access to your Account, Quizes and Courses.</p>
+                        </div>
+							</div>
+							<div class="fxt-transformX-R-50 fxt-transition-delay-10">
+								<div class="fxt-switcher-description">Don't have an account?<a href="login-33.html" class="fxt-switcher-text">Sign In</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="fxt-form-content">
+						<div class="fxt-main-form">
+							<div class="fxt-inner-wrap fxt-opacity fxt-transition-delay-13">
+							  <h2 class="fxt-page-title">A link has been sent to your Email </h2>
+                        <p class="fxt-description">Enter the email address or mobile number associated with your account.</p>
+                             <p>
         If an account matching your email exists, then an email was just sent that contains a link that you can use to reset your password.
         This link will expire in {{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }}.
     </p>
     <p>If you don't receive an email please check your spam folder or <a href="{{ path('app_forgot_password_request') }}">try again</a>.</p>
-{% endblock %}
+								
+								<div class="form-group">
+							
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			{% block js %}
+				<!-- jquery-->
+				<script src="{{asset('assets_login/js/jquery-3.5.0.min.js')}}"></script>
+				<!-- Bootstrap js -->
+				<script src="{{asset('assets_login/js/bootstrap.min.js')}}"></script>
+				<!-- Imagesloaded js -->
+				<script src="{{asset('assets_login/js/imagesloaded.pkgd.min.js')}}"></script>
+				<!-- Validator js -->
+				<script src="{{asset('assets_login/js/validator.min.js')}}"></script>
+				<!-- Custom Js -->
+				<script src="{{asset('assets_login/js/main.js')}}"></script>
+			{% endblock %}
+		{% endblock %}
+
+	</body>
+
+</html>

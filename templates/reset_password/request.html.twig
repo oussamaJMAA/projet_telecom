@@ -1,22 +1,100 @@
-{% extends 'base.html.twig' %}
 
-{% block title %}Reset your password{% endblock %}
+
+
+<html class="no-js" lang="">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+ <title>Reset-Password </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Telecom | Login and Register</title>
+   {% block style %}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{asset('assets_login/css/bootstrap.min.css')}}">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="{{asset('assets_login/css/fontawesome-all.min.css')}}">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="{{asset('assets_login/font/flaticon.css')}}">
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{asset('assets_login/css/style2.css')}}">
+    {% endblock %}
+</head>
+
 
 {% block body %}
-    {% for flash_error in app.flashes('reset_password_error') %}
-        <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
-    {% endfor %}
-    <h1>Reset your password</h1>
 
-    {{ form_start(requestForm) }}
-        {{ form_row(requestForm.email) }}
-        <div>
-            <small>
-                Enter your email address and we will send you a
-                link to reset your password.
-            </small>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="preloader" class="preloader">
+        <div class='inner'>
+            <div class='line1'></div>
+            <div class='line2'></div>
+            <div class='line3'></div>
         </div>
+    </div>
+    <section class="fxt-template-animation fxt-template-layout33">
+        <div class="fxt-content-wrap">
+            <div class="fxt-heading-content">
+                <div class="fxt-inner-wrap fxt-transformX-R-50 fxt-transition-delay-3">
+                    <div class="fxt-transformX-R-50 fxt-transition-delay-10">
+                        <a href="login-33.html" class="fxt-logo"></a>
+                    </div>
+                    <div class="fxt-transformX-R-50 fxt-transition-delay-10">
+                         <div class="fxt-middle-content">
+                            <div class="fxt-sub-title">Welcome to</div>
+                            <h1 class="fxt-main-title">Tunisie Telecom.</h1>
+                            <p class="fxt-description">We are glad to see you again! Get access to your Account, Quizes and Courses.</p>
+                        </div>
+                    </div>
+                    <div class="fxt-transformX-R-50 fxt-transition-delay-10">
+                        <div class="fxt-switcher-description">Don't have an account?<a href="login-33.html" class="fxt-switcher-text">Sign In</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="fxt-form-content">
+                <div class="fxt-main-form">
+                    <div class="fxt-inner-wrap fxt-opacity fxt-transition-delay-13">
+                        <h2 class="fxt-page-title">Reset Password</h2>
+                        <p class="fxt-description">Enter the email address or mobile number associated with your account.</p>
+                       {{ form_start(requestForm) }}
+                            <div class="form-group">
+                                <label for="email" class="fxt-label">Email or Mobile Number</label>
+                              {{ form_widget(requestForm.email, {'attr': {'class': 'form-control','placeholder':'Email Or Mobile Number'}}) }}
 
-        <button class="btn btn-primary">Send password reset email</button>
-    {{ form_end(requestForm) }}
+                            </div>
+                            <div class="form-group mb-3">
+                              
+                                   <button class="fxt-btn-fill">Reset password</button>
+                            </div>
+                       {{ form_end(requestForm) }}
+                        <div class="fxt-switcher-description">Return to?<a  href="{{path('app_login')}}"class="fxt-switcher-text ms-1">Log in</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        {% block js %}
+    <!-- jquery-->
+    <script src="{{asset('assets_login/js/jquery-3.5.0.min.js')}}"></script>
+    <!-- Bootstrap js -->
+    <script src="{{asset('assets_login/js/bootstrap.min.js')}}"></script>
+    <!-- Imagesloaded js -->
+    <script src="{{asset('assets_login/js/imagesloaded.pkgd.min.js')}}"></script>
+    <!-- Validator js -->
+    <script src="{{asset('assets_login/js/validator.min.js')}}"></script>
+    <!-- Custom Js -->
+    <script src="{{asset('assets_login/js/main.js')}}"></script>
+    {% endblock %}
 {% endblock %}
+
+</body>
+
+</html>

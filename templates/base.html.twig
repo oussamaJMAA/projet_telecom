@@ -78,23 +78,21 @@
 						<li class="dropdown dropdown-user">
 							<a class="dropdown-toggle" data-bs-toggle="dropdown" data-hover="dropdown"
 								data-close-others="true">
-								<img alt="" class="img-circle " src="../assets/img/dp.jpg" />
+								<img alt="" class="img-circle " src="{{asset('download.jpg')}}
+
+
+								" />
 								{% if app.user %}
 								<span class="username username-hide-on-mobile"> {{app.user.fullName| split(' ', 2)[0]}} </span>
 								{% endif %}
 								<i class="fa fa-angle-down"></i>
 							</a>
-							<ul class="dropdown-menu dropdown-menu-default">
-								<li>
-									<a href="user_profile.html">
-										<i class="icon-user"></i> Profile </a>
-								</li>
-								<li>
+					
+						<li>
 									<a href="{{path('app_logout')}}">
 										<i class="icon-logout"></i> Log Out </a>
 								</li>
-							</ul>
-						</li>
+							
 						<!-- end manage user dropdown -->
 					
 					</ul>
@@ -119,7 +117,7 @@
 							<li class="sidebar-user-panel">
 								<div class="user-panel">
 									<div class="pull-left image">
-										<img src="{{asset('assets/img/dp.jpg')}}" class="img-circle user-img-circle"
+										<img src="{{asset('download.jpg')}}" class="img-circle user-img-circle"
 											alt="User Image" />
 									</div>
 									<div class="pull-left info">
@@ -253,6 +251,18 @@
 	<script src="{{asset('assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap4.min.js')}}"></script>
 	<script src="{{asset('assets/js/pages/table/table_data.js')}}"></script>
 	<script src="{{asset('assets/js/validation.js')}}"></script>
+	<script src="vendor/global/global.min.js"></script>
+    <script src="{{asset('vendor/chart.js/Chart.bundle.min.js')}}"></script>
+	<!-- Apex Chart -->
+	
+    
+	<script src="{{asset('vendor/jquery-nice-select/js/jquery.nice-select.min.js')}}"></script>
+
+    <!-- Chart ChartJS plugin files -->
+    <script src="{{asset('vendor/chart.js/Chart.bundle.min.js')}}"></script>
+    <script src="{{asset('js/plugins-init/chartjs-init.js')}}"></script>
+	
+    
         {% endblock %}
     </body>
 

@@ -108,6 +108,11 @@ window.__mirage2 = {petok:"52cc717bba8ea956e0557373ac3d518298ebd33a-1658364813-1
                                     <li class="nav-item"><a href="{{path('quizz_front')}}" class="nav-link">Quiz Time !</a>
                                        
                                     </li>
+                                    {% if app.user %}
+                                     <li class="nav-item"><a href="{{path('app_history')}}" class="nav-link">Quiz History</a>
+                                       
+                                    </li>
+                                    {% endif %}
 
                                     <li class="nav-item"><a href="{{path('app_course_index_front')}}" class="nav-link">Courses</a>
                                       
@@ -171,7 +176,7 @@ window.__mirage2 = {petok:"52cc717bba8ea956e0557373ac3d518298ebd33a-1658364813-1
                             <ul class="services-widget-list">
                                
                                
-                                <li><a href="#">Chat Bot Support</a></li>
+                                <li><a href="{{path('chatbot')}}">Chat Bot Support</a></li>
                         
                         
                             </ul>

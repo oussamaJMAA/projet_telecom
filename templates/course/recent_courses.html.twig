@@ -1,6 +1,6 @@
 {% extends 'base_front.html.twig' %}
 
-{% block title %}All Courses{% endblock %}
+{% block title %}Recent Courses{% endblock %}
 
 {% block body %}
   <section class="shop-area ptb-100">
@@ -11,7 +11,7 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-8 col-md-7">
                                     <div class="woocommerce-result-count">
-                                        <h3>Courses</h3>
+                                        <h3> Recent Courses</h3>
                                         <p>Showing 1-8 of 14 results</p>
                                     </div>
                                 </div>
@@ -21,8 +21,8 @@
                                         <select id="s1" NAME="section" onChange="SelectRedirect();">
                                             <option value="0">All Courses</option>
                                             <option value="1">Recommended For you</option>
-                                            <option value="2">Top Courses</option>
-                                            <option value="3">Recent Courses</option>
+                                      
+                                            <option value="2">Recent Courses</option>
                                         </select>
                                     </div>
                                 </div>
@@ -98,11 +98,9 @@ case "1":
 window.location="{{path('app_course_index_front_rec')}}";
 break;
 
-case "2":
-window.location="{{path('top')}}";
-break;
 
-case "3":
+
+case "2":
 window.location="{{path('recent')}}";
 break;
 

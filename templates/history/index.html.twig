@@ -1,0 +1,64 @@
+{% extends 'base_front.html.twig' %}
+
+{% block title %}Home
+{% endblock %}
+{% block body %}
+	<div class="page-title-area">
+		<div class="container">
+			<div class="page-title-content">
+				<h2>
+					Quiz History</h2>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>Quiz History</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Title Area -->
+
+	<!-- Start Contact Info Box Area -->
+	<section class="contact-info-box-area ptb-100 pb-0">
+		<div class="container">
+			<div class="row">
+
+				<div class="table-wrap">
+					<div class="table-responsive">
+						<table class="table display product-overview mb-30" id="support_table">
+							<thead>
+								<tr>
+									<th>Id</th>
+
+
+									<th>Questions</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									{% for h in history %}
+										<td>{{h.id }}</td>
+										<td>{{ h.question}}
+										</td>
+									</tr>
+								{% else %}
+									<tr>
+										<td colspan="2">no records found</td>
+									</tr>
+
+								{% endfor %}
+							</tbody>
+						</table>
+
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+	<!-- End Contact Info Box Area -->
+
+
+</div></section><!-- Start Contact Area --><!-- Start Map Area --><!-- End Map Area -->{% endblock %}

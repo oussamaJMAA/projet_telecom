@@ -174,6 +174,16 @@ class CourseRepository extends ServiceEntityRepository
         $a = $resultSet->fetchAllAssociative();
         return $a;
     }
+    public function recent_courses_limit_4()
+    {
+        $conn = $this->getEntityManager()
+            ->getConnection();
+        $sql = "select * from course order by id desc limit 4";
+        $statement = $conn->prepare($sql);
+        $resultSet = $statement->executeQuery();
+        $a = $resultSet->fetchAllAssociative();
+        return $a;
+    }
     public function recent_courses_no_limit()
     {
         $conn = $this->getEntityManager()
@@ -199,7 +209,7 @@ class CourseRepository extends ServiceEntityRepository
     {
         $conn = $this->getEntityManager()
             ->getConnection();
-        $sql = "select * from course where nb_enrollments > (select avg(nb_enrollments) from course) order by nb_enrollments desc";
+        $sql = "select * from enrollments order by id desc";
         $statement = $conn->prepare($sql);
         $resultSet = $statement->executeQuery();
         $a = $resultSet->fetchAllAssociative();
