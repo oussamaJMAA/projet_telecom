@@ -37,6 +37,7 @@ class RegistrationFormType extends AbstractType
                 ],
             ])
             ->add('fullName')
+            ->add('phoneNumber')
         ;
     }
 
