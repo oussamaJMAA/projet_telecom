@@ -4,8 +4,59 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3c6c56d27c19ce0a3070c981343c0cd",
+    "content-hash": "ce8ac68be7a7f1892e06ae020b91fc21",
     "packages": [
+        {
+            "name": "authy/php",
+            "version": "v2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twilio/authy-php.git",
+                "reference": "d770adb9f8f44be87f87aba4ce7b9b0da79534ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twilio/authy-php/zipball/d770adb9f8f44be87f87aba4ce7b9b0da79534ca",
+                "reference": "d770adb9f8f44be87f87aba4ce7b9b0da79534ca",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "resty/resty": "~0.6.0"
+            },
+            "require-dev": {
+                "eher/phpunit": ">= 1.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Authy": "lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Cuadrado",
+                    "email": "david@authy.com"
+                }
+            ],
+            "description": "PHP client for Authy",
+            "homepage": "https://github.com/authy/authy-php",
+            "keywords": [
+                "Authentication",
+                "api",
+                "two-factor"
+            ],
+            "support": {
+                "issues": "https://github.com/twilio/authy-php/issues",
+                "source": "https://github.com/twilio/authy-php/tree/v2.1"
+            },
+            "abandoned": "twilio/sdk",
+            "time": "2014-08-14T20:38:48+00:00"
+        },
         {
             "name": "babdev/pagerfanta-bundle",
             "version": "v3.7.0",
@@ -3247,6 +3298,57 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "resty/resty",
+            "version": "0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fictivekin/Resty.php.git",
+                "reference": "3ba18ec4b507b3b6fcbc49bba5a503baba051c0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fictivekin/Resty.php/zipball/3ba18ec4b507b3b6fcbc49bba5a503baba051c0a",
+                "reference": "3ba18ec4b507b3b6fcbc49bba5a503baba051c0a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "funkatron/funit": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Resty\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache 2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Ed Finkler",
+                    "email": "ed@fictivekin.com",
+                    "homepage": "http://fictivekin.com"
+                }
+            ],
+            "description": "A simple PHP library for doing RESTful HTTP stuff. Does not require the curl extension",
+            "homepage": "https://github.com/fictivekin/resty.php",
+            "keywords": [
+                "client",
+                "http",
+                "rest",
+                "restful"
+            ],
+            "support": {
+                "issues": "https://github.com/fictivekin/Resty.php/issues",
+                "source": "https://github.com/fictivekin/Resty.php/tree/PSR4-composer-dev"
+            },
+            "time": "2014-02-13T16:19:46+00:00"
         },
         {
             "name": "sensio/framework-extra-bundle",
