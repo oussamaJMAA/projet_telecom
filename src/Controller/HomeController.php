@@ -20,6 +20,7 @@ class HomeController extends AbstractController
      */
     public function index(CourseRepository $courseRepository): Response
     {
+        /*
      $account_sid = 'AC98154bf72bc4fd663711706599cb305b';
 $auth_token = '742d3e31b094511b619e19d9ce068f9d';
 // In production, these should be environment variables. E.g.:
@@ -37,6 +38,7 @@ $client->messages->create(
         'body' => 'I sent this message in under 10 minutes!'
     )
 );
+*/
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
             'courses' => $courseRepository->recent_courses()
