@@ -82,6 +82,11 @@ class Course
      */
     private $comments;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Levels::class, inversedBy="course")
+     */
+    private $levels;
+
   
 
     public function __construct()
@@ -261,6 +266,18 @@ class Course
                 $comment->setCourse(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getLevels(): ?Levels
+    {
+        return $this->levels;
+    }
+
+    public function setLevels(?Levels $levels): self
+    {
+        $this->levels = $levels;
 
         return $this;
     }

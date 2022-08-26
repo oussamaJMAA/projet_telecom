@@ -45,6 +45,11 @@ class Quiz
      */
     private $courses;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Levels::class, inversedBy="quiz")
+     */
+    private $levels;
+
     public function __construct()
     {
         $this->questions = new ArrayCollection();
@@ -159,6 +164,18 @@ class Quiz
     public function removeCourse(Course $course): self
     {
         $this->courses->removeElement($course);
+
+        return $this;
+    }
+
+    public function getLevels(): ?Levels
+    {
+        return $this->levels;
+    }
+
+    public function setLevels(?Levels $levels): self
+    {
+        $this->levels = $levels;
 
         return $this;
     }
