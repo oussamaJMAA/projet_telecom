@@ -20,6 +20,7 @@ class QuizController extends AbstractController
     public function index(QuizQuestionsRepository $qr, $id, Request $request, QuizRepository $qr2): Response
     { 
       if($this->getUser()){
+        
         $level_of_user = $this->getUser()->getLevels()->getDifficulty();
       $history = new History();
       $ar =[];
