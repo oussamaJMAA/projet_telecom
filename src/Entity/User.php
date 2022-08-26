@@ -72,7 +72,7 @@ class User implements UserInterface
     /**
      * @ORM\Column(type="boolean")
      */
-    private $verified;
+    private $verified = 0;
    public function __construct()
     {
         $this->likes = new ArrayCollection();

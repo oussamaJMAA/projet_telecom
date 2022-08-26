@@ -95,14 +95,15 @@ class Authenticator extends AbstractFormLoginAuthenticator implements PasswordAu
             return new RedirectResponse($targetPath);
         }
         $user = $token->getUser();
+        if ($user->getVerified() == 0) {
+            //   return new RedirectResponse($this->urlGenerator->generate('app_verif'));
+
+            return new RedirectResponse($this->urlGenerator->generate('app_verif', array('id' => $user->getId())));
+        }
         if (in_array("ROLE_ADMIN", $user->getRoles())) {
             return new RedirectResponse($this->urlGenerator->generate('app_dashboard'));
-            }
-            else 
+        } else
             return new RedirectResponse($this->urlGenerator->generate('app_home'));
-            
-            
-     
     }
     protected function getLoginUrl()
     {

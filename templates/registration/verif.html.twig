@@ -1,0 +1,99 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+
+<!-- Mirrored from affixtheme.com/html/xmee/demo/login-33.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 Aug 2022 22:15:19 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Telecom</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{asset('assets_login/css/bootstrap.min.css')}}">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="{{asset('assets_login/css/fontawesome-all.min.css')}}">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="{{asset('assets_login/font/flaticon.css')}}">
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{asset('assets_login/css/style2.css')}}">
+</head>
+
+<body>
+{% block body %}
+  
+     <div id="preloader" class="preloader">
+        <div class='inner'>
+            <div class='line1'></div>
+            <div class='line2'></div>
+            <div class='line3'></div>
+        </div>
+    </div>
+    <section class="fxt-template-animation fxt-template-layout33">
+        <div class="fxt-content-wrap">
+            <div class="fxt-heading-content">
+                <div class="fxt-inner-wrap fxt-transformX-R-50 fxt-transition-delay-3">
+                    <div class="fxt-transformX-R-50 fxt-transition-delay-10">
+                        
+                    </div>
+                    <div class="fxt-transformX-R-50 fxt-transition-delay-10">
+                       <div class="fxt-middle-content">
+                            <div class="fxt-sub-title">Welcome to</div>
+                            <h1 class="fxt-main-title">Tunisie Telecom.</h1>
+                            <p class="fxt-description">We are glad to see you again! Get access to your Account, Quizes and Courses.</p>
+                        </div>
+                    </div>
+                    <div class="fxt-transformX-R-50 fxt-transition-delay-10">
+                        <div class="fxt-switcher-description">Don't have an account?<a href="{{path('app_login')}}"class="fxt-switcher-text">Sign In</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="fxt-form-content">
+                <div class="fxt-main-form">
+                    <div class="fxt-inner-wrap fxt-opacity fxt-transition-delay-13">
+                        <h2 class="fxt-page-title">Sign Up</h2>
+                        <p class="fxt-description">Sign Up to try our amazing services</p>
+                         {% for message in app.flashes('error') %}
+                          <div class="flash-notice alert alert-danger">
+                         {{ message }}
+                         </div>
+                         {% endfor %}
+                        {{ form_start(registrationForm) }}
+                            <div class="form-group">
+                                <label for="name" class="fxt-label">Full Name</label>
+                            {{ form_widget(registrationForm.verif, {'attr': {'class': 'form-control','placeholder':'Entrez the Code'}}) }}
+                               {{form_errors(registrationForm.verif)}}
+                            </div>
+                           
+                        
+        
+                            <div class="form-group mb-3">
+                                <button type="submit" class="fxt-btn-fill">Verify</button>
+                            </div>
+                    {{ form_end(registrationForm) }}
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% block js %}
+    <!-- jquery-->
+    <script src="{{asset('assets_login/js/jquery-3.5.0.min.js')}}"></script>
+    <!-- Bootstrap js -->
+    <script src="{{asset('assets_login/js/bootstrap.min.js')}}"></script>
+    <!-- Imagesloaded js -->
+    <script src="{{asset('assets_login/js/imagesloaded.pkgd.min.js')}}"></script>
+    <!-- Validator js -->
+    <script src="{{asset('assets_login/js/validator.min.js')}}"></script>
+    <!-- Custom Js -->
+    <script src="{{asset('assets_login/js/main.js')}}"></script>
+    {% endblock %}
+{% endblock %}
+</body>
+
+
+<!-- Mirrored from affixtheme.com/html/xmee/demo/login-33.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 Aug 2022 22:15:19 GMT -->
+</html>

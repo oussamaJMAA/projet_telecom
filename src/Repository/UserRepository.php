@@ -119,4 +119,27 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
         ;
     }
     */
+        /**
+    * @return string
+    */
+    public function generateRandomString($length = 6) {
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $charactersLength = strlen($characters);
+        $randomString = '';
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, $charactersLength - 1)];
+        }
+        return $randomString;
+    }
+public function getUserVerifCode($id){
+    $conn = $this->getEntityManager()
+    ->getConnection();
+$sql = "SELECT verification_code from user where id= ?";
+$statement = $conn->prepare($sql);
+$statement->bindValue(1, $id);
+$resultSet = $statement->executeQuery();
+$a = $resultSet->fetchOne();
+return $a;
+
+}
 }
