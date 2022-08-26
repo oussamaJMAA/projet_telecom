@@ -32,11 +32,13 @@ class QuizQuestionsController extends AbstractController
      */
     public function quizz_front(QuizRepository $qr,QuizQuestionsRepository $qqr): Response
     {
-
+        if($this->getUser()){
+            $level_of_user = $this->getUser()->getLevels()->getDifficulty();
         return $this->render('home/quizz_front.html.twig',[
-            'quizz' => $qr->findAll(),
+            'quizz' => $qr->findByLevels($level_of_user),
          
         ]);
+    } return $this->redirectToRoute('app_login');
     }
 
     /**

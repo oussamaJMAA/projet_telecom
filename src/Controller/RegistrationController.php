@@ -48,6 +48,7 @@ class RegistrationController extends AbstractController
                 )
             );
             $user->setRoles(array('ROLE_EMPLOYEE'));
+            $user -> setLevels(1); //set level to nothing at first (1) because he didnt even begin any quiz
             $verif_code = $userRepository->generateRandomString(6);
             $user->setVerificationCode($verif_code);
             $account_sid = 'AC98154bf72bc4fd663711706599cb305b';

@@ -20,15 +20,15 @@ class QuizController extends AbstractController
     public function index(QuizQuestionsRepository $qr, $id, Request $request, QuizRepository $qr2): Response
     { 
       if($this->getUser()){
+        $level_of_user = $this->getUser()->getLevels()->getDifficulty();
       $history = new History();
       $ar =[];
-        dump($qr->getQuestions($id));
-        foreach($qr->getQuestions($id) as $element ){
+      //dump($qr2->get_question_level_of_user($level_of_user));
+        foreach($qr2->get_question_level_of_user($level_of_user) as $element ){
           array_push($ar, $element['question']);
            
         }
-        dump($ar);
-        $entityManager = $this->getDoctrine()->getManager();
+           $entityManager = $this->getDoctrine()->getManager();
         foreach($ar as $element ){
             $history = new History();
             $history->setUser($this->getUser()->getId());

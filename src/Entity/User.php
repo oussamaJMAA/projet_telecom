@@ -73,6 +73,11 @@ class User implements UserInterface
      * @ORM\Column(type="boolean")
      */
     private $verified = 0;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Levels::class, inversedBy="user")
+     */
+    private $levels;
    public function __construct()
     {
         $this->likes = new ArrayCollection();
@@ -281,6 +286,18 @@ class User implements UserInterface
     public function setVerified(bool $verified): self
     {
         $this->verified = $verified;
+
+        return $this;
+    }
+
+    public function getLevels(): ?Levels
+    {
+        return $this->levels;
+    }
+
+    public function setLevels(?Levels $levels): self
+    {
+        $this->levels = $levels;
 
         return $this;
     }
