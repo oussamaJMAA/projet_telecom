@@ -81,6 +81,29 @@
                                 <button type="submit" class="fxt-btn-fill">Register</button>
                             </div>
                     {{ form_end(registrationForm) }}
+                     <div class="fxt-divider-text">OR</div>
+                        <div id="fxt-login-option" class="fxt-login-option">
+                            <ul>
+                                <li class="fxt-google active">
+                                    <a href="{{path('connect_google')}}">
+                                        <span class="fxt-option-icon"><i class="fab fa-google"></i></span>
+                                        <span class="fxt-option-text ml-2">Continue with Google</span>
+                                    </a>
+                                </li>
+                                <li class="fxt-facebook">
+                                    <a href="#">
+                                        <span class="fxt-option-icon"><i class="fab fa-facebook-f"></i></span>
+                                        <span class="fxt-option-text ml-2">Continue with Facebook</span>
+                                    </a>
+                                </li>
+                                <li class="fxt-apple">
+                                    <a href="#">
+                                        <span class="fxt-option-icon"><i class="fab fa-apple"></i></span>
+                                        <span class="fxt-option-text ml-2">Continue with Apple</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                       
                     </div>
                 </div>
