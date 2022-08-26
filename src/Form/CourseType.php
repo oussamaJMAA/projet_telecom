@@ -23,21 +23,6 @@ class CourseType extends AbstractType
             ->add('details')
             ->add('link')
             ->add('nb_likes')
-            ->add('quizzes', EntityType::class, [
-                // looks for choices from this entity
-                'class' => Quiz::class,
-                'label' => 'Quiz',
-          // uses the category name property as the visible option string
-                'choice_label' => 'title',
-               
-                
-                'attr' => [
-                    'class' =>'select',
-                    'expended'=>False,
-                    'multiple'=>True,
-                ],
-                ])
-       
           
         ;
     }
