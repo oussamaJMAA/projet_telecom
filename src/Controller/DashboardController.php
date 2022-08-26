@@ -16,10 +16,7 @@ class DashboardController extends AbstractController
      */
     public function index(CourseRepository $courseRepository,QuizRepository $q,UserRepository $u): Response
     {//exec('c:\WINDOWS\system32\cmd.exe /c start C:\Users\oussa\AppData\Local\Programs\"Opera GX"\launcher.exe');
-
        dump($q->barchart2()[0]['name']);
-
-
 
         return $this->render('dashboard/index.html.twig', [
 

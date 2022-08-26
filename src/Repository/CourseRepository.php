@@ -174,19 +174,11 @@ class CourseRepository extends ServiceEntityRepository
         $a = $resultSet->fetchAllAssociative();
         return $a;
     }
-<<<<<<< HEAD
     public function recent_courses_limit_4()
     {
         $conn = $this->getEntityManager()
             ->getConnection();
         $sql = "select * from course order by id desc limit 4";
-=======
-    public function recent_courses_limit_()
-    {
-        $conn = $this->getEntityManager()
-            ->getConnection();
-        $sql = "select * from course order by id desc limit 6";
->>>>>>> 80c0e065b4c1d87776eba1ffea0d0561b43f29b9
         $statement = $conn->prepare($sql);
         $resultSet = $statement->executeQuery();
         $a = $resultSet->fetchAllAssociative();
