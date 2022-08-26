@@ -19,6 +19,7 @@ use Symfony\Component\Security\Guard\GuardAuthenticatorHandler;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
+
 class RegistrationController extends AbstractController
 { public function __construct( UrlGeneratorInterface $urlGenerator)
     {
