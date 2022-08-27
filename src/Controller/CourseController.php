@@ -261,4 +261,29 @@ class CourseController extends AbstractController
         // uniqid(), which is based on timestamps
         return md5(uniqid());
     }
+
+    /**
+     * @Route("/course/search_result:$request", name="search_result")
+     */
+    public function searchAction(Request $request): Response
+
+    {
+        // just set up a fresh $task object (remove the example data)
+        $input = "";
+
+        $searchForm = $this->createForm(courseType::class);
+
+        $searchForm->handleRequest($request);
+        if ($searchForm->isSubmitted() && $searchForm->isValid()) {
+            $input = $searchForm->getData();
+
+            // ... perform some action, such as saving the task to the database
+
+            return $this->redirectToRoute('search_result:' + $input);
+        }
+
+        return $this->render('course/index_front.html.twig', [
+            'form' => $searchForm   
+        ]);
+    }
 }

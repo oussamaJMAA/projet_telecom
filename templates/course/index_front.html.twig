@@ -17,22 +17,26 @@
 								</div>
 							</div>
 						</div>
-                        <form class="form-inline row align-items-center">
-                                <input class="form-control mr-sm-2 col-lg-8 col-md" type="search" placeholder="Search" aria-label="Search">        
-                                <div class="col-lg-3 col-md">
-                                    <div class="woocommerce-topbar-ordering">
-                                        <select id="s1" name="section" onchange="SelectRedirect();">
-                                            <option value="0">All Courses</option>
-                                            <option value="1">Recommended For you</option>
+						{% if searchForm is defined %}
+							{{ form_start(searchForm)}}
+							<div class="form-group col-lg-6">
+								{{ form_widget(searchForm, {'attr': {'placeholder':'search ...'}}) }}
+								<button type="button" name="" id="" class="btn btn-primary btn-lg btn-block">Submit</button>
+							</div>
 
-                                            <option value="2">Recent Courses</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <button class="btn btn-outline-success col-lg-1 col-md" type="submit">Search</button>
-                        </form>
+							<div class="col-lg-3 col-md-2">
+								<div class="woocommerce-topbar-ordering">
+									<select id="s1" name="section" onchange="SelectRedirect();">
+										<option value="0">All Courses</option>
+										<option value="1">Recommended For you</option>
+										<option value="2">Recent Courses</option>
+									</select>
+								</div>
+							</div>
+							{{ form_end(searchForm)}}
+						{% endif %}
 					</div>
-
+					
 
 					<div class="row">
 
