@@ -348,4 +348,26 @@ public function get_question_level_of_user($l){
      $a = $resultSet->fetchAllAssociative();
      return $a;
 }
+public function UserScore($id){
+    $conn = $this->getEntityManager()
+            ->getConnection();
+        $sql = "select sum(score)  -(select score from user_quiz where quiz_id = 2) from user_quiz where user_id = ? ;";
+        $statement = $conn->prepare($sql);
+        $statement->bindValue(1, $id);
+        $resultSet = $statement->executeQuery();
+        $a = $resultSet->fetchOne();
+        return $a;
+
+}
+public function UserScore2($id){
+    $conn = $this->getEntityManager()
+            ->getConnection();
+        $sql = "select sum(score) from user_quiz where quiz_id > 21;";
+        $statement = $conn->prepare($sql);
+        $statement->bindValue(1, $id);
+        $resultSet = $statement->executeQuery();
+        $a = $resultSet->fetchOne();
+        return $a;
+
+}
 }

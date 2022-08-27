@@ -70,6 +70,13 @@ class QuizQuestionsController extends AbstractController
                 ]);
             }
             
+if (($level_of_user == 2) && ($qr->UserScore($this->getUser()->getId())==50))
+{$levelRepository->setUserLevel($this->getUser()->getId(), 3);
+}
+if (($level_of_user == 3) && ($qr->UserScore2($this->getUser()->getId())==65))
+{$levelRepository->setUserLevel($this->getUser()->getId(), 4);
+}
+        
             return $this->render('home/quizz_front.html.twig', [
                 'quizz' => $qr->findByLevels($level_of_user),
 
