@@ -362,7 +362,7 @@ public function UserScore($id){
 public function UserScore2($id){
     $conn = $this->getEntityManager()
             ->getConnection();
-        $sql = "select sum(score) from user_quiz where quiz_id > 21;";
+        $sql = "select sum(score) from user_quiz where quiz_id > 21 and user_id = ?;";
         $statement = $conn->prepare($sql);
         $statement->bindValue(1, $id);
         $resultSet = $statement->executeQuery();
