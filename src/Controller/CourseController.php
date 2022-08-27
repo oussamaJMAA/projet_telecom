@@ -89,12 +89,9 @@ class CourseController extends AbstractController
      */
     public function index_front(CourseRepository $courseRepository, int $page = 1): Response
     {
-        $pagerfanta = new Pagerfanta(new QueryAdapter($courseRepository->allCourses()));
-        $pagerfanta->setMaxPerPage(6);
-        $pagerfanta->setCurrentPage($page);
-
+       
         return $this->render('course/index_front.html.twig', [
-            'pager' => $pagerfanta,
+            'pager' =>$courseRepository->courses_per_level($this->getUser()->getId()),
         ]);
     }
     /**

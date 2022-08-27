@@ -249,4 +249,15 @@ class CourseRepository extends ServiceEntityRepository
         return $this->createQueryBuilder('c')
         ->orderBy('c.id', 'ASC');
     }
+    public function courses_per_level($u)
+    {
+        $conn = $this->getEntityManager()
+            ->getConnection();
+        $sql = "select * from course where levels_id = (select levels_id from user where id = ?);";
+        $statement = $conn->prepare($sql);
+        $statement->bindValue(1, $u);
+        $resultSet = $statement->executeQuery();
+        $a = $resultSet->fetchAllAssociative();
+        return $a;
+    }
 }
