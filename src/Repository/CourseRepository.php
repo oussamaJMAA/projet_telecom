@@ -249,4 +249,20 @@ class CourseRepository extends ServiceEntityRepository
         return $this->createQueryBuilder('c')
         ->orderBy('c.id', 'ASC');
     }
+    
+    
+    /**
+     * @return Course[] Returns an array of Course objects
+     */
+    public function findByExampleField($value)
+    {
+        return $this->createQueryBuilder('j')
+            ->andWhere('j.gameName LIKE :val')
+            ->setParameter('val', '%'.$value.'%')
+            ->orderBy('j.gameName', 'ASC')
+            ->getQuery()
+            ->getResult()
+        ;
+    }
+
 }

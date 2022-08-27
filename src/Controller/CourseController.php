@@ -18,6 +18,8 @@ use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Security\Core\Security;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 /**
@@ -35,7 +37,7 @@ class CourseController extends AbstractController
         ]);
     }
 
-     /**
+    /**
      * @Route("/details/{id}", name="app_course_index_front_detailed", methods={"GET", "POST"})
      */
     public function detailed_course(CommentRepository $commentRepository, Course $course, $id, CourseRepository $courseRepository, Request $request): Response
@@ -47,7 +49,7 @@ class CourseController extends AbstractController
             $form->handleRequest($request);
 
             if ($form->isSubmitted() && $form->isValid()) {
-                $comment->setContent( $form->get('content')->getData());
+                $comment->setContent($form->get('content')->getData());
                 $comment->setCourse($course);
                 $comment->setAuthor($this->getUser());
                 $comment->setCreatedAt(new DateTime());
@@ -77,7 +79,7 @@ class CourseController extends AbstractController
                 'liked' => $liked,
                 'enrolled' => $enrolled,
                 'form' => $form->createView(),
-                
+
 
             ]);
         } else {
@@ -205,7 +207,7 @@ class CourseController extends AbstractController
     {
         return $this->redirectToRoute('app_course_index_front_detailed', ['id' => $id, 'user' => $this->getUser()->getId()], Response::HTTP_SEE_OTHER);
     }
-   
+
 
 
 
