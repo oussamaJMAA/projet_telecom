@@ -103,8 +103,10 @@ window.__mirage2 = {petok:"52cc717bba8ea956e0557373ac3d518298ebd33a-1658364813-1
                                         <p style ='color:white'>Level : Beginner</p>
                                         {% elseif  app.user.levels.difficulty == 3 %}
                                            <p style ='color:white'>Level : Intermediate</p>
-                                        {% else %}
+                                        {% elseif  app.user.levels.difficulty == 4 %}
                                            <p style ='color:white'>Level : Expert</p>
+                                    {% else %}
+                                     <p style ='color:white'>Start a Quizz to get your level ->></p>
                                         {% endif %}
                                         {% endif %}
                             <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">

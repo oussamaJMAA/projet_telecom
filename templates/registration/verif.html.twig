@@ -53,8 +53,8 @@
             <div class="fxt-form-content">
                 <div class="fxt-main-form">
                     <div class="fxt-inner-wrap fxt-opacity fxt-transition-delay-13">
-                        <h2 class="fxt-page-title">Sign Up</h2>
-                        <p class="fxt-description">Sign Up to try our amazing services</p>
+                        <h2 class="fxt-page-title">Account Verification</h2>
+                        <p class="fxt-description">Verif your Account</p>
                          {% for message in app.flashes('error') %}
                           <div class="flash-notice alert alert-danger">
                          {{ message }}
@@ -62,7 +62,7 @@
                          {% endfor %}
                         {{ form_start(registrationForm) }}
                             <div class="form-group">
-                                <label for="name" class="fxt-label">Full Name</label>
+                                <label for="name" class="fxt-label">Verification Code</label>
                             {{ form_widget(registrationForm.verif, {'attr': {'class': 'form-control','placeholder':'Entrez the Code'}}) }}
                                {{form_errors(registrationForm.verif)}}
                             </div>
