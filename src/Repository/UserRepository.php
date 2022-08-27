@@ -143,6 +143,17 @@ $a = $resultSet->fetchOne();
 return $a;
 
 }
+public function setValidUser($id){
+    $conn = $this->getEntityManager()
+    ->getConnection();
+$sql = "UPDATE user SET verified = 1 WHERE id= ?";
+$statement = $conn->prepare($sql);
+$statement->bindValue(1, $id);
+$resultSet = $statement->executeQuery();
+$a = $resultSet->fetchOne();
+return $a;
+
+}
 public function findOrCreateGoogleUser(ResourceOwnerInterface $owner): User
 {
    $user = $this->createQueryBuilder('u')

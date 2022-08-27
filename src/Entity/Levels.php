@@ -22,7 +22,7 @@ class Levels
     /**
      * @ORM\Column(type="integer")
      */
-    private $difficulty;
+    private $difficulty = 0;
 
     /**
      * @ORM\OneToMany(targetEntity=user::class, mappedBy="levels")

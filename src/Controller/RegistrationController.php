@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\User;
+use App\Entity\Levels;
 use Twilio\Rest\Client;
 use App\Form\VerifFormType;
 use App\Security\Authenticator;
@@ -36,6 +37,8 @@ class RegistrationController extends AbstractController
     public function register(Request $request, UserPasswordEncoderInterface $userPasswordEncoder, GuardAuthenticatorHandler $guardHandler, Authenticator $authenticator, EntityManagerInterface $entityManager,UserRepository $userRepository): Response
     {
         $user = new User();
+       // $level = new Levels();
+        
         $form = $this->createForm(RegistrationFormType::class, $user);
         $form->handleRequest($request);
 
@@ -48,7 +51,7 @@ class RegistrationController extends AbstractController
                 )
             );
             $user->setRoles(array('ROLE_EMPLOYEE'));
-            $user -> setLevels(1); //set level to nothing at first (1) because he didnt even begin any quiz
+            $user ->setLevels(null) ;//set level to nothing at first (1) because he didnt even begin any quiz
             $verif_code = $userRepository->generateRandomString(6);
             $user->setVerificationCode($verif_code);
             $account_sid = 'AC98154bf72bc4fd663711706599cb305b';
@@ -99,6 +102,7 @@ class RegistrationController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
 
             if($form->get('verif')->getData()==$userRepository->getUserVerifCode($id) ){
+                $userRepository->setValidUser($id);
                 $this->addFlash(
                     'success',
                     'Verification code is correct'
