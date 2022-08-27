@@ -75,4 +75,27 @@ class LevelsRepository extends ServiceEntityRepository
         ;
     }
     */
+    public function getLevel($l){
+    
+        $a= $this->createQueryBuilder('l')
+            ->andWhere('l.difficulty = :val')
+            ->setParameter('val', $l)
+            ->getQuery()
+            ->getOneOrNullResult();
+           
+        
+        return $a ;
+    }
+    public function setUserLevel($id,$level){
+     
+            $conn = $this->getEntityManager()
+                ->getConnection();
+            $sql = "update user set levels_id = ? where id = ?";
+            $statement = $conn->prepare($sql);
+            $statement->bindValue(1, $level);
+            $statement->bindValue(2, $id);
+           return  $statement->executeQuery();
+
+
+    }
 }

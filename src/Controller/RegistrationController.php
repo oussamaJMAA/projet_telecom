@@ -9,6 +9,7 @@ use App\Form\VerifFormType;
 use App\Security\Authenticator;
 use App\Form\RegistrationFormType;
 use App\Repository\UserRepository;
+use App\Repository\LevelsRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -34,11 +35,9 @@ class RegistrationController extends AbstractController
     /**
      * @Route("/register", name="app_register")
      */
-    public function register(Request $request, UserPasswordEncoderInterface $userPasswordEncoder, GuardAuthenticatorHandler $guardHandler, Authenticator $authenticator, EntityManagerInterface $entityManager,UserRepository $userRepository): Response
+    public function register(LevelsRepository $levelRepository,Request $request, UserPasswordEncoderInterface $userPasswordEncoder, GuardAuthenticatorHandler $guardHandler, Authenticator $authenticator, EntityManagerInterface $entityManager,UserRepository $userRepository): Response
     {
         $user = new User();
-       // $level = new Levels();
-        
         $form = $this->createForm(RegistrationFormType::class, $user);
         $form->handleRequest($request);
 
@@ -51,7 +50,8 @@ class RegistrationController extends AbstractController
                 )
             );
             $user->setRoles(array('ROLE_EMPLOYEE'));
-            $user ->setLevels(null) ;//set level to nothing at first (1) because he didnt even begin any quiz
+dump($levelRepository->getLevel(1));
+            $user ->setLevels($levelRepository->getLevel(1)) ;//set level to nothing at first (1) because he didnt even begin any quiz
             $verif_code = $userRepository->generateRandomString(6);
             $user->setVerificationCode($verif_code);
             $account_sid = 'AC98154bf72bc4fd663711706599cb305b';

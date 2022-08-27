@@ -2,9 +2,13 @@
 
 namespace App\Controller;
 
+use Exception;
+use App\Form\QuizFormType;
 use App\Entity\QuizQuestions;
 use App\Form\QuizQuestionsType;
 use App\Repository\QuizRepository;
+use App\Repository\LevelsRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use App\Repository\QuizQuestionsRepository;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -26,19 +30,52 @@ class QuizQuestionsController extends AbstractController
         ]);
     }
 
-    
+
     /**
      * @Route("/employee", name="quizz_front")
      */
-    public function quizz_front(QuizRepository $qr,QuizQuestionsRepository $qqr): Response
+    public function quizz_front(EntityManagerInterface $em, LevelsRepository $levelRepository, Request $request, QuizRepository $qr, QuizQuestionsRepository $qqr): Response
     {
-        if($this->getUser()){
+        if ($this->getUser()) {
             $level_of_user = $this->getUser()->getLevels()->getDifficulty();
-        return $this->render('home/quizz_front.html.twig',[
-            'quizz' => $qr->findByLevels($level_of_user),
-         
-        ]);
-    } return $this->redirectToRoute('app_login');
+            if ($level_of_user == 1) {
+                $form = $this->createForm(QuizFormType::class);
+                $form->handleRequest($request);
+                if ($form->isSubmitted() && $form->isValid()) {
+                    $score = $form->get('score')->getData();
+                    if ($score <= 7) {
+
+                        $levelRepository->setUserLevel($this->getUser()->getId(), 2);
+                    } else if ($score >= 12) {
+                        $levelRepository->setUserLevel($this->getUser()->getId(), 4);
+                    } else {
+                        $levelRepository->setUserLevel($this->getUser()->getId(), 3);
+                    }
+                    try {
+                        $qr->test($this->getUser()->getId(), 2, $score);
+                    } catch (Exception $e) {
+                        //         dump($e);
+                        $qr->test_update($this->getUser()->getId(), 2, $score);
+                    }
+
+                    return $this->redirectToRoute('app_home', [], Response::HTTP_SEE_OTHER);
+                }
+
+
+
+                return $this->render('home/quizz_level1.html.twig', [
+                    'questions' => $qr->get_question_level_of_user($level_of_user),
+                    'form' => $form->createView(),
+
+                ]);
+            }
+            
+            return $this->render('home/quizz_front.html.twig', [
+                'quizz' => $qr->findByLevels($level_of_user),
+
+            ]);
+        }
+        return $this->redirectToRoute('app_login');
     }
 
     /**

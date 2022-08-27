@@ -341,7 +341,7 @@ public function get_question_level_of_user($l){
     $conn = $this->getEntityManager()
     ->getConnection();
      $sql = "
-     select * from quiz_questions join quiz on quiz.id = quiz_questions.quiz_id where quiz.levels_id = ?";
+     select * from quiz_questions join quiz on quiz.id = quiz_questions.quiz_id where quiz.levels_id = ? limit 15";
      $statement = $conn->prepare($sql);
      $statement->bindValue(1, $l);
      $resultSet = $statement->executeQuery();
