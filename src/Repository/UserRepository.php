@@ -2,8 +2,10 @@
 
 namespace App\Repository;
 
+use App\Entity\Levels;
 use App\Entity\User;
 use Doctrine\ORM\ORMException;
+use App\Repository\LevelsRepository;
 use Doctrine\ORM\OptimisticLockException;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -155,7 +157,7 @@ return $a;
 
 }
 public function findOrCreateGoogleUser(ResourceOwnerInterface $owner): User
-{
+{$em =$this->getEntityManager();
    $user = $this->createQueryBuilder('u')
         ->where ('u.email = :email')
        ->setParameters([
@@ -169,9 +171,10 @@ public function findOrCreateGoogleUser(ResourceOwnerInterface $owner): User
     }
     $user= (new User()) 
    ->setEmail($owner->getEmail())
+   ->setLevels($em->getRepository(Levels::class)->getLevel(1))
    ->setFullName($owner->getFirstName().' '.$owner->getLastName())
    ->setRoles(['ROLE_EMPLOYEE']);
-$em =$this->getEntityManager();
+
 $em->persist($user);
 $em->flush();
 return $user;
