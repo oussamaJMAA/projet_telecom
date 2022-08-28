@@ -3,34 +3,266 @@
 {% block title %}Home{% endblock %}
 
 {% block body %}
+<style>
+
+/*  carousel      */
+
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.bg-0 {
+	background-image: url(img/img0.jpg);
+}
+.bg-1 {
+	background-image: url(img/img1.jpg);
+}
+.bg-2 {
+	background-image: url(img/img2.jpg);
+}
+.bg-3 {
+	background-image: url(img/img3.jpg);
+}
+.bg-4 {
+	background-image: url(img/img4.jpg);
+}
+.bg-5 {
+	background-image: url(img/img5.jpg);
+}
+.bg-6 {
+	background-image: url(img/img6.jpg);
+}
+.bg-7 {
+	background-image: url(img/img7.jpg);
+}
+.bg-8 {
+	background-image: url(img/img8.jpg);
+}
+.bg-0, .bg-1, .bg-2, .bg-3, .bg-4, .bg-5, .bg-6, .bg-7, .bg-8{
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.carousel-caption {
+	bottom: 220px;
+	z-index: 2;
+}
+.carousel-caption h5 {
+	font-size: 85px;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	font-family: 'Moon Dance', cursive;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+
+.carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 1;
+}
+.carousel-indicators {
+	bottom: 65px;
+}
+.carousel-indicators button {
+	width: 100px !important;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	.navbar-collapse {
+		background: #fff;
+	}
+	.navbar-collapse .nav-item .nav-link {
+		color: #000;
+	}
+	.carousel-caption {
+		bottom: 350px;
+	}
+	.carousel-caption h5 {
+		font-size: 65px;
+	}
+	.carousel-caption p {
+		font-size: 18px;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	.navbar-collapse .nav-item .nav-link {
+		color: #000;
+	}
+	.carousel-caption {
+		bottom: 165px;
+	}
+	.carousel-caption h5 {
+		font-size: 25px;
+	}
+	.carousel-caption p {
+		font-size: 12px;
+		width: 100%;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	.navbar-collapse {
+		background: #fff;
+	}
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
         <!-- Start Main Banner Area -->
-        <div class="main-banner">
-            <div class="container">
-                <div class="row align-items-center m-0">
-                    <div class="col-lg-6 p-0">
-                        <div class="main-banner-content">
-                            <span class="sub-title"><i class="flaticon-wifi-signal"></i> Tunisie Telecom Service</span>
-                            <h1>Built for Internet Service</h1>
-                            <p>Tunisie Telecom is the incumbent telecom operator in Tunisia. Tunisie Telecom has more than 6 million subscribers in the fixed and mobile telephony, in Tunisia and abroad.</p>
-
-
-                            <div class="btn-box">
-                                <a href={{path('app_course_index_front')}} class="btn btn-primary">Check Courses</a>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 p-0">
-                        <div class="banner-image">
-                            <img data-cfsrc="assets/img/banner-img1.png" alt="image" style="display:none;visibility:hidden;"><noscript><img src="assets/img/banner-img1.png" alt="image"></noscript>
-                        </div>
-                    </div>
+        
+         <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
+        <div class="carousel-inner">
+            <div class="carousel-item active bg-0">
+                <div class="carousel-caption">
+                    <h5><span class="text-warning"></span></h5>
+                    <p></p>
                 </div>
             </div>
-
-            <div class="shape-img1"><img data-cfsrc="assets/img/shape-image/1.png" alt="imgae" style="display:none;visibility:hidden;"><noscript><img src="assets/img/shape-image/1.png" alt="imgae"></noscript></div>
+            <div class="carousel-item bg-1">
+                <div class="carousel-caption">
+                    <h5><span class="text-warning"></span></h5>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item bg-2">
+                <div class="carousel-caption">
+                    <h5><span class="text-warning"></span></h5>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item bg-3">
+                <div class="carousel-caption">
+                    <h5><span class="text-warning"></span></h5>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item bg-4">
+                <div class="carousel-caption">
+                    <h5><span class="text-warning"></span></h5>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item bg-5">
+                <div class="carousel-caption">
+                    <h5><span class="text-warning"></span></h5>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item bg-6">
+                <div class="carousel-caption">
+                    <h5><span class="text-warning"></span></h5>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item bg-7">
+                <div class="carousel-caption">
+                    <h5><span class="text-warning"></span></h5>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item bg-8">
+                <div class="carousel-caption">
+                    <h5><span class="text-warning"></span></h5>
+                    <p></p>
+                </div>
+            </div>
         </div>
+
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions"
+            type="button">
+            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions"
+            type="button">
+            <span aria-hidden="true" class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <!--thumbnails-->
+        <div class="carousel-indicators align-items-center row">
+            <button aria-label="Slide 1" class="active col" data-bs-slide-to="0"
+                data-bs-target="#carouselExampleCaptions" type="button">
+                
+            </button>
+
+            <button aria-label="Slide 2" class="col" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions"
+                type="button">
+                
+            </button>
+
+            <button aria-label="Slide 3" class="col" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions"
+                type="button">
+                
+            </button>
+
+            <button aria-label="Slide 4" class="col" data-bs-slide-to="3" data-bs-target="#carouselExampleCaptions"
+                type="button">
+                
+            </button>
+
+            <button aria-label="Slide 5" class="col" data-bs-slide-to="4" data-bs-target="#carouselExampleCaptions"
+                type="button">
+                
+            </button>
+
+            <button aria-label="Slide 6" class="col" data-bs-slide-to="5" data-bs-target="#carouselExampleCaptions"
+                type="button">
+                
+            </button>
+
+            <button aria-label="Slide 7" class="col" data-bs-slide-to="6" data-bs-target="#carouselExampleCaptions"
+                type="button">
+                
+            </button>
+
+            <button aria-label="Slide 8" class="col" data-bs-slide-to="7" data-bs-target="#carouselExampleCaptions"
+                type="button">
+                
+            </button>
+
+            <button aria-label="Slide 9" class="col" data-bs-slide-to="8" data-bs-target="#carouselExampleCaptions"
+                type="button">
+                
+            </button>
+        </div>
+    </div>
+
+           
+     
         <!-- End Main Banner Area -->
 
         <!-- Start Features Area -->
@@ -207,7 +439,7 @@
                             <i class="flaticon-help"></i>
                         </span>
                         
-                        <span>Questions you might find in the quizes</span>
+                        <span>Sensibilizations and Tips</span>
                     </span>
                 
                 </div>
@@ -217,10 +449,28 @@
                         <div class="faq-accordion">
                             <ul class="accordion">
                                 <li class="accordion-item">
-                                    <a class="accordion-title" href="javascript:void(0)"><i class="flaticon-add"></i> How do permissions work in Google Play Instant?</a>
-                                    <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <a class="accordion-title" href="javascript:void(0)"><i class="flaticon-add"></i> How to Prevent Email Impersonation ?</a>
+                                    <p class="accordion-content">Cyber criminals are finding new ways to exploit applications, systems, and tools to send malicious messages from email addresses you trust, such as those ending in @nyu.edu.
+
+The Email Impersonation Security service provides a stronger layer of cybersecurity for messages and automated notifications sent to NYU Email. Any email that does not meet NYU’s cybersecurity standards is flagged as a risk in the recipient's NYU Email inbox so they know to be cautious about it, or to just delete the message..</p>
+                                </li>
+                         <li class="accordion-item">
+                                    <a class="accordion-title" href="javascript:void(0)"><i class="flaticon-add"></i> What Is Ransomware?</a>
+                                    <p class="accordion-content">Ransomware is a form of malware that can encrypt files and block access to all data on your device. It can lock up networks and deny access to business-critical data. It is the #1 cyberthreat to institutions and universities because of the data these organizations hold. Cybercriminals demand payments, usually in the form of bitcoin, but payment does not guarantee receipt of the decryption key.</p>
                                 </li>
                                 
+                                <li class="accordion-item">
+                                    <a class="accordion-title" href="javascript:void(0)"><i class="flaticon-add"></i> What are Security Certificates?</a>
+                                    <p class="accordion-content">Security certificates are small data files that allow secure connections from a web server to a browser and from one server to another. The Security Certificates service provides and administers TLS certificates to NYU website and server administrators..</p>
+                                </li> <li class="accordion-item">
+                                    <a class="accordion-title" href="javascript:void(0)"><i class="flaticon-add"></i>General Data Protection Regulation ?</a>
+                                    <p class="accordion-content">The GDPR is a data protection law that applies broadly to the processing of personal information about European Union (EU) residents (Note that, in addition to EU Member States, the GDPR also applies to Iceland, Norway, Liechtenstein, United Kingdom and Switzerland.) Generally speaking, the regulation applies to all personally identifiable data that is collected, used, stored or otherwise processed about individuals in the EU under certain circumstances, by any method including electronic and paper records. For more information about how the GDPR applies to NYU, please see the section below entitled “What areas of NYU may be impacted?”.</p>
+                                </li>
+                                
+                                <li class="accordion-item">
+                                    <a class="accordion-title" href="javascript:void(0)"><i class="flaticon-add"></i> Why Secure Your Computer?</a>
+                                    <p class="accordion-content">Every unprotected computer that connects to NYU’s network is a potential open door for cyber criminals. The threat extends beyond your computer to those of your NYU colleagues, NYU’s network, and University data..</p>
+                                </li>        
                                
                             </ul>
                         </div>
@@ -230,17 +480,37 @@
                         <div class="faq-accordion">
                             <ul class="accordion">
                                 <li class="accordion-item">
-                                    <a class="accordion-title" href="javascript:void(0)"><i class="flaticon-add"></i> What things will be provided by Bahama internet?</a>
-                                    <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <a class="accordion-title" href="javascript:void(0)"><i class="flaticon-add"></i>How to Avoid Phishing and Suspicious Email</a>
+                                    <p class="accordion-content">Phishing is a social engineering attempt to trick you into revealing personal or sensitive information, and/or to install malware on your device. These messages can be delivered by email, phone call, SMS text message, or other means. The language in phishing messages often attempts to create a sense of panic and urgency, to entice you with offers that are too good to be true, or to appear as a message from a legitimate source. By responding—typing in your information, clicking a link, downloading a file, etc.—malware may be installed and your data stolen.
+
+Phishing scams can also be delivered by pop-ups on webpages, fake login pages, paid ads, social media posts and messaging, as well as unsolicited tech support..</p>
                                 </li>
                                 
-                               
+                                <li class="accordion-item">
+                                    <a class="accordion-title" href="javascript:void(0)"><i class="flaticon-add"></i> Secure Your Internet Connection with VPN?</a>
+                                    <p class="accordion-content">A Virtual Private Network, or VPN, adds another layer of security. Whether working remotely from a coffee shop or hotel, or using a personal device when out and about, it is a good idea to use a VPN..</p>
+                                </li>
+                                
+                                <li class="accordion-item">
+                                    <a class="accordion-title" href="javascript:void(0)"><i class="flaticon-add"></i>Secure Your Web Browser?</a>
+                                    <p class="accordion-content">Privacy and security are closely connected. Paying attention to browser privacy settings and features is critical for your online security. This article provides some insights and tips to help you protect your privacy and security when using some of the most popular web browsers..</p>
+                                </li>
+                                 <li class="accordion-item">
+                                    <a class="accordion-title" href="javascript:void(0)"><i class="flaticon-add"></i> Be Secure on Public Wi-Fi?</a>
+                                    <p class="accordion-content">Public Wi-Fi networks are often exploited by malicious actors seeking access to your sensitive data. For this reason, it’s critical that you remain aware of common Wi-Fi scam tactics and the best practices for safely connecting to and using public Wi-Fi. Some common topics to keep in mind? Make sure you're connecting to the establishment's official public Wi-Fi and not a scammer's knock off network..</p>
+                                </li>
+                                
+                                <li class="accordion-item">
+                                    <a class="accordion-title" href="javascript:void(0)"><i class="flaticon-add"></i> Secure Your Zoom Meetings?</a>
+                                    <p class="accordion-content">Use the Waiting Room, a meeting password, and other features to effectively manage your Zoom meeting or class and prevent uninvited intruders from disrupting your session.</p>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+       
         <!-- End FAQ Area -->
 
 
