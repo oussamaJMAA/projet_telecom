@@ -7,16 +7,16 @@
 	<div class="page-bar">
 		<div class="page-title-breadcrumb">
 			<div class=" pull-left">
-				<div class="page-title">Listes des cours</div>
+				<div class="page-title">All users</div>
 			</div>
 			<ol class="breadcrumb page-breadcrumb pull-right">
 				<li>
 					<i class="fa fa-home"></i>&nbsp;<a class="parent-item" href="index.html">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
 				</li>
 				<li>
-					<a class="parent-item" href="#">Cours</a>&nbsp;<i class="fa fa-angle-right"></i>
+					<a class="parent-item" href="#">Users</a>&nbsp;<i class="fa fa-angle-right"></i>
 				</li>
-				<li class="active">Liste des Cours</li>
+				<li class="active">All users</li>
 			</ol>
 		</div>
 	</div>
@@ -26,7 +26,7 @@
 		<div class="col-md-12 col-sm-12">
 			<div class="card  card-box">
 				<div class="card-head">
-					<header>New Student List</header>
+					
 					<div class="tools">
 						<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
 						<a class="t-collapse btn-color fa fa-chevron-down" href="javascript:;"></a>
@@ -42,6 +42,8 @@
 										<th>Id</th>
 										<th>FullName</th>
 										<th>Email</th>
+										<th>Experience</th>
+										<th>Details</th>
 										<th>Roles</th>
 										
 										<th>Actions</th>
@@ -53,10 +55,13 @@
 											<td>{{ user.id }}</td>
 												<td>{{ user.fullName }}</td>
 											<td>{{ user.email }}</td>
+												<td>{{user.experience}} </td>
+															<td>{{user.details}}</td>
 											<td>	{% for role in user.roles %}
 																{{role}}
 																<br>
 															{% endfor %}</td>
+														
 										
 
 																	<td class="left">

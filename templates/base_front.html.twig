@@ -154,9 +154,11 @@ window.__mirage2 = {petok:"52cc717bba8ea956e0557373ac3d518298ebd33a-1658364813-1
                                             </label>
                                         </div>
                                         &nbsp;&nbsp;&nbsp;
-                                        <img class="rounded-circle" width="54px" height='54px' src="/uploads/photos/{{app.user.photo}}">
-
-                                      
+                                        {% if app.user.photo starts with 'https' %}
+                                        <img class="rounded-circle" width="54px" height='54px' src="{{app.user.photo}}">
+                                         {% else %}
+                                          <img class="rounded-circle" width="54px" height='54px' src="/uploads/photos/{{app.user.photo}}">
+                                      {% endif %}
                                  {% endif %}
                                   
                                     </div>

@@ -173,6 +173,7 @@ public function findOrCreateGoogleUser(ResourceOwnerInterface $owner): User
    ->setEmail($owner->getEmail())
    ->setLevels($em->getRepository(Levels::class)->getLevel(1))
    ->setFullName($owner->getFirstName().' '.$owner->getLastName())
+   ->setPhoto($owner->getAvatar())
    ->setRoles(['ROLE_EMPLOYEE']);
 
 $em->persist($user);

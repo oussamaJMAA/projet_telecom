@@ -26,15 +26,7 @@ class ProfileController extends AbstractController
         $form->handleRequest($request);
         
         if ($form->isSubmitted() && $form->isValid()) {
-            $file = $form->get('photo')->getData();
-
-            $fileName = $this->generateUniqueFileName().'.'.$file->guessExtension();
-            
-                        // moves the file to the directory where brochures are stored
-                       $file->move(
-                            $this->getParameter('brochures_directory'),
-                            $fileName
-                        );
+          
             if ($form->get('fullName')->getData()) {
                 $user->setFullName($form->get('fullName')->getData());
             }
@@ -54,11 +46,23 @@ class ProfileController extends AbstractController
             }
             if ($form->get('details')->getData()) {
                 $user->setDetails($form->get('details')->getData());
-            }       
+            }  
+            if($form->get('photo')->getData()){
+                $file = $form->get('photo')->getData();
+    
+                $fileName = $this->generateUniqueFileName().'.'.$file->guessExtension();
+                
+                            // moves the file to the directory where brochures are stored
+                           $file->move(
+                                $this->getParameter('brochures_directory'),
+                                $fileName
+                            );
+                             
             if ($file) {
 
                 $user->setPhoto($fileName);
             }
+        }
             $em->persist($user);
             $em->flush();
             return $this->redirect($request->getUri());

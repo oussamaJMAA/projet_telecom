@@ -69,8 +69,11 @@
     <div class="row">
         <div class="col-md-3 border-right">
         {{ form_start(form,{'attr':{'novalidate':'novalidate'}}) }}
-            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="/uploads/photos/{{app.user.photo}}"><span class="font-weight-bold">{{app.user.fullName}}</span><span class="text-black-50">{{app.user.email}}</span><span> </span></div>
-            
+        {% if app.user.photo starts with 'https' %}
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="{{app.user.photo}}"><span class="font-weight-bold">{{app.user.fullName}}</span><span class="text-black-50">{{app.user.email}}</span><span> </span></div>
+            {% else %}
+             <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="/uploads/photos/{{app.user.photo}}"><span class="font-weight-bold">{{app.user.fullName}}</span><span class="text-black-50">{{app.user.email}}</span><span> </span></div>
+            {% endif %}
         {{ form_widget(form.photo, {'attr': {'class': 'form-control'}}) }}
         </div>
         <div class="col-md-5 border-right">
