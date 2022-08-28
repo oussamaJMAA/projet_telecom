@@ -260,4 +260,21 @@ class CourseRepository extends ServiceEntityRepository
         $a = $resultSet->fetchAllAssociative();
         return $a;
     }
+
+
+    public function Searchcourse($value)
+    {
+       $a = $this->createQueryBuilder('c')
+            ->andWhere('c.name LIKE :val')
+            ->setParameter('val', '%'.$value.'%')
+            ->orderBy('c.name', 'ASC')
+            ->getQuery()
+            ->getResult();
+            
+           
+        
+            return $a ;
+        ;
+    }
+
 }

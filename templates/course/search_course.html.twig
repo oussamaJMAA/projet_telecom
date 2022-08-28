@@ -17,17 +17,6 @@
 								</div>
 
 							</div>
-
-							<div class="col-lg-6 col-md-7">
-								{{form_start(form)}}
-								
-								<div class="form-group d-flex justify-content-end">
-									{{ form_widget(form.search, {'attr': {'type':'text','class': 'form-control','placeholder':'Search here...'}}) }}
-								
-									{{form_widget(form.submit)}}
-									{{form_end(form)}}
-								</div>
-							</div>
 							<div class="col-lg-4 col-md-5">
 								<div class="woocommerce-topbar-ordering">
 									<select id="s1" name="section" onchange="SelectRedirect();">
@@ -45,7 +34,7 @@
 					<div class="row">
 
 
-						{% for course in pager %}
+						{% for course in c %}
 							<div class="col-lg-4 col-md-6 col-sm-6">
 								<div class="single-product-box">
 									<div class="product-image">
@@ -79,7 +68,7 @@
 											<span class="price">Enrollments
 											</span>
 											<span class="price">:
-												{{ course.nb_enrollments }}</span>
+												{{ course.nbEnrollments }}</span>
 										</div>
 
 										<a href={{ path('app_course_index_front_detailed', {'id': course.id} ) }} class="add-to-cart-btn">View Course</a>

@@ -9,6 +9,7 @@ use App\Form\CourseType;
 use App\Form\CommentType;
 use Pagerfanta\Pagerfanta;
 use Symfony\Component\Mime\Email;
+use App\Form\SearchCourseFormType;
 use App\Repository\CourseRepository;
 use App\Repository\CommentRepository;
 use Doctrine\ORM\EntityManagerInterface;
@@ -32,6 +33,23 @@ class CourseController extends AbstractController
     {
         return $this->render('course/index.html.twig', [
             'courses' => $courseRepository->findAll(),
+        ]);
+    }
+
+/**
+     * @Route("/course_front", name="app_course_index_front", methods={"GET","POST"})
+     */
+    public function index_front(Request $request,CourseRepository $courseRepository): Response
+    {
+        $form = $this->createForm(SearchCourseFormType::class);
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+           return $this->redirectToRoute('search',['name'=>$form->get('search')->getData()]);
+        
+        }
+        return $this->render('course/index_front.html.twig', [
+            'form'=>$form->createView(),
+            'pager' =>$courseRepository->courses_per_level($this->getUser()->getId()),
         ]);
     }
 
@@ -84,16 +102,27 @@ class CourseController extends AbstractController
             return $this->redirectToRoute('app_login');
         }
     }
-    /**
-     * @Route("/course_front/{page<\d+>}", name="app_course_index_front", methods={"GET"})
-     */
-    public function index_front(CourseRepository $courseRepository, int $page = 1): Response
-    {
-       
-        return $this->render('course/index_front.html.twig', [
-            'pager' =>$courseRepository->courses_per_level($this->getUser()->getId()),
+    
+/*
+    if ($form->isSubmitted() && $form->isValid()) {
+        return $this->render('course/search_course.html.twig',[
+        'c'=> $courseRepository->Searchcourse($form->get('search')->getData())
         ]);
-    }
+      
+    }*/
+
+
+    /**
+     * @Route("/course_front/search/{name}", name="search", methods={"GET"})
+     */
+    public function Search(Request $request,CourseRepository $courseRepository,$name): Response
+    { 
+        return $this->render('course/search_course.html.twig', [
+            
+            'c'=> $courseRepository->Searchcourse($name)
+        ]);
+ }
+
     /**
      * @Route("/course_front/rec", name="app_course_index_front_rec", methods={"GET"})
      */
