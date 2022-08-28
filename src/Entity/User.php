@@ -78,6 +78,21 @@ class User implements UserInterface
      * @ORM\ManyToOne(targetEntity=Levels::class, inversedBy="user")
      */
     private $levels;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $experience;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $details;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $photo;
    public function __construct()
     {
         $this->likes = new ArrayCollection();
@@ -301,4 +316,41 @@ class User implements UserInterface
 
         return $this;
     }
+
+    public function getExperience(): ?string
+    {
+        return $this->experience;
+    }
+
+    public function setExperience(?string $experience): self
+    {
+        $this->experience = $experience;
+
+        return $this;
+    }
+
+    public function getDetails(): ?string
+    {
+        return $this->details;
+    }
+
+    public function setDetails(?string $details): self
+    {
+        $this->details = $details;
+
+        return $this;
+    }
+
+    public function getPhoto()
+    {
+        return $this->photo;
+    }
+
+    public function setPhoto($photo)
+    {
+        $this->photo = $photo;
+
+        return $this;
+    }
+
 }
