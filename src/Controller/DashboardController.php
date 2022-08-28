@@ -16,9 +16,7 @@ class DashboardController extends AbstractController
      */
     public function index(CourseRepository $courseRepository,QuizRepository $q,UserRepository $u): Response
     {//exec('c:\WINDOWS\system32\cmd.exe /c start C:\Users\oussa\AppData\Local\Programs\"Opera GX"\launcher.exe');
-       dump($q->barchart2());
-       
-        return $this->render('dashboard/index.html.twig', [
+      return $this->render('dashboard/index.html.twig', [
 
             'controller_name' => 'DashboardController',
             'nb_courses' => $courseRepository->count_courses(),
@@ -45,13 +43,6 @@ class DashboardController extends AbstractController
             'n10' => $q->count10(),
             'n11' => $q->count11(),
             'n12' => $q->count12(),
-            'b2' => $q->barchart2(),
-            'f1' => $q->barchart2()[0]['name'],
-            'f2'=> "lezem user theny",
-            'c1' => $q->barchart2()[0]['count'],
-            'c2' => "",
-            'c3' => "",
-            'c4' => "",
             'array'=> $q->barchart2()
         ]);
     }

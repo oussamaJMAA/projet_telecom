@@ -666,12 +666,14 @@ var barChart2 = function(){
 		if(jQuery('#barChart_2').length > 0 ){
 var x = {{ array | json_encode| raw }}
 
+var u = [];
+var d = [];
+for(let i=0;i<x.length;i ++){
+d.push(x[i]['count']);
+u.push(x[i]['name']);
+console.log(d);
+}
 
-var b= x[0]['name'];
-var a= x[1]['name'];
-var c = x[2]['name'];
-var d = x[3]['name'];
-console.log(b);
 		//gradient bar chart
 			const barChart_2 = document.getElementById("barChart_2").getContext('2d');
 			//generate gradient
@@ -686,12 +688,13 @@ console.log(b);
 				data: {
 					defaultFontFamily: 'Poppins',
 			
-					labels: [b,a,c,d],
+					labels: u,
 					
 					datasets: [
 						{
 							label: "Quizes Passed",
-							data: [{{c1}},{{c2}},{{c3}},{{c4}}],
+
+							data: d,
 							borderColor: barChart_2gradientStroke,
 							borderWidth: "0",
 							backgroundColor: barChart_2gradientStroke, 
