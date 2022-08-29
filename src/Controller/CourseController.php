@@ -40,7 +40,7 @@ class CourseController extends AbstractController
      * @Route("/course_front", name="app_course_index_front", methods={"GET","POST"})
      */
     public function index_front(Request $request,CourseRepository $courseRepository): Response
-    {
+    {if($this->getUser()){
         $form = $this->createForm(SearchCourseFormType::class);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
@@ -51,6 +51,8 @@ class CourseController extends AbstractController
             'form'=>$form->createView(),
             'pager' =>$courseRepository->courses_per_level($this->getUser()->getId()),
         ]);
+    }
+    return $this->redirectToRoute('app_login');
     }
 
      /**
